@@ -1,24 +1,24 @@
-package hello;
+package application.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-//@Entity
+@Entity
 public class Customer {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String firstName;
     private String lastName;
+    @OneToOne
+    private Address address;
 
     protected Customer() {}
 
-    public Customer(String firstName, String lastName) {
+    public Customer(String firstName, String lastName, Address address) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.address = address;
     }
 
     @Override
