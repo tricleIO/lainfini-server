@@ -1,4 +1,4 @@
-package application.entity;
+package application.model.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,6 +14,7 @@ public class Address {
     private String street;
     private int houseNumber;
     private String city;
+    private String postal;
     private String state;
     private String country;
 

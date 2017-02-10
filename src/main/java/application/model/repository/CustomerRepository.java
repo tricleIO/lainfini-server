@@ -1,6 +1,6 @@
-package application.repository;
+package application.model.repository;
 
-import application.entity.Customer;
+import application.model.entity.Customer;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

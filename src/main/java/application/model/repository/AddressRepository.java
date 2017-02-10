@@ -1,10 +1,7 @@
-package application.repository;
+package application.model.repository;
 
-import application.entity.Address;
-import application.entity.Customer;
+import application.model.entity.Address;
 import org.springframework.data.repository.CrudRepository;
-
-import java.util.List;
 
 public interface AddressRepository extends CrudRepository<Address, Long> {
 

@@ -1,8 +1,9 @@
-package application.entity;
+package application.model.entity;
 
-import application.type.Currency;
-import application.type.Sex;
-import application.type.State;
+import application.model.type.Currency;
+import application.model.type.Locale;
+import application.model.type.Sex;
+import application.model.type.State;
 
 import javax.persistence.*;
 
@@ -27,6 +28,8 @@ public class Customer {
     private State state;
     @Enumerated(EnumType.STRING)
     private Currency currency;
+    @Enumerated(EnumType.STRING)
+    private Locale locale;
 
     protected Customer() {}
 

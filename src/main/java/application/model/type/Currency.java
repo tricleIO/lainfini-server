@@ -1,4 +1,4 @@
-package application.type;
+package application.model.type;
 
 public enum Currency {
 
