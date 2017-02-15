@@ -1,5 +1,5 @@
 /*
- * Copyright 2014-2015 the original author or authors.
+ * Copyright 2014 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,23 +16,15 @@
 
 package hello;
 
-public class Greeting {
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-	private final long id;
+@RestController
+public class HomeController {
 
-	private final String content;
-
-	public long getId() {
-		return id;
-	}
-
-	public String getContent() {
-		return content;
-	}
-
-	public Greeting(long id, String content) {
-		this.id = id;
-		this.content = content;
+	@RequestMapping("/")
+	public String home() {
+		return "home";
 	}
 
 }
