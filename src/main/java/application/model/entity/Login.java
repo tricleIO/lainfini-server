@@ -15,7 +15,6 @@ public class Login {
     @OneToOne
     private LinkedAccount serviceAccount;
 
-    @Type(type="org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
     private LocalDateTime loggedAt;
 
     private String loggedFrom;

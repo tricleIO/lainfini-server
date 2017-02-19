@@ -6,6 +6,7 @@ import org.hibernate.annotations.Type;
 import org.joda.time.LocalDateTime;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 public class LinkedAccount {
@@ -22,7 +23,6 @@ public class LinkedAccount {
 
     private State state;
 
-    @Type(type="org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
-    private LocalDateTime linkedAt;
+    private Date linkedAt;
 
 }
