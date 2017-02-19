@@ -1,9 +1,7 @@
 package application.model.entity;
 
-import org.hibernate.annotations.Type;
-import org.joda.time.LocalDateTime;
-
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 public class Login {
@@ -15,7 +13,7 @@ public class Login {
     @OneToOne
     private LinkedAccount serviceAccount;
 
-    private LocalDateTime loggedAt;
+    private Date loggedAt;
 
     private String loggedFrom;
 

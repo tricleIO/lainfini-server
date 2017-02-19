@@ -1,12 +1,10 @@
 package application.model.entity;
 
-import org.hibernate.annotations.Type;
-import org.joda.time.LocalDateTime;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.Date;
 
 @Entity
 public class AuthApp {
@@ -21,10 +19,8 @@ public class AuthApp {
 
     private String name;
 
-    @Type(type="org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
-    private LocalDateTime validFrom;
+    private Date validFrom;
 
-    @Type(type="org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
-    private LocalDateTime validTo;
+    private Date validTo;
 
 }

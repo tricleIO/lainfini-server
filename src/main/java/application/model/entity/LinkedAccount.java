@@ -2,8 +2,6 @@ package application.model.entity;
 
 import application.model.type.AccountParty;
 import application.model.type.State;
-import org.hibernate.annotations.Type;
-import org.joda.time.LocalDateTime;
 
 import javax.persistence.*;
 import java.util.Date;

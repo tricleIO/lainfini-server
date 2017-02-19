@@ -2,9 +2,9 @@ package application.model.entity;
 
 import application.model.type.State;
 import org.hibernate.annotations.Type;
-import org.joda.time.LocalDateTime;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 public class AuthToken {
@@ -23,11 +23,9 @@ public class AuthToken {
 
     private String ip;
 
-    @Type(type="org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
-    private LocalDateTime createdAt;
+    private Date createdAt;
 
-    @Type(type="org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
-    private LocalDateTime expiresAt;
+    private Date expiresAt;
 
     @OneToOne
     private Login login;
