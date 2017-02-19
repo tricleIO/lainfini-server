@@ -1,4 +1,4 @@
-package application.rest;
+package application.rest.domain;
 
 public class Greeting {
 
@@ -17,4 +17,5 @@ public class Greeting {
     public String getContent() {
         return content;
     }
+
 }

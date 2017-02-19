@@ -4,11 +4,10 @@ import java.util.concurrent.atomic.AtomicLong;
 
 import application.api.ReadCustomerByIdRequest;
 import application.api.SendMailRequest;
+import application.rest.domain.Greeting;
 import application.service.customer.CustomerService;
 import application.service.mail.MailService;
 import hello.Car;
-import net.sargue.mailgun.Configuration;
-import net.sargue.mailgun.Mail;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
