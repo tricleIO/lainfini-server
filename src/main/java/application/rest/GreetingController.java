@@ -2,8 +2,8 @@ package application.rest;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-import application.api.ReadCustomerByIdRequest;
-import application.api.SendMailRequest;
+import application.api.customer.ReadCustomerByIdRequest;
+import application.api.mail.SendMailRequest;
 import application.rest.domain.Greeting;
 import application.service.customer.CustomerService;
 import application.service.mail.MailService;

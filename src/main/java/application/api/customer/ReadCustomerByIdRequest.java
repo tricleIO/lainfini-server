@@ -1,4 +1,4 @@
-package application.api;
+package application.api.customer;
 
 public class ReadCustomerByIdRequest {
 

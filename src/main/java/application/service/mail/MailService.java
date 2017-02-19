@@ -1,6 +1,6 @@
 package application.service.mail;
 
-import application.api.SendMailRequest;
+import application.api.mail.SendMailRequest;
 import org.springframework.stereotype.Service;
 
 @Service

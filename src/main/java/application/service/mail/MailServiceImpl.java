@@ -1,6 +1,6 @@
 package application.service.mail;
 
-import application.api.SendMailRequest;
+import application.api.mail.SendMailRequest;
 import net.sargue.mailgun.Configuration;
 import net.sargue.mailgun.Mail;
 

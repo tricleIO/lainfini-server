@@ -1,6 +1,6 @@
 package application.service.customer;
 
-import application.api.ReadCustomerByIdRequest;
+import application.api.customer.ReadCustomerByIdRequest;
 import application.persistence.entity.Customer;
 import application.persistence.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
