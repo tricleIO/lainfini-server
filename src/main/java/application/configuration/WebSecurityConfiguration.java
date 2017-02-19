@@ -14,8 +14,9 @@
  * limitations under the License.
  */
 
-package application;
+package application.configuration;
 
+import application.service.security.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

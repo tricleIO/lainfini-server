@@ -1,9 +1,9 @@
-package application.model.entity;
+package application.persistence.entity;
 
-import application.model.type.Currency;
-import application.model.type.Locale;
-import application.model.type.Sex;
-import application.model.type.State;
+import application.persistence.type.Currency;
+import application.persistence.type.Locale;
+import application.persistence.type.Sex;
+import application.persistence.type.State;
 
 import javax.persistence.*;
 

@@ -9,6 +9,9 @@
           <file>file://$MODULE_DIR$/src/main/java/application/configuration/PersistenceJPAConfig.java</file>
           <file>file://$MODULE_DIR$/src/main/java/application/WebSecurityConfiguration.java</file>
         </fileset>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/application/configuration/BeanConfig.java</file>
+        </fileset>
       </configuration>
     </facet>
   </component>

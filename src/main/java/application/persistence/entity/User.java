@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package application.model.entity;
+package application.persistence.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.validator.constraints.NotEmpty;

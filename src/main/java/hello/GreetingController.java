@@ -16,7 +16,7 @@
 
 package hello;
 
-import application.model.entity.User;
+import application.persistence.entity.User;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

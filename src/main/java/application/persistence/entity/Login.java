@@ -1,4 +1,4 @@
-package application.model.entity;
+package application.persistence.entity;
 
 import javax.persistence.*;
 import java.util.Date;

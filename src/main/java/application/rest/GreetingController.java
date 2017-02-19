@@ -2,9 +2,14 @@ package application.rest;
 
 import java.util.concurrent.atomic.AtomicLong;
 
+import application.api.ReadCustomerByIdRequest;
+import application.api.SendMailRequest;
+import application.service.customer.CustomerService;
+import application.service.mail.MailService;
 import hello.Car;
 import net.sargue.mailgun.Configuration;
 import net.sargue.mailgun.Mail;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -12,6 +17,12 @@ public class GreetingController {
 
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
+
+    @Autowired
+    private CustomerService customerService;
+
+    @Autowired
+    private MailService mailService;
 
     @RequestMapping("/greeting")
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
@@ -21,16 +32,8 @@ public class GreetingController {
 
     @RequestMapping(value = "/car", method = RequestMethod.POST)
     public Greeting update(@RequestBody Car car) {
-        Configuration configuration = new Configuration()
-                .domain("sandbox84f18e68139b47b5a326c912cb4b3c38.mailgun.org")
-                .apiKey("key-7fcc1bc67e3bb8cbae048b6e872904be")
-                .from("Test", "mailgun@sandbox84f18e68139b47b5a326c912cb4b3c38.mailgun.org");
-        Mail.using(configuration)
-                .to("jan.merta.90@gmail.com")
-                .subject("predmet")
-                .text("cau kamo")
-                .build()
-                .send();
+        System.out.println(customerService.readCustomer(new ReadCustomerByIdRequest(1L)));
+        mailService.sendMail(new SendMailRequest());
         return new Greeting(counter.incrementAndGet(),
                 String.format(template, car.getVIN()));
     }

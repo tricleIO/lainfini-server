@@ -1,7 +1,7 @@
-package application.model.entity;
+package application.persistence.entity;
 
-import application.model.type.AccountParty;
-import application.model.type.State;
+import application.persistence.type.AccountParty;
+import application.persistence.type.State;
 
 import javax.persistence.*;
 import java.util.Date;

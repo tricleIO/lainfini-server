@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package application.model.repository;
+package application.persistence.repository;
 
-import application.model.entity.User;
+import application.persistence.entity.User;
 import org.springframework.data.repository.CrudRepository;
 
 public interface UserRepository extends CrudRepository<User, Long> {

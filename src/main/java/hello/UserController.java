@@ -16,8 +16,8 @@
 
 package hello;
 
-import application.model.entity.User;
-import application.model.repository.UserRepository;
+import application.persistence.entity.User;
+import application.persistence.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

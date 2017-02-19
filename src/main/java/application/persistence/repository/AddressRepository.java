@@ -1,6 +1,6 @@
-package application.model.repository;
+package application.persistence.repository;
 
-import application.model.entity.Address;
+import application.persistence.entity.Address;
 import org.springframework.data.repository.CrudRepository;
 
 public interface AddressRepository extends CrudRepository<Address, Long> {

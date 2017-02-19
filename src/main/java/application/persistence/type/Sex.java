@@ -1,4 +1,4 @@
-package application.model.type;
+package application.persistence.type;
 
 public enum Sex {
     MALE,
