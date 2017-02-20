@@ -3,6 +3,7 @@ package application.rest;
 import java.util.concurrent.atomic.AtomicLong;
 
 import application.api.customer.ReadCustomerByIdRequest;
+import application.api.customer.Response;
 import application.api.mail.SendPlainTextMailRequest;
 import application.rest.domain.Customer;
 import application.rest.domain.Greeting;
@@ -40,18 +41,19 @@ public class GreetingController {
 
     @RequestMapping(value = "/customer/{customerId}", method = RequestMethod.GET)
     public ResponseEntity<?> readCustomer(@PathVariable Long customerId) {
-        CustomerDetails customerDetails = customerService.readCustomer(
+        Response<CustomerDetails> response = customerService.readCustomer(
                 new ReadCustomerByIdRequest(customerId)
         );
-        if (customerDetails != null) {
+        if (response.isSuccessful()) {
             return new ResponseEntity<>(
-                    Customer.fromDetails(customerDetails),
+                    Customer.fromDetails(response.getBody()),
                     HttpStatus.OK
             );
+        } else {
+            return new ResponseEntity<>(
+                    HttpStatus.NOT_FOUND
+            );
         }
-        return new ResponseEntity<>(
-                HttpStatus.NOT_FOUND
-        );
     }
 
     @RequestMapping(value = "/sendMail", method = RequestMethod.POST)
