@@ -1,11 +1,10 @@
 package application.service.customer;
 
 import application.api.customer.ReadCustomerByIdRequest;
-import application.persistence.entity.Customer;
-
+import application.service.domain.CustomerDetails;
 
 public interface CustomerService {
 
-    Customer readCustomer(ReadCustomerByIdRequest readCustomerByIdRequest);
+    CustomerDetails readCustomer(ReadCustomerByIdRequest readCustomerByIdRequest);
 
 }

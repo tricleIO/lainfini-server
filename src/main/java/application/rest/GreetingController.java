@@ -4,11 +4,15 @@ import java.util.concurrent.atomic.AtomicLong;
 
 import application.api.customer.ReadCustomerByIdRequest;
 import application.api.mail.SendPlainTextMailRequest;
+import application.rest.domain.Customer;
 import application.rest.domain.Greeting;
+import application.rest.domain.Mail;
 import application.service.customer.CustomerService;
+import application.service.domain.CustomerDetails;
 import application.service.mail.MailService;
-import hello.Car;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -24,22 +28,41 @@ public class GreetingController {
     private MailService mailService;
 
     @RequestMapping("/greeting")
-    public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
-        return new Greeting(counter.incrementAndGet(),
-                String.format(template, name));
+    public ResponseEntity<?> greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
+        return new ResponseEntity<>(
+                new Greeting(
+                        counter.incrementAndGet(),
+                        String.format(template, name)
+                ),
+                HttpStatus.OK
+        );
     }
 
-    @RequestMapping(value = "/car", method = RequestMethod.POST)
-    public Greeting update(@RequestBody Car car) {
-        System.out.println(customerService.readCustomer(new ReadCustomerByIdRequest(1L)));
+    @RequestMapping(value = "/customer/{customerId}", method = RequestMethod.GET)
+    public ResponseEntity<?> readCustomer(@PathVariable Long customerId) {
+        CustomerDetails customerDetails = customerService.readCustomer(
+                new ReadCustomerByIdRequest(customerId)
+        );
+        if (customerDetails != null) {
+            return new ResponseEntity<>(
+                    Customer.fromDetails(customerDetails),
+                    HttpStatus.OK
+            );
+        }
+        return new ResponseEntity<>(
+                HttpStatus.NOT_FOUND
+        );
+    }
+
+    @RequestMapping(value = "/sendMail", method = RequestMethod.POST)
+    public ResponseEntity<?> sendMail(@RequestBody Mail mail) {
         mailService.sendMail(
                 new SendPlainTextMailRequest(
-                        "jan.merta.90@gmail.com",
-                        "Predmet",
-                        "Ahoj, jak se vede?"
+                        mail.getTo(),
+                        mail.getSubject(),
+                        mail.getText()
                 )
         );
-        return new Greeting(counter.incrementAndGet(),
-                String.format(template, car.getVIN()));
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }
