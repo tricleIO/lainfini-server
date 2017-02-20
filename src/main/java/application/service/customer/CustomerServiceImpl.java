@@ -2,7 +2,7 @@ package application.service.customer;
 
 import application.api.Status;
 import application.api.customer.ReadCustomerByIdRequest;
-import application.api.customer.Response;
+import application.api.ServiceResponse;
 import application.persistence.entity.Customer;
 import application.persistence.repository.CustomerRepository;
 import application.service.domain.CustomerDetails;
@@ -15,14 +15,14 @@ public class CustomerServiceImpl implements CustomerService {
     @Autowired
     private CustomerRepository customerRepository;
 
-    public Response<CustomerDetails> readCustomer(ReadCustomerByIdRequest readCustomerByIdRequest) {
+    public ServiceResponse<CustomerDetails> readCustomer(ReadCustomerByIdRequest readCustomerByIdRequest) {
         Customer customer = customerRepository.findOne(
                 readCustomerByIdRequest.id
         );
         if (customer != null) {
-            return Response.success(customer.toDetails());
+            return ServiceResponse.success(customer.toDetails());
         }
-        return Response.error(Status.NOT_FOUND);
+        return ServiceResponse.error(Status.NOT_FOUND);
     }
 
 }
