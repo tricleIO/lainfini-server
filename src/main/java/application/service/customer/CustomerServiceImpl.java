@@ -14,7 +14,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     public Customer readCustomer(ReadCustomerByIdRequest readCustomerByIdRequest) {
         return customerRepository.findOne(
-                readCustomerByIdRequest.getId()
+                readCustomerByIdRequest.id
         );
     }
 
