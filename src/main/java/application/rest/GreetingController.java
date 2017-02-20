@@ -3,7 +3,7 @@ package application.rest;
 import java.util.concurrent.atomic.AtomicLong;
 
 import application.api.customer.ReadCustomerByIdRequest;
-import application.api.mail.SendMailRequest;
+import application.api.mail.SendPlainTextMailRequest;
 import application.rest.domain.Greeting;
 import application.service.customer.CustomerService;
 import application.service.mail.MailService;
@@ -24,7 +24,7 @@ public class GreetingController {
     private MailService mailService;
 
     @RequestMapping("/greeting")
-    public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
+    public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
         return new Greeting(counter.incrementAndGet(),
                 String.format(template, name));
     }
@@ -32,7 +32,13 @@ public class GreetingController {
     @RequestMapping(value = "/car", method = RequestMethod.POST)
     public Greeting update(@RequestBody Car car) {
         System.out.println(customerService.readCustomer(new ReadCustomerByIdRequest(1L)));
-        mailService.sendMail(new SendMailRequest());
+        mailService.sendMail(
+                new SendPlainTextMailRequest(
+                        "jan.merta.90@gmail.com",
+                        "Predmet",
+                        "Ahoj, jak se vede?"
+                )
+        );
         return new Greeting(counter.incrementAndGet(),
                 String.format(template, car.getVIN()));
     }

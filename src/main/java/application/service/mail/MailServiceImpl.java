@@ -1,6 +1,6 @@
 package application.service.mail;
 
-import application.api.mail.SendMailRequest;
+import application.api.mail.SendPlainTextMailRequest;
 import net.sargue.mailgun.Configuration;
 import net.sargue.mailgun.Mail;
 
@@ -8,20 +8,18 @@ public class MailServiceImpl implements MailService {
 
     private final Configuration configuration;
 
-    public MailServiceImpl() {
-        this.configuration = new Configuration()
-                .domain("sandbox84f18e68139b47b5a326c912cb4b3c38.mailgun.org")
-                .apiKey("key-7fcc1bc67e3bb8cbae048b6e872904be")
-                .from("Test", "mailgun@sandbox84f18e68139b47b5a326c912cb4b3c38.mailgun.org");
+    public MailServiceImpl(Configuration configuration) {
+        this.configuration = configuration;
     }
 
     @Override
-    public void sendMail(SendMailRequest sendMailRequest) {
+    public void sendMail(SendPlainTextMailRequest sendMailRequest) {
         Mail.using(configuration)
-                .to("jan.merta.90@gmail.com")
-                .subject("predmet")
-                .text("cau kamo")
+                .to(sendMailRequest.to)
+                .subject(sendMailRequest.subject)
+                .text(sendMailRequest.text)
                 .build()
                 .send();
     }
+
 }
