@@ -6,12 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class MailServiceImpl implements MailService {
+public class MailgunMailServiceImpl implements MailService {
 
     @Autowired
     private final Configuration configuration;
 
-    public MailServiceImpl(Configuration configuration) {
+    public MailgunMailServiceImpl(Configuration configuration) {
         this.configuration = configuration;
     }
 

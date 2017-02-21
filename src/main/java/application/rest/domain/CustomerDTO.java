@@ -1,8 +1,6 @@
 package application.rest.domain;
 
-import application.service.domain.CustomerDetails;
-
-public class Customer {
+public class CustomerDTO {
 
     private Long id;
     private String firstName;
@@ -32,11 +30,4 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    public static Customer fromDetails(CustomerDetails customerDetails) {
-        Customer customer = new Customer();
-        customer.setId(customerDetails.getId());
-        customer.setFirstName(customerDetails.getFirstName());
-        customer.setLastName(customerDetails.getLastName());
-        return customer;
-    }
 }

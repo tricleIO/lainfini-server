@@ -1,10 +1,9 @@
 package application.rest;
 
+import application.rest.domain.CustomerDTO;
 import application.service.response.ServiceResponse;
-import application.rest.domain.Customer;
 import application.rest.domain.Mail;
 import application.service.customer.CustomerService;
-import application.service.domain.CustomerDetails;
 import application.service.mail.MailService;
 import application.service.nexmo.SMSClientServiceImpl;
 import application.service.nexmo.model.SMSMessageRestModel;
@@ -24,12 +23,12 @@ public class MainController {
 
     @RequestMapping(value = "/customer/{customerId}", method = RequestMethod.GET)
     public ResponseEntity<?> readCustomer(@PathVariable Long customerId) {
-        ServiceResponse<CustomerDetails> response = customerService.read(
+        ServiceResponse<CustomerDTO> response = customerService.read(
                 customerId
         );
         if (response.isSuccessful()) {
             return new ResponseEntity<>(
-                    Customer.fromDetails(response.getBody()),
+                    response.getBody(),
                     HttpStatus.OK
             );
         } else {

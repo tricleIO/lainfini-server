@@ -4,12 +4,12 @@ import application.persistence.type.Currency;
 import application.persistence.type.Locale;
 import application.persistence.type.Sex;
 import application.persistence.type.State;
-import application.service.domain.CustomerDetails;
+import application.rest.domain.CustomerDTO;
 
 import javax.persistence.*;
 
 @Entity
-public class Customer implements DTOConvertable<CustomerDetails> {
+public class Customer implements DTOConvertable<CustomerDTO> {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -139,17 +139,17 @@ public class Customer implements DTOConvertable<CustomerDetails> {
     @Override
     public String toString() {
         return String.format(
-                "Customer[id=%d, firstName='%s', lastName='%s']",
+                "CustomerDTO[id=%d, firstName='%s', lastName='%s']",
                 id, firstName, lastName);
     }
 
     @Override
-    public CustomerDetails toDTO() {
-        CustomerDetails customerDetails = new CustomerDetails(
-                id,
-                firstName,
-                lastName
-        );
-        return customerDetails;
+    public CustomerDTO toDTO() {
+        CustomerDTO customerDTO = new CustomerDTO();
+        customerDTO.setId(id);
+        customerDTO.setFirstName(firstName);
+        customerDTO.setLastName(lastName);
+        return customerDTO;
     }
+
 }

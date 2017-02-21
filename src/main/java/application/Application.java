@@ -34,30 +34,30 @@ public class Application {
             addressRepository.save(a1);
             customerRepository.save(new Customer("Jack", "Bauer", a1));
 
-//            customerRepository.save(new application.persistence.entity.Customer("Chloe", "O'Brian", a1));
-//            customerRepository.save(new application.persistence.entity.Customer("Kim", "Bauer", a1));
-//            customerRepository.save(new application.persistence.entity.Customer("David", "Palmer", a1));
-//            customerRepository.save(new application.persistence.entity.Customer("Michelle", "Dessler", a1));
+//            customerRepository.save(new application.persistence.entity.CustomerDTO("Chloe", "O'Brian", a1));
+//            customerRepository.save(new application.persistence.entity.CustomerDTO("Kim", "Bauer", a1));
+//            customerRepository.save(new application.persistence.entity.CustomerDTO("David", "Palmer", a1));
+//            customerRepository.save(new application.persistence.entity.CustomerDTO("Michelle", "Dessler", a1));
 
 //            // fetch all customers
 //            log.info("Customers found with findAll():");
 //            log.info("-------------------------------");
-//            for (application.persistence.entity.Customer customer : customerRepository.findAll()) {
+//            for (application.persistence.entity.CustomerDTO customer : customerRepository.findAll()) {
 //                log.info(customer.toString());
 //            }
 //            log.info("");
 //
 //            // fetch an individual customer by ID
-//            application.persistence.entity.Customer customer = customerRepository.findOne(1L);
-//            log.info("Customer found with findOne(1L):");
+//            application.persistence.entity.CustomerDTO customer = customerRepository.findOne(1L);
+//            log.info("CustomerDTO found with findOne(1L):");
 //            log.info("--------------------------------");
 //            log.info(customer.toString());
 //            log.info("");
 //
 //            // fetch customers by last name
-//            log.info("Customer found with findByLastName('Bauer'):");
+//            log.info("CustomerDTO found with findByLastName('Bauer'):");
 //            log.info("--------------------------------------------");
-//            for (application.persistence.entity.Customer bauer : customerRepository.findByLastName("Bauer")) {
+//            for (application.persistence.entity.CustomerDTO bauer : customerRepository.findByLastName("Bauer")) {
 //                log.info(bauer.toString());
 //            }
 //            log.info("");
