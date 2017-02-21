@@ -1,6 +1,5 @@
 package application.service.mail;
 
-import application.api.mail.SendPlainTextMailRequest;
 import net.sargue.mailgun.Configuration;
 import net.sargue.mailgun.Mail;
 
@@ -13,11 +12,11 @@ public class MailServiceImpl implements MailService {
     }
 
     @Override
-    public void sendMail(SendPlainTextMailRequest sendMailRequest) {
+    public void sendMail(String to, String subject, String text) {
         Mail.using(configuration)
-                .to(sendMailRequest.to)
-                .subject(sendMailRequest.subject)
-                .text(sendMailRequest.text)
+                .to(to)
+                .subject(subject)
+                .text(text)
                 .build()
                 .send();
     }

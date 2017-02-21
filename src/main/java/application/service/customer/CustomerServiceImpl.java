@@ -1,7 +1,6 @@
 package application.service.customer;
 
 import application.api.Status;
-import application.api.customer.ReadCustomerByIdRequest;
 import application.api.ServiceResponse;
 import application.persistence.entity.Customer;
 import application.persistence.repository.CustomerRepository;
@@ -15,9 +14,9 @@ public class CustomerServiceImpl implements CustomerService {
     @Autowired
     private CustomerRepository customerRepository;
 
-    public ServiceResponse<CustomerDetails> readCustomer(ReadCustomerByIdRequest readCustomerByIdRequest) {
+    public ServiceResponse<CustomerDetails> readCustomer(Long customerId) {
         Customer customer = customerRepository.findOne(
-                readCustomerByIdRequest.id
+                customerId
         );
         if (customer != null) {
             return ServiceResponse.success(customer.toDetails());

@@ -35,4 +35,5 @@ public class CustomerDetails {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
 }
