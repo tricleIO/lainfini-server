@@ -2,9 +2,13 @@ package application.service.mail;
 
 import net.sargue.mailgun.Configuration;
 import net.sargue.mailgun.Mail;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class MailServiceImpl implements MailService {
 
+    @Autowired
     private final Configuration configuration;
 
     public MailServiceImpl(Configuration configuration) {

@@ -9,7 +9,7 @@ import application.service.domain.CustomerDetails;
 import javax.persistence.*;
 
 @Entity
-public class Customer {
+public class Customer implements DTOConvertable<CustomerDetails> {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -152,4 +152,14 @@ public class Customer {
         return customerDetails;
     }
 
+
+    @Override
+    public CustomerDetails toDTO() {
+        CustomerDetails customerDetails = new CustomerDetails(
+                id,
+                firstName,
+                lastName
+        );
+        return customerDetails;
+    }
 }
