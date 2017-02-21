@@ -33,8 +33,7 @@ public class Application {
             Address a1 = new Address("Ad", 1, "a", "a", "a");
             addressRepository.save(a1);
             customerRepository.save(new Customer("Jack", "Bauer", a1));
-
-//            customerRepository.save(new application.persistence.entity.CustomerDTO("Chloe", "O'Brian", a1));
+            customerRepository.save(new Customer("Chloe", "O'Brian", a1));
 //            customerRepository.save(new application.persistence.entity.CustomerDTO("Kim", "Bauer", a1));
 //            customerRepository.save(new application.persistence.entity.CustomerDTO("David", "Palmer", a1));
 //            customerRepository.save(new application.persistence.entity.CustomerDTO("Michelle", "Dessler", a1));

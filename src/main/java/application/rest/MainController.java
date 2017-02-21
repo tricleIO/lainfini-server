@@ -21,7 +21,7 @@ public class MainController {
     @Autowired
     private MailService mailService;
 
-    @RequestMapping(value = "/customer/{customerId}", method = RequestMethod.GET)
+    @RequestMapping(value = "/customers/{customerId}", method = RequestMethod.GET)
     public ResponseEntity<?> readCustomer(@PathVariable Long customerId) {
         ServiceResponse<CustomerDTO> response = customerService.read(
                 customerId
@@ -36,6 +36,15 @@ public class MainController {
                     HttpStatus.NOT_FOUND
             );
         }
+    }
+
+    @RequestMapping(value = "/customers", method = RequestMethod.GET)
+    public ResponseEntity<?> readCustomer() {
+        ServiceResponse<?> response = customerService.readAll();
+            return new ResponseEntity<>(
+                    response.getBody(),
+                    HttpStatus.OK
+            );
     }
 
     @RequestMapping(value = "/sendMail", method = RequestMethod.POST)
