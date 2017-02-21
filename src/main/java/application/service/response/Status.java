@@ -1,4 +1,4 @@
-package application.api;
+package application.service.response;
 
 public enum Status {
     OK,

@@ -1,6 +1,6 @@
 package application.rest;
 
-import application.api.ServiceResponse;
+import application.service.response.ServiceResponse;
 import application.rest.domain.Customer;
 import application.rest.domain.Mail;
 import application.service.customer.CustomerService;
@@ -24,7 +24,7 @@ public class MainController {
 
     @RequestMapping(value = "/customer/{customerId}", method = RequestMethod.GET)
     public ResponseEntity<?> readCustomer(@PathVariable Long customerId) {
-        ServiceResponse<CustomerDetails> response = customerService.readCustomer(
+        ServiceResponse<CustomerDetails> response = customerService.read(
                 customerId
         );
         if (response.isSuccessful()) {

@@ -1,6 +1,6 @@
 package application.service;
 
-import application.api.ServiceResponse;
+import application.service.response.ServiceResponse;
 
 import java.io.Serializable;
 

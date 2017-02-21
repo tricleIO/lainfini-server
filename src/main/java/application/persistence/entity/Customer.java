@@ -143,16 +143,6 @@ public class Customer implements DTOConvertable<CustomerDetails> {
                 id, firstName, lastName);
     }
 
-    public CustomerDetails toDetails() {
-        CustomerDetails customerDetails = new CustomerDetails(
-                id,
-                firstName,
-                lastName
-        );
-        return customerDetails;
-    }
-
-
     @Override
     public CustomerDetails toDTO() {
         CustomerDetails customerDetails = new CustomerDetails(

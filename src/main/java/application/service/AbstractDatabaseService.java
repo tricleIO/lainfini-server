@@ -1,7 +1,7 @@
 package application.service;
 
-import application.api.ServiceResponse;
-import application.api.Status;
+import application.service.response.ServiceResponse;
+import application.service.response.Status;
 import application.persistence.entity.DTOConvertable;
 import org.springframework.data.repository.CrudRepository;
 
