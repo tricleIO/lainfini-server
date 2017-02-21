@@ -1,41 +1,26 @@
 package application.rest;
 
-import java.util.concurrent.atomic.AtomicLong;
-
 import application.api.ServiceResponse;
 import application.rest.domain.Customer;
-import application.rest.domain.Greeting;
 import application.rest.domain.Mail;
 import application.service.customer.CustomerService;
 import application.service.domain.CustomerDetails;
 import application.service.mail.MailService;
+import application.service.nexmo.SMSClientServiceImpl;
+import application.service.nexmo.model.SMSMessageRestModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class GreetingController {
-
-    private static final String template = "Hello, %s!";
-    private final AtomicLong counter = new AtomicLong();
+public class MainController {
 
     @Autowired
     private CustomerService customerService;
 
     @Autowired
     private MailService mailService;
-
-    @RequestMapping("/greeting")
-    public ResponseEntity<?> greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
-        return new ResponseEntity<>(
-                new Greeting(
-                        counter.incrementAndGet(),
-                        String.format(template, name)
-                ),
-                HttpStatus.OK
-        );
-    }
 
     @RequestMapping(value = "/customer/{customerId}", method = RequestMethod.GET)
     public ResponseEntity<?> readCustomer(@PathVariable Long customerId) {
@@ -61,6 +46,13 @@ public class GreetingController {
                 mail.getSubject(),
                 mail.getText()
         );
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/sendSMSMessage", method = RequestMethod.POST)
+    public ResponseEntity<?> sendSMSMessage(@RequestBody SMSMessageRestModel smsMessageRestModel) {
+        SMSClientServiceImpl smsClient = new SMSClientServiceImpl();
+        smsClient.sendMessage(smsMessageRestModel.getToPhoneNumber(), smsMessageRestModel.getMessageText());
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }
