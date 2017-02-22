@@ -2,7 +2,7 @@ package application.rest;
 
 import application.rest.domain.CustomerDTO;
 import application.service.response.ServiceResponse;
-import application.rest.domain.Mail;
+import application.rest.domain.MailDTO;
 import application.service.customer.CustomerService;
 import application.service.mail.MailService;
 import application.service.nexmo.SMSClientServiceImpl;
@@ -48,11 +48,11 @@ public class MainController {
     }
 
     @RequestMapping(value = "/sendMail", method = RequestMethod.POST)
-    public ResponseEntity<?> sendMail(@RequestBody Mail mail) {
+    public ResponseEntity<?> sendMail(@RequestBody MailDTO mailDTO) {
         mailService.sendMail(
-                mail.getTo(),
-                mail.getSubject(),
-                mail.getText()
+                mailDTO.getTo(),
+                mailDTO.getSubject(),
+                mailDTO.getText()
         );
         return new ResponseEntity<>(HttpStatus.OK);
     }

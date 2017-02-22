@@ -1,6 +1,6 @@
 package application.rest.domain;
 
-public class Mail {
+public class MailDTO {
 
     private String to;
     private String subject;
