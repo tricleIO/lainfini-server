@@ -11,7 +11,7 @@ import java.io.Serializable;
 
 public abstract class AbstractDatabaseController<E extends DTOConvertable<D>, I extends Serializable, D extends EntityConvertable<E>, S extends DatabaseServiceInterface<E, I, D>> {
 
-    public ResponseEntity<?> readAll() {
+    protected final ResponseEntity<?> readAll() {
         ServiceResponse<?> response = getBaseService().readAll();
         return new ResponseEntity<>(
                 response.getBody(),
@@ -19,7 +19,7 @@ public abstract class AbstractDatabaseController<E extends DTOConvertable<D>, I 
         );
     }
 
-    public ResponseEntity<?> read(I id) {
+    protected final ResponseEntity<?> read(I id) {
         ServiceResponse<D> response = getBaseService().read(
                 id
         );
@@ -35,7 +35,7 @@ public abstract class AbstractDatabaseController<E extends DTOConvertable<D>, I 
         }
     }
 
-    public ResponseEntity<?> create(D dto) {
+    protected final ResponseEntity<?> create(D dto) {
         ServiceResponse<?> response = getBaseService().create(dto);
         return new ResponseEntity<>(
                 response.getBody(),
