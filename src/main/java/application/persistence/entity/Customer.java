@@ -32,7 +32,7 @@ public class Customer implements DTOConvertable<CustomerDTO> {
     @Enumerated(EnumType.STRING)
     private Locale locale;
 
-    protected Customer() {}
+    public Customer() {}
 
     public Customer(String firstName, String lastName, Address billingAddress) {
         this.firstName = firstName;

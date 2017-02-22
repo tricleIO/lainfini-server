@@ -47,12 +47,21 @@ public class MainController {
             );
     }
 
+    @RequestMapping(value = "/customers", method = RequestMethod.POST)
+    public ResponseEntity<?> createCustomer(@RequestBody CustomerDTO customer) {
+        ServiceResponse<?> response = customerService.create(customer);
+        return new ResponseEntity<>(
+                response.getBody(),
+                HttpStatus.OK
+        );
+    }
+
     @RequestMapping(value = "/sendMail", method = RequestMethod.POST)
-    public ResponseEntity<?> sendMail(@RequestBody MailDTO mailDTO) {
+    public ResponseEntity<?> sendMail(@RequestBody MailDTO mail) {
         mailService.sendMail(
-                mailDTO.getTo(),
-                mailDTO.getSubject(),
-                mailDTO.getText()
+                mail.getTo(),
+                mail.getSubject(),
+                mail.getText()
         );
         return new ResponseEntity<>(HttpStatus.OK);
     }

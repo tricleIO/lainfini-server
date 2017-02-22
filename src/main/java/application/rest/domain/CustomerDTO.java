@@ -1,6 +1,8 @@
 package application.rest.domain;
 
-public class CustomerDTO {
+import application.persistence.entity.Customer;
+
+public class CustomerDTO implements EntityConvertable<Customer> {
 
     private Long id;
     private String firstName;
@@ -30,4 +32,12 @@ public class CustomerDTO {
         this.lastName = lastName;
     }
 
+    @Override
+    public Customer toEntity() {
+        Customer customer = new Customer();
+        customer.setId(id);
+        customer.setFirstName(firstName);
+        customer.setLastName(lastName);
+        return customer;
+    }
 }
