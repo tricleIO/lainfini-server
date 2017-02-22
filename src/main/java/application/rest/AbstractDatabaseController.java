@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 
 import java.io.Serializable;
 
-public abstract class BaseController<E extends DTOConvertable<D>, I extends Serializable, D extends EntityConvertable<E>, S extends DatabaseServiceInterface<E, I, D>> {
+public abstract class AbstractDatabaseController<E extends DTOConvertable<D>, I extends Serializable, D extends EntityConvertable<E>, S extends DatabaseServiceInterface<E, I, D>> {
 
     public ResponseEntity<?> readAll() {
         ServiceResponse<?> response = getBaseService().readAll();

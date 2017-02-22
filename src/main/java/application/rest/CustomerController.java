@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/customers")
-public class CustomerController extends BaseController<Customer, Long, CustomerDTO, CustomerService> {
+public class CustomerController extends AbstractDatabaseController<Customer, Long, CustomerDTO, CustomerService> {
 
     @Autowired
     private CustomerService customerService;
