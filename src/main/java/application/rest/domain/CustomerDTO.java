@@ -1,9 +1,11 @@
 package application.rest.domain;
 
 import application.persistence.entity.Customer;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 @Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class CustomerDTO implements EntityConvertable<Customer> {
 
     private Long id;
@@ -21,4 +23,5 @@ public class CustomerDTO implements EntityConvertable<Customer> {
         customer.setLastName(lastName);
         return customer;
     }
+
 }

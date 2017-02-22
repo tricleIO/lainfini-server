@@ -1,9 +1,11 @@
 package application.rest.domain;
 
 import application.persistence.entity.Address;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 @Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class AddressDTO implements EntityConvertable<Address> {
 
     private Long id;
