@@ -1,5 +1,7 @@
 package application.service.mail;
 
+import application.rest.domain.MailDTO;
+import application.service.response.ServiceResponse;
 import net.sargue.mailgun.Configuration;
 import net.sargue.mailgun.Mail;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,13 +18,14 @@ public class MailgunMailServiceImpl implements MailService {
     }
 
     @Override
-    public void sendMail(String to, String subject, String text) {
+    public ServiceResponse<MailDTO> sendMail(MailDTO mail) {
         Mail.using(configuration)
-                .to(to)
-                .subject(subject)
-                .text(text)
+                .to(mail.getTo())
+                .subject(mail.getSubject())
+                .text(mail.getText())
                 .build()
                 .send();
+        return ServiceResponse.success(mail);
     }
 
 }
