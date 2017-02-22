@@ -1,12 +1,16 @@
 package application.persistence.entity;
 
+import application.rest.domain.AddressDTO;
+import lombok.Data;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Address {
+@Data
+public class Address implements DTOConvertable<AddressDTO> {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
@@ -18,7 +22,7 @@ public class Address {
     private String state;
     private String country;
 
-    protected Address() {
+    public Address() {
     }
 
     public Address(String street, int houseNumber, String city, String state, String country) {
@@ -29,51 +33,17 @@ public class Address {
         this.country = country;
     }
 
-    public Long getId() {
-        return id;
+    @Override
+    public AddressDTO toDTO() {
+        AddressDTO addressDTO = new AddressDTO();
+        addressDTO.setId(id);
+        addressDTO.setStreet(street);
+        addressDTO.setHouseNumber(houseNumber);
+        addressDTO.setCity(city);
+        addressDTO.setPostal(postal);
+        addressDTO.setState(state);
+        addressDTO.setCountry(country);
+        return addressDTO;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getStreet() {
-        return street;
-    }
-
-    public void setStreet(String street) {
-        this.street = street;
-    }
-
-    public int getHouseNumber() {
-        return houseNumber;
-    }
-
-    public void setHouseNumber(int houseNumber) {
-        this.houseNumber = houseNumber;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
 }
