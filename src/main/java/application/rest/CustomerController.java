@@ -19,9 +19,9 @@ public class CustomerController extends AbstractDatabaseController<Customer, Lon
         return readAll();
     }
 
-    @RequestMapping(value = "/{customerId}", method = RequestMethod.GET)
-    public ResponseEntity<?> readCustomer(@PathVariable Long customerId) {
-        return read(customerId);
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public ResponseEntity<?> readCustomer(@PathVariable Long id) {
+        return read(id);
     }
 
     @RequestMapping(method = RequestMethod.POST)
