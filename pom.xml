@@ -16,6 +16,13 @@
 
     <dependencies>
 
+        <!-- Mail Chimp-->
+        <dependency>
+            <groupId>com.github.alexanderwe</groupId>
+            <artifactId>bananaj</artifactId>
+            <version>1.2.1-alpha</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
