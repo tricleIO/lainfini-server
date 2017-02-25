@@ -6,6 +6,7 @@ import application.rest.domain.CustomerDTO;
 import application.service.address.AddressService;
 import application.service.customer.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,8 +18,8 @@ public class AddressController extends AbstractDatabaseController<Address, Long,
     private AddressService addressService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> readCustomers() {
-        return readAll();
+    public ResponseEntity<?> readCustomers(Pageable pageable) {
+        return readAll(pageable);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)

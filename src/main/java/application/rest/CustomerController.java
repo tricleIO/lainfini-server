@@ -4,6 +4,7 @@ import application.persistence.entity.Customer;
 import application.rest.domain.CustomerDTO;
 import application.service.customer.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,8 +16,8 @@ public class CustomerController extends AbstractDatabaseController<Customer, Lon
     private CustomerService customerService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> readCustomers() {
-        return readAll();
+    public ResponseEntity<?> readCustomers(Pageable pageable) {
+        return readAll(pageable);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)

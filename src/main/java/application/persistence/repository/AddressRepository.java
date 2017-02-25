@@ -1,8 +1,8 @@
 package application.persistence.repository;
 
 import application.persistence.entity.Address;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface AddressRepository extends CrudRepository<Address, Long> {
+public interface AddressRepository extends PagingAndSortingRepository<Address, Long> {
 
 }
