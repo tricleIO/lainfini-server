@@ -1,8 +1,7 @@
 package application.rest;
 
 import application.persistence.entity.DTOConvertable;
-import application.rest.domain.DTO;
-import application.rest.domain.EntityConvertable;
+import application.rest.domain.InputOutputDTO;
 import application.service.DatabaseServiceInterface;
 import application.service.response.ServiceResponse;
 import org.springframework.data.domain.Page;
@@ -11,9 +10,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 import java.io.Serializable;
-import java.util.List;
 
-public abstract class AbstractDatabaseController<E extends DTOConvertable<D>, I extends Serializable, D extends DTO<E>, S extends DatabaseServiceInterface<E, I, D>> {
+public abstract class AbstractDatabaseController<E extends DTOConvertable<D>, I extends Serializable, D extends InputOutputDTO<E>, S extends DatabaseServiceInterface<E, I, D>> {
 
     protected final ResponseEntity<?> readAll(Pageable pageable) {
         ServiceResponse<Page<D>> response = getBaseService().readAll(pageable);

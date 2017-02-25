@@ -11,7 +11,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class AddressDTO extends ResourceSupport implements DTO<Address> {
+public class AddressDTO extends ResourceSupport implements InputOutputDTO<Address> {
 
     private Long uid;
     private String street;
