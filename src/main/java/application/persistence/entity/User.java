@@ -17,6 +17,7 @@
 package application.persistence.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
@@ -25,6 +26,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@Data
 public class User implements Serializable {
 
     @Id
@@ -57,41 +59,5 @@ public class User implements Serializable {
         this.password = user.getPassword();
         this.roles = user.getRoles();
     }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public Set<Role> getRoles() {
-        return roles;
-    }
-
-    public void setRoles(Set<Role> roles) {
-        this.roles = roles;
-    }
-
-    public Customer getCustomer() { return customer; }
-
-    public void setCustomer(Customer customer) { this.customer = customer; }
 
 }

@@ -1,5 +1,7 @@
 package application.persistence.entity;
 
+import lombok.Data;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -8,6 +10,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
+@Data
 public class AuthApp implements Serializable {
 
     @Id
