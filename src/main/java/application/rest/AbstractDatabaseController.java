@@ -1,7 +1,7 @@
 package application.rest;
 
 import application.persistence.entity.DTOConvertable;
-import application.rest.domain.InputOutputDTO;
+import application.rest.domain.ReadWriteDatabaseDTO;
 import application.service.DatabaseServiceInterface;
 import application.service.response.ServiceResponse;
 import org.springframework.data.domain.Page;
@@ -11,7 +11,7 @@ import org.springframework.http.ResponseEntity;
 
 import java.io.Serializable;
 
-public abstract class AbstractDatabaseController<E extends DTOConvertable<D>, I extends Serializable, D extends InputOutputDTO<E>, S extends DatabaseServiceInterface<E, I, D>> {
+public abstract class AbstractDatabaseController<E extends DTOConvertable<D>, I extends Serializable, D extends ReadWriteDatabaseDTO<E>, S extends DatabaseServiceInterface<E, I, D>> {
 
     protected final ResponseEntity<?> readAll(Pageable pageable) {
         ServiceResponse<Page<D>> response = getBaseService().readAll(pageable);
