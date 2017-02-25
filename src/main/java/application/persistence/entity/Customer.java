@@ -61,7 +61,6 @@ public class Customer implements DTOConvertable<CustomerDTO> {
         if (deliveryAddress != null) {
             customerDTO.setDeliveryAddressId(deliveryAddress.getId());
         }
-        customerDTO.addLinks();
         return customerDTO;
     }
 

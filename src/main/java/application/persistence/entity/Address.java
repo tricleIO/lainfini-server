@@ -13,7 +13,7 @@ import javax.persistence.Id;
 public class Address implements DTOConvertable<AddressDTO> {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String street;
     private int houseNumber;
@@ -23,14 +23,6 @@ public class Address implements DTOConvertable<AddressDTO> {
     private String country;
 
     public Address() {
-    }
-
-    public Address(String street, int houseNumber, String city, String state, String country) {
-        this.street = street;
-        this.houseNumber = houseNumber;
-        this.city = city;
-        this.state = state;
-        this.country = country;
     }
 
     @Override
@@ -43,7 +35,6 @@ public class Address implements DTOConvertable<AddressDTO> {
         addressDTO.setPostal(postal);
         addressDTO.setState(state);
         addressDTO.setCountry(country);
-        addressDTO.addLinks();
         return addressDTO;
     }
 
