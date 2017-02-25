@@ -1,9 +1,10 @@
 package application.persistence.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
-public class InstagramAccount {
+public class InstagramAccount implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -8,10 +8,11 @@ import application.rest.domain.CustomerDTO;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Data
-public class Customer implements DTOConvertable<CustomerDTO> {
+public class Customer implements DTOConvertable<CustomerDTO>, Serializable {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)

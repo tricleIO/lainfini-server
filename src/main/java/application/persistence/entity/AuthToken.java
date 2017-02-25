@@ -3,10 +3,11 @@ package application.persistence.entity;
 import application.persistence.type.State;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-public class AuthToken {
+public class AuthToken implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

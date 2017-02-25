@@ -1,10 +1,11 @@
 package application.persistence.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-public class Login {
+public class Login implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

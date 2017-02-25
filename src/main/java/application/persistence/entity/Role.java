@@ -21,11 +21,12 @@ import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.security.core.GrantedAuthority;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-public class Role implements GrantedAuthority {
+public class Role implements GrantedAuthority, Serializable {
 
 	private static final long serialVersionUID = 1L;
 

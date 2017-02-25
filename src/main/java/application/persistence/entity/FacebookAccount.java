@@ -1,9 +1,10 @@
 package application.persistence.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
-public class FacebookAccount {
+public class FacebookAccount implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
