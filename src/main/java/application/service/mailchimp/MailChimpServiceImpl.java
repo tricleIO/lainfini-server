@@ -1,7 +1,9 @@
 package application.service.mailchimp;
 
+import application.configuration.AppProperties;
 import connection.MailChimpConnection;
 import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.net.URL;
@@ -12,10 +14,14 @@ import java.net.URL;
 @Service
 public class MailChimpServiceImpl implements MailChimpService {
 
-    MailChimpConnection connection;
+    private final AppProperties appProperties;
 
-    public MailChimpServiceImpl() {
-        connection = new MailChimpConnection("4066ba9c09ef09535a5133dc51eb3fd4-us15");
+    private MailChimpConnection connection;
+
+    @Autowired
+    public MailChimpServiceImpl(AppProperties appProperties) {
+        this.appProperties = appProperties;
+        connection = new MailChimpConnection(appProperties.getMailchimpApiKey());
     }
 
     public void addMemberToList(String listId, String subscriberMail) throws Exception {
