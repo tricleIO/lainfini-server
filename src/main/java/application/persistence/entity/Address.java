@@ -36,13 +36,14 @@ public class Address implements DTOConvertable<AddressDTO> {
     @Override
     public AddressDTO toDTO() {
         AddressDTO addressDTO = new AddressDTO();
-        addressDTO.setId(id);
+        addressDTO.setUid(id);
         addressDTO.setStreet(street);
         addressDTO.setHouseNumber(houseNumber);
         addressDTO.setCity(city);
         addressDTO.setPostal(postal);
         addressDTO.setState(state);
         addressDTO.setCountry(country);
+        addressDTO.addLinks();
         return addressDTO;
     }
 

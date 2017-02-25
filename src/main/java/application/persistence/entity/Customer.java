@@ -52,15 +52,16 @@ public class Customer implements DTOConvertable<CustomerDTO> {
     @Override
     public CustomerDTO toDTO() {
         CustomerDTO customerDTO = new CustomerDTO();
-        customerDTO.setId(id);
+        customerDTO.setUid(id);
         customerDTO.setFirstName(firstName);
         customerDTO.setLastName(lastName);
-        if (deliveryAddress != null) {
-            customerDTO.setDeliveryAddressId(deliveryAddress.getId());
-        }
         if (billingAddress != null) {
             customerDTO.setBillingAddressId(billingAddress.getId());
         }
+        if (deliveryAddress != null) {
+            customerDTO.setDeliveryAddressId(deliveryAddress.getId());
+        }
+        customerDTO.addLinks();
         return customerDTO;
     }
 

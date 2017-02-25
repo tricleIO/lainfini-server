@@ -18,17 +18,17 @@ public class AddressController extends AbstractDatabaseController<Address, Long,
     private AddressService addressService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> readCustomers(Pageable pageable) {
+    public ResponseEntity<?> readAddresses(Pageable pageable) {
         return readAll(pageable);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<?> readCustomer(@PathVariable Long id) {
+    public ResponseEntity<?> readAddress(@PathVariable Long id) {
         return read(id);
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<?> createCustomer(@RequestBody AddressDTO address) {
+    public ResponseEntity<?> createAddress(@RequestBody AddressDTO address) {
         return create(address);
     }
 
