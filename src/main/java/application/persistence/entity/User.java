@@ -16,6 +16,7 @@
 
 package application.persistence.entity;
 
+import application.rest.domain.UserDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
@@ -27,7 +28,7 @@ import java.util.Set;
 
 @Entity
 @Data
-public class User implements Serializable {
+public class User implements DTOConvertable<UserDTO>, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -58,6 +59,17 @@ public class User implements Serializable {
         this.customer = user.getCustomer();
         this.password = user.getPassword();
         this.roles = user.getRoles();
+    }
+
+    @Override
+    public UserDTO toDTO() {
+        UserDTO userDTO = new UserDTO();
+        userDTO.setUid(id);
+        userDTO.setUsername(login);
+        if (customer != null) {
+            userDTO.setCustomerId(customer.getId());
+        }
+        return userDTO;
     }
 
 }
