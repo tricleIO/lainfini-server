@@ -1,4 +1,4 @@
-package application.persistence.entity;
+package application.rest.domain;
 
 public interface Linkable {
 
