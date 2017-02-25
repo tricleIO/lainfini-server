@@ -2,7 +2,10 @@ package application.rest;
 
 import application.persistence.entity.Customer;
 import application.rest.domain.CustomerDTO;
+import application.rest.domain.UserDTO;
 import application.service.customer.CustomerService;
+import application.service.response.ServiceResponse;
+import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.hateoas.Link;

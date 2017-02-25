@@ -33,9 +33,9 @@ public class SMSClientServiceImpl implements SMSClientService {
         try {
             int statusCode = client.executeMethod(method);
 
-            System.out.println("Status Code = " + statusCode);
+            System.out.println("ServiceResponseStatus Code = " + statusCode);
             System.out.println("QueryString>>> " + method.getQueryString());
-            System.out.println("Status Text>>>" + HttpStatus.getStatusText(statusCode));
+            System.out.println("ServiceResponseStatus Text>>>" + HttpStatus.getStatusText(statusCode));
 
             //Get data as a String
             System.out.println(method.getResponseBodyAsString());

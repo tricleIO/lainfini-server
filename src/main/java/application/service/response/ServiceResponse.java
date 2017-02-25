@@ -3,7 +3,7 @@ package application.service.response;
 public class ServiceResponse<B> {
 
     private B body;
-    private Status status;
+    private ServiceResponseStatus status;
 
     private ServiceResponse() {
     }
@@ -11,11 +11,11 @@ public class ServiceResponse<B> {
     public static <B> ServiceResponse<B> success(B body) {
         ServiceResponse response = new ServiceResponse();
         response.body = body;
-        response.status = Status.OK;
+        response.status = ServiceResponseStatus.OK;
         return response;
     }
 
-    public static <B> ServiceResponse<B> error(Status status) {
+    public static <B> ServiceResponse<B> error(ServiceResponseStatus status) {
         ServiceResponse response = new ServiceResponse();
         response.status = status;
         return response;
@@ -25,11 +25,11 @@ public class ServiceResponse<B> {
         return body;
     }
 
-    public Status getStatus() {
+    public ServiceResponseStatus getStatus() {
         return status;
     }
 
     public boolean isSuccessful() {
-        return getStatus() == Status.OK;
+        return getStatus() == ServiceResponseStatus.OK;
     }
 }

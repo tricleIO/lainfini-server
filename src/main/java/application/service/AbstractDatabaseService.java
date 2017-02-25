@@ -3,17 +3,14 @@ package application.service;
 import application.persistence.EntityToDTOConverter;
 import application.rest.domain.EntityConvertable;
 import application.service.response.ServiceResponse;
-import application.service.response.Status;
+import application.service.response.ServiceResponseStatus;
 import application.persistence.entity.DTOConvertable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.io.Serializable;
-import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 
 public abstract class AbstractDatabaseService<E extends DTOConvertable<D>, I extends Serializable, R extends PagingAndSortingRepository<E, I>, D extends EntityConvertable<E>>
@@ -21,10 +18,10 @@ public abstract class AbstractDatabaseService<E extends DTOConvertable<D>, I ext
 
     public ServiceResponse<D> read(I key) {
         E result = getRepository().findOne(key);
-        if (result != null) {
-            return ServiceResponse.success(result.toDTO());
+        if (result == null) {
+            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
         }
-        return ServiceResponse.error(Status.NOT_FOUND);
+        return ServiceResponse.success(result.toDTO());
     }
 
     public ServiceResponse<Page<D>> readAll(Pageable pageable) {
