@@ -28,11 +28,8 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
         ServiceResponse<CartDTO> response = super.read(key);
         // success
         if (response.isSuccessful()) {
-            // unwrap response
             CartDTO cartDTO = response.getBody();
-            // add items to cart
             addItemsToCart(cartDTO, cartHasProductRepository.findByCartId(key));
-            // and return updated cart
             return ServiceResponse.success(cartDTO);
         }
         // delegate error response
