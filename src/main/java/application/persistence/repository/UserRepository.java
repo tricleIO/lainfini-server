@@ -19,7 +19,7 @@ package application.persistence.repository;
 import application.persistence.entity.User;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface UserRepository extends PagingAndSortingRepository<User, Long> {
+public interface UserRepository extends PagingAndSortingRepository<User, Integer> {
 
 	User findByLogin(String login);
 
