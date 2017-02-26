@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 public class ProductDTO implements ReadWriteDatabaseDTO<Product> {
 
-    private Long id;
+    private Long uid;
     private String name;
     private String description;
     private Integer price;
@@ -14,7 +14,7 @@ public class ProductDTO implements ReadWriteDatabaseDTO<Product> {
     @Override
     public Product toEntity() {
         Product product = new Product();
-        product.setId(id);
+        product.setId(uid);
         product.setName(name);
         product.setDescription(description);
         product.setPrice(price);

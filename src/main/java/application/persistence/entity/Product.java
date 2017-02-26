@@ -1,5 +1,7 @@
 package application.persistence.entity;
 
+import application.rest.domain.EntityConvertable;
+import application.rest.domain.ProductDTO;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -10,7 +12,7 @@ import java.io.Serializable;
 
 @Entity
 @Data
-public class Product implements Serializable {
+public class Product implements DTOConvertable<ProductDTO>, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,5 +23,15 @@ public class Product implements Serializable {
     private String description;
 
     private Integer price;
+
+    @Override
+    public ProductDTO toDTO() {
+        ProductDTO productDTO = new ProductDTO();
+        productDTO.setUid(id);
+        productDTO.setName(name);
+        productDTO.setDescription(description);
+        productDTO.setPrice(price);
+        return  productDTO;
+    }
 
 }
