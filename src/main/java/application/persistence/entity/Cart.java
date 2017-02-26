@@ -1,5 +1,7 @@
 package application.persistence.entity;
 
+import application.rest.domain.CartDTO;
+import application.rest.domain.EntityConvertable;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -8,15 +10,24 @@ import java.util.Date;
 
 @Entity
 @Data
-public class Cart implements Serializable {
+public class Cart implements EntityConvertable<CartDTO>, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @OneToOne
-    private User user;
+    private Customer owner;
 
     private Date createdAt;
+
+    @Override
+    public CartDTO toEntity() {
+        CartDTO cartDTO = new CartDTO();
+        cartDTO.setUid(id);
+        cartDTO.setOwnerId(owner.getId());
+        cartDTO.setCreatedAt(createdAt);
+        return cartDTO;
+    }
 
 }
