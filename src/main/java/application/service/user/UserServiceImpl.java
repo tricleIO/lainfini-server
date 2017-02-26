@@ -31,7 +31,7 @@ public class UserServiceImpl extends AbstractDatabaseService<User, Integer, User
     @Override
     public ServiceResponse<UserDTO> create(UserDTO user) {
         if (exists(user)) {
-            return ServiceResponse.error(ServiceResponseStatus.USERNAME_ALREADY_EXIST);
+            return ServiceResponse.error(ServiceResponseStatus.USERNAME_ALREADY_EXISTS);
         }
         return super.create(user);
     }

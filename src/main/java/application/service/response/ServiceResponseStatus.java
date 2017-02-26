@@ -11,7 +11,7 @@ public enum ServiceResponseStatus {
     ALREADY_EXISTS("Object with given parameters already exists.", HttpStatus.CONFLICT),
 
     // user
-    USERNAME_ALREADY_EXIST("User with given username already exists.", HttpStatus.CONFLICT),
+    USERNAME_ALREADY_EXISTS("User with given username already exists.", HttpStatus.CONFLICT),
 
     // cart
     CART_OWNER_NOT_FOUND("Cart owner (customer) with given id was not found.", HttpStatus.NOT_FOUND)
