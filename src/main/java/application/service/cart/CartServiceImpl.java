@@ -9,6 +9,8 @@ import application.rest.domain.ItemDTO;
 import application.service.AbstractDatabaseService;
 import application.service.response.ServiceResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,17 +25,37 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
     private CartHasProductRepository cartHasProductRepository;
 
     @Override
-    public ServiceResponse<CartDTO> read(Long key) {
+    public ServiceResponse<CartDTO> read(Long cartId) {
         // call original method
-        ServiceResponse<CartDTO> response = super.read(key);
+        ServiceResponse<CartDTO> response = super.read(cartId);
         // success
         if (response.isSuccessful()) {
-            CartDTO cartDTO = response.getBody();
-            addItemsToCart(cartDTO, cartHasProductRepository.findByCartId(key));
-            return ServiceResponse.success(cartDTO);
+            // add items of products to cart
+            CartDTO cart = response.getBody();
+            addItemsToCart(cart, getCartHasProductsByCartId(cartId));
         }
-        // delegate error response
         return response;
+    }
+
+    @Override
+    public ServiceResponse<Page<CartDTO>> readAll(Pageable pageable) {
+        // call original method
+        ServiceResponse<Page<CartDTO>> response = super.readAll(pageable);
+        // success
+        if (response.isSuccessful()) {
+            // add items of products to carts
+            List<CartDTO> carts = response.getBody().getContent();
+            // @TODO - try think about optimization number of queries
+            for (CartDTO cart : carts) {
+                addItemsToCart(cart, getCartHasProductsByCartId(cart.getUid()));
+            }
+        }
+        return response;
+    }
+
+    @Override
+    public CartRepository getRepository() {
+        return cartRepository;
     }
 
     private void addItemsToCart(CartDTO cart, List<CartHasProduct> cartHasProducts) {
@@ -50,9 +72,8 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
         return itemDTO;
     }
 
-    @Override
-    public CartRepository getRepository() {
-        return cartRepository;
+    private List<CartHasProduct> getCartHasProductsByCartId(Long cartId) {
+        return cartHasProductRepository.findByCartId(cartId);
     }
 
 }
