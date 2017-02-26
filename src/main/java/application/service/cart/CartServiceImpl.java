@@ -65,7 +65,7 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
     public ServiceResponse<CartDTO> create(CartDTO cartDTO) {
         Customer customer = customerRepository.findOne(cartDTO.getOwnerId());
         if (customer == null) {
-            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+            return ServiceResponse.error(ServiceResponseStatus.CART_OWNER_NOT_FOUND);
         }
         Cart cart = cartDTO.toEntity();
         cart.setOwner(customer);

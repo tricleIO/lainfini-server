@@ -5,9 +5,14 @@ import org.springframework.http.HttpStatus;
 
 public enum ServiceResponseStatus {
 
+    // generic
     OK("OK", HttpStatus.OK),
     NOT_FOUND("Object not found.", HttpStatus.NOT_FOUND),
-    ALREADY_EXISTS("Object already exists.", HttpStatus.CONFLICT);
+    ALREADY_EXISTS("Object already exists.", HttpStatus.CONFLICT),
+
+    // cart
+    CART_OWNER_NOT_FOUND("Cart owner (customer) with given id was not found!", HttpStatus.NOT_FOUND)
+    ;
 
     private final HttpStatus httpStatus;
     private final String message;
