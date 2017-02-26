@@ -7,16 +7,17 @@ import java.io.Serializable;
 
 @Entity
 @Data
+@IdClass(CartHasProductId.class)
 public class CartHasProduct implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
     @OneToOne
     private Cart cart;
 
+    @Id
     @OneToOne
     private Product product;
+
+    private Integer number;
 
 }

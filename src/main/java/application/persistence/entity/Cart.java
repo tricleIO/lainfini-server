@@ -10,7 +10,7 @@ import java.util.Date;
 
 @Entity
 @Data
-public class Cart implements EntityConvertable<CartDTO>, Serializable {
+public class Cart implements DTOConvertable<CartDTO>, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,7 +22,7 @@ public class Cart implements EntityConvertable<CartDTO>, Serializable {
     private Date createdAt;
 
     @Override
-    public CartDTO toEntity() {
+    public CartDTO toDTO() {
         CartDTO cartDTO = new CartDTO();
         cartDTO.setUid(id);
         cartDTO.setOwnerId(owner.getId());
