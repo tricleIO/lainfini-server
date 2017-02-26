@@ -2,6 +2,7 @@ package application.service;
 
 import application.persistence.EntityToDTOConverter;
 import application.rest.domain.EntityConvertable;
+import application.rest.domain.PageDTO;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.persistence.entity.DTOConvertable;
@@ -25,11 +26,14 @@ public abstract class AbstractDatabaseService<E extends DTOConvertable<D>, I ext
     }
 
     public ServiceResponse<Page<D>> readAll(Pageable pageable) {
+        // find all entities
         Page<E> page = getRepository().findAll(pageable);
+        // convert entities to DTOs
         EntityToDTOConverter<E, D> converter = new EntityToDTOConverter<>(page.getContent());
         List<D> responseElements = converter.convert();
-        Page<D> pageNew = new PageImpl<>(responseElements, pageable, getRepository().count());
-        return ServiceResponse.success(pageNew);
+        // make page from them
+        Page<D> pageWithDTOs = new PageImpl<>(responseElements, pageable, getRepository().count());
+        return ServiceResponse.success(pageWithDTOs);
     }
 
     public ServiceResponse<D> create(D dto) {

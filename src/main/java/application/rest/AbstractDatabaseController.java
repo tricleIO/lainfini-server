@@ -1,6 +1,7 @@
 package application.rest;
 
 import application.persistence.entity.DTOConvertable;
+import application.rest.domain.PageDTO;
 import application.rest.domain.ReadWriteDatabaseDTO;
 import application.service.DatabaseServiceInterface;
 import application.service.response.ServiceResponse;
@@ -17,12 +18,15 @@ public abstract class AbstractDatabaseController<E extends DTOConvertable<D>, I 
         ServiceResponse<Page<D>> response = getBaseService().readAll(pageable);
         if (response.isSuccessful()) {
             Page<D> page = response.getBody();
-            // add links
-            for (D dto : page.getContent()) {
+            // add links to page
+            PageDTO<D> pageDTO = new PageDTO<>(page);
+            // add links to page content elements
+            for (D dto : pageDTO.getContent()) {
                 dto.addLinks();
             }
+            // return page
             return new ResponseEntity<>(
-                    response.getBody(),
+                    pageDTO,
                     HttpStatus.OK
             );
         }
@@ -36,6 +40,7 @@ public abstract class AbstractDatabaseController<E extends DTOConvertable<D>, I 
         // success
         if (response.isSuccessful()) {
             D dto = response.getBody();
+            // add hypermedia links
             dto.addLinks();
             return new ResponseEntity<>(
                     response.getBody(),
