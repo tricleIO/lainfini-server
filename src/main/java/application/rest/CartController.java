@@ -17,17 +17,17 @@ public class CartController extends AbstractDatabaseController<Cart, Long, CartD
     private CartService cartService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> readAddresses(Pageable pageable) {
+    public ResponseEntity<?> readCarts(Pageable pageable) {
         return readAll(pageable);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<?> readAddress(@PathVariable Long id) {
+    public ResponseEntity<?> readCart(@PathVariable Long id) {
         return read(id);
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<?> createAddress(@RequestBody CartDTO cart) {
+    public ResponseEntity<?> createCart(@RequestBody CartDTO cart) {
         return create(cart);
     }
 
