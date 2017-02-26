@@ -16,17 +16,17 @@ public class ProductController extends AbstractDatabaseController<Product, Long,
     private ProductService productService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> readAddresses(Pageable pageable) {
+    public ResponseEntity<?> readProducts(Pageable pageable) {
         return readAll(pageable);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<?> readAddress(@PathVariable Long id) {
+    public ResponseEntity<?> readProduct(@PathVariable Long id) {
         return read(id);
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<?> createAddress(@RequestBody ProductDTO product) {
+    public ResponseEntity<?> createProduct(@RequestBody ProductDTO product) {
         return create(product);
     }
 
