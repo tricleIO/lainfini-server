@@ -28,8 +28,11 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
         ServiceResponse<CartDTO> response = super.read(key);
         // success
         if (response.isSuccessful()) {
+            // unwrap response
             CartDTO cartDTO = response.getBody();
+            // add items to cart
             addItemsToCart(cartDTO, cartHasProductRepository.findByCartId(key));
+            // and return updated cart
             return ServiceResponse.success(cartDTO);
         }
         // delegate error response
@@ -38,7 +41,7 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
 
     private void addItemsToCart(CartDTO cart, List<CartHasProduct> cartHasProducts) {
         for (CartHasProduct cartHasProduct : cartHasProducts) {
-            // add item to product list
+            // create item and add it to product list
             cart.addItem(createCartItem(cartHasProduct));
         }
     }
