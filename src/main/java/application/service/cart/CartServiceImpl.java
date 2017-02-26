@@ -2,12 +2,16 @@ package application.service.cart;
 
 import application.persistence.entity.Cart;
 import application.persistence.entity.CartHasProduct;
+import application.persistence.entity.Customer;
 import application.persistence.repository.CartHasProductRepository;
 import application.persistence.repository.CartRepository;
+import application.persistence.repository.CustomerRepository;
 import application.rest.domain.CartDTO;
+import application.rest.domain.CustomerDTO;
 import application.rest.domain.ItemDTO;
 import application.service.AbstractDatabaseService;
 import application.service.response.ServiceResponse;
+import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -23,6 +27,9 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
 
     @Autowired
     private CartHasProductRepository cartHasProductRepository;
+
+    @Autowired
+    private CustomerRepository customerRepository;
 
     @Override
     public ServiceResponse<CartDTO> read(Long cartId) {
@@ -51,6 +58,20 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
             }
         }
         return response;
+    }
+
+    // add info about owner (customer)
+    @Override
+    public ServiceResponse<CartDTO> create(CartDTO cartDTO) {
+        Customer customer = customerRepository.findOne(cartDTO.getOwnerId());
+        if (customer == null) {
+            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+        }
+        Cart cart = cartDTO.toEntity();
+        cart.setOwner(customer);
+        // @TODO - check errors!
+        Cart savedCart = cartRepository.save(cart);
+        return ServiceResponse.success(savedCart.toDTO());
     }
 
     @Override
