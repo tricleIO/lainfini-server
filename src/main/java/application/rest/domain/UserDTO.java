@@ -1,9 +1,11 @@
 package application.rest.domain;
 
 import application.persistence.entity.User;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 @Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class UserDTO implements ReadWriteDatabaseDTO<User> {
 
     private Integer uid;
