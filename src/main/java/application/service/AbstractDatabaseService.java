@@ -2,7 +2,6 @@ package application.service;
 
 import application.persistence.EntityToDTOConverter;
 import application.rest.domain.EntityConvertable;
-import application.rest.domain.PageDTO;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.persistence.entity.DTOConvertable;

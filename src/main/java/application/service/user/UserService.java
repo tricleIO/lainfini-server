@@ -8,6 +8,5 @@ import application.service.response.ServiceResponse;
 public interface UserService extends DatabaseServiceInterface<User, Integer, UserDTO> {
 
     ServiceResponse<UserDTO> read(String username);
-    ServiceResponse<UserDTO> create(UserDTO user);
 
 }
