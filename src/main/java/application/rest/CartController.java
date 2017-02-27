@@ -3,6 +3,7 @@ package application.rest;
 import application.persistence.entity.Cart;
 import application.rest.domain.CartDTO;
 import application.rest.domain.CartHasProductDTO;
+import application.rest.domain.ItemDTO;
 import application.rest.domain.ProductDTO;
 import application.service.cart.CartService;
 import application.service.response.ServiceResponse;
@@ -35,8 +36,8 @@ public class CartController extends AbstractDatabaseController<Cart, Long, CartD
     }
 
     @RequestMapping(value = "/{cartId}/products", method = RequestMethod.PATCH)
-    public ResponseEntity<?> addProduct(@RequestBody CartHasProductDTO cartHasProduct) {
-        ServiceResponse<?> response = cartService.addProductToCart(cartHasProduct);
+    public ResponseEntity<?> addProduct(@PathVariable Long cartId, @RequestBody ItemDTO itemDTO) {
+        ServiceResponse<?> response = cartService.addProductToCart(cartId, itemDTO);
         if (response.isSuccessful()) {
             return new ResponseEntity<>(response.getBody(), HttpStatus.OK);
         }

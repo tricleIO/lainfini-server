@@ -5,10 +5,7 @@ import application.persistence.repository.CartHasProductRepository;
 import application.persistence.repository.CartRepository;
 import application.persistence.repository.CustomerRepository;
 import application.persistence.repository.ProductRepository;
-import application.rest.domain.CartDTO;
-import application.rest.domain.CartHasProductDTO;
-import application.rest.domain.ItemDTO;
-import application.rest.domain.ProductDTO;
+import application.rest.domain.*;
 import application.service.AbstractDatabaseService;
 import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
@@ -68,29 +65,27 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
     }
 
     @Override
-    public ServiceResponse<ProductDTO> addProductToCart(CartHasProductDTO cartHasProductDTO) {
-//        ServiceResponse<CartDTO> cartServiceResponse = read(cartHasProductDTO.getCartId());
+    public ServiceResponse<ItemDTO> addProductToCart(Long cartId, ItemDTO item) {
+        ServiceResponse<CartDTO> cartServiceResponse = read(cartId);
         // find cart
-//        if (!cartServiceResponse.isSuccessful()) {
-        Cart cart = cartRepository.findOne(cartHasProductDTO.getCartId());
-        if (cart == null) {
+        if (!cartServiceResponse.isSuccessful()) {
             ServiceResponse.error(ServiceResponseStatus.CART_NOT_FOUND);
         }
         // find product
-//        ServiceResponse<ProductDTO> productServiceResponse = productService.read(cartHasProductDTO.getProductId());
-//        if (!productServiceResponse.isSuccessful()) {
-        Product product = productRepository.findOne(cartHasProductDTO.getProductId());
-        if (product == null) {
+        ServiceResponse<ProductDTO> productServiceResponse = productService.read(item.getProductUid());
+        if (!productServiceResponse.isSuccessful()) {
             ServiceResponse.error(ServiceResponseStatus.PRODUCT_NOT_FOUND);
         }
         // add product to cart (to CartHasProduct table)
         CartHasProduct cartHasProduct = new CartHasProduct();
-        cartHasProduct.setCart(cart);
-        cartHasProduct.setProduct(product);
-        cartHasProduct.setNumber(cartHasProductDTO.getNumber());
-        CartHasProduct saved = cartHasProductRepository.save(cartHasProduct);
+        cartHasProduct.setCart(cartServiceResponse.getBody().toEntity());
+        cartHasProduct.setProduct(productServiceResponse.getBody().toEntity());
+        cartHasProduct.setNumber(item.getNumber());
+        cartHasProductRepository.save(cartHasProduct);
         // success
-        return ServiceResponse.success(product.toDTO());
+        ItemResponseDTO itemResponseDTO = new ItemResponseDTO(cartId, item);
+
+        return ServiceResponse.success(itemResponseDTO);
     }
 
     // add info about owner (customer)
