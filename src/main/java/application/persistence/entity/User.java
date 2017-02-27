@@ -124,7 +124,6 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         if (deliveryAddress != null) {
             userDTO.setDeliveryAddressId(deliveryAddress.getId());
         }
-
         return userDTO;
     }
 

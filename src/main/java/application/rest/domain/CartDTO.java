@@ -1,8 +1,10 @@
 package application.rest.domain;
 
 import application.persistence.entity.Cart;
+import application.persistence.entity.User;
 import application.rest.CartController;
 import application.rest.UserController;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
@@ -14,6 +16,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cart> {
 
     private Long uid;
@@ -21,11 +24,17 @@ public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Car
     private Date createdAt;
     private List<ItemDTO> products = new LinkedList<>();
 
+    // for create
+    private UserDTO owner;
+
     @Override
     public Cart toEntity() {
         Cart cart = new Cart();
         cart.setId(uid);
         cart.setCreatedAt(new Date());
+        if (owner != null) {
+            cart.setOwner(owner.toEntity());
+        }
         return cart;
     }
 
