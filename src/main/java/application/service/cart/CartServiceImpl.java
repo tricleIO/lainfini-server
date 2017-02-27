@@ -1,15 +1,13 @@
 package application.service.cart;
 
-import application.persistence.entity.Cart;
-import application.persistence.entity.CartHasProduct;
-import application.persistence.entity.Customer;
+import application.persistence.entity.*;
 import application.persistence.repository.CartHasProductRepository;
 import application.persistence.repository.CartRepository;
 import application.persistence.repository.CustomerRepository;
-import application.rest.domain.CartDTO;
-import application.rest.domain.CustomerDTO;
-import application.rest.domain.ItemDTO;
+import application.persistence.repository.ProductRepository;
+import application.rest.domain.*;
 import application.service.AbstractDatabaseService;
+import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,10 +24,16 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
     private CartRepository cartRepository;
 
     @Autowired
+    private ProductRepository productRepository;
+
+    @Autowired
     private CartHasProductRepository cartHasProductRepository;
 
     @Autowired
     private CustomerRepository customerRepository;
+
+    @Autowired
+    private ProductService productService;
 
     @Override
     public ServiceResponse<CartDTO> read(Long cartId) {
@@ -60,10 +64,37 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
         return response;
     }
 
+    @Override
+    public ServiceResponse<ItemDTO> addProductToCart(Long cartId, ItemDTO item) {
+        ServiceResponse<CartDTO> cartServiceResponse = read(cartId);
+        // find cart
+        if (!cartServiceResponse.isSuccessful()) {
+            ServiceResponse.error(ServiceResponseStatus.CART_NOT_FOUND);
+        }
+        // find product
+        ServiceResponse<ProductDTO> productServiceResponse = productService.read(item.getProductUid());
+        if (!productServiceResponse.isSuccessful()) {
+            ServiceResponse.error(ServiceResponseStatus.PRODUCT_NOT_FOUND);
+        }
+
+
+
+        // add product to cart (to CartHasProduct table)
+        CartHasProduct cartHasProduct = new CartHasProduct();
+        cartHasProduct.setCart(cartServiceResponse.getBody().toEntity());
+        cartHasProduct.setProduct(productServiceResponse.getBody().toEntity());
+        cartHasProduct.setNumber(item.getNumber());
+        cartHasProductRepository.save(cartHasProduct);
+        // success
+        ItemResponseDTO itemResponseDTO = new ItemResponseDTO(cartId, item);
+
+        return ServiceResponse.success(itemResponseDTO);
+    }
+
     // add info about owner (customer)
     @Override
     public ServiceResponse<CartDTO> create(CartDTO cartDTO) {
-        Customer customer = customerRepository.findOne(cartDTO.getOwnerId());
+        Customer customer = customerRepository.findOne(cartDTO.getOwnerUid());
         if (customer == null) {
             return ServiceResponse.error(ServiceResponseStatus.CART_OWNER_NOT_FOUND);
         }
