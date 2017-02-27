@@ -21,4 +21,5 @@ public class ProductDTO implements ReadWriteDatabaseDTO<Product> {
         return product;
     }
 
+
 }

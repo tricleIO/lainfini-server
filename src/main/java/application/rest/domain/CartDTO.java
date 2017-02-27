@@ -17,13 +17,14 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cart> {
 
     private Long uid;
-    private Long ownerId;
+    private Long ownerUid;
     private Date createdAt;
     private List<ItemDTO> products = new LinkedList<>();
 
     @Override
     public Cart toEntity() {
         Cart cart = new Cart();
+        cart.setId(uid);
         cart.setCreatedAt(new Date());
         return cart;
     }
@@ -35,11 +36,12 @@ public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Car
     @Override
     public void addLinks() {
         add(linkTo(methodOn(CartController.class).readCart(uid)).withSelfRel());
-        if (ownerId != null) {
-            add(linkTo(methodOn(CustomerController.class).readCustomer(ownerId)).withRel("owner"));
+        if (ownerUid != null) {
+            add(linkTo(methodOn(CustomerController.class).readCustomer(ownerUid)).withRel("owner"));
         }
         for (ItemDTO item : products) {
             item.addLinks();
         }
     }
+
 }

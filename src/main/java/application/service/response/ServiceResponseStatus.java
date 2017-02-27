@@ -14,8 +14,9 @@ public enum ServiceResponseStatus {
     USERNAME_ALREADY_EXISTS("User with given username already exists.", HttpStatus.CONFLICT),
 
     // cart
-    CART_OWNER_NOT_FOUND("Cart owner (customer) with given id was not found.", HttpStatus.NOT_FOUND)
-    ;
+    CART_OWNER_NOT_FOUND("Cart owner (customer) with given id was not found.", HttpStatus.NOT_FOUND),
+    CART_NOT_FOUND("Cart with given id was not found.", HttpStatus.NOT_FOUND),
+    PRODUCT_NOT_FOUND("Product with given id was not found.", HttpStatus.NOT_FOUND);
 
     private final HttpStatus httpStatus;
     private final String message;

@@ -1,7 +1,6 @@
 package application.persistence.entity;
 
 import application.rest.domain.CartDTO;
-import application.rest.domain.EntityConvertable;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -25,7 +24,7 @@ public class Cart implements DTOConvertable<CartDTO>, Serializable {
     public CartDTO toDTO() {
         CartDTO cartDTO = new CartDTO();
         cartDTO.setUid(id);
-        cartDTO.setOwnerId(owner.getId());
+        cartDTO.setOwnerUid(owner.getId());
         cartDTO.setCreatedAt(createdAt);
         return cartDTO;
     }
