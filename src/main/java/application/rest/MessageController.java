@@ -4,7 +4,7 @@ import application.rest.domain.MailDTO;
 import application.service.mail.MailService;
 import application.service.mailchimp.MailChimpService;
 import application.service.mailchimp.model.MailChimpSubscribeModel;
-import application.service.nexmo.SMSClientServiceImpl;
+import application.service.nexmo.SMSClientService;
 import application.service.nexmo.model.SMSMessageRestModel;
 import application.service.response.ServiceResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +24,9 @@ public class MessageController {
     @Autowired
     private MailChimpService mailChimpService;
 
+    @Autowired
+    private SMSClientService smsClientService;
+
     @RequestMapping(value = "/sendMail", method = RequestMethod.POST)
     public ResponseEntity<?> sendMail(@RequestBody MailDTO mail) {
         ServiceResponse<MailDTO> mailResponse = mailService.sendMail(mail);
@@ -32,8 +35,7 @@ public class MessageController {
 
     @RequestMapping(value = "/sendSMSMessage", method = RequestMethod.POST)
     public ResponseEntity<?> sendSMSMessage(@RequestBody SMSMessageRestModel smsMessageRestModel) {
-        SMSClientServiceImpl smsClient = new SMSClientServiceImpl();
-        smsClient.sendMessage(smsMessageRestModel.getToPhoneNumber(), smsMessageRestModel.getMessageText());
+        smsClientService.sendMessage(smsMessageRestModel.getToPhoneNumber(), smsMessageRestModel.getMessageText());
         return new ResponseEntity<>(HttpStatus.OK);
     }
 

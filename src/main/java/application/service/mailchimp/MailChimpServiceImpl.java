@@ -21,7 +21,7 @@ public class MailChimpServiceImpl implements MailChimpService {
     @Autowired
     public MailChimpServiceImpl(AppProperties appProperties) {
         this.appProperties = appProperties;
-        connection = new MailChimpConnection(appProperties.getMailchimpApiKey());
+        connection = new MailChimpConnection(this.appProperties.getMailchimpApiKey());
     }
 
     public void addMemberToList(String listId, String subscriberMail) throws Exception {

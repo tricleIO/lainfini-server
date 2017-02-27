@@ -1,34 +1,45 @@
 package application.service.nexmo;
 
 
+import application.configuration.AppProperties;
 import application.service.nexmo.model.IncomingNexmoResponse;
 import com.google.gson.Gson;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.NameValuePair;
 import org.apache.commons.httpclient.methods.PostMethod;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 
 /**
  * Created by pfilip on 21.2.17.
  */
+@Service
 public class SMSClientServiceImpl implements SMSClientService {
 
+    private final AppProperties appProperties;
+
     private static String URL = "https://rest.nexmo.com/sms/json";
+
+    @Autowired
+    public SMSClientServiceImpl(AppProperties appProperties) {
+        this.appProperties = appProperties;
+    }
 
     public IncomingNexmoResponse sendMessage(String toPhoneNumber, String messageText) {
         HttpClient client = new HttpClient();
 
         PostMethod method = new PostMethod(URL);
 
-        NameValuePair nvp1 = new NameValuePair("api_key", "306c28aa");
-        NameValuePair nvp2 = new NameValuePair("api_secret", "1b5f23407a4c2f39");
-        NameValuePair nvp3 = new NameValuePair("to", toPhoneNumber);
-        NameValuePair nvp4 = new NameValuePair("from", "Nexmo");
-        NameValuePair nvp5 = new NameValuePair("text", messageText);
+        NameValuePair apiKeyNVP = new NameValuePair("api_key", appProperties.getNexmoApiKey());
+        NameValuePair apiSecretNVP = new NameValuePair("api_secret", appProperties.getNexmoApiSecret());
+        NameValuePair toNVP = new NameValuePair("to", toPhoneNumber);
+        NameValuePair fromNVP = new NameValuePair("from", appProperties.getNexmoFromName());
+        NameValuePair textNVP = new NameValuePair("text", messageText);
 
-        method.setQueryString(new NameValuePair[]{nvp1, nvp2, nvp3, nvp4, nvp5});
+        method.setQueryString(new NameValuePair[]{apiKeyNVP, apiSecretNVP, toNVP, fromNVP, textNVP});
 
         try {
             int statusCode = client.executeMethod(method);

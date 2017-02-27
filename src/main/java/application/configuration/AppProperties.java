@@ -17,6 +17,26 @@ public class AppProperties {
     @Value("${mailchimp.apikey:null}")
     private String mailchimpApiKey;
 
+    @Value("${mailgun.domain:null}")
+    private String mailgunDomain;
+
+    @Value("${mailgun.apikey:null}")
+    private String mailgunApiKey;
+
+    @Value("${mailgun.from.name:null}")
+    private String mailgunFromName;
+
+    @Value("${mailgun.from.email:null}")
+    private String mailgunFromEmail;
+
+    @Value("${nexmo.apikey:null}")
+    private String nexmoApiKey;
+
+    @Value("${nexmo.apisecret:null}")
+    private String nexmoApiSecret;
+
+    @Value("${nexmo.from.name:null}")
+    private String nexmoFromName;
 
     @PostConstruct
     private void testValueContent() {
