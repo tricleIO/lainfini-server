@@ -76,6 +76,9 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
         if (!productServiceResponse.isSuccessful()) {
             ServiceResponse.error(ServiceResponseStatus.PRODUCT_NOT_FOUND);
         }
+
+
+
         // add product to cart (to CartHasProduct table)
         CartHasProduct cartHasProduct = new CartHasProduct();
         cartHasProduct.setCart(cartServiceResponse.getBody().toEntity());
