@@ -77,18 +77,25 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
             ServiceResponse.error(ServiceResponseStatus.PRODUCT_NOT_FOUND);
         }
 
-
-
-        // add product to cart (to CartHasProduct table)
-        CartHasProduct cartHasProduct = new CartHasProduct();
-        cartHasProduct.setCart(cartServiceResponse.getBody().toEntity());
-        cartHasProduct.setProduct(productServiceResponse.getBody().toEntity());
-        cartHasProduct.setNumber(item.getNumber());
-        cartHasProductRepository.save(cartHasProduct);
+        CartHasProduct saved;
+        Long countExistingPairs = cartHasProductRepository.countByCartIdAndProductId(cartId, item.getProductUid());
+        if (countExistingPairs == 0) {
+            // add product to cart (to CartHasProduct table)
+            CartHasProduct cartHasProduct = new CartHasProduct();
+            cartHasProduct.setCart(cartServiceResponse.getBody().toEntity());
+            cartHasProduct.setProduct(productServiceResponse.getBody().toEntity());
+            cartHasProduct.setNumber(item.getNumber());
+            saved = cartHasProductRepository.save(cartHasProduct);
+        } else {
+            // if pair exists, add number of given products to original number of products
+            CartHasProduct foundCartHasProduct = cartHasProductRepository.findByCartIdAndProductId(
+                    cartId, item.getProductUid()
+            );
+            foundCartHasProduct.setNumber(foundCartHasProduct.getNumber() + item.getNumber());
+            saved = cartHasProductRepository.save(foundCartHasProduct);
+        }
         // success
-        ItemResponseDTO itemResponseDTO = new ItemResponseDTO(cartId, item);
-
-        return ServiceResponse.success(itemResponseDTO);
+        return ServiceResponse.success(saved.toDTO());
     }
 
     // add info about owner (customer)

@@ -9,5 +9,6 @@ public interface CartHasProductRepository extends PagingAndSortingRepository<Car
 
     List<CartHasProduct> findByCartId(Long id);
     Long countByCartIdAndProductId(Long cartId, Long productId);
+    CartHasProduct findByCartIdAndProductId(Long cartId, Long productId);
 
 }
