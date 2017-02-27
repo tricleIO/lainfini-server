@@ -10,10 +10,7 @@ import application.service.response.ServiceResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class MessageController {
@@ -48,5 +45,17 @@ public class MessageController {
         }
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
+    @RequestMapping(value = "/getMailChimpLists", method = RequestMethod.GET)
+    public ResponseEntity<?> getMailChimpLists() {
+        return mailChimpService.getLists();
+    }
+
+    @RequestMapping(value = "/getMailChimpLists/{listId}", method = RequestMethod.GET)
+    public ResponseEntity<?> getMailChimpLists(@PathVariable String listId) {
+        return mailChimpService.getLists(listId);
+    }
+
+
 
 }
