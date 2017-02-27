@@ -24,9 +24,6 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
     private CartRepository cartRepository;
 
     @Autowired
-    private ProductRepository productRepository;
-
-    @Autowired
     private CartHasProductRepository cartHasProductRepository;
 
     @Autowired
