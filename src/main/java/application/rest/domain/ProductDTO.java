@@ -9,7 +9,7 @@ public class ProductDTO implements ReadWriteDatabaseDTO<Product> {
     private Long uid;
     private String name;
     private String description;
-    private Integer price;
+    private Double price;
 
     @Override
     public Product toEntity() {

@@ -1,6 +1,6 @@
 package application.persistence.type;
 
-public enum Locale {
+public enum LocaleEnum {
 
     CZECH,
     ENGLISH

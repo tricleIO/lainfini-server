@@ -1,6 +1,6 @@
 package application.persistence.type;
 
-public enum Currency {
+public enum CurrencyEnum {
 
     CZK("koruna", "Kč"),
     USD("dollar", "$");
@@ -8,7 +8,7 @@ public enum Currency {
     private String name;
     private String symbol;
 
-    Currency(String name, String symbol) {
+    CurrencyEnum(String name, String symbol) {
         this.name = name;
         this.symbol = symbol;
     }

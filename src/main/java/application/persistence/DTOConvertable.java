@@ -1,4 +1,4 @@
-package application.persistence.entity;
+package application.persistence;
 
 public interface DTOConvertable<T> {
 

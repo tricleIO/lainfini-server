@@ -1,13 +1,10 @@
 package application.persistence.entity;
 
-import application.rest.domain.EntityConvertable;
+import application.persistence.DTOConvertable;
 import application.rest.domain.ProductDTO;
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -18,11 +15,14 @@ public class Product implements DTOConvertable<ProductDTO>, Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "name", nullable = false, length = 255)
     private String name;
 
+    @Column(name = "description", columnDefinition = "TEXT")
     private String description;
 
-    private Integer price;
+    @Column(name = "price")
+    private Double price;
 
     @Override
     public ProductDTO toDTO() {

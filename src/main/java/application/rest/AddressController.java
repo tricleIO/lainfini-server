@@ -2,9 +2,7 @@ package application.rest;
 
 import application.persistence.entity.Address;
 import application.rest.domain.AddressDTO;
-import application.rest.domain.CustomerDTO;
 import application.service.address.AddressService;
-import application.service.customer.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;

@@ -8,7 +8,9 @@ import java.util.List;
 public interface CartHasProductRepository extends PagingAndSortingRepository<CartHasProduct, Long> {
 
     List<CartHasProduct> findByCartId(Long id);
+
     Long countByCartIdAndProductId(Long cartId, Long productId);
+
     CartHasProduct findByCartIdAndProductId(Long cartId, Long productId);
 
 }

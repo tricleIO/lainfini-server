@@ -1,6 +1,6 @@
 package application.persistence.type;
 
-public enum Sex {
+public enum SexEnum {
     MALE,
     FEMALE
 }

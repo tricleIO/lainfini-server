@@ -2,7 +2,7 @@ package application.rest.domain;
 
 import application.persistence.entity.Cart;
 import application.rest.CartController;
-import application.rest.CustomerController;
+import application.rest.UserController;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
@@ -37,7 +37,7 @@ public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Car
     public void addLinks() {
         add(linkTo(methodOn(CartController.class).readCart(uid)).withSelfRel());
         if (ownerUid != null) {
-            add(linkTo(methodOn(CustomerController.class).readCustomer(ownerUid)).withRel("owner"));
+            add(linkTo(methodOn(UserController.class).readUser(ownerUid)).withRel("owner"));
         }
         for (ItemDTO item : products) {
             item.addLinks();

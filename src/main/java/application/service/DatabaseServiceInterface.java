@@ -1,13 +1,12 @@
 package application.service;
 
-import application.persistence.entity.DTOConvertable;
+import application.persistence.DTOConvertable;
 import application.rest.domain.EntityConvertable;
 import application.service.response.ServiceResponse;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import java.io.Serializable;
-import java.util.List;
 
 public interface DatabaseServiceInterface<E extends DTOConvertable<D>, I extends Serializable, D extends EntityConvertable<E>> {
 

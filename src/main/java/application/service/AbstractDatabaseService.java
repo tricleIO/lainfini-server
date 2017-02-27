@@ -1,10 +1,10 @@
 package application.service;
 
+import application.persistence.DTOConvertable;
 import application.persistence.EntityToDTOConverter;
 import application.rest.domain.EntityConvertable;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
-import application.persistence.entity.DTOConvertable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;

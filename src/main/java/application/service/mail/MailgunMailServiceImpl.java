@@ -2,7 +2,7 @@ package application.service.mail;
 
 import application.configuration.AppProperties;
 import application.rest.domain.MailDTO;
-import application.service.mailchimp.Connection;
+import application.service.Connection;
 import application.service.response.ServiceResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;

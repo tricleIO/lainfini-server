@@ -1,5 +1,6 @@
 package application.persistence.entity;
 
+import application.persistence.DTOConvertable;
 import application.rest.domain.ItemDTO;
 import application.rest.domain.ItemResponseDTO;
 import lombok.Data;
@@ -9,6 +10,7 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Entity
+@Table(name = "cart_has_product")
 @Data
 public class CartHasProduct implements DTOConvertable<ItemDTO>, Serializable {
 
@@ -16,21 +18,25 @@ public class CartHasProduct implements DTOConvertable<ItemDTO>, Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
     @NotNull
+    @ManyToOne
+    @JoinColumn(name = "cart_id", referencedColumnName = "id")
     private Cart cart;
 
-    @OneToOne
     @NotNull
+    @ManyToOne
+    @JoinColumn(name = "product_id", referencedColumnName = "id")
     private Product product;
 
-    private Integer number;
+    @NotNull
+    @Column(name = "quantity", nullable = false)
+    private Integer quantity;
 
     @Override
     public ItemDTO toDTO() {
         ItemResponseDTO item = new ItemResponseDTO();
         item.setProductUid(product.getId());
-        item.setNumber(number);
+        item.setQuantity(quantity);
         item.setCartUid(cart.getId());
         return item;
     }

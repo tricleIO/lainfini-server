@@ -1,7 +1,5 @@
 package application.persistence;
 
-import application.persistence.entity.DTOConvertable;
-
 import java.util.LinkedList;
 import java.util.List;
 

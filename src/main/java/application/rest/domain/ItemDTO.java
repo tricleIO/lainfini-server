@@ -11,7 +11,8 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 public class ItemDTO extends ResourceSupport implements Linkable {
 
     private Long productUid;
-    private Integer number;
+
+    private Integer quantity;
 
     @Override
     public void addLinks() {

@@ -1,6 +1,6 @@
 package application.persistence.type;
 
-public enum State {
+public enum StatusEnum {
     ACTIVE,
     INACTIVE,
     DELETED

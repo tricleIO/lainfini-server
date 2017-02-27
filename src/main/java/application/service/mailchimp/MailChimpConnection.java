@@ -1,5 +1,6 @@
 package application.service.mailchimp;
 
+import application.service.Connection;
 import org.json.JSONObject;
 import org.springframework.http.*;
 import org.springframework.http.converter.StringHttpMessageConverter;

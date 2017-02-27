@@ -16,32 +16,83 @@
 
 package application.persistence.entity;
 
+import application.persistence.DTOConvertable;
+import application.persistence.type.CurrencyEnum;
+import application.persistence.type.LocaleEnum;
+import application.persistence.type.SexEnum;
+import application.persistence.type.StatusEnum;
 import application.rest.domain.UserDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
-import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
+@Table(name = "customer")
 @Data
 public class User implements DTOConvertable<UserDTO>, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Long id;
+
+    @OneToMany(mappedBy = "customer")
+    private List<LinkedAccount> linkedAccountList;
+
+    @NotNull
+    @Column(name = "first_name", length = 64, nullable = false)
+    private String firstName;
+
+    @NotNull
+    @Column(name = "last_name", length = 64, nullable = false)
+    private String lastName;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "sex", length = 6)
+    private SexEnum sex;
 
     @OneToOne
-    private Customer customer;
+    @JoinColumn(name = "billing_address_id", referencedColumnName = "id")
+    private Address billingAddress;
 
-    @NotEmpty
+    @OneToOne
+    @JoinColumn(name = "delivery_address_id", referencedColumnName = "id")
+    private Address deliveryAddress;
+
+    @Column(name = "phone_code", length = 5)
+    private String phoneCode;
+
+    @Column(name = "phone_number", length = 15)
+    private String phoneNumber;
+
+    @Column(name = "abra_link")
+    private String abraLink;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "status", length = 15)
+    private StatusEnum statusEnum;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name="currency", length = 10)
+    private CurrencyEnum currency;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "locale", length = 10)
+    private LocaleEnum locale;
+
+    /*login part*/
+
+    @NotNull
     @Column(unique = true, nullable = false)
     private String login;
 
-    @NotEmpty
+    @NotNull
+    @Column(name = "password", length = 64)
     private String password;
 
     @JsonIgnore
@@ -56,7 +107,6 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         super();
         this.id = user.getId();
         this.login = user.getLogin();
-        this.customer = user.getCustomer();
         this.password = user.getPassword();
         this.roles = user.getRoles();
     }
@@ -66,9 +116,15 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         UserDTO userDTO = new UserDTO();
         userDTO.setUid(id);
         userDTO.setUsername(login);
-        if (customer != null) {
-            userDTO.setCustomerId(customer.getId());
+        userDTO.setFirstName(firstName);
+        userDTO.setLastName(lastName);
+        if (billingAddress != null) {
+            userDTO.setBillingAddressId(billingAddress.getId());
         }
+        if (deliveryAddress != null) {
+            userDTO.setDeliveryAddressId(deliveryAddress.getId());
+        }
+
         return userDTO;
     }
 

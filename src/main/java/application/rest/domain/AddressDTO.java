@@ -28,7 +28,7 @@ public class AddressDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         address.setStreet(street);
         address.setHouseNumber(houseNumber);
         address.setCity(city);
-        address.setPostal(postal);
+        address.setPostalCode(postal);
         address.setState(state);
         address.setCountry(country);
         return address;

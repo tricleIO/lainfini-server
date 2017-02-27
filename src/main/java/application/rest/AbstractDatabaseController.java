@@ -1,6 +1,6 @@
 package application.rest;
 
-import application.persistence.entity.DTOConvertable;
+import application.persistence.DTOConvertable;
 import application.rest.domain.PageDTO;
 import application.rest.domain.ReadWriteDatabaseDTO;
 import application.service.DatabaseServiceInterface;

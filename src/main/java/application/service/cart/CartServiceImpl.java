@@ -1,11 +1,14 @@
 package application.service.cart;
 
-import application.persistence.entity.*;
+import application.persistence.entity.Cart;
+import application.persistence.entity.CartHasProduct;
+import application.persistence.entity.User;
 import application.persistence.repository.CartHasProductRepository;
 import application.persistence.repository.CartRepository;
-import application.persistence.repository.CustomerRepository;
-import application.persistence.repository.ProductRepository;
-import application.rest.domain.*;
+import application.persistence.repository.UserRepository;
+import application.rest.domain.CartDTO;
+import application.rest.domain.ItemDTO;
+import application.rest.domain.ProductDTO;
 import application.service.AbstractDatabaseService;
 import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
@@ -27,7 +30,7 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
     private CartHasProductRepository cartHasProductRepository;
 
     @Autowired
-    private CustomerRepository customerRepository;
+    private UserRepository customerRepository;
 
     @Autowired
     private ProductService productService;
@@ -81,14 +84,14 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
             CartHasProduct cartHasProduct = new CartHasProduct();
             cartHasProduct.setCart(cartServiceResponse.getBody().toEntity());
             cartHasProduct.setProduct(productServiceResponse.getBody().toEntity());
-            cartHasProduct.setNumber(item.getNumber());
+            cartHasProduct.setQuantity(item.getQuantity());
             saved = cartHasProductRepository.save(cartHasProduct);
         } else {
             // if pair exists, add number of given products to original number of products
             CartHasProduct foundCartHasProduct = cartHasProductRepository.findByCartIdAndProductId(
                     cartId, item.getProductUid()
             );
-            foundCartHasProduct.setNumber(foundCartHasProduct.getNumber() + item.getNumber());
+            foundCartHasProduct.setQuantity(foundCartHasProduct.getQuantity() + item.getQuantity());
             saved = cartHasProductRepository.save(foundCartHasProduct);
         }
         // success
@@ -98,7 +101,7 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
     // add info about owner (customer)
     @Override
     public ServiceResponse<CartDTO> create(CartDTO cartDTO) {
-        Customer customer = customerRepository.findOne(cartDTO.getOwnerUid());
+        User customer = customerRepository.findOne(cartDTO.getOwnerUid());
         if (customer == null) {
             return ServiceResponse.error(ServiceResponseStatus.CART_OWNER_NOT_FOUND);
         }
@@ -124,7 +127,7 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
     private ItemDTO createCartItem(CartHasProduct cartHasProduct) {
         ItemDTO itemDTO = new ItemDTO();
         itemDTO.setProductUid(cartHasProduct.getProduct().getId());
-        itemDTO.setNumber(cartHasProduct.getNumber());
+        itemDTO.setQuantity(cartHasProduct.getQuantity());
         return itemDTO;
     }
 

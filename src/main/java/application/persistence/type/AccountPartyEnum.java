@@ -1,6 +1,6 @@
 package application.persistence.type;
 
-public enum AccountParty {
+public enum AccountPartyEnum {
 
     FACEBOOK,
     INSTAGRAM,

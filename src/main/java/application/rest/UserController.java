@@ -1,9 +1,7 @@
 package application.rest;
 
 import application.persistence.entity.User;
-import application.rest.AbstractDatabaseController;
 import application.rest.domain.UserDTO;
-import application.service.customer.CustomerService;
 import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -12,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/users")
-public class UserController extends AbstractDatabaseController<User, Integer, UserDTO, UserService> {
+public class UserController extends AbstractDatabaseController<User, Long, UserDTO, UserService> {
 
     @Autowired
     private UserService userService;
@@ -23,7 +21,7 @@ public class UserController extends AbstractDatabaseController<User, Integer, Us
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<?> readUser(@PathVariable Integer id) {
+    public ResponseEntity<?> readUser(@PathVariable Long id) {
         return read(id);
     }
 

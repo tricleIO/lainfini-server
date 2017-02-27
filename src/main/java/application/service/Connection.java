@@ -1,4 +1,4 @@
-package application.service.mailchimp;
+package application.service;
 
 import org.json.JSONObject;
 import org.springframework.http.HttpEntity;

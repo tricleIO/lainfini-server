@@ -18,7 +18,7 @@ public class ItemResponseDTO extends ItemDTO {
     public ItemResponseDTO(Long cartUid, ItemDTO itemDTO) {
         super();
         this.setProductUid(itemDTO.getProductUid());
-        this.setNumber(itemDTO.getNumber());
+        this.setQuantity(itemDTO.getQuantity());
         this.setCartUid(cartUid);
     }
 
