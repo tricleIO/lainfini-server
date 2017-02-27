@@ -16,15 +16,12 @@
 
 package application.persistence.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity
 @Table(name = "role")
@@ -40,10 +37,6 @@ public class Role implements GrantedAuthority, Serializable {
 	@NotNull
 	@Column(name = "role_name")
 	private String name;
-
-	@JsonIgnore
-	@ManyToMany(fetch = FetchType.LAZY, mappedBy = "roles")
-	private Set<User> users = new HashSet<User>();
 
 	@Override
 	public String getAuthority() {
