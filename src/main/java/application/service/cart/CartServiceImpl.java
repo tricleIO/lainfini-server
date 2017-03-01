@@ -6,13 +6,12 @@ import application.persistence.entity.User;
 import application.persistence.repository.CartHasProductRepository;
 import application.persistence.repository.CartRepository;
 import application.persistence.repository.UserRepository;
-import application.rest.domain.CartDTO;
-import application.rest.domain.ItemDTO;
-import application.rest.domain.ProductDTO;
+import application.rest.domain.*;
 import application.service.AbstractDatabaseService;
 import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
+import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -30,7 +29,7 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
     private CartHasProductRepository cartHasProductRepository;
 
     @Autowired
-    private UserRepository customerRepository;
+    private UserService userService;
 
     @Autowired
     private ProductService productService;
@@ -101,15 +100,12 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
     // add info about owner (customer)
     @Override
     public ServiceResponse<CartDTO> create(CartDTO cartDTO) {
-        User customer = customerRepository.findOne(cartDTO.getOwnerUid());
-        if (customer == null) {
+        ServiceResponse<UserDTO> ownerResponse = userService.read(cartDTO.getOwnerUid());
+        if (!ownerResponse.isSuccessful()) {
             return ServiceResponse.error(ServiceResponseStatus.CART_OWNER_NOT_FOUND);
         }
-        Cart cart = cartDTO.toEntity();
-        cart.setOwner(customer);
-        // @TODO - check errors!
-        Cart savedCart = cartRepository.save(cart);
-        return ServiceResponse.success(savedCart.toDTO());
+        cartDTO.setOwner(ownerResponse.getBody());
+        return super.create(cartDTO);
     }
 
     @Override
