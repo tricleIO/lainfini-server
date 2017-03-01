@@ -24,6 +24,9 @@ public class Product implements DTOConvertable<ProductDTO>, Serializable {
     @Column(name = "price")
     private Double price;
 
+    @OneToOne
+    private Category category;
+
     @Override
     public ProductDTO toDTO() {
         ProductDTO productDTO = new ProductDTO();
@@ -31,6 +34,9 @@ public class Product implements DTOConvertable<ProductDTO>, Serializable {
         productDTO.setName(name);
         productDTO.setDescription(description);
         productDTO.setPrice(price);
+        if (category != null) {
+            productDTO.setCategoryUid(category.getId());
+        }
         return  productDTO;
     }
 
