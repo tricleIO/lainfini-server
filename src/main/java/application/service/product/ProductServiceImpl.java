@@ -27,6 +27,7 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
 
     @Override
     public ServiceResponse<Page<ProductDTO>> readProductsInCategory(Integer category, Pageable pageable) {
+        // @TODO - refactoring -> getPageServiceResponse(page, pageable)?
         Page<Product> pageWithProducts = productRepository.findByCategoryId(category, pageable);
         return ServiceResponse.success(
                 convertPageWithEntitiesToPageWithDtos(pageWithProducts, pageable)
