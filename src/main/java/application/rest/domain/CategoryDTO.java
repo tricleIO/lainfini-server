@@ -1,12 +1,17 @@
 package application.rest.domain;
 
 import application.persistence.entity.Category;
+import application.rest.CategoryController;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import org.springframework.hateoas.ResourceSupport;
+
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class CategoryDTO implements ReadWriteDatabaseDTO<Category> {
+public class CategoryDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Category> {
 
     private Integer uid;
     private String name;
@@ -24,6 +29,13 @@ public class CategoryDTO implements ReadWriteDatabaseDTO<Category> {
             category.setParent(parentCategory.toEntity());
         }
         return category;
+    }
+
+    @Override
+    public void addLinks() {
+        if (parentCategoryUid != null) {
+            add(linkTo(methodOn(CategoryController.class).readCategory(parentCategoryUid)).withRel("parentCategory"));
+        }
     }
 
 }
