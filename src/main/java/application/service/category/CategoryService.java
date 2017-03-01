@@ -9,7 +9,8 @@ import org.springframework.data.domain.Pageable;
 
 public interface CategoryService extends DatabaseServiceInterface<Category, Integer, CategoryDTO> {
 
-    ServiceResponse<CategoryDTO> createSubcategory(int parentCategoryId, CategoryDTO subcategoryDTO);
+    ServiceResponse<Page<CategoryDTO>> readMainCategories(Pageable pageable);
     ServiceResponse<Page<CategoryDTO>> readSubcategories(int parentCategoryId, Pageable pageable);
+    ServiceResponse<CategoryDTO> createSubcategory(int parentCategoryId, CategoryDTO subcategoryDTO);
 
 }

@@ -50,7 +50,7 @@ public abstract class AbstractDatabaseController<E extends DTOConvertable<D>, I 
         return new ErrorResponseEntity(response.getStatus());
     }
 
-    private ResponseEntity<?> getSimpleResponseEntity(ServiceResponse<D> response) {
+    protected ResponseEntity<?> getSimpleResponseEntity(ServiceResponse<D> response) {
         // success
         if (response.isSuccessful()) {
             D dto = response.getBody();

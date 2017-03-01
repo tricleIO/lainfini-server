@@ -17,9 +17,19 @@ public class CategoryServiceImpl extends AbstractDatabaseService<Category, Integ
     @Autowired
     private CategoryRepository categoryRepository;
 
+    @Override
+    public ServiceResponse<Page<CategoryDTO>> readMainCategories(Pageable pageable) {
+        Page<Category> categoryPage = categoryRepository.findByParentIsNull(pageable);
+        return ServiceResponse.success(
+                convertPageWithEntitiesToPageWithDtos(categoryPage, pageable)
+        );
+    }
+
     public ServiceResponse<Page<CategoryDTO>> readSubcategories(int parentCategoryId, Pageable pageable) {
         Page<Category> categoryPage = categoryRepository.findByParentId(parentCategoryId, pageable);
-        return ServiceResponse.success(convertPageWithEntitiesToPageWithDtos(categoryPage, pageable));
+        return ServiceResponse.success(
+                convertPageWithEntitiesToPageWithDtos(categoryPage, pageable)
+        );
     }
 
     @Override
