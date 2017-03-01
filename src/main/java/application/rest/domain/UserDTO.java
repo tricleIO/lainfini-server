@@ -11,18 +11,18 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class UserDTO  extends ResourceSupport implements ReadWriteDatabaseDTO<User> {
+public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<User> {
 
     private Long uid;
     private String username;
     private String password;
-    private Long customerId;
+    private Long customerUid;
 
     private String firstName;
     private String lastName;
 
-    private Long deliveryAddressId;
-    private Long billingAddressId;
+    private Long deliveryAddressUid;
+    private Long billingAddressUid;
 
     @Override
     public User toEntity() {
@@ -37,11 +37,11 @@ public class UserDTO  extends ResourceSupport implements ReadWriteDatabaseDTO<Us
 
     @Override
     public void addLinks() {
-        if (billingAddressId != null) {
-            add(linkTo(methodOn(AddressController.class).readAddress(billingAddressId)).withRel("billingAddress"));
+        if (billingAddressUid != null) {
+            add(linkTo(methodOn(AddressController.class).readAddress(billingAddressUid)).withRel("billingAddress"));
         }
-        if (deliveryAddressId != null) {
-            add(linkTo(methodOn(AddressController.class).readAddress(deliveryAddressId)).withRel("deliveryAddress"));
+        if (deliveryAddressUid != null) {
+            add(linkTo(methodOn(AddressController.class).readAddress(deliveryAddressUid)).withRel("deliveryAddress"));
         }
     }
 

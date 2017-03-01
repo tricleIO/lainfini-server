@@ -125,10 +125,10 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         userDTO.setFirstName(firstName);
         userDTO.setLastName(lastName);
         if (billingAddress != null) {
-            userDTO.setBillingAddressId(billingAddress.getId());
+            userDTO.setBillingAddressUid(billingAddress.getId());
         }
         if (deliveryAddress != null) {
-            userDTO.setDeliveryAddressId(deliveryAddress.getId());
+            userDTO.setDeliveryAddressUid(deliveryAddress.getId());
         }
         return userDTO;
     }
