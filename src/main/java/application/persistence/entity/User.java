@@ -44,6 +44,12 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @OneToMany(mappedBy = "customer")
     private List<LinkedAccount> linkedAccountList;
 
+    @Column(name = "degree_before_name")
+    private String degreeBeforeName;
+
+    @Column(name = "degree_after_name")
+    private String degreeAfterName;
+
     @NotNull
     @Column(name = "first_name", length = 64, nullable = false)
     private String firstName;
