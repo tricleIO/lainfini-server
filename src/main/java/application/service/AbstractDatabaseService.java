@@ -27,11 +27,7 @@ public abstract class AbstractDatabaseService<E extends DTOConvertable<D>, I ext
     public ServiceResponse<Page<D>> readAll(Pageable pageable) {
         // find all entities
         Page<E> page = getRepository().findAll(pageable);
-        // convert entities to DTOs
-        EntityToDTOConverter<E, D> converter = new EntityToDTOConverter<>(page.getContent());
-        List<D> responseElements = converter.convert();
-        // make page from them
-        Page<D> pageWithDTOs = new PageImpl<>(responseElements, pageable, getRepository().count());
+        Page<D> pageWithDTOs = convertPageWithEntitiesToPageWithDtos(page, pageable);
         return ServiceResponse.success(pageWithDTOs);
     }
 
@@ -39,6 +35,14 @@ public abstract class AbstractDatabaseService<E extends DTOConvertable<D>, I ext
         E entity = dto.toEntity();
         E savedEntity = getRepository().save(entity);
         return ServiceResponse.success(savedEntity.toDTO());
+    }
+
+    protected Page<D> convertPageWithEntitiesToPageWithDtos(Page<E> page, Pageable pageable) {
+        // convert entities to DTOs
+        EntityToDTOConverter<E, D> converter = new EntityToDTOConverter<>(page.getContent());
+        List<D> responseElements = converter.convert();
+        // make page from them
+        return new PageImpl<>(responseElements, pageable, getRepository().count());
     }
 
     public abstract R getRepository();
