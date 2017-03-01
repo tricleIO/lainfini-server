@@ -15,6 +15,8 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
 
     private Long uid;
     private String name;
+    private String ean;
+    private String shortDescription;
     private String description;
     private Double price;
     private Integer categoryUid;
@@ -24,6 +26,8 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         Product product = new Product();
         product.setId(uid);
         product.setName(name);
+        product.setEan(ean);
+        product.setShortDescription(shortDescription);
         product.setDescription(description);
         product.setPrice(price);
         return product;

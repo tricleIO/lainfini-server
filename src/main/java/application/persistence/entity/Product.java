@@ -18,6 +18,12 @@ public class Product implements DTOConvertable<ProductDTO>, Serializable {
     @Column(name = "name", nullable = false, length = 255)
     private String name;
 
+    @Column(name = "ean", length = 13)
+    private String ean;
+
+    @Column(name = "short_description", length = 255)
+    private String shortDescription;
+
     @Column(name = "description", columnDefinition = "TEXT")
     private String description;
 
@@ -32,6 +38,8 @@ public class Product implements DTOConvertable<ProductDTO>, Serializable {
         ProductDTO productDTO = new ProductDTO();
         productDTO.setUid(id);
         productDTO.setName(name);
+        productDTO.setEan(ean);
+        productDTO.setShortDescription(shortDescription);
         productDTO.setDescription(description);
         productDTO.setPrice(price);
         if (category != null) {
