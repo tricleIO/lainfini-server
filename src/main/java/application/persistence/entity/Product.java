@@ -2,10 +2,13 @@ package application.persistence.entity;
 
 import application.persistence.DTOConvertable;
 import application.rest.domain.ProductDTO;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Data
@@ -32,6 +35,11 @@ public class Product implements DTOConvertable<ProductDTO>, Serializable {
 
     @OneToOne
     private Category category;
+
+    @JsonIgnore
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "product_has_document", joinColumns = {@JoinColumn(name = "product_id")}, inverseJoinColumns = {@JoinColumn(name = "document_id")})
+    private Set<ProductDocument> productDocuments = new HashSet<ProductDocument>();
 
     @Override
     public ProductDTO toDTO() {

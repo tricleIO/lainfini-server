@@ -19,7 +19,9 @@ public enum ServiceResponseStatus {
     PRODUCT_NOT_FOUND("Product with given id was not found.", HttpStatus.NOT_FOUND),
 
     // category
-    PARENT_CATEGORY_NOT_FOUND("Parent category with given id was not found.", HttpStatus.NOT_FOUND);
+    PARENT_CATEGORY_NOT_FOUND("Parent category with given id was not found.", HttpStatus.NOT_FOUND),
+
+    INTERNAL_ERROR("Internal error", HttpStatus.INTERNAL_SERVER_ERROR);
 
     private final HttpStatus httpStatus;
     private final String message;

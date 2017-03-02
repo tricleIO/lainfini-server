@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.PostConstruct;
+import java.io.Serializable;
 import java.lang.reflect.Field;
 
 /**
@@ -12,7 +13,7 @@ import java.lang.reflect.Field;
  */
 @Configuration
 @Data
-public class AppProperties {
+public class AppProperties implements Serializable {
 
     @Value("${mailchimp.apikey:null}")
     private String mailchimpApiKey;
@@ -38,6 +39,12 @@ public class AppProperties {
     @Value("${nexmo.from.name:null}")
     private String nexmoFromName;
 
+    @Value("${document.location:null}")
+    private String productDocumentStoreLocation;
+
+    @Value("${lainfini.server.address:null}")
+    private String serverAddress;
+
     @PostConstruct
     private void testValueContent() {
 
@@ -45,6 +52,8 @@ public class AppProperties {
             try {
                 if (f.get(this).toString().equals("null")) {
                     System.out.println(f.getName() + " is not filled");
+                    throw new NullPointerException("Config failed: " +f.getName() + " is not filled");
+
                 }
             } catch (IllegalAccessException e) {
                 throw new NullPointerException("Config failed");
