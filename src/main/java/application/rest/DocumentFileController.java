@@ -3,7 +3,7 @@ package application.rest;
 import application.persistence.entity.DocumentFile;
 import application.rest.domain.DocumentFileDTO;
 import application.rest.domain.ProductDTO;
-import application.service.product.ProductDocumentService;
+import application.service.product.DocumentFileService;
 import application.service.response.ServiceResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,11 +19,11 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping(value = "/documents")
-public class DocumentFileController extends AbstractDatabaseController<DocumentFile, Long, DocumentFileDTO, ProductDocumentService> {
+public class DocumentFileController extends AbstractDatabaseController<DocumentFile, Long, DocumentFileDTO, DocumentFileService> {
 
 
     @Autowired
-    private ProductDocumentService productDocumentService;
+    private DocumentFileService documentFileService;
 
 
     /**
@@ -46,7 +46,7 @@ public class DocumentFileController extends AbstractDatabaseController<DocumentF
             documentFileDTO.setProducts(productDTOS);
 
             documentFileDTO.setFile(file);
-            ServiceResponse<DocumentFileDTO> productDocumentDTOServiceResponse = productDocumentService.create(documentFileDTO);
+            ServiceResponse<DocumentFileDTO> productDocumentDTOServiceResponse = documentFileService.create(documentFileDTO);
             documentFileDTOS.add(productDocumentDTOServiceResponse.getBody());
         }
         return new ResponseEntity(documentFileDTOS, HttpStatus.OK);
@@ -55,7 +55,7 @@ public class DocumentFileController extends AbstractDatabaseController<DocumentF
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public ResponseEntity<?> readProduct(@PathVariable UUID id) throws UnsupportedEncodingException {
-        return productDocumentService.findByIndex(id);
+        return documentFileService.findByIndex(id);
     }
 
     /**
@@ -68,8 +68,8 @@ public class DocumentFileController extends AbstractDatabaseController<DocumentF
 
 
     @Override
-    public ProductDocumentService getBaseService() {
-        return productDocumentService;
+    public DocumentFileService getBaseService() {
+        return documentFileService;
     }
 
 }

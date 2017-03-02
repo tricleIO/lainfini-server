@@ -22,7 +22,7 @@ import java.util.UUID;
  * Created by pfilip on 2.3.17.
  */
 @Service
-public class ProductDocumentServiceImpl extends AbstractDatabaseService<DocumentFile, Long, DocumentFileRepository, DocumentFileDTO> implements ProductDocumentService {
+public class DocumentFileServiceImpl extends AbstractDatabaseService<DocumentFile, Long, DocumentFileRepository, DocumentFileDTO> implements DocumentFileService {
 
     @Autowired
     private AppProperties appProperties;
