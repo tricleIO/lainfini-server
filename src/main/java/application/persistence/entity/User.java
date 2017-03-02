@@ -134,7 +134,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     }
 
     public SexEnum getSex () {
-        return SexEnum.parse(this.sex);
+        return SexEnum.parseFromDB(this.sex);
     }
 
     public void setRight(SexEnum sex) {

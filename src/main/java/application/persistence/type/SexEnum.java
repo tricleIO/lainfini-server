@@ -17,7 +17,7 @@ public enum SexEnum implements Serializable {
         return value;
     }
 
-    public static SexEnum parse(String value) {
+    public static SexEnum parseFromDB(String value) {
         for (SexEnum item : SexEnum.values()) {
             if (item.getValue().equals(value)) {
                 return item;
