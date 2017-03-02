@@ -39,7 +39,7 @@ public class Product implements DTOConvertable<ProductDTO>, Serializable {
     @JsonIgnore
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "product_has_document", joinColumns = {@JoinColumn(name = "product_id")}, inverseJoinColumns = {@JoinColumn(name = "document_id")})
-    private Set<ProductDocument> productDocuments = new HashSet<ProductDocument>();
+    private Set<DocumentFile> documentFiles = new HashSet<DocumentFile>();
 
     @Override
     public ProductDTO toDTO() {

@@ -47,7 +47,7 @@ public abstract class AbstractFile<T>  implements DTOConvertable<T>, Serializabl
     @Column (name = "valid_to")
     private Date validTo;
 
-    @ManyToMany(cascade=CascadeType.ALL, mappedBy="productDocuments")
+    @ManyToMany(cascade=CascadeType.ALL, mappedBy="documentFiles")
     private Set<Product> products;
 
 

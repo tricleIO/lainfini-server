@@ -1,10 +1,10 @@
 package application.service.product;
 
 import application.configuration.AppProperties;
-import application.persistence.entity.ProductDocument;
-import application.persistence.repository.ProductDocumentRepository;
+import application.persistence.entity.DocumentFile;
+import application.persistence.repository.DocumentFileRepository;
 import application.persistence.type.FileStatusEnum;
-import application.rest.domain.ProductDocumentDTO;
+import application.rest.domain.DocumentFileDTO;
 import application.service.AbstractDatabaseService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
@@ -22,27 +22,27 @@ import java.util.UUID;
  * Created by pfilip on 2.3.17.
  */
 @Service
-public class ProductDocumentServiceImpl extends AbstractDatabaseService<ProductDocument, Long, ProductDocumentRepository, ProductDocumentDTO> implements ProductDocumentService {
+public class ProductDocumentServiceImpl extends AbstractDatabaseService<DocumentFile, Long, DocumentFileRepository, DocumentFileDTO> implements ProductDocumentService {
 
     @Autowired
     private AppProperties appProperties;
 
     @Autowired
-    private ProductDocumentRepository productDocumentRepository;
+    private DocumentFileRepository documentFileRepository;
 
     @Override
-    public ProductDocumentRepository getRepository() {
-        return productDocumentRepository;
+    public DocumentFileRepository getRepository() {
+        return documentFileRepository;
     }
 
     @Override
-    public ServiceResponse<ProductDocumentDTO> create(ProductDocumentDTO dto) {
+    public ServiceResponse<DocumentFileDTO> create(DocumentFileDTO dto) {
         String storeLocation = appProperties.getProductDocumentStoreLocation();
 
         dto.setFileStatus(FileStatusEnum.UPLOADING);
-        ProductDocument workingProductDocument = getRepository().save(dto.toEntity());
+        DocumentFile workingDocumentFile = getRepository().save(dto.toEntity());
 
-        workingProductDocument.setIndex(UUID.randomUUID());
+        workingDocumentFile.setIndex(UUID.randomUUID());
 
         MultipartFile file = dto.getFile();
         if (!file.isEmpty()) {
@@ -50,21 +50,21 @@ public class ProductDocumentServiceImpl extends AbstractDatabaseService<ProductD
                 String uploadsDir = storeLocation;
 
 
-                String structuredDirectoryFromId = uploadsDir +FileUtil.getStructuredDirectoryFromId(workingProductDocument.getId());
+                String structuredDirectoryFromId = uploadsDir +FileUtil.getStructuredDirectoryFromId(workingDocumentFile.getId());
                 if (!FileUtil.checkOrCreatePathToDirectory(structuredDirectoryFromId)) {
                     return ServiceResponse.error(ServiceResponseStatus.INTERNAL_ERROR); //todo změnit response
                 }
                 String filePath = structuredDirectoryFromId +"/"+ file.getOriginalFilename();
                 File dest = new File(filePath);
                 file.transferTo(dest);
-                workingProductDocument.setFileStatus(FileStatusEnum.UPLOADED);
+                workingDocumentFile.setFileStatus(FileStatusEnum.UPLOADED);
 
-                workingProductDocument = getRepository().save(workingProductDocument);
-                return ServiceResponse.success(workingProductDocument.toDTO());
+                workingDocumentFile = getRepository().save(workingDocumentFile);
+                return ServiceResponse.success(workingDocumentFile.toDTO());
             } catch (IOException e) {
                 e.printStackTrace();
-                workingProductDocument.setFileStatus(FileStatusEnum.NOT_UPLOADED);
-                getRepository().save(workingProductDocument);
+                workingDocumentFile.setFileStatus(FileStatusEnum.NOT_UPLOADED);
+                getRepository().save(workingDocumentFile);
             }
         }
 
@@ -73,7 +73,7 @@ public class ProductDocumentServiceImpl extends AbstractDatabaseService<ProductD
 
     @Override
     public ResponseEntity<?> findByIndex(UUID fileIndex) {
-        ProductDocument byIndex = productDocumentRepository.findByIndex(fileIndex);
+        DocumentFile byIndex = documentFileRepository.findByIndex(fileIndex);
         return ResponseEntity.ok(byIndex);
     }
 }

@@ -1,8 +1,8 @@
 package application.rest;
 
-import application.persistence.entity.ProductDocument;
+import application.persistence.entity.DocumentFile;
+import application.rest.domain.DocumentFileDTO;
 import application.rest.domain.ProductDTO;
-import application.rest.domain.ProductDocumentDTO;
 import application.service.product.ProductDocumentService;
 import application.service.response.ServiceResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping(value = "/documents")
-public class FileDocumentController extends AbstractDatabaseController<ProductDocument, Long, ProductDocumentDTO, ProductDocumentService> {
+public class DocumentFileController extends AbstractDatabaseController<DocumentFile, Long, DocumentFileDTO, ProductDocumentService> {
 
 
     @Autowired
@@ -34,22 +34,22 @@ public class FileDocumentController extends AbstractDatabaseController<ProductDo
      */
     @RequestMapping(value = "/upload/for/product/{productId}", method = RequestMethod.POST)
     public ResponseEntity<?> uploadProductDocument(@PathVariable Long productId, @RequestParam("file") MultipartFile[]  files ) {
-        List<ProductDocumentDTO> productDocumentDTOS = new ArrayList<>();
+        List<DocumentFileDTO> documentFileDTOS = new ArrayList<>();
         for (MultipartFile file : files) {
-            ProductDocumentDTO productDocumentDTO = new ProductDocumentDTO();
-            productDocumentDTO.setFileName(file.getOriginalFilename());
+            DocumentFileDTO documentFileDTO = new DocumentFileDTO();
+            documentFileDTO.setFileName(file.getOriginalFilename());
 
             ProductDTO productDTO = new ProductDTO();
             productDTO.setUid(productId);
             HashSet<ProductDTO> productDTOS = new HashSet<>();
             productDTOS.add(productDTO);
-            productDocumentDTO.setProducts(productDTOS);
+            documentFileDTO.setProducts(productDTOS);
 
-            productDocumentDTO.setFile(file);
-            ServiceResponse<ProductDocumentDTO> productDocumentDTOServiceResponse = productDocumentService.create(productDocumentDTO);
-            productDocumentDTOS.add(productDocumentDTOServiceResponse.getBody());
+            documentFileDTO.setFile(file);
+            ServiceResponse<DocumentFileDTO> productDocumentDTOServiceResponse = productDocumentService.create(documentFileDTO);
+            documentFileDTOS.add(productDocumentDTOServiceResponse.getBody());
         }
-        return new ResponseEntity(productDocumentDTOS, HttpStatus.OK);
+        return new ResponseEntity(documentFileDTOS, HttpStatus.OK);
     }
 
 

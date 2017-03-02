@@ -1,10 +1,10 @@
 package application.service.product;
 
-import application.persistence.entity.ProductDocument;
-import application.rest.domain.ProductDocumentDTO;
+import application.persistence.entity.DocumentFile;
+import application.rest.domain.DocumentFileDTO;
 
 /**
  * Created by pfilip on 2.3.17.
  */
-public interface ProductDocumentService extends AbstractProductFileService<ProductDocument, ProductDocumentDTO> {
+public interface ProductDocumentService extends AbstractProductFileService<DocumentFile, DocumentFileDTO> {
 }
