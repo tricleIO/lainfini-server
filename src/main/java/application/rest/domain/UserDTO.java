@@ -1,6 +1,7 @@
 package application.rest.domain;
 
 import application.persistence.entity.User;
+import application.persistence.type.SexEnum;
 import application.rest.AddressController;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
@@ -20,6 +21,8 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
 
     private String firstName;
     private String lastName;
+
+    private SexEnum sex;
 
     private Long deliveryAddressUid;
     private Long billingAddressUid;

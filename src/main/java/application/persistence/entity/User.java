@@ -58,9 +58,8 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "last_name", length = 64, nullable = false)
     private String lastName;
 
-    @Enumerated(EnumType.STRING)
-    @Column(name = "sex", length = 6)
-    private SexEnum sex;
+    @Column(name = "sex", length = 1)
+    private String sex;
 
     @OneToOne
     @JoinColumn(name = "billing_address_id", referencedColumnName = "id")
@@ -124,6 +123,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         userDTO.setUsername(login);
         userDTO.setFirstName(firstName);
         userDTO.setLastName(lastName);
+        userDTO.setSex(getSex());
         if (billingAddress != null) {
             userDTO.setBillingAddressUid(billingAddress.getId());
         }
@@ -131,6 +131,14 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
             userDTO.setDeliveryAddressUid(deliveryAddress.getId());
         }
         return userDTO;
+    }
+
+    public SexEnum getSex () {
+        return SexEnum.parse(this.sex);
+    }
+
+    public void setRight(SexEnum sex) {
+        this.sex = sex.getValue();
     }
 
 }
