@@ -6,6 +6,8 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
+import java.util.List;
+
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
@@ -21,6 +23,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private Double price;
     private Integer categoryUid;
     private CallDTO call;
+    private List<FlashDTO> flashes;
 
     @Override
     public Product toEntity() {

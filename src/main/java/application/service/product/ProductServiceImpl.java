@@ -3,9 +3,12 @@ package application.service.product;
 import application.persistence.entity.Category;
 import application.persistence.entity.Product;
 import application.persistence.entity.ProductHasCallToAction;
+import application.persistence.entity.ProductHasFlash;
 import application.persistence.repository.CategoryRepository;
 import application.persistence.repository.ProductHasCallToActionRepository;
+import application.persistence.repository.ProductHasFlashRepository;
 import application.persistence.repository.ProductRepository;
+import application.rest.domain.FlashDTO;
 import application.rest.domain.ProductDTO;
 import application.service.AbstractDatabaseService;
 import application.service.response.ServiceResponse;
@@ -31,6 +34,9 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
 
     @Autowired
     private ProductHasCallToActionRepository productHasCallToActionRepository;
+
+    @Autowired
+    private ProductHasFlashRepository productHasFlashRepository;
 
     private Random random = new Random();
 
@@ -88,6 +94,14 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
     protected void additionalUpdateDto(ProductDTO dto) {
         super.additionalUpdateDto(dto);
         addRandomCallToAction(dto);
+        if (productHasFlashRepository.countByProductId(dto.getUid()) > 0) {
+            List<ProductHasFlash> productHasFlashList = productHasFlashRepository.findByProductId(dto.getUid());
+            List<FlashDTO> flashDTOList = new LinkedList<>();
+            for (ProductHasFlash productHasFlash : productHasFlashList) {
+                flashDTOList.add(productHasFlash.getFlash().toDTO());
+            }
+            dto.setFlashes(flashDTOList);
+        }
     }
 
     @Override
