@@ -1,7 +1,6 @@
 package application.service;
 
 import application.persistence.DTOConvertable;
-import application.persistence.EntityToDTOConverter;
 import application.rest.domain.EntityConvertable;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
@@ -11,6 +10,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.io.Serializable;
+import java.util.LinkedList;
 import java.util.List;
 
 public abstract class AbstractDatabaseService<E extends DTOConvertable<D>, I extends Serializable, R extends PagingAndSortingRepository<E, I>, D extends EntityConvertable<E>>
@@ -21,7 +21,9 @@ public abstract class AbstractDatabaseService<E extends DTOConvertable<D>, I ext
         if (result == null) {
             return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
         }
-        return ServiceResponse.success(result.toDTO());
+        D dto = result.toDTO();
+        additionalUpdateDto(dto);
+        return ServiceResponse.success(dto);
     }
 
     public ServiceResponse<Page<D>> readAll(Pageable pageable) {
@@ -38,11 +40,18 @@ public abstract class AbstractDatabaseService<E extends DTOConvertable<D>, I ext
     }
 
     protected Page<D> convertPageWithEntitiesToPageWithDtos(Page<E> page, Pageable pageable) {
-        // convert entities to DTOs
-        EntityToDTOConverter<E, D> converter = new EntityToDTOConverter<>(page.getContent());
-        List<D> responseElements = converter.convert();
+        List<D> dtoList = new LinkedList<>();
+        for (E currentEntity : page.getContent()) {
+            D currentDTO = currentEntity.toDTO();
+            additionalUpdateDto(currentDTO);
+            dtoList.add(currentDTO);
+        }
         // make page from them
-        return new PageImpl<>(responseElements, pageable, getRepository().count());
+        return new PageImpl<>(dtoList, pageable, getRepository().count());
+    }
+
+    protected void additionalUpdateDto(D dto) {
+        // empty here, can override in children
     }
 
     public abstract R getRepository();

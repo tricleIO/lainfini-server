@@ -2,7 +2,9 @@ package application.service.product;
 
 import application.persistence.entity.Category;
 import application.persistence.entity.Product;
+import application.persistence.entity.ProductHasCallToAction;
 import application.persistence.repository.CategoryRepository;
+import application.persistence.repository.ProductHasCallToActionRepository;
 import application.persistence.repository.ProductRepository;
 import application.rest.domain.ProductDTO;
 import application.service.AbstractDatabaseService;
@@ -15,6 +17,7 @@ import org.springframework.stereotype.Service;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+import java.util.Random;
 
 @Service
 public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, ProductRepository, ProductDTO> implements ProductService {
@@ -22,8 +25,19 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
     @Autowired
     private ProductRepository productRepository;
 
+
     @Autowired
     private CategoryRepository categoryRepository;
+
+    @Autowired
+    private ProductHasCallToActionRepository productHasCallToActionRepository;
+
+    private Random random = new Random();
+
+    @Override
+    public ServiceResponse<ProductDTO> read(Long key) {
+        return super.read(key);
+    }
 
     @Override
     public ServiceResponse<Page<ProductDTO>> readProductsInCategory(Integer category, Pageable pageable) {
@@ -59,6 +73,21 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
         }
 
         return categoryIds;
+    }
+
+    private void addRandomCallToAction(ProductDTO product) {
+        if (productHasCallToActionRepository.countByProductId(product.getUid()) > 0) {
+            List<ProductHasCallToAction> productHasCallToAction = productHasCallToActionRepository.findByProductId(product.getUid());
+            int index = random.nextInt(productHasCallToAction.size());
+            ProductHasCallToAction randomProductHasCallToAction = productHasCallToAction.get(index);
+            product.setCall(randomProductHasCallToAction.getCallToAction().toDTO());
+        }
+    }
+
+    @Override
+    protected void additionalUpdateDto(ProductDTO dto) {
+        super.additionalUpdateDto(dto);
+        addRandomCallToAction(dto);
     }
 
     @Override

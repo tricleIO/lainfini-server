@@ -20,6 +20,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private String description;
     private Double price;
     private Integer categoryUid;
+    private CallDTO call;
 
     @Override
     public Product toEntity() {

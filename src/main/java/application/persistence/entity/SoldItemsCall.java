@@ -10,16 +10,16 @@ import javax.persistence.Entity;
 @Data
 public class SoldItemsCall extends CallToAction {
 
-    private Integer sold;
-    private Integer made;
+//    private Integer sold;
+//    private Integer made;
 
     @Override
     public CallDTO toDTO() {
         SoldItemsCallDTO soldItemsCallDTO = new SoldItemsCallDTO();
         soldItemsCallDTO.setId(getId());
         soldItemsCallDTO.setType(getType());
-        soldItemsCallDTO.setMade(made);
-        soldItemsCallDTO.setSold(sold);
+//        soldItemsCallDTO.setMade(made);
+//        soldItemsCallDTO.setSold(sold);
         return soldItemsCallDTO;
     }
 
