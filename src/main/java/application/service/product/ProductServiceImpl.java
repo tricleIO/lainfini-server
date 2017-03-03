@@ -10,8 +10,11 @@ import application.persistence.repository.ProductHasFlashRepository;
 import application.persistence.repository.ProductRepository;
 import application.rest.domain.FlashDTO;
 import application.rest.domain.ProductDTO;
+import application.rest.domain.ProductHasFlashDTO;
 import application.service.AbstractDatabaseService;
+import application.service.flash.FlashService;
 import application.service.response.ServiceResponse;
+import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -38,6 +41,9 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
     @Autowired
     private ProductHasFlashRepository productHasFlashRepository;
 
+    @Autowired
+    private FlashService flashService;
+
     private Random random = new Random();
 
     @Override
@@ -61,6 +67,30 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
         return ServiceResponse.success(
                 convertPageWithEntitiesToPageWithDtos(pageWithProducts, pageable)
         );
+    }
+
+    @Override
+    public ServiceResponse<ProductDTO> addFlash(ProductHasFlashDTO productHasFlashDTO) {
+        if (productHasFlashRepository.countByProductIdAndFlashId(
+                productHasFlashDTO.getProductUid(), productHasFlashDTO.getFlashUid()) == 0) {
+
+            ServiceResponse<FlashDTO> flashResponse = flashService.read(productHasFlashDTO.getFlashUid());
+            if (!flashResponse.isSuccessful()) {
+                return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+            }
+            ServiceResponse<ProductDTO> productResponse = read(productHasFlashDTO.getProductUid());
+            if (!productResponse.isSuccessful()) {
+                return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+            }
+
+            ProductHasFlash productHasFlash = new ProductHasFlash();
+            productHasFlash.setFlash(flashResponse.getBody().toEntity());
+            productHasFlash.setProduct(productResponse.getBody().toEntity());
+            productHasFlashRepository.save(productHasFlash);
+        }
+
+        // load updated product
+        return read(productHasFlashDTO.getProductUid());
     }
 
     private List<Integer> getCategoryAndAllSubcategoriesIds(Integer categoryId) {

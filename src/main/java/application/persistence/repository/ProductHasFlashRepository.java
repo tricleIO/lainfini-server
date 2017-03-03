@@ -9,5 +9,6 @@ public interface ProductHasFlashRepository extends PagingAndSortingRepository<Pr
 
     Long countByProductId(Long productId);
     List<ProductHasFlash> findByProductId(Long productId);
+    Long countByProductIdAndFlashId(Long productId, Integer flashId);
 
 }
