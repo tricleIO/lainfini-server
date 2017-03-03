@@ -5,9 +5,8 @@
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/src/main/java/application/Application.java</file>
-          <file>file://$MODULE_DIR$/src/main/java/application/configuration/BeanConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/application/configuration/AppProperties.java</file>
           <file>file://$MODULE_DIR$/src/main/java/application/configuration/OAuth2ServerConfiguration.java</file>
-          <file>file://$MODULE_DIR$/src/main/java/application/configuration/PersistenceJPAConfig.java</file>
           <file>file://$MODULE_DIR$/src/main/java/application/configuration/WebSecurityConfiguration.java</file>
         </fileset>
       </configuration>
