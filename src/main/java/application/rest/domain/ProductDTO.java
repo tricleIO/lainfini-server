@@ -24,6 +24,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private Integer categoryUid;
     private CallDTO call;
     private List<FlashDTO> flashes;
+    private Boolean isFavourite = false;
 
     @Override
     public Product toEntity() {

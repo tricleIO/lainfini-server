@@ -4,10 +4,7 @@ import application.persistence.entity.Category;
 import application.persistence.entity.Product;
 import application.persistence.entity.ProductHasCallToAction;
 import application.persistence.entity.ProductHasFlash;
-import application.persistence.repository.CategoryRepository;
-import application.persistence.repository.ProductHasCallToActionRepository;
-import application.persistence.repository.ProductHasFlashRepository;
-import application.persistence.repository.ProductRepository;
+import application.persistence.repository.*;
 import application.rest.domain.FlashDTO;
 import application.rest.domain.ProductDTO;
 import application.rest.domain.ProductHasFlashDTO;
@@ -20,6 +17,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.security.Principal;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -44,6 +42,9 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
     @Autowired
     private FlashService flashService;
 
+    @Autowired
+    private UserLikesProductRepository userLikesProductRepository;
+
     private Random random = new Random();
 
     @Override
@@ -52,21 +53,26 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
     }
 
     @Override
-    public ServiceResponse<Page<ProductDTO>> readProductsInCategory(Integer category, Pageable pageable) {
-        // @TODO - refactoring -> getPageServiceResponse(page, pageable)?
-        Page<Product> pageWithProducts = productRepository.findByCategoryId(category, pageable);
+    public ServiceResponse<Page<ProductDTO>> readProductsInCategoryAndSubcategories(Integer categoryId, Pageable pageable, Principal principal) {
+        List<Integer> categoryIds = getCategoryAndAllSubcategoriesIds(categoryId);
+        Page<Product> pageWithProducts = productRepository.findByCategoryIdIn(categoryIds, pageable);
+        Page<ProductDTO> pageWithDtos = convertPageWithEntitiesToPageWithDtos(pageWithProducts, pageable);
+
+        if (principal != null) {
+            for (ProductDTO productDTO : pageWithDtos.getContent()) {
+                if (userLikesProduct(principal.getName(), productDTO)) {
+                    productDTO.setIsFavourite(true);
+                }
+            }
+        }
+
         return ServiceResponse.success(
-                convertPageWithEntitiesToPageWithDtos(pageWithProducts, pageable)
+            pageWithDtos
         );
     }
 
-    @Override
-    public ServiceResponse<Page<ProductDTO>> readProductsInCategoryAndSubcategories(Integer categoryId, Pageable pageable) {
-        List<Integer> categoryIds = getCategoryAndAllSubcategoriesIds(categoryId);
-        Page<Product> pageWithProducts = productRepository.findByCategoryIdIn(categoryIds, pageable);
-        return ServiceResponse.success(
-                convertPageWithEntitiesToPageWithDtos(pageWithProducts, pageable)
-        );
+    private boolean userLikesProduct(String username, ProductDTO productDTO) {
+        return userLikesProductRepository.countByUserLoginAndProductId(username, productDTO.getUid()) > 0;
     }
 
     @Override
