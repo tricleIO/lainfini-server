@@ -35,6 +35,7 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
         user.setPassword(password);
         user.setFirstName(firstName);
         user.setLastName(lastName);
+        user.setSex(sex.getValue());
         return user;
     }
 
