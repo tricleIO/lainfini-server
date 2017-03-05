@@ -6,5 +6,5 @@ import application.rest.domain.DocumentFileDTO;
 /**
  * Created by pfilip on 2.3.17.
  */
-public interface DocumentFileService extends AbstractProductFileService<DocumentFile, DocumentFileDTO> {
+public interface DocumentFileService extends AbstractFileService<DocumentFile, DocumentFileDTO> {
 }

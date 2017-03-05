@@ -1,6 +1,7 @@
 package application.persistence.entity;
 
 import application.rest.domain.DocumentFileDTO;
+import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -9,6 +10,7 @@ import javax.persistence.Table;
  * Created by pfilip on 2.3.17.
  */
 @Entity
+@Data
 @Table(name = "document_file")
 public class DocumentFile extends AbstractFile<DocumentFileDTO> {
 

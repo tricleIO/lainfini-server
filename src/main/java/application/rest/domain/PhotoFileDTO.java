@@ -9,7 +9,11 @@ import lombok.Data;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class PhotoFileDTO extends AbstractProductFileDTO<PhotoFile> {
+public class PhotoFileDTO extends AbstractFileDTO<PhotoFile> {
+
+    private Integer width;
+
+    private Integer height;
 
     @Override
     public PhotoFile toEntity() { //todo, bude záležet, co budeme vracet
@@ -18,6 +22,8 @@ public class PhotoFileDTO extends AbstractProductFileDTO<PhotoFile> {
         photoFile.setIndex(fileIndex);
         photoFile.setFileDescription(fileDescription);
         photoFile.setFileStatus(fileStatus);
+        photoFile.setHeight(height);
+        photoFile.setWidth(width);
         return photoFile;
     }
 

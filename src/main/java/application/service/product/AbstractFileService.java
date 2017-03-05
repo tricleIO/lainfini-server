@@ -11,7 +11,9 @@ import java.util.UUID;
 /**
  * Created by pfilip on 2.3.17.
  */
-public interface AbstractProductFileService<E extends AbstractFile<D>, D extends EntityConvertable<E>> extends DatabaseServiceInterface<E, Long, D> {
+public interface AbstractFileService<E extends AbstractFile<D>, D extends EntityConvertable<E>> extends DatabaseServiceInterface<E, Long, D> {
 
     ResponseEntity<?> findByIndex(UUID fileIndex);
+
+    String getStoreLocation();
 }

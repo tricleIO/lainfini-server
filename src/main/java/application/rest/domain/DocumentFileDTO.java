@@ -9,7 +9,7 @@ import lombok.Data;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class DocumentFileDTO extends AbstractProductFileDTO<DocumentFile> {
+public class DocumentFileDTO extends AbstractFileDTO<DocumentFile> {
 
     @Override
     public DocumentFile toEntity() { //todo, bude záležet, co budeme vracet

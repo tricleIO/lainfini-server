@@ -40,7 +40,14 @@ public class AppProperties implements Serializable {
     private String nexmoFromName;
 
     @Value("${document.location:null}")
-    private String productDocumentStoreLocation;
+    private String documentStoreLocation;
+
+    @Value("${photo.location:null}")
+    private String photoStoreLocation;
+
+    @Value("${photo.resize.to:null}")
+    private String[] photoDefaultResizeTo;
+
 
     @Value("${lainfini.server.address:null}")
     private String serverAddress;

@@ -16,7 +16,7 @@ import java.util.UUID;
  * Created by pfilip on 2.3.17.
  */
 @Data
-public abstract class AbstractProductFileDTO<T extends AbstractFile> extends ResourceSupport implements ReadWriteDatabaseDTO<T>, Serializable {
+public abstract class AbstractFileDTO<T extends AbstractFile> extends ResourceSupport implements ReadWriteDatabaseDTO<T>, Serializable {
 
     protected Long uid;
     protected UUID fileIndex;
