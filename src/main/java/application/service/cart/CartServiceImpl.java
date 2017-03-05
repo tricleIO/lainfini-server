@@ -2,11 +2,12 @@ package application.service.cart;
 
 import application.persistence.entity.Cart;
 import application.persistence.entity.CartHasProduct;
-import application.persistence.entity.User;
 import application.persistence.repository.CartHasProductRepository;
 import application.persistence.repository.CartRepository;
-import application.persistence.repository.UserRepository;
-import application.rest.domain.*;
+import application.rest.domain.CartDTO;
+import application.rest.domain.ItemDTO;
+import application.rest.domain.ProductDTO;
+import application.rest.domain.UserDTO;
 import application.service.AbstractDatabaseService;
 import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
@@ -64,7 +65,7 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
     }
 
     @Override
-    public ServiceResponse<ItemDTO> addProductToCart(Long cartId, ItemDTO item) {
+    public ServiceResponse<CartDTO> addProductToCart(Long cartId, ItemDTO item) {
         ServiceResponse<CartDTO> cartServiceResponse = read(cartId);
         // find cart
         if (!cartServiceResponse.isSuccessful()) {
@@ -76,7 +77,6 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
             ServiceResponse.error(ServiceResponseStatus.PRODUCT_NOT_FOUND);
         }
 
-        CartHasProduct saved;
         Long countExistingPairs = cartHasProductRepository.countByCartIdAndProductId(cartId, item.getProductUid());
         if (countExistingPairs == 0) {
             // add product to cart (to CartHasProduct table)
@@ -84,17 +84,17 @@ public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRep
             cartHasProduct.setCart(cartServiceResponse.getBody().toEntity());
             cartHasProduct.setProduct(productServiceResponse.getBody().toEntity());
             cartHasProduct.setQuantity(item.getQuantity());
-            saved = cartHasProductRepository.save(cartHasProduct);
+            cartHasProductRepository.save(cartHasProduct);
         } else {
             // if pair exists, add number of given products to original number of products
             CartHasProduct foundCartHasProduct = cartHasProductRepository.findByCartIdAndProductId(
                     cartId, item.getProductUid()
             );
             foundCartHasProduct.setQuantity(foundCartHasProduct.getQuantity() + item.getQuantity());
-            saved = cartHasProductRepository.save(foundCartHasProduct);
+            cartHasProductRepository.save(foundCartHasProduct);
         }
-        // success
-        return ServiceResponse.success(saved.toDTO());
+        // success, read patched cart
+        return read(cartId);
     }
 
     // add info about owner (customer)

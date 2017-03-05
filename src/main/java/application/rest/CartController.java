@@ -4,7 +4,6 @@ import application.persistence.entity.Cart;
 import application.rest.domain.CartDTO;
 import application.rest.domain.ItemDTO;
 import application.service.cart.CartService;
-import application.service.response.ServiceResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -34,12 +33,9 @@ public class CartController extends AbstractDatabaseController<Cart, Long, CartD
 
     @RequestMapping(value = "/{cartId}", method = RequestMethod.PATCH)
     public ResponseEntity<?> addProduct(@PathVariable Long cartId, @RequestBody ItemDTO itemDTO) {
-        ServiceResponse<ItemDTO> response = cartService.addProductToCart(cartId, itemDTO);
-        if (response.isSuccessful()) {
-            response.getBody().addLinks();
-            return ResponseEntity.ok(response.getBody());
-        }
-        return new ErrorResponseEntity(response.getStatus());
+        return getSimpleResponseEntity(
+                cartService.addProductToCart(cartId, itemDTO)
+        );
     }
 
     @Override
