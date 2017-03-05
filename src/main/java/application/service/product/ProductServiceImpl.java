@@ -23,6 +23,8 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Random;
 
+// @TODO - refactor this class, eventually add generic support for secured services
+
 @Service
 public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, ProductRepository, ProductDTO> implements ProductService {
 
