@@ -24,6 +24,9 @@ public enum ServiceResponseStatus {
     // material
     MATERIAL_NOT_FOUND("Material with given id was not found.", HttpStatus.NOT_FOUND),
 
+    // size
+    SIZE_NOT_FOUND("Size with given id was not found.", HttpStatus.NOT_FOUND),
+
     INTERNAL_ERROR("Internal error", HttpStatus.INTERNAL_SERVER_ERROR),
     ;
 

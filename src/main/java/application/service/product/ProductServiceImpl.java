@@ -5,15 +5,13 @@ import application.persistence.entity.Product;
 import application.persistence.entity.ProductHasCallToAction;
 import application.persistence.entity.ProductHasFlash;
 import application.persistence.repository.*;
-import application.rest.domain.FlashDTO;
-import application.rest.domain.MaterialDTO;
-import application.rest.domain.ProductDTO;
-import application.rest.domain.ProductHasFlashDTO;
+import application.rest.domain.*;
 import application.service.AbstractDatabaseService;
 import application.service.flash.FlashService;
 import application.service.material.MaterialService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
+import application.service.size.SizeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -51,6 +49,9 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
 
     @Autowired
     private MaterialService materialService;
+
+    @Autowired
+    private SizeService sizeService;
 
     private Random random = new Random();
 
@@ -111,6 +112,16 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
                 return ServiceResponse.error(ServiceResponseStatus.MATERIAL_NOT_FOUND);
             }
             productDTO.setMaterial(materialResponse.getBody());
+        }
+        // add size
+        if (productDTO.getSizeUid() != null) {
+            ServiceResponse<SizeDTO> sizeResponse = sizeService.read(
+                    productDTO.getSizeUid()
+            );
+            if (!sizeResponse.isSuccessful()) {
+                return ServiceResponse.error(ServiceResponseStatus.SIZE_NOT_FOUND);
+            }
+            productDTO.setSize(sizeResponse.getBody());
         }
         return super.create(productDTO);
     }
