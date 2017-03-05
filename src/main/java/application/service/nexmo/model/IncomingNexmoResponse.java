@@ -24,7 +24,7 @@ public class IncomingNexmoResponse implements Serializable {
         @SerializedName("to")
         private String to;
 
-        @SerializedName("message-id")
+        @SerializedName("message-uid")
         private String messageId;
 
         @SerializedName("status")
