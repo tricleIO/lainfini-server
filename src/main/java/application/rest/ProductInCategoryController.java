@@ -2,7 +2,6 @@ package application.rest;
 
 import application.persistence.entity.Product;
 import application.rest.domain.ProductDTO;
-import application.rest.domain.UserDTO;
 import application.service.product.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -23,11 +22,6 @@ public class ProductInCategoryController extends AbstractDatabaseController<Prod
 
     @RequestMapping(value = "/{categoryId}/products", method = RequestMethod.GET)
     public ResponseEntity<?> readProducts(@PathVariable Integer categoryId, Pageable pageable, Principal principal) {
-        UserDTO userDTO = null;
-        if (principal != null) {
-            System.out.println(principal);
-            System.out.println(principal.getName());
-        }
         return getPageResponseEntity(
                 productService.readProductsInCategoryAndSubcategories(categoryId, pageable, principal)
         );
