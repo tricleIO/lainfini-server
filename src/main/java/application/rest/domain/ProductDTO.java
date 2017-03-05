@@ -29,6 +29,8 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private Integer materialUid;
     private SizeDTO size;
     private Integer sizeUid;
+    private UnitDTO unit;
+    private Integer unitUid;
 
     @Override
     public Product toEntity() {
@@ -44,6 +46,9 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         }
         if (size != null) {
             product.setSize(size.toEntity());
+        }
+        if (unit != null) {
+            product.setUnit(unit.toEntity());
         }
         return product;
     }

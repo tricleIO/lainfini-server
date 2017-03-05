@@ -16,6 +16,8 @@ public enum ServiceResponseStatus {
     // cart
     CART_OWNER_NOT_FOUND("Cart owner (customer) with given uid was not found.", HttpStatus.NOT_FOUND),
     CART_NOT_FOUND("Cart with given uid was not found.", HttpStatus.NOT_FOUND),
+
+    // product
     PRODUCT_NOT_FOUND("Product with given uid was not found.", HttpStatus.NOT_FOUND),
 
     // category
@@ -26,6 +28,9 @@ public enum ServiceResponseStatus {
 
     // size
     SIZE_NOT_FOUND("Size with given id was not found.", HttpStatus.NOT_FOUND),
+
+    // unit
+    UNIT_NOT_FOUND("Unit with given id was not found.", HttpStatus.NOT_FOUND),
 
     INTERNAL_ERROR("Internal error", HttpStatus.INTERNAL_SERVER_ERROR),
     ;

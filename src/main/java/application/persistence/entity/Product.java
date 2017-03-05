@@ -44,6 +44,10 @@ public class Product implements DTOConvertable<ProductDTO>, Serializable {
     @JoinColumn(name = "size_id", referencedColumnName = "id")
     private Size size;
 
+    @ManyToOne
+    @JoinColumn(name = "unit_id", referencedColumnName = "id")
+    private Unit unit;
+
     @JsonIgnore
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "product_has_document", joinColumns = {@JoinColumn(name = "product_id")}, inverseJoinColumns = {@JoinColumn(name = "document_id")})
@@ -66,6 +70,9 @@ public class Product implements DTOConvertable<ProductDTO>, Serializable {
         }
         if (size != null) {
             productDTO.setSize(size.toDTO());
+        }
+        if (unit != null) {
+            productDTO.setUnit(unit.toDTO());
         }
         return  productDTO;
     }

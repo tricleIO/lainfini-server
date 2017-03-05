@@ -12,6 +12,7 @@ import application.service.material.MaterialService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.size.SizeService;
+import application.service.unit.UnitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -52,6 +53,9 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
 
     @Autowired
     private SizeService sizeService;
+
+    @Autowired
+    private UnitService unitService;
 
     private Random random = new Random();
 
@@ -122,6 +126,16 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
                 return ServiceResponse.error(ServiceResponseStatus.SIZE_NOT_FOUND);
             }
             productDTO.setSize(sizeResponse.getBody());
+        }
+        // add unit
+        if (productDTO.getUnitUid() != null) {
+            ServiceResponse<UnitDTO> unitResponse = unitService.read(
+                    productDTO.getUnitUid()
+            );
+            if (!unitResponse.isSuccessful()) {
+                return ServiceResponse.error(ServiceResponseStatus.UNIT_NOT_FOUND);
+            }
+            productDTO.setUnit(unitResponse.getBody());
         }
         return super.create(productDTO);
     }
