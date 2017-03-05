@@ -12,6 +12,7 @@ public class MaterialDTO implements ReadWriteDatabaseDTO<Material> {
     @Override
     public Material toEntity() {
         Material material = new Material();
+        material.setId(uid);
         material.setName(name);
         return material;
     }

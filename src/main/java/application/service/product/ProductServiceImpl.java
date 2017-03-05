@@ -6,10 +6,12 @@ import application.persistence.entity.ProductHasCallToAction;
 import application.persistence.entity.ProductHasFlash;
 import application.persistence.repository.*;
 import application.rest.domain.FlashDTO;
+import application.rest.domain.MaterialDTO;
 import application.rest.domain.ProductDTO;
 import application.rest.domain.ProductHasFlashDTO;
 import application.service.AbstractDatabaseService;
 import application.service.flash.FlashService;
+import application.service.material.MaterialService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,6 +48,9 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
 
     @Autowired
     private UserLikesProductRepository userLikesProductRepository;
+
+    @Autowired
+    private MaterialService materialService;
 
     private Random random = new Random();
 
@@ -93,6 +98,21 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
         return ServiceResponse.success(
                 pageWithDtos
         );
+    }
+
+    @Override
+    public ServiceResponse<ProductDTO> create(ProductDTO productDTO) {
+        // add material
+        if (productDTO.getMaterialUid() != null) {
+            ServiceResponse<MaterialDTO> materialResponse = materialService.read(
+                    productDTO.getMaterialUid()
+            );
+            if (!materialResponse.isSuccessful()) {
+                return ServiceResponse.error(ServiceResponseStatus.MATERIAL_NOT_FOUND);
+            }
+            productDTO.setMaterial(materialResponse.getBody());
+        }
+        return super.create(productDTO);
     }
 
     private boolean userLikesProduct(String username, ProductDTO productDTO) {

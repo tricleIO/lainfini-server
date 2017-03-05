@@ -21,7 +21,11 @@ public enum ServiceResponseStatus {
     // category
     PARENT_CATEGORY_NOT_FOUND("Parent category with given uid was not found.", HttpStatus.NOT_FOUND),
 
-    INTERNAL_ERROR("Internal error", HttpStatus.INTERNAL_SERVER_ERROR);
+    // material
+    MATERIAL_NOT_FOUND("Material with given id was not found.", HttpStatus.NOT_FOUND),
+
+    INTERNAL_ERROR("Internal error", HttpStatus.INTERNAL_SERVER_ERROR),
+    ;
 
     private final HttpStatus httpStatus;
     private final String message;
