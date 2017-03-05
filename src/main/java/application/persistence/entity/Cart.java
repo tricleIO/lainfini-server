@@ -31,6 +31,8 @@ public class Cart implements DTOConvertable<CartDTO>, Serializable {
     @Enumerated(EnumType.ORDINAL)
     private CartStatus status;
 
+    private String createdFrom;
+
     @Override
     public CartDTO toDTO() {
         CartDTO cartDTO = new CartDTO();
@@ -38,6 +40,7 @@ public class Cart implements DTOConvertable<CartDTO>, Serializable {
         cartDTO.setOwnerUid(owner.getId());
         cartDTO.setCreatedAt(createdAt);
         cartDTO.setStatus(status);
+        cartDTO.setCreatedFrom(createdFrom);
         return cartDTO;
     }
 

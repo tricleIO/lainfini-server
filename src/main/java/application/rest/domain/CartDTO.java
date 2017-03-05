@@ -24,6 +24,7 @@ public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Car
     private Date createdAt;
     private List<ItemDTO> products = new LinkedList<>();
     private CartStatus status;
+    private String createdFrom;
 
     // for create
     private UserDTO owner;
@@ -37,6 +38,7 @@ public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Car
             cart.setOwner(owner.toEntity());
         }
         cart.setStatus(status);
+        cart.setCreatedFrom(createdFrom);
         return cart;
     }
 
