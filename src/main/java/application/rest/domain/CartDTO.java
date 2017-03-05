@@ -1,7 +1,7 @@
 package application.rest.domain;
 
 import application.persistence.entity.Cart;
-import application.persistence.entity.User;
+import application.persistence.type.CartStatus;
 import application.rest.CartController;
 import application.rest.UserController;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -23,6 +23,7 @@ public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Car
     private Long ownerUid;
     private Date createdAt;
     private List<ItemDTO> products = new LinkedList<>();
+    private CartStatus status;
 
     // for create
     private UserDTO owner;
@@ -35,6 +36,7 @@ public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Car
         if (owner != null) {
             cart.setOwner(owner.toEntity());
         }
+        cart.setStatus(status);
         return cart;
     }
 
