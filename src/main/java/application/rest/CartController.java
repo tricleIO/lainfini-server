@@ -32,7 +32,7 @@ public class CartController extends AbstractDatabaseController<Cart, Long, CartD
         return create(cart);
     }
 
-    @RequestMapping(value = "/{cartId}/products", method = RequestMethod.PATCH)
+    @RequestMapping(value = "/{cartId}", method = RequestMethod.PATCH)
     public ResponseEntity<?> addProduct(@PathVariable Long cartId, @RequestBody ItemDTO itemDTO) {
         ServiceResponse<ItemDTO> response = cartService.addProductToCart(cartId, itemDTO);
         if (response.isSuccessful()) {
