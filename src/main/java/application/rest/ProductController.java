@@ -9,6 +9,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
+
 @RestController
 @RequestMapping(value = "/products")
 public class ProductController extends AbstractDatabaseController<Product, Long, ProductDTO, ProductService> {
@@ -22,8 +24,10 @@ public class ProductController extends AbstractDatabaseController<Product, Long,
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<?> readProduct(@PathVariable Long id) {
-        return read(id);
+    public ResponseEntity<?> readProduct(@PathVariable Long id, Principal principal) {
+        return getSimpleResponseEntity(
+                productService.read(id, principal)
+        );
     }
 
     @RequestMapping(method = RequestMethod.POST)

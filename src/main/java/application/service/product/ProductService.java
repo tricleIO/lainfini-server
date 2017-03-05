@@ -12,6 +12,7 @@ import java.security.Principal;
 
 public interface ProductService extends DatabaseServiceInterface<Product, Long, ProductDTO> {
 
+    ServiceResponse<ProductDTO> read(Long key, Principal principal);
     ServiceResponse<Page<ProductDTO>> readProductsInCategoryAndSubcategories(Integer categoryId, Pageable pageable, Principal principal);
     ServiceResponse<ProductDTO> addFlash(ProductHasFlashDTO productHasFlash);
 

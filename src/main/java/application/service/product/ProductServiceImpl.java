@@ -48,8 +48,17 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
     private Random random = new Random();
 
     @Override
-    public ServiceResponse<ProductDTO> read(Long key) {
-        return super.read(key);
+    public ServiceResponse<ProductDTO> read(Long key, Principal principal) {
+        ServiceResponse<ProductDTO> response = super.read(key);
+        if (response.isSuccessful()) {
+            ProductDTO productDTO = response.getBody();
+            if (principal != null) {
+                if (userLikesProduct(principal.getName(), productDTO)) {
+                    productDTO.setIsFavourite(true);
+                }
+            }
+        }
+        return response;
     }
 
     @Override
@@ -67,7 +76,7 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
         }
 
         return ServiceResponse.success(
-            pageWithDtos
+                pageWithDtos
         );
     }
 
@@ -129,7 +138,7 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
     @Override
     protected void additionalUpdateDto(ProductDTO dto) {
         super.additionalUpdateDto(dto);
-        addRandomCallToAction(dto);
+        // addRandomCallToAction(dto);
         if (productHasFlashRepository.countByProductId(dto.getUid()) > 0) {
             List<ProductHasFlash> productHasFlashList = productHasFlashRepository.findByProductId(dto.getUid());
             List<FlashDTO> flashDTOList = new LinkedList<>();

@@ -17,7 +17,7 @@ public class ItemDTO extends ResourceSupport implements Linkable {
     @Override
     public void addLinks() {
         if (productUid != null) {
-            add(linkTo(methodOn(ProductController.class).readProduct(productUid)).withRel("product"));
+            add(linkTo(methodOn(ProductController.class).readProduct(productUid, null)).withRel("product"));
         }
     }
 }
