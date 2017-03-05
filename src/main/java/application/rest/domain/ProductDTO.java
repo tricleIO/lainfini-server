@@ -25,6 +25,8 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private CallDTO call;
     private List<FlashDTO> flashes;
     private Boolean isFavourite = false;
+    private MaterialDTO material;
+    private Integer materialUid;
 
     @Override
     public Product toEntity() {
@@ -35,6 +37,9 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         product.setShortDescription(shortDescription);
         product.setDescription(description);
         product.setPrice(price);
+        if (material != null) {
+            product.setMaterial(material.toEntity());
+        }
         return product;
     }
 
