@@ -19,8 +19,10 @@ public class ProductController extends AbstractDatabaseController<Product, Long,
     private ProductService productService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> readProducts(Pageable pageable) {
-        return readAll(pageable);
+    public ResponseEntity<?> readProducts(Pageable pageable, Principal principal) {
+        return getPageResponseEntity(
+                productService.readAll(pageable, principal)
+        );
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)

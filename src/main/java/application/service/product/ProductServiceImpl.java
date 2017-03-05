@@ -62,6 +62,19 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
     }
 
     @Override
+    public ServiceResponse<Page<ProductDTO>> readAll(Pageable pageable, Principal principal) {
+        ServiceResponse<Page<ProductDTO>> response = super.readAll(pageable);
+        if (principal != null) {
+            for (ProductDTO productDTO : response.getBody().getContent()) {
+                if (userLikesProduct(principal.getName(), productDTO)) {
+                    productDTO.setIsFavourite(true);
+                }
+            }
+        }
+        return response;
+    }
+
+    @Override
     public ServiceResponse<Page<ProductDTO>> readProductsInCategoryAndSubcategories(Integer categoryId, Pageable pageable, Principal principal) {
         List<Integer> categoryIds = getCategoryAndAllSubcategoriesIds(categoryId);
         Page<Product> pageWithProducts = productRepository.findByCategoryIdIn(categoryIds, pageable);
