@@ -27,6 +27,16 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
     private Long deliveryAddressUid;
     private Long billingAddressUid;
 
+    private String phoneCode;
+    private String phoneNumber;
+
+    private String abraLink;
+
+    private CurrencyDTO currency;
+
+    private String degreeBeforeName;
+    private String degreeAfterName;
+
     @Override
     public User toEntity() {
         User user = new User();
@@ -35,9 +45,17 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
         user.setPassword(password);
         user.setFirstName(firstName);
         user.setLastName(lastName);
+        user.setPhoneCode(phoneCode);
+        user.setPhoneNumber(phoneNumber);
+        if (currency != null) {
+            user.setCurrency(currency.toEntity());
+        }
         if (sex != null) {
             user.setSex(sex.getValue());
         }
+        user.setAbraLink(abraLink);
+        user.setDegreeAfterName(degreeAfterName);
+        user.setDegreeBeforeName(degreeBeforeName);
         return user;
     }
 

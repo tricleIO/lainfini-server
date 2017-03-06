@@ -17,7 +17,6 @@
 package application.persistence.entity;
 
 import application.persistence.DTOConvertable;
-import application.persistence.type.CurrencyEnum;
 import application.persistence.type.LocaleEnum;
 import application.persistence.type.SexEnum;
 import application.persistence.type.StatusEnum;
@@ -82,9 +81,9 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "status", length = 15)
     private StatusEnum statusEnum;
 
-    @Enumerated(EnumType.STRING)
-    @Column(name="currency", length = 10)
-    private CurrencyEnum currency;
+    @ManyToOne
+    @JoinColumn(name = "currency_id", referencedColumnName = "id")
+    private Currency currency;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "locale", length = 10)
@@ -130,6 +129,14 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         if (deliveryAddress != null) {
             userDTO.setDeliveryAddressUid(deliveryAddress.getId());
         }
+        userDTO.setPhoneCode(phoneCode);
+        userDTO.setPhoneNumber(phoneNumber);
+        userDTO.setAbraLink(abraLink);
+        if (currency != null) {
+            userDTO.setCurrency(currency.toDTO());
+        }
+        userDTO.setDegreeAfterName(degreeAfterName);
+        userDTO.setDegreeBeforeName(degreeBeforeName);
         return userDTO;
     }
 
@@ -137,8 +144,8 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         return SexEnum.parseFromDB(this.sex);
     }
 
-    public void setRight(SexEnum sex) {
-        this.sex = sex.getValue();
-    }
+//    public void setSex(SexEnum sex) {
+//        this.sex = sex.getValue();
+//    }
 
 }
