@@ -137,6 +137,10 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
             }
             productDTO.setUnit(unitResponse.getBody());
         }
+
+        if (productDTO.getUrlSlug() == null) {
+            productDTO.setUrlSlug(productDTO.getName().replaceAll("\\s+","-").toLowerCase());
+        }
         return super.create(productDTO);
     }
 

@@ -53,6 +53,8 @@ public class Product implements DTOConvertable<ProductDTO>, Serializable {
     @JoinTable(name = "product_has_document", joinColumns = {@JoinColumn(name = "product_id")}, inverseJoinColumns = {@JoinColumn(name = "document_id")})
     private Set<DocumentFile> documentFiles = new HashSet<DocumentFile>();
 
+    private String urlSlug;
+
     @Override
     public ProductDTO toDTO() {
         ProductDTO productDTO = new ProductDTO();
@@ -74,7 +76,8 @@ public class Product implements DTOConvertable<ProductDTO>, Serializable {
         if (unit != null) {
             productDTO.setUnit(unit.toDTO());
         }
-        return  productDTO;
+        productDTO.setUrlSlug(urlSlug);
+        return productDTO;
     }
 
 }

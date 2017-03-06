@@ -31,6 +31,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private Integer sizeUid;
     private UnitDTO unit;
     private Integer unitUid;
+    private String urlSlug;
 
     @Override
     public Product toEntity() {
@@ -50,6 +51,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         if (unit != null) {
             product.setUnit(unit.toEntity());
         }
+        product.setUrlSlug(urlSlug);
         return product;
     }
 

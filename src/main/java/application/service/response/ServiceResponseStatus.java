@@ -24,13 +24,13 @@ public enum ServiceResponseStatus {
     PARENT_CATEGORY_NOT_FOUND("Parent category with given uid was not found.", HttpStatus.NOT_FOUND),
 
     // material
-    MATERIAL_NOT_FOUND("Material with given id was not found.", HttpStatus.NOT_FOUND),
+    MATERIAL_NOT_FOUND("Material with given uid was not found.", HttpStatus.NOT_FOUND),
 
     // size
-    SIZE_NOT_FOUND("Size with given id was not found.", HttpStatus.NOT_FOUND),
+    SIZE_NOT_FOUND("Size with given uid was not found.", HttpStatus.NOT_FOUND),
 
     // unit
-    UNIT_NOT_FOUND("Unit with given id was not found.", HttpStatus.NOT_FOUND),
+    UNIT_NOT_FOUND("Unit with given uid was not found.", HttpStatus.NOT_FOUND),
 
     INTERNAL_ERROR("Internal error", HttpStatus.INTERNAL_SERVER_ERROR),
     ;
