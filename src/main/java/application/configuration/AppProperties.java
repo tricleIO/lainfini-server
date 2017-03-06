@@ -39,6 +39,12 @@ public class AppProperties implements Serializable {
     @Value("${nexmo.from.name:null}")
     private String nexmoFromName;
 
+    @Value("${stripe.secretKey:null}")
+    private String stripeSecretKey;
+
+    @Value("${stripe.publishableKey:null}")
+    private String stripePublishableKey;
+
     @Value("${document.location:null}")
     private String documentStoreLocation;
 

@@ -78,6 +78,9 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "abra_link")
     private String abraLink;
 
+    @Column(name = "stripe_customer_token")
+    private String stripeToken;
+
     @Enumerated(EnumType.STRING)
     @Column(name = "status", length = 15)
     private StatusEnum statusEnum;
