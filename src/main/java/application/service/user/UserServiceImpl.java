@@ -7,6 +7,7 @@ import application.service.AbstractDatabaseService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -14,6 +15,9 @@ public class UserServiceImpl extends AbstractDatabaseService<User, Long, UserRep
 
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Override
     public UserRepository getRepository() {
@@ -33,6 +37,8 @@ public class UserServiceImpl extends AbstractDatabaseService<User, Long, UserRep
         if (exists(user)) {
             return ServiceResponse.error(ServiceResponseStatus.USERNAME_ALREADY_EXISTS);
         }
+        // bcrypt password
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
         return super.create(user);
     }
 
