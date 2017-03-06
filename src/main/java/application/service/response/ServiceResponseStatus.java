@@ -14,14 +14,26 @@ public enum ServiceResponseStatus {
     USERNAME_ALREADY_EXISTS("User with given username already exists.", HttpStatus.CONFLICT),
 
     // cart
-    CART_OWNER_NOT_FOUND("Cart owner (customer) with given id was not found.", HttpStatus.NOT_FOUND),
-    CART_NOT_FOUND("Cart with given id was not found.", HttpStatus.NOT_FOUND),
-    PRODUCT_NOT_FOUND("Product with given id was not found.", HttpStatus.NOT_FOUND),
+    CART_OWNER_NOT_FOUND("Cart owner (customer) with given uid was not found.", HttpStatus.NOT_FOUND),
+    CART_NOT_FOUND("Cart with given uid was not found.", HttpStatus.NOT_FOUND),
+
+    // product
+    PRODUCT_NOT_FOUND("Product with given uid was not found.", HttpStatus.NOT_FOUND),
 
     // category
-    PARENT_CATEGORY_NOT_FOUND("Parent category with given id was not found.", HttpStatus.NOT_FOUND),
+    PARENT_CATEGORY_NOT_FOUND("Parent category with given uid was not found.", HttpStatus.NOT_FOUND),
 
-    INTERNAL_ERROR("Internal error", HttpStatus.INTERNAL_SERVER_ERROR);
+    // material
+    MATERIAL_NOT_FOUND("Material with given id was not found.", HttpStatus.NOT_FOUND),
+
+    // size
+    SIZE_NOT_FOUND("Size with given id was not found.", HttpStatus.NOT_FOUND),
+
+    // unit
+    UNIT_NOT_FOUND("Unit with given id was not found.", HttpStatus.NOT_FOUND),
+
+    INTERNAL_ERROR("Internal error", HttpStatus.INTERNAL_SERVER_ERROR),
+    ;
 
     private final HttpStatus httpStatus;
     private final String message;

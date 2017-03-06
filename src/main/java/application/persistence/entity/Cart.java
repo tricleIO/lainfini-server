@@ -1,6 +1,7 @@
 package application.persistence.entity;
 
 import application.persistence.DTOConvertable;
+import application.persistence.type.CartStatus;
 import application.rest.domain.CartDTO;
 import lombok.Data;
 
@@ -27,12 +28,19 @@ public class Cart implements DTOConvertable<CartDTO>, Serializable {
     @Column(name = "created_at", nullable = false)
     private Date createdAt;
 
+    @Enumerated(EnumType.ORDINAL)
+    private CartStatus status;
+
+    private String createdFrom;
+
     @Override
     public CartDTO toDTO() {
         CartDTO cartDTO = new CartDTO();
         cartDTO.setUid(id);
         cartDTO.setOwnerUid(owner.getId());
         cartDTO.setCreatedAt(createdAt);
+        cartDTO.setStatus(status);
+        cartDTO.setCreatedFrom(createdFrom);
         return cartDTO;
     }
 

@@ -5,13 +5,14 @@ import application.persistence.entity.Product;
 import application.persistence.entity.ProductHasCallToAction;
 import application.persistence.entity.ProductHasFlash;
 import application.persistence.repository.*;
-import application.rest.domain.FlashDTO;
-import application.rest.domain.ProductDTO;
-import application.rest.domain.ProductHasFlashDTO;
+import application.rest.domain.*;
 import application.service.AbstractDatabaseService;
 import application.service.flash.FlashService;
+import application.service.material.MaterialService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
+import application.service.size.SizeService;
+import application.service.unit.UnitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -22,6 +23,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 import java.util.Random;
+
+// @TODO - refactor this class, eventually add generic support for secured services
 
 @Service
 public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, ProductRepository, ProductDTO> implements ProductService {
@@ -45,11 +48,42 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
     @Autowired
     private UserLikesProductRepository userLikesProductRepository;
 
+    @Autowired
+    private MaterialService materialService;
+
+    @Autowired
+    private SizeService sizeService;
+
+    @Autowired
+    private UnitService unitService;
+
     private Random random = new Random();
 
     @Override
-    public ServiceResponse<ProductDTO> read(Long key) {
-        return super.read(key);
+    public ServiceResponse<ProductDTO> read(Long key, Principal principal) {
+        ServiceResponse<ProductDTO> response = super.read(key);
+        if (response.isSuccessful()) {
+            ProductDTO productDTO = response.getBody();
+            if (principal != null) {
+                if (userLikesProduct(principal.getName(), productDTO)) {
+                    productDTO.setIsFavourite(true);
+                }
+            }
+        }
+        return response;
+    }
+
+    @Override
+    public ServiceResponse<Page<ProductDTO>> readAll(Pageable pageable, Principal principal) {
+        ServiceResponse<Page<ProductDTO>> response = super.readAll(pageable);
+        if (principal != null) {
+            for (ProductDTO productDTO : response.getBody().getContent()) {
+                if (userLikesProduct(principal.getName(), productDTO)) {
+                    productDTO.setIsFavourite(true);
+                }
+            }
+        }
+        return response;
     }
 
     @Override
@@ -67,8 +101,43 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
         }
 
         return ServiceResponse.success(
-            pageWithDtos
+                pageWithDtos
         );
+    }
+
+    @Override
+    public ServiceResponse<ProductDTO> create(ProductDTO productDTO) {
+        // add material
+        if (productDTO.getMaterialUid() != null) {
+            ServiceResponse<MaterialDTO> materialResponse = materialService.read(
+                    productDTO.getMaterialUid()
+            );
+            if (!materialResponse.isSuccessful()) {
+                return ServiceResponse.error(ServiceResponseStatus.MATERIAL_NOT_FOUND);
+            }
+            productDTO.setMaterial(materialResponse.getBody());
+        }
+        // add size
+        if (productDTO.getSizeUid() != null) {
+            ServiceResponse<SizeDTO> sizeResponse = sizeService.read(
+                    productDTO.getSizeUid()
+            );
+            if (!sizeResponse.isSuccessful()) {
+                return ServiceResponse.error(ServiceResponseStatus.SIZE_NOT_FOUND);
+            }
+            productDTO.setSize(sizeResponse.getBody());
+        }
+        // add unit
+        if (productDTO.getUnitUid() != null) {
+            ServiceResponse<UnitDTO> unitResponse = unitService.read(
+                    productDTO.getUnitUid()
+            );
+            if (!unitResponse.isSuccessful()) {
+                return ServiceResponse.error(ServiceResponseStatus.UNIT_NOT_FOUND);
+            }
+            productDTO.setUnit(unitResponse.getBody());
+        }
+        return super.create(productDTO);
     }
 
     private boolean userLikesProduct(String username, ProductDTO productDTO) {
@@ -129,7 +198,7 @@ public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, P
     @Override
     protected void additionalUpdateDto(ProductDTO dto) {
         super.additionalUpdateDto(dto);
-        addRandomCallToAction(dto);
+        // addRandomCallToAction(dto);
         if (productHasFlashRepository.countByProductId(dto.getUid()) > 0) {
             List<ProductHasFlash> productHasFlashList = productHasFlashRepository.findByProductId(dto.getUid());
             List<FlashDTO> flashDTOList = new LinkedList<>();
