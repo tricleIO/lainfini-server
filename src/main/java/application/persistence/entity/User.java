@@ -144,8 +144,8 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         return SexEnum.parseFromDB(this.sex);
     }
 
-//    public void setSex(SexEnum sex) {
-//        this.sex = sex.getValue();
-//    }
+    public void setSex(SexEnum sex) {
+        this.sex = sex.getValue();
+    }
 
 }

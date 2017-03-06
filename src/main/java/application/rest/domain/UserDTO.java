@@ -51,7 +51,7 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
             user.setCurrency(currency.toEntity());
         }
         if (sex != null) {
-            user.setSex(sex.getValue());
+            user.setSex(sex);
         }
         user.setAbraLink(abraLink);
         user.setDegreeAfterName(degreeAfterName);
