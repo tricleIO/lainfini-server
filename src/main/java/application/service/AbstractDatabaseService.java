@@ -1,6 +1,8 @@
 package application.service;
 
 import application.persistence.DTOConvertable;
+import application.persistence.entity.SoftDeletableEntity;
+import application.persistence.type.StatusEnum;
 import application.rest.domain.EntityConvertable;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
@@ -35,8 +37,26 @@ public abstract class AbstractDatabaseService<E extends DTOConvertable<D>, I ext
 
     public ServiceResponse<D> create(D dto) {
         E entity = dto.toEntity();
+        if (entity instanceof SoftDeletableEntity) {
+            ((SoftDeletableEntity) entity).setStatus(StatusEnum.ACTIVE);
+        }
         E savedEntity = getRepository().save(entity);
         return ServiceResponse.success(savedEntity.toDTO());
+    }
+
+    public ServiceResponse<D> delete(I key) {
+        E result = getRepository().findOne(key);
+        if (result == null) {
+            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+        }
+        D dto = result.toDTO();
+        if (result instanceof SoftDeletableEntity) {
+            ((SoftDeletableEntity) result).setStatus(StatusEnum.DELETED);
+            getRepository().save(result);
+        } else {
+            getRepository().delete(key);
+        }
+        return ServiceResponse.success(dto);
     }
 
     protected Page<D> convertPageWithEntitiesToPageWithDtos(Page<E> page, Pageable pageable) {

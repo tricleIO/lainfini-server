@@ -15,21 +15,27 @@ import java.io.Serializable;
 public abstract class AbstractDatabaseController<E extends DTOConvertable<D>, I extends Serializable, D extends ReadWriteDatabaseDTO<E>, S extends DatabaseServiceInterface<E, I, D>> {
 
     protected final ResponseEntity<?> readAll(Pageable pageable) {
-        ServiceResponse<Page<D>> response = getBaseService().readAll(pageable);
-        return getPageResponseEntity(response);
+        return getPageResponseEntity(
+                getBaseService().readAll(pageable)
+        );
     }
 
     protected final ResponseEntity<?> read(I id) {
-        ServiceResponse<D> response = getBaseService().read(
-                id
+        return getSimpleResponseEntity(
+                getBaseService().read(id)
         );
-        return getSimpleResponseEntity(response);
-
     }
 
     protected final ResponseEntity<?> create(D dto) {
-        ServiceResponse<D> response = getBaseService().create(dto);
-        return getSimpleResponseEntity(response);
+        return getSimpleResponseEntity(
+                getBaseService().create(dto)
+        );
+    }
+
+    protected final ResponseEntity<?> delete(I key) {
+        return getSimpleResponseEntity(
+                getBaseService().delete(key)
+        );
     }
 
     protected ResponseEntity<?> getPageResponseEntity(ServiceResponse<Page<D>> response) {

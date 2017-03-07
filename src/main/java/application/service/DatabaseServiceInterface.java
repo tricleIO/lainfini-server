@@ -13,5 +13,6 @@ public interface DatabaseServiceInterface<E extends DTOConvertable<D>, I extends
     ServiceResponse<D> read(I key);
     ServiceResponse<Page<D>> readAll(Pageable pageable);
     ServiceResponse<D> create(D dto);
+    ServiceResponse<D> delete(I key);
 
 }

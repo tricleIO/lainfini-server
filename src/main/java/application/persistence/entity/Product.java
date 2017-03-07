@@ -12,7 +12,7 @@ import java.util.Set;
 
 @Entity
 @Data
-public class Product implements DTOConvertable<ProductDTO>, Serializable {
+public class Product extends SoftDeletableEntity implements DTOConvertable<ProductDTO>, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

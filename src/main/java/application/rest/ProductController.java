@@ -37,6 +37,13 @@ public class ProductController extends AbstractDatabaseController<Product, Long,
         return create(product);
     }
 
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    public ResponseEntity<?> deleteProduct(@PathVariable Long id) {
+        return getSimpleResponseEntity(
+                productService.delete(id)
+        );
+    }
+
     @RequestMapping(value = "/{productId}/flashes", method = RequestMethod.POST)
     public ResponseEntity<?> addFlash(@PathVariable Long productId, @RequestBody ProductHasFlashDTO productHasFlash) {
         productHasFlash.setProductUid(productId);
