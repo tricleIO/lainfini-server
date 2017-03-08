@@ -9,7 +9,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.Transient;
 import java.io.Serializable;
-import java.util.Set;
 import java.util.UUID;
 
 /**
@@ -20,10 +19,12 @@ public abstract class AbstractFileDTO<T extends AbstractFile> extends ResourceSu
 
     protected Long uid;
     protected UUID fileIndex;
+    protected String mimeType;
     protected String fileName;
     protected String fileDescription;
     protected FileStatusEnum fileStatus;
-    protected Set<ProductDTO> products;
+
+    protected ImageFileDTO imageFileDTO;
 
     @Transient
     @JsonIgnore

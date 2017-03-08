@@ -48,12 +48,8 @@ public class AppProperties implements Serializable {
     @Value("${document.location:null}")
     private String documentStoreLocation;
 
-    @Value("${photo.location:null}")
-    private String photoStoreLocation;
-
     @Value("${photo.resize.to:null}")
     private String[] photoDefaultResizeTo;
-
 
     @Value("${lainfini.server.address:null}")
     private String serverAddress;
