@@ -6,7 +6,7 @@ import application.persistence.entity.ImageFile;
 import application.persistence.repository.ImageFileRepository;
 import application.rest.domain.AbstractFileDTO;
 import application.rest.domain.ImageFileDTO;
-import application.service.AbstractDatabaseService;
+import application.service.BaseDatabaseServiceImpl;
 import application.service.response.ServiceResponse;
 import org.imgscalr.Scalr;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ import java.io.IOException;
  * Created by pfilip on 2.3.17.
  */
 @Service
-public class ImageFileServiceImpl  extends AbstractDatabaseService<ImageFile, Long, ImageFileRepository, ImageFileDTO> implements ImageFileService<AbstractFile,AbstractFileDTO> {
+public class ImageFileServiceImpl  extends BaseDatabaseServiceImpl<ImageFile, Long, ImageFileRepository, ImageFileDTO> implements ImageFileService<AbstractFile,AbstractFileDTO> {
 
     @Autowired
     private AppProperties appProperties;

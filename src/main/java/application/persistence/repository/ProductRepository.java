@@ -7,7 +7,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.util.List;
 
-public interface ProductRepository extends PagingAndSortingRepository<Product, Long> {
+public interface ProductRepository extends PagingAndSortingRepository<Product, Long>, SoftDeletableRepository<Product> {
 
     Page<Product> findByCategoryId(Integer categoryId, Pageable pageable);
     Page<Product> findByCategoryIdIn(List<Integer> categoryIds, Pageable pageable);

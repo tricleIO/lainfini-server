@@ -2,8 +2,8 @@ package application.service.address;
 
 import application.persistence.entity.Address;
 import application.rest.domain.AddressDTO;
-import application.service.DatabaseServiceInterface;
+import application.service.BaseDatabaseService;
 
-public interface AddressService extends DatabaseServiceInterface<Address, Long, AddressDTO> {
+public interface AddressService extends BaseDatabaseService<Address, Long, AddressDTO> {
 
 }

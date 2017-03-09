@@ -1,6 +1,7 @@
 package application.rest.domain;
 
 import application.persistence.entity.Product;
+import application.persistence.type.StatusEnum;
 import application.rest.CategoryController;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
@@ -13,7 +14,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Product> {
+public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Product>, IdentifableDTO<Long>, SoftDeletableDTO {
 
     private Long uid;
     private String name;
@@ -32,6 +33,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private UnitDTO unit;
     private Integer unitUid;
     private String urlSlug;
+    private StatusEnum status;
 
     @Override
     public Product toEntity() {
@@ -52,6 +54,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
             product.setUnit(unit.toEntity());
         }
         product.setUrlSlug(urlSlug);
+        product.setStatus(status);
         return product;
     }
 

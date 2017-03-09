@@ -4,7 +4,7 @@ import application.persistence.entity.FAQ;
 import lombok.Data;
 
 @Data
-public class FaqDTO implements ReadWriteDatabaseDTO<FAQ> {
+public class FaqDTO implements ReadWriteDatabaseDTO<FAQ>, IdentifableDTO<Integer> {
 
     private Integer uid;
     private String question;

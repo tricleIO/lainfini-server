@@ -6,7 +6,7 @@ import application.persistence.entity.ProductHasCallToAction;
 import application.persistence.entity.ProductHasFlash;
 import application.persistence.repository.*;
 import application.rest.domain.*;
-import application.service.AbstractDatabaseService;
+import application.service.BaseSoftDeletableDatabaseServiceImpl;
 import application.service.flash.FlashService;
 import application.service.material.MaterialService;
 import application.service.response.ServiceResponse;
@@ -27,7 +27,7 @@ import java.util.Random;
 // @TODO - refactor this class, eventually add generic support for secured services
 
 @Service
-public class ProductServiceImpl extends AbstractDatabaseService<Product, Long, ProductRepository, ProductDTO> implements ProductService {
+public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Product, Long, ProductRepository, ProductDTO> implements ProductService {
 
     @Autowired
     private ProductRepository productRepository;

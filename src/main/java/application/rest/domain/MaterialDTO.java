@@ -4,7 +4,7 @@ import application.persistence.entity.Material;
 import lombok.Data;
 
 @Data
-public class MaterialDTO implements ReadWriteDatabaseDTO<Material> {
+public class MaterialDTO implements ReadWriteDatabaseDTO<Material>, IdentifableDTO<Integer> {
 
     private Integer uid;
     private String name;

@@ -5,7 +5,7 @@ import application.persistence.type.FlashEnum;
 import lombok.Data;
 
 @Data
-public class FlashDTO implements ReadWriteDatabaseDTO<Flash> {
+public class FlashDTO implements ReadWriteDatabaseDTO<Flash>, IdentifableDTO<Integer> {
 
     private Integer uid;
     private FlashEnum type;

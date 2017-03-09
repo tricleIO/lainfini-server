@@ -11,7 +11,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class CategoryDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Category> {
+public class CategoryDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Category>, IdentifableDTO<Integer> {
 
     private Integer uid;
     private String name;

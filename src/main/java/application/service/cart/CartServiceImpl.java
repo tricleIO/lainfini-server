@@ -8,7 +8,7 @@ import application.rest.domain.CartDTO;
 import application.rest.domain.ItemDTO;
 import application.rest.domain.ProductDTO;
 import application.rest.domain.UserDTO;
-import application.service.AbstractDatabaseService;
+import application.service.BaseDatabaseServiceImpl;
 import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
@@ -21,7 +21,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class CartServiceImpl extends AbstractDatabaseService<Cart, Long, CartRepository, CartDTO> implements CartService {
+public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, Long, CartRepository, CartDTO> implements CartService {
 
     @Autowired
     private CartRepository cartRepository;

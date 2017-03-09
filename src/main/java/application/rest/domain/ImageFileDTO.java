@@ -11,7 +11,7 @@ import java.io.Serializable;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ImageFileDTO implements ReadWriteDatabaseDTO<ImageFile>, Serializable {
+public class ImageFileDTO implements ReadWriteDatabaseDTO<ImageFile>, IdentifableDTO<Long>, Serializable {
 
     private AbstractFileDTO abstractFileDTO;
 
@@ -26,6 +26,16 @@ public class ImageFileDTO implements ReadWriteDatabaseDTO<ImageFile>, Serializab
         imageFile.setHeight(height);
         imageFile.setWidth(width);
         return imageFile;
+    }
+
+    @Override
+    public Long getUid() {
+        return abstractFileDTO.getUid();
+    }
+
+    @Override
+    public void setUid(Long key) {
+        abstractFileDTO.setUid(key);
     }
 
 }

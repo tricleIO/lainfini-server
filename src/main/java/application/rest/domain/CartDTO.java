@@ -17,7 +17,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cart> {
+public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cart>, IdentifableDTO<Long> {
 
     private Long uid;
     private Long ownerUid;

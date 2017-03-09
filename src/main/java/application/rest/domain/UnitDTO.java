@@ -4,7 +4,7 @@ import application.persistence.entity.Unit;
 import lombok.Data;
 
 @Data
-public class UnitDTO implements ReadWriteDatabaseDTO<Unit> {
+public class UnitDTO implements ReadWriteDatabaseDTO<Unit>, IdentifableDTO<Integer> {
 
     private Integer uid;
     private String name;

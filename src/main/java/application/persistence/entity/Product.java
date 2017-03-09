@@ -12,7 +12,7 @@ import java.util.Set;
 
 @Entity
 @Data
-public class Product extends SoftDeletableEntity implements DTOConvertable<ProductDTO>, Serializable {
+public class Product extends SoftDeletableEntityImpl implements DTOConvertable<ProductDTO>, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -77,6 +77,7 @@ public class Product extends SoftDeletableEntity implements DTOConvertable<Produ
             productDTO.setUnit(unit.toDTO());
         }
         productDTO.setUrlSlug(urlSlug);
+        productDTO.setStatus(status);
         return productDTO;
     }
 

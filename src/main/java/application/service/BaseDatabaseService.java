@@ -8,7 +8,7 @@ import org.springframework.data.domain.Pageable;
 
 import java.io.Serializable;
 
-public interface DatabaseServiceInterface<E extends DTOConvertable<D>, I extends Serializable, D extends EntityConvertable<E>> {
+public interface BaseDatabaseService<E extends DTOConvertable<D>, I extends Serializable, D extends EntityConvertable<E>> {
 
     ServiceResponse<D> read(I key);
     ServiceResponse<Page<D>> readAll(Pageable pageable);

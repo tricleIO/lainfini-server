@@ -6,7 +6,7 @@ import application.persistence.entity.AbstractFile;
 import application.persistence.repository.AbstractFileRepository;
 import application.persistence.type.FileStatusEnum;
 import application.rest.domain.AbstractFileDTO;
-import application.service.AbstractDatabaseService;
+import application.service.BaseDatabaseServiceImpl;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.util.FileUtil;
@@ -23,7 +23,7 @@ import java.util.UUID;
 /**
  * Created by pfilip on 2.3.17.
  */
-public abstract class AbstractFileServiceImpl<E extends AbstractFile<S> & DTOConvertable<S>,D extends PagingAndSortingRepository<E, Long>,S extends AbstractFileDTO<E>> extends AbstractDatabaseService<E, Long, D, S> {
+public abstract class AbstractFileServiceImpl<E extends AbstractFile<S> & DTOConvertable<S>,D extends PagingAndSortingRepository<E, Long>,S extends AbstractFileDTO<E>> extends BaseDatabaseServiceImpl<E, Long, D, S> {
 
 
     public ServiceResponse<S> findByIndex(UUID fileIndex) {

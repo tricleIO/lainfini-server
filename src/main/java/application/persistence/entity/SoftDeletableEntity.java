@@ -1,17 +1,10 @@
 package application.persistence.entity;
 
-import application.persistence.type.StatusEnum;
-import lombok.Data;
+/**
+ * Created by Johnik on 9.3.2017.
+ */
+public interface SoftDeletableEntity {
+    application.persistence.type.StatusEnum getStatus();
 
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.MappedSuperclass;
-
-@Data
-@MappedSuperclass
-public abstract class SoftDeletableEntity {
-
-    @Enumerated(EnumType.ORDINAL)
-    protected StatusEnum status;
-
+    void setStatus(application.persistence.type.StatusEnum status);
 }

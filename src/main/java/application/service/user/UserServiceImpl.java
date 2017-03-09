@@ -3,7 +3,7 @@ package application.service.user;
 import application.persistence.entity.User;
 import application.persistence.repository.UserRepository;
 import application.rest.domain.UserDTO;
-import application.service.AbstractDatabaseService;
+import application.service.BaseDatabaseServiceImpl;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserServiceImpl extends AbstractDatabaseService<User, Long, UserRepository, UserDTO> implements UserService {
+public class UserServiceImpl extends BaseDatabaseServiceImpl<User, Long, UserRepository, UserDTO> implements UserService {
 
     @Autowired
     private UserRepository userRepository;

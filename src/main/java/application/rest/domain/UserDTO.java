@@ -12,7 +12,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<User> {
+public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<User>, IdentifableDTO<Long> {
 
     private Long uid;
     private String username;
