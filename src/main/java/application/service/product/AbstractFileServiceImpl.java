@@ -11,11 +11,13 @@ import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.util.FileUtil;
 import org.springframework.data.repository.PagingAndSortingRepository;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.UUID;
 
 /**
@@ -24,9 +26,14 @@ import java.util.UUID;
 public abstract class AbstractFileServiceImpl<E extends AbstractFile<S> & DTOConvertable<S>,D extends PagingAndSortingRepository<E, Long>,S extends AbstractFileDTO<E>> extends AbstractDatabaseService<E, Long, D, S> {
 
 
-    public ResponseEntity<?> findByIndex(UUID fileIndex) {
-        AbstractFile byIndex = ((AbstractFileRepository)getRepository()).findByIndex(fileIndex);
-        return ResponseEntity.ok(byIndex);
+    public ServiceResponse<S> findByIndex(UUID fileIndex) {
+        AbstractFile byIndex = ((AbstractFileRepository) getRepository()).findByIndex(fileIndex);
+        if (byIndex != null) {
+            S byIndexDto = (S) byIndex.toDTO();
+            return ServiceResponse.success(byIndexDto);
+        } else {
+            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+        }
     }
 
     @Override
@@ -39,15 +46,20 @@ public abstract class AbstractFileServiceImpl<E extends AbstractFile<S> & DTOCon
         workingDocumentFile.setIndex(UUID.randomUUID());
 
         MultipartFile file = dto.getFile();
-        if (!file.isEmpty()) {
+        if (file != null && !file.isEmpty()) {
             try {
                 String structuredDirectoryFromId = storeLocation + FileUtil.getStructuredDirectoryFromId(workingDocumentFile.getId());
                 if (!FileUtil.checkOrCreatePathToDirectory(structuredDirectoryFromId)) {
                     return ServiceResponse.error(ServiceResponseStatus.INTERNAL_ERROR); //todo změnit response
                 }
-                String filePath = structuredDirectoryFromId +"/"+ file.getOriginalFilename();
+                String filePath = structuredDirectoryFromId +"/"+ workingDocumentFile.getId();
                 File dest = new File(filePath);
                 file.transferTo(dest);
+
+
+                Path path = Paths.get(filePath);
+                String mimeType = Files.probeContentType(path);
+                workingDocumentFile.setMimeType(mimeType);
                 workingDocumentFile.setFileStatus(FileStatusEnum.UPLOADED);
 
                 beforeRecordSaved(dest, workingDocumentFile);

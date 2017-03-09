@@ -11,5 +11,5 @@ import java.util.UUID;
  */
 @NoRepositoryBean
 public interface AbstractFileRepository<E extends AbstractFile> extends PagingAndSortingRepository<E, Long> {
-    AbstractFile findByIndex(UUID fileIndex);
+    E findByIndex(UUID fileIndex);
 }

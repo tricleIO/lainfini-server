@@ -51,7 +51,7 @@ public class Product extends SoftDeletableEntity implements DTOConvertable<Produ
     @JsonIgnore
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "product_has_document", joinColumns = {@JoinColumn(name = "product_id")}, inverseJoinColumns = {@JoinColumn(name = "document_id")})
-    private Set<DocumentFile> documentFiles = new HashSet<DocumentFile>();
+    private Set<ApplicationFile> applicationFiles = new HashSet<ApplicationFile>();
 
     private String urlSlug;
 
