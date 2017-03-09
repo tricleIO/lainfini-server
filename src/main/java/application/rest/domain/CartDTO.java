@@ -11,15 +11,16 @@ import org.springframework.hateoas.ResourceSupport;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.UUID;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cart>, IdentifableDTO<Long> {
+public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cart>, IdentifableDTO<UUID> {
 
-    private Long uid;
+    private UUID uid;
     private Long ownerUid;
     private Date createdAt;
     private List<ItemDTO> products = new LinkedList<>();

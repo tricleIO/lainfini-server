@@ -6,8 +6,10 @@ import application.rest.domain.ItemDTO;
 import application.service.BaseDatabaseService;
 import application.service.response.ServiceResponse;
 
-public interface CartService extends BaseDatabaseService<Cart, Long, CartDTO> {
+import java.util.UUID;
 
-    ServiceResponse<CartDTO> addProductToCart(Long cartId, ItemDTO item);
+public interface CartService extends BaseDatabaseService<Cart, UUID, CartDTO> {
+
+    ServiceResponse<CartDTO> addProductToCart(UUID cartId, ItemDTO item);
 
 }

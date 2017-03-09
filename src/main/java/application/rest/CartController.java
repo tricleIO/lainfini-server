@@ -9,9 +9,11 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.UUID;
+
 @RestController
 @RequestMapping(value = "/carts")
-public class CartController extends AbstractDatabaseController<Cart, Long, CartDTO, CartService> {
+public class CartController extends AbstractDatabaseController<Cart, UUID, CartDTO, CartService> {
 
     @Autowired
     private CartService cartService;
@@ -22,7 +24,7 @@ public class CartController extends AbstractDatabaseController<Cart, Long, CartD
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<?> readCart(@PathVariable Long id) {
+    public ResponseEntity<?> readCart(@PathVariable UUID id) {
         return read(id);
     }
 
@@ -32,7 +34,7 @@ public class CartController extends AbstractDatabaseController<Cart, Long, CartD
     }
 
     @RequestMapping(value = "/{cartId}", method = RequestMethod.PATCH)
-    public ResponseEntity<?> addProduct(@PathVariable Long cartId, @RequestBody ItemDTO itemDTO) {
+    public ResponseEntity<?> addProduct(@PathVariable UUID cartId, @RequestBody ItemDTO itemDTO) {
         return getSimpleResponseEntity(
                 cartService.addProductToCart(cartId, itemDTO)
         );

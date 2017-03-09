@@ -4,11 +4,13 @@ import application.persistence.DTOConvertable;
 import application.persistence.type.CartStatus;
 import application.rest.domain.CartDTO;
 import lombok.Data;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.UUID;
 
 @Entity
 @Table(name = "cart")
@@ -16,8 +18,10 @@ import java.util.Date;
 public class Cart implements DTOConvertable<CartDTO>, Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GenericGenerator(name = "uuid", strategy = "uuid2")
+    @GeneratedValue(generator = "uuid")
+    @Column(name = "id", unique = true, nullable = false)
+    private UUID id;
 
     @OneToOne
     @NotNull

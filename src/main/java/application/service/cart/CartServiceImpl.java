@@ -19,9 +19,10 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
-public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, Long, CartRepository, CartDTO> implements CartService {
+public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRepository, CartDTO> implements CartService {
 
     @Autowired
     private CartRepository cartRepository;
@@ -36,7 +37,7 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, Long, CartRep
     private ProductService productService;
 
     @Override
-    public ServiceResponse<CartDTO> read(Long cartId) {
+    public ServiceResponse<CartDTO> read(UUID cartId) {
         // call original method
         ServiceResponse<CartDTO> response = super.read(cartId);
         // success
@@ -65,7 +66,7 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, Long, CartRep
     }
 
     @Override
-    public ServiceResponse<CartDTO> addProductToCart(Long cartId, ItemDTO item) {
+    public ServiceResponse<CartDTO> addProductToCart(UUID cartId, ItemDTO item) {
         ServiceResponse<CartDTO> cartServiceResponse = read(cartId);
         // find cart
         if (!cartServiceResponse.isSuccessful()) {
@@ -127,7 +128,7 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, Long, CartRep
         return itemDTO;
     }
 
-    private List<CartHasProduct> getCartHasProductsByCartId(Long cartId) {
+    private List<CartHasProduct> getCartHasProductsByCartId(UUID cartId) {
         return cartHasProductRepository.findByCartId(cartId);
     }
 
