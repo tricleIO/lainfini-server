@@ -8,6 +8,7 @@ import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
 import java.util.List;
+import java.util.Set;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
@@ -34,6 +35,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private Integer unitUid;
     private String urlSlug;
     private StatusEnum status;
+    private Set<ApplicationFileDTO> applicationFileDTOS;
 
     @Override
     public Product toEntity() {

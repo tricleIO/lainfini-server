@@ -218,4 +218,14 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         return productRepository;
     }
 
+    @Override
+    public Product saveEntity(Product entity) {
+        return getRepository().save(entity);
+    }
+
+    @Override
+    public Product findOne(Long key) {
+        return getRepository().findOne(key);
+    }
+
 }

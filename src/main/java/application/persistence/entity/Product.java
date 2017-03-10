@@ -2,8 +2,8 @@ package application.persistence.entity;
 
 import application.persistence.DTOConvertable;
 import application.rest.domain.ProductDTO;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -11,11 +11,14 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@Table(name = "product")
 @Data
+@EqualsAndHashCode(exclude="applicationFiles")
 public class Product extends SoftDeletableEntityImpl implements DTOConvertable<ProductDTO>, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", unique = true, nullable = false)
     private Long id;
 
     @Column(name = "name", nullable = false, length = 255)
@@ -48,10 +51,8 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @JoinColumn(name = "unit_id", referencedColumnName = "id")
     private Unit unit;
 
-    @JsonIgnore
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "product_has_document", joinColumns = {@JoinColumn(name = "product_id")}, inverseJoinColumns = {@JoinColumn(name = "document_id")})
-    private Set<ApplicationFile> applicationFiles = new HashSet<ApplicationFile>();
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pf.product", cascade=CascadeType.ALL)
+    private Set<ProductFile> applicationFiles = new HashSet<>();
 
     private String urlSlug;
 
