@@ -20,7 +20,7 @@ public class ImageFileDTO implements ReadWriteDatabaseDTO<ImageFile>, Identifabl
     private Integer height;
 
     @Override
-    public ImageFile toEntity() {
+    public ImageFile toEntity(boolean selectAsParent) {
         ImageFile imageFile = new ImageFile();
 //        imageFile.setFile((AbstractFile) abstractFileDTO.toEntity());
         imageFile.setHeight(height);

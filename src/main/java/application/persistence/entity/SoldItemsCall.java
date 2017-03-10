@@ -14,7 +14,7 @@ public class SoldItemsCall extends CallToAction {
 //    private Integer made;
 
     @Override
-    public CallDTO toDTO() {
+    public CallDTO toDTO(boolean selectAsParent) {
         SoldItemsCallDTO soldItemsCallDTO = new SoldItemsCallDTO();
         soldItemsCallDTO.setId(getId());
         soldItemsCallDTO.setType(getType());

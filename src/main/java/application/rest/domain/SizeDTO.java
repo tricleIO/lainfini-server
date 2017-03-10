@@ -10,7 +10,7 @@ public class SizeDTO implements ReadWriteDatabaseDTO<Size>, IdentifableDTO<Integ
     private String name;
 
     @Override
-    public Size toEntity() {
+    public Size toEntity(boolean selectAsParent) {
         Size size = new Size();
         size.setId(uid);
         size.setName(name);

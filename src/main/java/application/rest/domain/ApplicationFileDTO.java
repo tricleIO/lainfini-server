@@ -12,7 +12,7 @@ import lombok.Data;
 public class ApplicationFileDTO extends AbstractFileDTO<ApplicationFile> {
 
     @Override
-    public ApplicationFile toEntity() {
+    public ApplicationFile toEntity(boolean selectAsParent) {
         ApplicationFile applicationFile = new ApplicationFile();
         applicationFile.setId(uid);
         applicationFile.setFileName(fileName);

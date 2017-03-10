@@ -23,7 +23,7 @@ public class ApplicationFile extends AbstractFile<ApplicationFileDTO> {
     private Set<ProductFile> productFiles;
 
     @Override
-    public ApplicationFileDTO toDTO() { //todo dodělat
+    public ApplicationFileDTO toDTO(boolean selectAsParent) { //todo dodělat
         ApplicationFileDTO applicationFileDTO = new ApplicationFileDTO();
         applicationFileDTO.setUid(getId());
         applicationFileDTO.setFileIndex(getIndex());
@@ -32,7 +32,7 @@ public class ApplicationFile extends AbstractFile<ApplicationFileDTO> {
         applicationFileDTO.setFileDescription(getFileDescription());
         applicationFileDTO.setFileStatus(getFileStatus());
         if (getImageFile() != null) {
-            applicationFileDTO.setImageFileDTO(getImageFile().toDTO());
+            applicationFileDTO.setImageFileDTO(getImageFile().toDTO(false));
         }
         return applicationFileDTO;
     }

@@ -33,7 +33,7 @@ public  class ApplicationFileController extends AbstractFileController<Applicati
 
         for (MultipartFile file : files) {
             ApplicationFileDTO body = fileUploadProcess(file);
-            ApplicationFile applicationFile = body.toEntity();
+            ApplicationFile applicationFile = body.toEntity(false);
             ProductFile productFile = new ProductFile();
             productFile.getPf().setFile(applicationFile);
             productFile.getPf().setProduct(product);

@@ -23,7 +23,7 @@ public class Unit implements DTOConvertable<UnitDTO>, Serializable {
     private String abbr;
 
     @Override
-    public UnitDTO toDTO() {
+    public UnitDTO toDTO(boolean selectAsParent) {
         UnitDTO unitDTO = new UnitDTO();
         unitDTO.setUid(id);
         unitDTO.setName(name);

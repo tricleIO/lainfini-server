@@ -29,7 +29,7 @@ public abstract class AbstractFileServiceImpl<E extends AbstractFile<S> & DTOCon
     public ServiceResponse<S> findByIndex(UUID fileIndex) {
         AbstractFile byIndex = ((AbstractFileRepository) getRepository()).findByIndex(fileIndex);
         if (byIndex != null) {
-            S byIndexDto = (S) byIndex.toDTO();
+            S byIndexDto = (S) byIndex.toDTO(false);
             return ServiceResponse.success(byIndexDto);
         } else {
             return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
@@ -41,7 +41,7 @@ public abstract class AbstractFileServiceImpl<E extends AbstractFile<S> & DTOCon
         String storeLocation = getStoreLocation();
 
         dto.setFileStatus(FileStatusEnum.UPLOADING);
-        E workingDocumentFile = getRepository().save(dto.toEntity());
+        E workingDocumentFile = getRepository().save(dto.toEntity(false));
 
         workingDocumentFile.setIndex(UUID.randomUUID());
 
@@ -65,7 +65,7 @@ public abstract class AbstractFileServiceImpl<E extends AbstractFile<S> & DTOCon
                 beforeRecordSaved(dest, workingDocumentFile);
 
                 workingDocumentFile = getRepository().save(workingDocumentFile);
-                return ServiceResponse.success(workingDocumentFile.toDTO());
+                return ServiceResponse.success(workingDocumentFile.toDTO(false));
             } catch (IOException e) {
                 e.printStackTrace();
                 workingDocumentFile.setFileStatus(FileStatusEnum.NOT_UPLOADED);

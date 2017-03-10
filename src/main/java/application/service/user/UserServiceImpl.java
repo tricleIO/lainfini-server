@@ -29,7 +29,7 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, Long, UserRep
         if (foundUser == null) {
             return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
         }
-        return ServiceResponse.success(foundUser.toDTO());
+        return ServiceResponse.success(foundUser.toDTO(false));
     }
 
     @Override

@@ -33,10 +33,10 @@ public abstract class BaseSoftDeletableDatabaseServiceImpl<E extends DTOConverta
     public ServiceResponse<D> create(D dto) {
         // deny custom id setting
         dto.setUid(null);
-        E entity = dto.toEntity();
+        E entity = dto.toEntity(false);
         entity.setStatus(StatusEnum.ACTIVE);
         E savedEntity = getRepository().save(entity);
-        return ServiceResponse.success(savedEntity.toDTO());
+        return ServiceResponse.success(savedEntity.toDTO(false));
     }
 
     public ServiceResponse<D> delete(I key) {
@@ -46,7 +46,7 @@ public abstract class BaseSoftDeletableDatabaseServiceImpl<E extends DTOConverta
         }
         result.setStatus(StatusEnum.DELETED);
         E softDeletedEntity = getRepository().save(result);
-        return ServiceResponse.success(softDeletedEntity.toDTO());
+        return ServiceResponse.success(softDeletedEntity.toDTO(false));
     }
 
 }
