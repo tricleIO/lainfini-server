@@ -31,7 +31,7 @@ public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Car
     private UserDTO owner;
 
     @Override
-    public Cart toEntity(boolean selectAsParent) {
+    public Cart toEntity(boolean selectAsParent, Object... parentParams) {
         Cart cart = new Cart();
         cart.setId(uid);
         cart.setCreatedAt(new Date());

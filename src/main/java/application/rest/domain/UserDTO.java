@@ -38,7 +38,7 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
     private String degreeAfterName;
 
     @Override
-    public User toEntity(boolean selectAsParent) {
+    public User toEntity(boolean selectAsParent, Object... parentParams) {
         User user = new User();
         user.setId(uid);
         user.setLogin(username);

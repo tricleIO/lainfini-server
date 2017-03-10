@@ -10,7 +10,7 @@ public class MaterialDTO implements ReadWriteDatabaseDTO<Material>, IdentifableD
     private String name;
 
     @Override
-    public Material toEntity(boolean selectAsParent) {
+    public Material toEntity(boolean selectAsParent, Object... parentParams) {
         Material material = new Material();
         material.setId(uid);
         material.setName(name);

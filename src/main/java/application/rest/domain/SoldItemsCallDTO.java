@@ -14,7 +14,7 @@ public class SoldItemsCallDTO extends CallDTO {
     private Integer made;
 
     @Override
-    public CallToAction toEntity(boolean selectAsParent) {
+    public CallToAction toEntity(boolean selectAsParent, Object... parentParams) {
         SoldItemsCall soldItemsCall = new SoldItemsCall();
         soldItemsCall.setType(CallEnum.GOOD_TASTE);
 //        soldItemsCall.setMade(made);
