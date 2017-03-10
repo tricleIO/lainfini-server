@@ -11,7 +11,7 @@ public class FaqDTO implements ReadWriteDatabaseDTO<FAQ>, IdentifableDTO<Integer
     private String answer;
 
     @Override
-    public FAQ toEntity() {
+    public FAQ toEntity(boolean selectAsParent) {
         FAQ faq = new FAQ();
         faq.setQuestion(question);
         faq.setAnswer(answer);

@@ -22,7 +22,7 @@ public class FAQ implements DTOConvertable<FaqDTO> {
     private String answer;
 
     @Override
-    public FaqDTO toDTO() {
+    public FaqDTO toDTO(boolean selectAsParent) {
         FaqDTO faqDTO = new FaqDTO();
         faqDTO.setUid(id);
         faqDTO.setQuestion(question);

@@ -30,7 +30,7 @@ public class ImageFile implements DTOConvertable<ImageFileDTO>, Serializable {
     private Integer height;
 
     @Override
-    public ImageFileDTO toDTO() {
+    public ImageFileDTO toDTO(boolean selectAsParent) {
         ImageFileDTO imageFileDTO = new ImageFileDTO();
         imageFileDTO.setHeight(getHeight());
         imageFileDTO.setWidth(getWidth());

@@ -57,7 +57,7 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     private String urlSlug;
 
     @Override
-    public ProductDTO toDTO() {
+    public ProductDTO toDTO(boolean selectAsParent) {
         ProductDTO productDTO = new ProductDTO();
         productDTO.setUid(id);
         productDTO.setName(name);
@@ -69,13 +69,13 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
             productDTO.setCategoryUid(category.getId());
         }
         if (material != null) {
-            productDTO.setMaterial(material.toDTO());
+            productDTO.setMaterial(material.toDTO(false));
         }
         if (size != null) {
-            productDTO.setSize(size.toDTO());
+            productDTO.setSize(size.toDTO(false));
         }
         if (unit != null) {
-            productDTO.setUnit(unit.toDTO());
+            productDTO.setUnit(unit.toDTO(false));
         }
         productDTO.setUrlSlug(urlSlug);
         productDTO.setStatus(status);

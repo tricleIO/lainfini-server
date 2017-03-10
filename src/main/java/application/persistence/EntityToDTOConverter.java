@@ -14,7 +14,7 @@ public class EntityToDTOConverter<E extends DTOConvertable<T>, T> {
     public List<T> convert() {
         List<T> dtoList = new LinkedList<>();
         for (E entity : entities) {
-            dtoList.add(entity.toDTO());
+            dtoList.add(entity.toDTO(false));
         }
         return dtoList;
     }

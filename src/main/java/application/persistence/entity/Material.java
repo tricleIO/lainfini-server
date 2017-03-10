@@ -20,7 +20,7 @@ public class Material implements DTOConvertable<MaterialDTO> {
     private String name;
 
     @Override
-    public MaterialDTO toDTO() {
+    public MaterialDTO toDTO(boolean selectAsParent) {
         MaterialDTO materialDTO = new MaterialDTO();
         materialDTO.setUid(id);
         materialDTO.setName(name);

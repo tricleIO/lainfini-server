@@ -38,7 +38,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private Set<ApplicationFileDTO> applicationFileDTOS;
 
     @Override
-    public Product toEntity() {
+    public Product toEntity(boolean selectAsParent) {
         Product product = new Product();
         product.setId(uid);
         product.setName(name);
@@ -47,13 +47,13 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         product.setDescription(description);
         product.setPrice(price);
         if (material != null) {
-            product.setMaterial(material.toEntity());
+            product.setMaterial(material.toEntity(false));
         }
         if (size != null) {
-            product.setSize(size.toEntity());
+            product.setSize(size.toEntity(false));
         }
         if (unit != null) {
-            product.setUnit(unit.toEntity());
+            product.setUnit(unit.toEntity(false));
         }
         product.setUrlSlug(urlSlug);
         product.setStatus(status);

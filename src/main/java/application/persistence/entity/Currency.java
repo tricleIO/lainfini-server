@@ -24,7 +24,7 @@ public class Currency implements DTOConvertable<CurrencyDTO>, Serializable {
     private CurrencySymbolPlacementEnum symbolPlacement;
 
     @Override
-    public CurrencyDTO toDTO() {
+    public CurrencyDTO toDTO(boolean selectAsParent) {
         CurrencyDTO currencyDTO = new CurrencyDTO();
         currencyDTO.setUid(id);
         currencyDTO.setName(name);

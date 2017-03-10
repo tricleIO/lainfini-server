@@ -36,7 +36,7 @@ public class Address implements DTOConvertable<AddressDTO>, Serializable {
 
 
     @Override
-    public AddressDTO toDTO() {
+    public AddressDTO toDTO(boolean selectAsParent) {
         AddressDTO addressDTO = new AddressDTO();
         addressDTO.setUid(id);
         addressDTO.setStreet(street);

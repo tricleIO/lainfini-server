@@ -2,6 +2,6 @@ package application.rest.domain;
 
 public interface EntityConvertable<E> {
 
-    E toEntity();
+    E toEntity(boolean selectAsParent);
 
 }

@@ -56,7 +56,7 @@ public abstract class AbstractFile<T extends AbstractFileDTO>  implements DTOCon
 
 
     @Override
-    public T toDTO() {
+    public T toDTO(boolean selectAsParent) {
         T applicationFileDTO = null;
         try {
             applicationFileDTO = getDTOClass().newInstance();

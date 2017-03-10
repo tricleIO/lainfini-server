@@ -82,8 +82,8 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
         if (countExistingPairs == 0) {
             // add product to cart (to CartHasProduct table)
             CartHasProduct cartHasProduct = new CartHasProduct();
-            cartHasProduct.setCart(cartServiceResponse.getBody().toEntity());
-            cartHasProduct.setProduct(productServiceResponse.getBody().toEntity());
+            cartHasProduct.setCart(cartServiceResponse.getBody().toEntity(false));
+            cartHasProduct.setProduct(productServiceResponse.getBody().toEntity(false));
             cartHasProduct.setQuantity(item.getQuantity());
             cartHasProductRepository.save(cartHasProduct);
         } else {
