@@ -22,7 +22,7 @@ public class AddressDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private String country;
 
     @Override
-    public Address toEntity(boolean selectAsParent) {
+    public Address toEntity(boolean selectAsParent, Object... parentParams) {
         Address address = new Address();
         address.setId(uid);
         address.setStreet(street);

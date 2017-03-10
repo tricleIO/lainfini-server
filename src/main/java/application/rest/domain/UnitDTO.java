@@ -11,7 +11,7 @@ public class UnitDTO implements ReadWriteDatabaseDTO<Unit>, IdentifableDTO<Integ
     private String abbr;
 
     @Override
-    public Unit toEntity(boolean selectAsParent) {
+    public Unit toEntity(boolean selectAsParent, Object... parentParams) {
         Unit unit = new Unit();
         unit.setId(uid);
         unit.setName(name);

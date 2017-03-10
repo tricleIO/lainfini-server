@@ -13,6 +13,7 @@ public interface BaseDatabaseService<E extends DTOConvertable<D>, I extends Seri
     ServiceResponse<D> read(I key);
     ServiceResponse<Page<D>> readAll(Pageable pageable);
     ServiceResponse<D> create(D dto);
+    ServiceResponse<D> patch(D dto);
     ServiceResponse<D> delete(I key);
 
 }

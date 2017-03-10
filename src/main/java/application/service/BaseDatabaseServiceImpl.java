@@ -22,7 +22,7 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
         if (result == null) {
             return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
         }
-        D dto = result.toDTO(false);
+        D dto = result.toDTO(true);
         additionalUpdateDto(dto);
         return ServiceResponse.success(dto);
     }
@@ -37,18 +37,18 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
     public ServiceResponse<D> create(D dto) {
         // deny custom id setting
         dto.setUid(null);
-        E entity = dto.toEntity(false);
+        E entity = dto.toEntity(true);
         E savedEntity = getRepository().save(entity);
-        return ServiceResponse.success(savedEntity.toDTO(false));
+        return ServiceResponse.success(savedEntity.toDTO(true));
     }
 
     public ServiceResponse<D> patch(D dto) {
         if (!getRepository().exists(dto.getUid())) {
             return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
         }
-        E entity = dto.toEntity(false);
+        E entity = dto.toEntity(true);
         E patchedEntity = getRepository().save(entity);
-        return ServiceResponse.success(patchedEntity.toDTO(false));
+        return ServiceResponse.success(patchedEntity.toDTO(true));
     }
 
     public ServiceResponse<D> delete(I key) {
@@ -56,7 +56,7 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
         if (result == null) {
             return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
         }
-        D dto = result.toDTO(false);
+        D dto = result.toDTO(true);
         getRepository().delete(key);
         return ServiceResponse.success(dto);
     }
@@ -64,7 +64,7 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
     protected Page<D> convertPageWithEntitiesToPageWithDtos(Page<E> page, Pageable pageable) {
         List<D> dtoList = new LinkedList<>();
         for (E currentEntity : page.getContent()) {
-            D currentDTO = currentEntity.toDTO(false);
+            D currentDTO = currentEntity.toDTO(true);
             additionalUpdateDto(currentDTO);
             dtoList.add(currentDTO);
         }

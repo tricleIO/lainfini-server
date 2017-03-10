@@ -13,7 +13,7 @@ public class CurrencyDTO implements ReadWriteDatabaseDTO<Currency> {
     private CurrencySymbolPlacementEnum symbolPlacement;
 
     @Override
-    public Currency toEntity(boolean selectAsParent) {
+    public Currency toEntity(boolean selectAsParent, Object... parentParams) {
         Currency currency = new Currency();
         currency.setId(uid);
         currency.setName(name);

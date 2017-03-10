@@ -119,7 +119,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     }
 
     @Override
-    public UserDTO toDTO(boolean selectAsParent) {
+    public UserDTO toDTO(boolean selectAsParent, Object... parentParams) {
         UserDTO userDTO = new UserDTO();
         userDTO.setUid(id);
         userDTO.setUsername(login);

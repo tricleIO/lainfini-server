@@ -19,7 +19,7 @@ public class ImageFile implements DTOConvertable<ImageFileDTO>, Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "file_id",referencedColumnName = "id")
     private AbstractFile file;
 
@@ -30,8 +30,14 @@ public class ImageFile implements DTOConvertable<ImageFileDTO>, Serializable {
     private Integer height;
 
     @Override
-    public ImageFileDTO toDTO(boolean selectAsParent) {
+    public ImageFileDTO toDTO(boolean selectAsParent, Object... parentParams) {
         ImageFileDTO imageFileDTO = new ImageFileDTO();
+        if (parentParams!= null && parentParams[0] != null)
+        {
+//         imageFileDTO.setAbstractFileDTO((AbstractFileDTO) parentParams[0]);
+        } else if (selectAsParent) {
+            imageFileDTO.setAbstractFileDTO(file.toDTO(false));
+        }
         imageFileDTO.setHeight(getHeight());
         imageFileDTO.setWidth(getWidth());
         return imageFileDTO;
