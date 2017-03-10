@@ -17,4 +17,7 @@ public interface ProductService extends BaseDatabaseService<Product, Long, Produ
     ServiceResponse<Page<ProductDTO>> readProductsInCategoryAndSubcategories(Integer categoryId, Pageable pageable, Principal principal);
     ServiceResponse<ProductDTO> addFlash(ProductHasFlashDTO productHasFlash);
 
+    Product saveEntity(Product entity);
+    Product findOne(Long key);
+
 }

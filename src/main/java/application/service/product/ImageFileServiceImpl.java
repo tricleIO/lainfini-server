@@ -32,7 +32,7 @@ public class ImageFileServiceImpl  extends BaseDatabaseServiceImpl<ImageFile, Lo
     @Override
     public ServiceResponse<AbstractFileDTO> create(AbstractFileDTO dto) {
         ImageFileDTO imageFile = new ImageFileDTO();
-        imageFile.setAbstractFileDTO(dto);
+//        imageFile.setAbstractFileDTO(dto);
         imageFile.setHeight(100);
         imageFile.setWidth(100);
         dto.setImageFileDTO(imageFile);

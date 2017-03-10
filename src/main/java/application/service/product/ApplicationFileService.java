@@ -8,4 +8,7 @@ import application.service.BaseDatabaseService;
  * Created by pfilip on 2.3.17.
  */
 public interface ApplicationFileService extends BaseDatabaseService<ApplicationFile, Long, ApplicationFileDTO>,AbstractFileService<ApplicationFile,ApplicationFileDTO> {
+
+    ApplicationFile saveEntity(ApplicationFile entity);
+    ApplicationFile findOne(Long key);
 }

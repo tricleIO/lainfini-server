@@ -2,23 +2,25 @@ package application.persistence.entity;
 
 import application.rest.domain.ApplicationFileDTO;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-import javax.persistence.CascadeType;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
 import java.util.Set;
 
 /**
  * Created by pfilip on 2.3.17.
  */
 @Entity
-@Data
 @DiscriminatorValue("F")
+@Data
+@EqualsAndHashCode(exclude = "productFiles")
 public class ApplicationFile extends AbstractFile<ApplicationFileDTO> {
 
-    @ManyToMany(cascade= CascadeType.ALL, mappedBy="applicationFiles")
-    private Set<Product> products;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "pf.file")
+    private Set<ProductFile> productFiles;
 
     @Override
     public ApplicationFileDTO toDTO() { //todo dodělat
@@ -39,4 +41,5 @@ public class ApplicationFile extends AbstractFile<ApplicationFileDTO> {
     protected Class<ApplicationFileDTO> getDTOClass() {
         return ApplicationFileDTO.class;
     }
+
 }

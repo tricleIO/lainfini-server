@@ -29,4 +29,14 @@ public class ApplicationFileServiceImpl extends AbstractFileServiceImpl<Applicat
     public ApplicationFileRepository getRepository() {
         return applicationFileRepository;
     }
+
+    @Override
+    public ApplicationFile saveEntity(ApplicationFile entity) {
+        return getRepository().save(entity);
+    }
+
+    @Override
+    public ApplicationFile findOne(Long key) {
+        return getRepository().findOne(key);
+    }
 }
