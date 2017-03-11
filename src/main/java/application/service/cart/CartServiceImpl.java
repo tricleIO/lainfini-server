@@ -42,7 +42,7 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
         ServiceResponse<CartDTO> response = super.read(cartId);
         // success
         if (response.isSuccessful()) {
-            // add items of products to cart
+            // add items of productFiles to cart
             CartDTO cart = response.getBody();
             addItemsToCart(cart, getCartHasProductsByCartId(cartId));
         }
@@ -55,7 +55,7 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
         ServiceResponse<Page<CartDTO>> response = super.readAll(pageable);
         // success
         if (response.isSuccessful()) {
-            // add items of products to carts
+            // add items of productFiles to carts
             List<CartDTO> carts = response.getBody().getContent();
             // @TODO - try think about optimization number of queries
             for (CartDTO cart : carts) {
@@ -82,12 +82,12 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
         if (countExistingPairs == 0) {
             // add product to cart (to CartHasProduct table)
             CartHasProduct cartHasProduct = new CartHasProduct();
-            cartHasProduct.setCart(cartServiceResponse.getBody().toEntity());
-            cartHasProduct.setProduct(productServiceResponse.getBody().toEntity());
+            cartHasProduct.setCart(cartServiceResponse.getBody().toEntity(false));
+            cartHasProduct.setProduct(productServiceResponse.getBody().toEntity(false));
             cartHasProduct.setQuantity(item.getQuantity());
             cartHasProductRepository.save(cartHasProduct);
         } else {
-            // if pair exists, add number of given products to original number of products
+            // if pair exists, add number of given productFiles to original number of productFiles
             CartHasProduct foundCartHasProduct = cartHasProductRepository.findByCartIdAndProductId(
                     cartId, item.getProductUid()
             );

@@ -24,7 +24,7 @@ public class Flash implements DTOConvertable<FlashDTO> {
     private String message;
 
     @Override
-    public FlashDTO toDTO() {
+    public FlashDTO toDTO(boolean selectAsParent, Object... parentParams) {
         FlashDTO flashDTO = new FlashDTO();
         flashDTO.setUid(id);
         flashDTO.setType(type);

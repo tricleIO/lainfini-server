@@ -33,7 +33,7 @@ public class CartHasProduct implements DTOConvertable<ItemDTO>, Serializable {
     private Integer quantity;
 
     @Override
-    public ItemDTO toDTO() {
+    public ItemDTO toDTO(boolean selectAsParent, Object... parentParams) {
         ItemResponseDTO item = new ItemResponseDTO();
         item.setProductUid(product.getId());
         item.setQuantity(quantity);

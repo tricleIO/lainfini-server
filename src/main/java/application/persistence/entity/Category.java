@@ -23,7 +23,7 @@ public class Category implements DTOConvertable<CategoryDTO>, Serializable {
     private Category parent;
 
     @Override
-    public CategoryDTO toDTO() {
+    public CategoryDTO toDTO(boolean selectAsParent, Object... parentParams) {
         CategoryDTO categoryDTO = new CategoryDTO();
         categoryDTO.setUid(id);
         categoryDTO.setName(name);

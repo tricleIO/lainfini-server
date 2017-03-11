@@ -29,7 +29,7 @@ public abstract class AbstractFileServiceImpl<E extends AbstractFile<S> & DTOCon
     public ServiceResponse<S> findByIndex(UUID fileIndex) {
         AbstractFile byIndex = ((AbstractFileRepository) getRepository()).findByIndex(fileIndex);
         if (byIndex != null) {
-            S byIndexDto = (S) byIndex.toDTO();
+            S byIndexDto = (S) byIndex.toDTO(false);
             return ServiceResponse.success(byIndexDto);
         } else {
             return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
@@ -41,42 +41,43 @@ public abstract class AbstractFileServiceImpl<E extends AbstractFile<S> & DTOCon
         String storeLocation = getStoreLocation();
 
         dto.setFileStatus(FileStatusEnum.UPLOADING);
-        E workingDocumentFile = getRepository().save(dto.toEntity());
 
-        workingDocumentFile.setIndex(UUID.randomUUID());
+        dto = super.create(dto).getBody();
+
+        dto.setFileIndex(UUID.randomUUID());
 
         MultipartFile file = dto.getFile();
         if (file != null && !file.isEmpty()) {
             try {
-                String structuredDirectoryFromId = storeLocation + FileUtil.getStructuredDirectoryFromId(workingDocumentFile.getId());
+                String structuredDirectoryFromId = storeLocation + FileUtil.getStructuredDirectoryFromId(dto.getUid());
                 if (!FileUtil.checkOrCreatePathToDirectory(structuredDirectoryFromId)) {
                     return ServiceResponse.error(ServiceResponseStatus.INTERNAL_ERROR); //todo změnit response
                 }
-                String filePath = structuredDirectoryFromId +"/"+ workingDocumentFile.getId();
+                String filePath = structuredDirectoryFromId +"/"+ dto.getUid();
                 File dest = new File(filePath);
                 file.transferTo(dest);
 
 
                 Path path = Paths.get(filePath);
                 String mimeType = Files.probeContentType(path);
-                workingDocumentFile.setMimeType(mimeType);
-                workingDocumentFile.setFileStatus(FileStatusEnum.UPLOADED);
+                dto.setMimeType(mimeType);
+                dto.setFileStatus(FileStatusEnum.UPLOADED);
 
-                beforeRecordSaved(dest, workingDocumentFile);
+                beforeRecordSaved(dest, dto);
 
-                workingDocumentFile = getRepository().save(workingDocumentFile);
-                return ServiceResponse.success(workingDocumentFile.toDTO());
+                ServiceResponse<S> patch = patch(dto);
+                return ServiceResponse.success(patch.getBody());
             } catch (IOException e) {
                 e.printStackTrace();
-                workingDocumentFile.setFileStatus(FileStatusEnum.NOT_UPLOADED);
-                getRepository().save(workingDocumentFile);
+                dto.setFileStatus(FileStatusEnum.NOT_UPLOADED);
+                patch(dto);
             }
         }
 
         return ServiceResponse.error(ServiceResponseStatus.INTERNAL_ERROR);  //todo změnit response
     }
 
-    protected void beforeRecordSaved(File file, E workingDocumentFile) {
+    protected void beforeRecordSaved(File file, S workingDocumentFile) {
 
     }
 

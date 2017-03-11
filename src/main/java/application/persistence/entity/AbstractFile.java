@@ -3,7 +3,9 @@ package application.persistence.entity;
 import application.persistence.DTOConvertable;
 import application.persistence.type.FileStatusEnum;
 import application.rest.domain.AbstractFileDTO;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -54,9 +56,13 @@ public abstract class AbstractFile<T extends AbstractFileDTO>  implements DTOCon
     @OneToOne(mappedBy = "file",cascade = CascadeType.ALL)
     private ImageFile imageFile;
 
+    @Transient
+    @JsonIgnore
+    private MultipartFile file;
+
 
     @Override
-    public T toDTO() {
+    public T toDTO(boolean selectAsParent, Object... parentParams) {
         T applicationFileDTO = null;
         try {
             applicationFileDTO = getDTOClass().newInstance();
@@ -71,6 +77,10 @@ public abstract class AbstractFile<T extends AbstractFileDTO>  implements DTOCon
         applicationFileDTO.setMimeType(getMimeType());
         applicationFileDTO.setFileDescription(getFileDescription());
         applicationFileDTO.setFileStatus(getFileStatus());
+        applicationFileDTO.setFile(getFile());
+        if (selectAsParent && getImageFile() != null) {
+            applicationFileDTO.setImageFileDTO(getImageFile().toDTO(false, applicationFileDTO));
+        }
         return (T) applicationFileDTO;
     }
 

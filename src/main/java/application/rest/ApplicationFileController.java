@@ -1,11 +1,11 @@
 package application.rest;
 
 import application.persistence.entity.ApplicationFile;
-import application.persistence.entity.Product;
-import application.persistence.entity.ProductFile;
 import application.rest.domain.ApplicationFileDTO;
+import application.rest.domain.ProductDTO;
 import application.service.product.ApplicationFileService;
 import application.service.product.ProductService;
+import application.service.response.ServiceResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/file")
-public  class ApplicationFileController extends AbstractFileController<ApplicationFile, ApplicationFileDTO, ApplicationFileService> {
+public class ApplicationFileController extends AbstractFileController<ApplicationFile, ApplicationFileDTO, ApplicationFileService> {
 
     @Autowired
     private ApplicationFileService applicationFileService;
@@ -29,19 +29,17 @@ public  class ApplicationFileController extends AbstractFileController<Applicati
     public ResponseEntity<?> uploadProductDocument(@PathVariable Long productId, @RequestParam("file") MultipartFile[] files) throws IllegalAccessException, InstantiationException {
         List<ApplicationFileDTO> applicationFileDTOS = new ArrayList<>();
 
-        Product product = productService.findOne(productId);
-
-        for (MultipartFile file : files) {
-            ApplicationFileDTO body = fileUploadProcess(file);
-            ApplicationFile applicationFile = body.toEntity();
-            ProductFile productFile = new ProductFile();
-            productFile.getPf().setFile(applicationFile);
-            productFile.getPf().setProduct(product);
-            applicationFileDTOS.add(body);
-            product.getApplicationFiles().add(productFile);
+        ServiceResponse<ProductDTO> read = productService.read(productId);
+        if (read.getBody() != null) {
+            ProductDTO productDTO = read.getBody();
+            for (MultipartFile file : files) {
+                ApplicationFileDTO applicationFileDTO = fileUploadProcess(file);
+                applicationFileDTOS.add(applicationFileDTO);
+                productDTO.getApplicationFileDTOS().add(applicationFileDTO);
+            }
+            productService.patch(productDTO);
         }
 
-        productService.saveEntity(product);
         return new ResponseEntity(applicationFileDTOS, HttpStatus.OK);
     }
 

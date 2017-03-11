@@ -21,12 +21,12 @@ public class CategoryDTO extends ResourceSupport implements ReadWriteDatabaseDTO
     private CategoryDTO parentCategory;
 
     @Override
-    public Category toEntity() {
+    public Category toEntity(boolean selectAsParent, Object... parentParams) {
         Category category = new Category();
         category.setId(uid);
         category.setName(name);
         if (parentCategory != null) {
-            category.setParent(parentCategory.toEntity());
+            category.setParent(parentCategory.toEntity(false));
         }
         return category;
     }

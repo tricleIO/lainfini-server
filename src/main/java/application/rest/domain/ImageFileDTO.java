@@ -1,5 +1,6 @@
 package application.rest.domain;
 
+import application.persistence.entity.AbstractFile;
 import application.persistence.entity.ImageFile;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
@@ -20,9 +21,11 @@ public class ImageFileDTO implements ReadWriteDatabaseDTO<ImageFile>, Identifabl
     private Integer height;
 
     @Override
-    public ImageFile toEntity() {
+    public ImageFile toEntity(boolean selectAsParent, Object... parentParams) {
         ImageFile imageFile = new ImageFile();
-//        imageFile.setFile((AbstractFile) abstractFileDTO.toEntity());
+        if (abstractFileDTO != null) {
+            imageFile.setFile((AbstractFile) parentParams[0]);
+        }
         imageFile.setHeight(height);
         imageFile.setWidth(width);
         return imageFile;

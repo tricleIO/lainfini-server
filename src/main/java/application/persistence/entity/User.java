@@ -119,7 +119,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     }
 
     @Override
-    public UserDTO toDTO() {
+    public UserDTO toDTO(boolean selectAsParent, Object... parentParams) {
         UserDTO userDTO = new UserDTO();
         userDTO.setUid(id);
         userDTO.setUsername(login);
@@ -136,7 +136,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         userDTO.setPhoneNumber(phoneNumber);
         userDTO.setAbraLink(abraLink);
         if (currency != null) {
-            userDTO.setCurrency(currency.toDTO());
+            userDTO.setCurrency(currency.toDTO(false));
         }
         userDTO.setDegreeAfterName(degreeAfterName);
         userDTO.setDegreeBeforeName(degreeBeforeName);

@@ -1,12 +1,14 @@
 package application.rest.domain;
 
 import application.persistence.entity.Product;
+import application.persistence.entity.ProductFile;
 import application.persistence.type.StatusEnum;
 import application.rest.CategoryController;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -38,7 +40,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private Set<ApplicationFileDTO> applicationFileDTOS;
 
     @Override
-    public Product toEntity() {
+    public Product toEntity(boolean selectAsParent, Object... parentParams) {
         Product product = new Product();
         product.setId(uid);
         product.setName(name);
@@ -47,14 +49,28 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         product.setDescription(description);
         product.setPrice(price);
         if (material != null) {
-            product.setMaterial(material.toEntity());
+            product.setMaterial(material.toEntity(false));
         }
         if (size != null) {
-            product.setSize(size.toEntity());
+            product.setSize(size.toEntity(false));
         }
         if (unit != null) {
-            product.setUnit(unit.toEntity());
+            product.setUnit(unit.toEntity(false));
         }
+
+
+        if (selectAsParent) {
+            HashSet<ProductFile> productFiles = new HashSet<>();
+
+            for (ApplicationFileDTO applicationFileDTO : applicationFileDTOS) {
+                ProductFile productFile = new ProductFile();
+                productFile.getPf().setFile(applicationFileDTO.toEntity(false));
+                productFile.getPf().setProduct(product);
+                product.getImages().add(productFile);
+            }
+        }
+
+
         product.setUrlSlug(urlSlug);
         product.setStatus(status);
         return product;

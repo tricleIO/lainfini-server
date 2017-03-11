@@ -163,8 +163,8 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
             }
 
             ProductHasFlash productHasFlash = new ProductHasFlash();
-            productHasFlash.setFlash(flashResponse.getBody().toEntity());
-            productHasFlash.setProduct(productResponse.getBody().toEntity());
+            productHasFlash.setFlash(flashResponse.getBody().toEntity(false));
+            productHasFlash.setProduct(productResponse.getBody().toEntity(false));
             productHasFlashRepository.save(productHasFlash);
         }
 
@@ -195,7 +195,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
             List<ProductHasCallToAction> productHasCallToAction = productHasCallToActionRepository.findByProductId(product.getUid());
             int index = random.nextInt(productHasCallToAction.size());
             ProductHasCallToAction randomProductHasCallToAction = productHasCallToAction.get(index);
-            product.setCall(randomProductHasCallToAction.getCallToAction().toDTO());
+            product.setCall(randomProductHasCallToAction.getCallToAction().toDTO(false));
         }
     }
 
@@ -207,7 +207,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
             List<ProductHasFlash> productHasFlashList = productHasFlashRepository.findByProductId(dto.getUid());
             List<FlashDTO> flashDTOList = new LinkedList<>();
             for (ProductHasFlash productHasFlash : productHasFlashList) {
-                flashDTOList.add(productHasFlash.getFlash().toDTO());
+                flashDTOList.add(productHasFlash.getFlash().toDTO(false));
             }
             dto.setFlashes(flashDTOList);
         }
@@ -216,16 +216,6 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     @Override
     public ProductRepository getRepository() {
         return productRepository;
-    }
-
-    @Override
-    public Product saveEntity(Product entity) {
-        return getRepository().save(entity);
-    }
-
-    @Override
-    public Product findOne(Long key) {
-        return getRepository().findOne(key);
     }
 
 }

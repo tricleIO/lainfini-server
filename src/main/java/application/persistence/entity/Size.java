@@ -20,7 +20,7 @@ public class Size implements DTOConvertable<SizeDTO> {
     private String name;
 
     @Override
-    public SizeDTO toDTO() {
+    public SizeDTO toDTO(boolean selectAsParent, Object... parentParams) {
         SizeDTO sizeDTO = new SizeDTO();
         sizeDTO.setUid(id);
         sizeDTO.setName(name);

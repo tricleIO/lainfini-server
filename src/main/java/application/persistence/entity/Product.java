@@ -1,6 +1,7 @@
 package application.persistence.entity;
 
 import application.persistence.DTOConvertable;
+import application.rest.domain.ApplicationFileDTO;
 import application.rest.domain.ProductDTO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,7 +14,7 @@ import java.util.Set;
 @Entity
 @Table(name = "product")
 @Data
-@EqualsAndHashCode(exclude="applicationFiles")
+@EqualsAndHashCode(exclude="images")
 public class Product extends SoftDeletableEntityImpl implements DTOConvertable<ProductDTO>, Serializable {
 
     @Id
@@ -52,12 +53,15 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     private Unit unit;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "pf.product", cascade=CascadeType.ALL)
-    private Set<ProductFile> applicationFiles = new HashSet<>();
+    private Set<ProductFile> images = new HashSet<>();
+
+    @Transient
+    private Set<ApplicationFile> applicationFiles;
 
     private String urlSlug;
 
     @Override
-    public ProductDTO toDTO() {
+    public ProductDTO toDTO(boolean selectAsParent, Object... parentParams) {
         ProductDTO productDTO = new ProductDTO();
         productDTO.setUid(id);
         productDTO.setName(name);
@@ -69,13 +73,20 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
             productDTO.setCategoryUid(category.getId());
         }
         if (material != null) {
-            productDTO.setMaterial(material.toDTO());
+            productDTO.setMaterial(material.toDTO(false));
         }
         if (size != null) {
-            productDTO.setSize(size.toDTO());
+            productDTO.setSize(size.toDTO(false));
         }
         if (unit != null) {
-            productDTO.setUnit(unit.toDTO());
+            productDTO.setUnit(unit.toDTO(false));
+        }
+        if(selectAsParent) {
+            HashSet<ApplicationFileDTO> applicationFileDTOS = new HashSet<>(images.size());
+            for (ProductFile image : images) {
+                applicationFileDTOS.add(image.getPf().getFile().toDTO(false));
+            }
+            productDTO.setApplicationFileDTOS(applicationFileDTOS);
         }
         productDTO.setUrlSlug(urlSlug);
         productDTO.setStatus(status);

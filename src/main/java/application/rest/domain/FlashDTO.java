@@ -13,7 +13,7 @@ public class FlashDTO implements ReadWriteDatabaseDTO<Flash>, IdentifableDTO<Int
     private String message;
 
     @Override
-    public Flash toEntity() {
+    public Flash toEntity(boolean selectAsParent, Object... parentParams) {
         Flash flash = new Flash();
         flash.setId(uid);
         flash.setType(type);

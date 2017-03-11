@@ -2,6 +2,6 @@ package application.persistence;
 
 public interface DTOConvertable<T> {
 
-    T toDTO();
+    T toDTO(boolean selectAsParent, Object... parentParams);
 
 }

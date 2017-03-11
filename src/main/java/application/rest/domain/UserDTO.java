@@ -38,7 +38,7 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
     private String degreeAfterName;
 
     @Override
-    public User toEntity() {
+    public User toEntity(boolean selectAsParent, Object... parentParams) {
         User user = new User();
         user.setId(uid);
         user.setLogin(username);
@@ -48,7 +48,7 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
         user.setPhoneCode(phoneCode);
         user.setPhoneNumber(phoneNumber);
         if (currency != null) {
-            user.setCurrency(currency.toEntity());
+            user.setCurrency(currency.toEntity(false));
         }
         if (sex != null) {
             user.setSex(sex);

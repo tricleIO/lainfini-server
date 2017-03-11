@@ -38,7 +38,7 @@ public class Cart implements DTOConvertable<CartDTO>, Serializable {
     private String createdFrom;
 
     @Override
-    public CartDTO toDTO() {
+    public CartDTO toDTO(boolean selectAsParent, Object... parentParams) {
         CartDTO cartDTO = new CartDTO();
         cartDTO.setUid(id);
         cartDTO.setOwnerUid(owner.getId());
