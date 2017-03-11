@@ -10,8 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+
 @Service
-public class UserServiceImpl extends BaseDatabaseServiceImpl<User, Long, UserRepository, UserDTO> implements UserService {
+public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRepository, UserDTO> implements UserService {
 
     @Autowired
     private UserRepository userRepository;

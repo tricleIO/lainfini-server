@@ -7,14 +7,16 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
+import java.util.UUID;
+
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<User>, IdentifableDTO<Long> {
+public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<User>, IdentifableDTO<UUID> {
 
-    private Long uid;
+    private UUID uid;
     private String username;
     private String password;
     private Long customerUid;

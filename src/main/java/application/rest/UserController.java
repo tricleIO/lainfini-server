@@ -8,9 +8,11 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.UUID;
+
 @RestController
 @RequestMapping(value = "/users")
-public class UserController extends AbstractDatabaseController<User, Long, UserDTO, UserService> {
+public class UserController extends AbstractDatabaseController<User, UUID, UserDTO, UserService> {
 
     @Autowired
     private UserService userService;
@@ -21,7 +23,7 @@ public class UserController extends AbstractDatabaseController<User, Long, UserD
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<?> readUser(@PathVariable Long id) {
+    public ResponseEntity<?> readUser(@PathVariable UUID id) {
         return read(id);
     }
 

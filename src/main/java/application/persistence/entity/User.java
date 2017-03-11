@@ -23,6 +23,7 @@ import application.persistence.type.StatusEnum;
 import application.rest.domain.UserDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -30,6 +31,7 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
 
 @Entity
 @Table(name = "customer")
@@ -37,8 +39,10 @@ import java.util.Set;
 public class User implements DTOConvertable<UserDTO>, Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    @GenericGenerator(name = "uuid", strategy = "uuid2")
+    @GeneratedValue(generator = "uuid")
+    @Column(name = "id", unique = true, nullable = false, columnDefinition = "BINARY(16)")
+    private UUID id;
 
     @OneToMany(mappedBy = "customer")
     private List<LinkedAccount> linkedAccountList;

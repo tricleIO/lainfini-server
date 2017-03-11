@@ -21,7 +21,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cart>, IdentifableDTO<UUID> {
 
     private UUID uid;
-    private Long ownerUid;
+    private UUID ownerUid;
     private Date createdAt;
     private List<ItemDTO> products = new LinkedList<>();
     private CartStatus status;
