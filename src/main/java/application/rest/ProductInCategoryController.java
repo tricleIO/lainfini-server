@@ -12,10 +12,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.security.Principal;
+import java.util.UUID;
 
 @RestController
 @RequestMapping(value = "/categories")
-public class ProductInCategoryController extends AbstractDatabaseController<Product, Long, ProductDTO, ProductService> {
+public class ProductInCategoryController extends AbstractDatabaseController<Product, UUID, ProductDTO, ProductService> {
 
     @Autowired
     private ProductService productService;

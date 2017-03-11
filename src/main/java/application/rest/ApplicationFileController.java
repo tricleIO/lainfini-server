@@ -14,6 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping(value = "/file")
@@ -26,7 +27,7 @@ public class ApplicationFileController extends AbstractFileController<Applicatio
     private ProductService productService;
 
     @RequestMapping(value = "/product/{productId}", method = RequestMethod.POST)
-    public ResponseEntity<?> uploadProductDocument(@PathVariable Long productId, @RequestParam("file") MultipartFile[] files) throws IllegalAccessException, InstantiationException {
+    public ResponseEntity<?> uploadProductDocument(@PathVariable UUID productId, @RequestParam("file") MultipartFile[] files) throws IllegalAccessException, InstantiationException {
         List<ApplicationFileDTO> applicationFileDTOS = new ArrayList<>();
 
         ServiceResponse<ProductDTO> read = productService.read(productId);

@@ -10,10 +10,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
+import java.util.UUID;
 
 @RestController
 @RequestMapping(value = "/products")
-public class ProductController extends AbstractDatabaseController<Product, Long, ProductDTO, ProductService> {
+public class ProductController extends AbstractDatabaseController<Product, UUID, ProductDTO, ProductService> {
 
     @Autowired
     private ProductService productService;
@@ -26,7 +27,7 @@ public class ProductController extends AbstractDatabaseController<Product, Long,
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<?> readProduct(@PathVariable Long id, Principal principal) {
+    public ResponseEntity<?> readProduct(@PathVariable UUID id, Principal principal) {
         return getSimpleResponseEntity(
                 productService.read(id, principal)
         );
@@ -38,14 +39,14 @@ public class ProductController extends AbstractDatabaseController<Product, Long,
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public ResponseEntity<?> deleteProduct(@PathVariable Long id) {
+    public ResponseEntity<?> deleteProduct(@PathVariable UUID id) {
         return getSimpleResponseEntity(
                 productService.delete(id)
         );
     }
 
     @RequestMapping(value = "/{productId}/flashes", method = RequestMethod.POST)
-    public ResponseEntity<?> addFlash(@PathVariable Long productId, @RequestBody ProductHasFlashDTO productHasFlash) {
+    public ResponseEntity<?> addFlash(@PathVariable UUID productId, @RequestBody ProductHasFlashDTO productHasFlash) {
         productHasFlash.setProductUid(productId);
         return getSimpleResponseEntity(
                 productService.addFlash(productHasFlash)

@@ -11,15 +11,16 @@ import org.springframework.hateoas.ResourceSupport;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Product>, IdentifableDTO<Long>, SoftDeletableDTO {
+public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Product>, IdentifableDTO<UUID>, SoftDeletableDTO {
 
-    private Long uid;
+    private UUID uid;
     private String name;
     private String ean;
     private String shortDescription;
@@ -39,6 +40,8 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private StatusEnum status;
     private Set<ApplicationFileDTO> applicationFileDTOS;
 
+    private CategoryDTO category;
+
     @Override
     public Product toEntity(boolean selectAsParent, Object... parentParams) {
         Product product = new Product();
@@ -48,6 +51,9 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         product.setShortDescription(shortDescription);
         product.setDescription(description);
         product.setPrice(price);
+        if (category != null) {
+            product.setCategory(category.toEntity(false));
+        }
         if (material != null) {
             product.setMaterial(material.toEntity(false));
         }

@@ -5,11 +5,13 @@ import application.rest.domain.ApplicationFileDTO;
 import application.rest.domain.ProductDTO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.UUID;
 
 @Entity
 @Table(name = "product")
@@ -18,9 +20,10 @@ import java.util.Set;
 public class Product extends SoftDeletableEntityImpl implements DTOConvertable<ProductDTO>, Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", unique = true, nullable = false)
-    private Long id;
+    @GenericGenerator(name = "uuid", strategy = "uuid2")
+    @GeneratedValue(generator = "uuid")
+    @Column(name = "id", unique = true, nullable = false, columnDefinition = "BINARY(16)")
+    private UUID id;
 
     @Column(name = "name", nullable = false, length = 255)
     private String name;

@@ -2,10 +2,12 @@ package application.rest.domain;
 
 import lombok.Data;
 
+import java.util.UUID;
+
 @Data
 public class ProductHasFlashDTO {
 
-    private Long productUid;
+    private UUID productUid;
     private Integer flashUid;
 
 }

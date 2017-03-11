@@ -7,6 +7,7 @@ import application.persistence.entity.ProductHasFlash;
 import application.persistence.repository.*;
 import application.rest.domain.*;
 import application.service.BaseSoftDeletableDatabaseServiceImpl;
+import application.service.category.CategoryService;
 import application.service.flash.FlashService;
 import application.service.material.MaterialService;
 import application.service.response.ServiceResponse;
@@ -19,15 +20,12 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.security.Principal;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-import java.util.Random;
+import java.util.*;
 
 // @TODO - refactor this class, eventually add generic support for secured services
 
 @Service
-public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Product, Long, ProductRepository, ProductDTO> implements ProductService {
+public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Product, UUID, ProductRepository, ProductDTO> implements ProductService {
 
     @Autowired
     private ProductRepository productRepository;
@@ -57,10 +55,13 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     @Autowired
     private UnitService unitService;
 
+    @Autowired
+    private CategoryService categoryService;
+
     private Random random = new Random();
 
     @Override
-    public ServiceResponse<ProductDTO> read(Long key, Principal principal) {
+    public ServiceResponse<ProductDTO> read(UUID key, Principal principal) {
         ServiceResponse<ProductDTO> response = super.read(key);
         if (response.isSuccessful()) {
             ProductDTO productDTO = response.getBody();
@@ -107,6 +108,16 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
 
     @Override
     public ServiceResponse<ProductDTO> create(ProductDTO productDTO) {
+        // add category
+        if (productDTO.getCategoryUid() != null) {
+            ServiceResponse<CategoryDTO> categoryResponse = categoryService.read(
+                    productDTO.getCategoryUid()
+            );
+            if (!categoryResponse.isSuccessful()) {
+                return ServiceResponse.error(ServiceResponseStatus.CATEGORY_NOT_FOUND);
+            }
+            productDTO.setCategory(categoryResponse.getBody());
+        }
         // add material
         if (productDTO.getMaterialUid() != null) {
             ServiceResponse<MaterialDTO> materialResponse = materialService.read(
