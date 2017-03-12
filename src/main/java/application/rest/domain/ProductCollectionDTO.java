@@ -3,7 +3,8 @@ package application.rest.domain;
 import application.persistence.entity.ProductCollection;
 import lombok.Data;
 
-import java.util.Set;
+import java.util.LinkedList;
+import java.util.List;
 
 @Data
 public class ProductCollectionDTO implements ReadWriteDatabaseDTO<ProductCollection>, IdentifableDTO<Integer> {
@@ -11,7 +12,7 @@ public class ProductCollectionDTO implements ReadWriteDatabaseDTO<ProductCollect
     private Integer uid;
     private String name;
     private String urlSlug;
-    private Set<ProductCollectionItemDTO> items;
+    private List<ProductCollectionItemDTO> items = new LinkedList<>();
 
     @Override
     public ProductCollection toEntity(boolean selectAsParent, Object... parentParams) {

@@ -32,12 +32,12 @@ public abstract class BaseSoftDeletableDatabaseServiceImpl<E extends DTOConverta
 
     public ServiceResponse<D> create(D dto) {
         ServiceResponse serviceResponse = super.create(dto);
-        if (serviceResponse.isSuccessful()) {
-            E entity = dto.toEntity(false);
-            entity.setStatus(StatusEnum.ACTIVE);
-            E patchedEntity = getRepository().save(entity);
-            serviceResponse = ServiceResponse.success(patchedEntity.toDTO(false));
-        }
+//        if (serviceResponse.isSuccessful()) {
+//            E entity = dto.toEntity(true);
+//            entity.setStatus(StatusEnum.ACTIVE);
+//            E patchedEntity = getRepository().save(entity);
+//            serviceResponse = ServiceResponse.success(patchedEntity.toDTO(false));
+//        }
         return serviceResponse;
     }
 

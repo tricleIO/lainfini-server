@@ -33,8 +33,10 @@ public enum ServiceResponseStatus {
     // unit
     UNIT_NOT_FOUND("Unit with given uid was not found.", HttpStatus.NOT_FOUND),
 
-    INTERNAL_ERROR("Internal error", HttpStatus.INTERNAL_SERVER_ERROR),
-    ;
+
+    COLLECTION_NOT_FOUND("Product collection with given id was not found.", HttpStatus.NOT_FOUND),
+
+    INTERNAL_ERROR("Internal error", HttpStatus.INTERNAL_SERVER_ERROR);
 
     private final HttpStatus httpStatus;
     private final String message;

@@ -54,17 +54,19 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         product.setShortDescription(shortDescription);
         product.setDescription(description);
         product.setPrice(price);
-        if (category != null) {
-            product.setCategory(category.toEntity(false));
-        }
-        if (material != null) {
-            product.setMaterial(material.toEntity(false));
-        }
-        if (size != null) {
-            product.setSize(size.toEntity(false));
-        }
-        if (unit != null) {
-            product.setUnit(unit.toEntity(false));
+        if (selectAsParent) {
+            if (category != null) {
+                product.setCategory(category.toEntity(false));
+            }
+            if (material != null) {
+                product.setMaterial(material.toEntity(false));
+            }
+            if (size != null) {
+                product.setSize(size.toEntity(false));
+            }
+            if (unit != null) {
+                product.setUnit(unit.toEntity(false));
+            }
         }
 
         if (selectAsParent) {

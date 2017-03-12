@@ -5,7 +5,7 @@ import application.rest.domain.ProductCollectionDTO;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.Set;
+import java.util.List;
 
 @Entity
 @Table(name = "product_collection")
@@ -22,7 +22,7 @@ public class ProductCollection implements DTOConvertable<ProductCollectionDTO> {
     private String urlSlug;
 
     @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "productCollection")
-    private Set<ProductCollectionItem> items;
+    private List<ProductCollectionItem> items;
 
 
     @Override
