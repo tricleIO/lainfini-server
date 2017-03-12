@@ -29,7 +29,7 @@ public abstract class AbstractFileServiceImpl<E extends AbstractFile<S> & DTOCon
     public ServiceResponse<S> findByIndex(UUID fileIndex) {
         AbstractFile byIndex = ((AbstractFileRepository) getRepository()).findByIndex(fileIndex);
         if (byIndex != null) {
-            S byIndexDto = (S) byIndex.toDTO(false);
+            S byIndexDto = (S) byIndex.toDTO(true);
             return ServiceResponse.success(byIndexDto);
         } else {
             return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
