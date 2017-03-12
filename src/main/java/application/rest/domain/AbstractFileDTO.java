@@ -3,6 +3,7 @@ package application.rest.domain;
 import application.persistence.entity.AbstractFile;
 import application.persistence.type.FileStatusEnum;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.hateoas.ResourceSupport;
@@ -26,6 +27,7 @@ public abstract class AbstractFileDTO<T extends AbstractFile> extends ResourceSu
     protected String fileDescription;
     protected FileStatusEnum fileStatus;
 
+    @JsonProperty("metadata")
     protected ImageFileDTO imageFileDTO;
 
     @Transient

@@ -1,5 +1,7 @@
 package application.persistence.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.Embeddable;
 import javax.persistence.ManyToOne;
 import java.io.Serializable;
@@ -12,9 +14,11 @@ public class ProductFileId implements Serializable {
 
 
     @ManyToOne
+    @JsonIgnore
     private Product product;
 
     @ManyToOne
+    @JsonIgnore
     private ApplicationFile file;
 
 

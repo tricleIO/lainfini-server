@@ -82,9 +82,11 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
             productDTO.setUnit(unit.toDTO(false));
         }
         if(selectAsParent) {
-            HashSet<ApplicationFileDTO> applicationFileDTOS = new HashSet<>(images.size());
+            Set<ApplicationFileDTO> applicationFileDTOS = new HashSet<>(images.size());
             for (ProductFile image : images) {
-                applicationFileDTOS.add(image.getPf().getFile().toDTO(false));
+                ApplicationFileDTO applicationFileDTO = image.getPf().getFile().toDTO(false);
+                applicationFileDTO.setSequenceNumber(image.getSequenceNumber());
+                applicationFileDTOS.add(applicationFileDTO);
             }
             productDTO.setApplicationFileDTOS(applicationFileDTOS);
         }

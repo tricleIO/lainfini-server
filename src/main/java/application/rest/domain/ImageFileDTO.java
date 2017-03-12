@@ -33,7 +33,9 @@ public class ImageFileDTO implements ReadWriteDatabaseDTO<ImageFile>, Identifabl
 
     @Override
     public Long getUid() {
-        return abstractFileDTO.getUid();
+        if (abstractFileDTO != null) {
+            return abstractFileDTO.getUid();
+        } else return null;
     }
 
     @Override

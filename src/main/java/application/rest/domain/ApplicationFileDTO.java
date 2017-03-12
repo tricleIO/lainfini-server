@@ -17,6 +17,8 @@ public class ApplicationFileDTO extends AbstractFileDTO<ApplicationFile> {
 
     protected Set<ProductDTO> products;
 
+    protected Integer sequenceNumber;
+
     @Override
     public ApplicationFile toEntity(boolean selectAsParent, Object... parentParams) {
         ApplicationFile applicationFile = new ApplicationFile();
@@ -30,6 +32,7 @@ public class ApplicationFileDTO extends AbstractFileDTO<ApplicationFile> {
         if (selectAsParent && imageFileDTO != null && imageFileDTO.getAbstractFileDTO() != null) {
             applicationFile.setImageFile(imageFileDTO.toEntity(false, applicationFile));
         }
+
         return  applicationFile;
     }
 

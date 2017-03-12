@@ -5,6 +5,7 @@ import application.persistence.entity.ProductFile;
 import application.persistence.type.StatusEnum;
 import application.rest.CategoryController;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
@@ -37,6 +38,8 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private Integer unitUid;
     private String urlSlug;
     private StatusEnum status;
+
+    @JsonProperty("images")
     private Set<ApplicationFileDTO> applicationFileDTOS;
 
     @Override
