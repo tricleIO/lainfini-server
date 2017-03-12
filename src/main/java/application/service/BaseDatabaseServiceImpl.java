@@ -35,11 +35,21 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
     }
 
     public ServiceResponse<D> create(D dto) {
-        // deny custom id setting
-        dto.setUid(null);
+        ServiceResponseStatus status = getCreateAdditionalDataLoaderBatch(dto).tryReadAll();
+        if (status != ServiceResponseStatus.OK) {
+            return ServiceResponse.error(status);
+        }
+        beforeCreate(dto);
         E entity = dto.toEntity(true);
         E savedEntity = getRepository().save(entity);
         return ServiceResponse.success(savedEntity.toDTO(true));
+    }
+
+    protected void beforeCreate(D dto) {
+    }
+
+    protected AdditionalDataManipulatorBatch<D> getCreateAdditionalDataLoaderBatch(D dto) {
+        return new AdditionalDataManipulatorBatch(dto);
     }
 
     public ServiceResponse<D> patch(D dto) {

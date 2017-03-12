@@ -64,15 +64,16 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
             product.setUnit(unit.toEntity(false));
         }
 
-
         if (selectAsParent) {
             HashSet<ProductFile> productFiles = new HashSet<>();
 
-            for (ApplicationFileDTO applicationFileDTO : applicationFileDTOS) {
-                ProductFile productFile = new ProductFile();
-                productFile.getPf().setFile(applicationFileDTO.toEntity(false));
-                productFile.getPf().setProduct(product);
-                product.getImages().add(productFile);
+            if (applicationFileDTOS != null) {
+                for (ApplicationFileDTO applicationFileDTO : applicationFileDTOS) {
+                    ProductFile productFile = new ProductFile();
+                    productFile.getPf().setFile(applicationFileDTO.toEntity(false));
+                    productFile.getPf().setProduct(product);
+                    product.getImages().add(productFile);
+                }
             }
         }
 

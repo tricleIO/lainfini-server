@@ -31,12 +31,14 @@ public abstract class BaseSoftDeletableDatabaseServiceImpl<E extends DTOConverta
     }
 
     public ServiceResponse<D> create(D dto) {
-        // deny custom id setting
-        dto.setUid(null);
-        E entity = dto.toEntity(false);
-        entity.setStatus(StatusEnum.ACTIVE);
-        E savedEntity = getRepository().save(entity);
-        return ServiceResponse.success(savedEntity.toDTO(false));
+        ServiceResponse serviceResponse = super.create(dto);
+        if (serviceResponse.isSuccessful()) {
+            E entity = dto.toEntity(false);
+            entity.setStatus(StatusEnum.ACTIVE);
+            E patchedEntity = getRepository().save(entity);
+            serviceResponse = ServiceResponse.success(patchedEntity.toDTO(false));
+        }
+        return serviceResponse;
     }
 
     public ServiceResponse<D> delete(I key) {
