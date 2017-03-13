@@ -2,12 +2,16 @@ package application.persistence.entity;
 
 import application.persistence.DTOConvertable;
 import application.rest.domain.ProductCollectionItemDTO;
-import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
 public class ProductCollectionItem implements DTOConvertable<ProductCollectionItemDTO> {
 
     @Id
@@ -32,4 +36,23 @@ public class ProductCollectionItem implements DTOConvertable<ProductCollectionIt
         productCollectionItemDTO.setProductUid(product.getId());
         return productCollectionItemDTO;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        ProductCollectionItem that = (ProductCollectionItem) o;
+
+        if (!product.getId().equals(that.product.getId())) return false;
+        return productCollection.getId().equals(that.productCollection.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        int result = product.getId().hashCode();
+        result = 31 * result + productCollection.getId().hashCode();
+        return result;
+    }
+
 }
