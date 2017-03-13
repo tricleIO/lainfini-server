@@ -312,10 +312,17 @@
             </properties>
         </profile>
         <profile>
-            <id>development</id>
+            <id>stage</id>
             <properties>
-                <finalname>_dev</finalname>
-                <build.profile.id>development</build.profile.id>
+                <finalname>_stg</finalname>
+                <build.profile.id>stage</build.profile.id>
+            </properties>
+        </profile>
+        <profile>
+            <id>testing</id>
+            <properties>
+                <finalname>_tst</finalname>
+                <build.profile.id>testing</build.profile.id>
             </properties>
         </profile>
     </profiles>
