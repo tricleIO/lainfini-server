@@ -246,6 +246,7 @@
     </properties>
 
     <build>
+        <finalName>${build.profile.id}##${version}</finalName>
         <filters>
             <filter>src/main/filters/${build.profile.id}.properties</filter>
         </filters>
