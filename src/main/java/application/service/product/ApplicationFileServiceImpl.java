@@ -7,6 +7,8 @@ import application.rest.domain.ApplicationFileDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+
 /**
  * Created by pfilip on 2.3.17.
  */
@@ -26,17 +28,15 @@ public class ApplicationFileServiceImpl extends AbstractFileServiceImpl<Applicat
     }
 
     @Override
+    public ApplicationFile findEntityByIndex(UUID fileIndex) {
+        return getRepository().findByIndex(fileIndex);
+    }
+
+    @Override
     public ApplicationFileRepository getRepository() {
         return applicationFileRepository;
     }
 
-    @Override
-    public ApplicationFile saveEntity(ApplicationFile entity) {
-        return getRepository().save(entity);
-    }
 
-    @Override
-    public ApplicationFile findOne(Long key) {
-        return getRepository().findOne(key);
-    }
+
 }

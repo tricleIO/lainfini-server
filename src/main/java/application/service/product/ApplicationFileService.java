@@ -9,6 +9,5 @@ import application.service.BaseDatabaseService;
  */
 public interface ApplicationFileService extends BaseDatabaseService<ApplicationFile, Long, ApplicationFileDTO>,AbstractFileService<ApplicationFile,ApplicationFileDTO> {
 
-    ApplicationFile saveEntity(ApplicationFile entity);
-    ApplicationFile findOne(Long key);
+
 }
