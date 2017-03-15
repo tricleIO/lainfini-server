@@ -39,13 +39,19 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
         if (status != ServiceResponseStatus.OK) {
             return ServiceResponse.error(status);
         }
-        beforeCreate(dto);
+        doBeforeConvertInCreate(dto);
         E entity = dto.toEntity(true);
+        // additional update of entity
+        doAfterConvertInCreate(entity);
         E savedEntity = getRepository().save(entity);
         return ServiceResponse.success(savedEntity.toDTO(true));
     }
 
-    protected void beforeCreate(D dto) {
+    protected void doBeforeConvertInCreate(D dto) {
+    }
+
+    protected void doAfterConvertInCreate(E entity) {
+
     }
 
     protected AdditionalDataManipulatorBatch<D> getCreateAdditionalDataLoaderBatch(D dto) {

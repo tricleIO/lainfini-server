@@ -30,17 +30,6 @@ public abstract class BaseSoftDeletableDatabaseServiceImpl<E extends DTOConverta
         return ServiceResponse.success(pageWithDTOs);
     }
 
-    public ServiceResponse<D> create(D dto) {
-        ServiceResponse serviceResponse = super.create(dto);
-        if (serviceResponse.isSuccessful()) {
-            E entity = dto.toEntity(true);
-            entity.setStatus(StatusEnum.ACTIVE);
-            E patchedEntity = getRepository().save(entity);
-            serviceResponse = ServiceResponse.success(patchedEntity.toDTO(false));
-        }
-        return serviceResponse;
-    }
-
     public ServiceResponse<D> delete(I key) {
         E result = getRepository().findOne(key);
         if (result == null) {
@@ -49,6 +38,11 @@ public abstract class BaseSoftDeletableDatabaseServiceImpl<E extends DTOConverta
         result.setStatus(StatusEnum.DELETED);
         E softDeletedEntity = getRepository().save(result);
         return ServiceResponse.success(softDeletedEntity.toDTO(false));
+    }
+
+    @Override
+    protected void doAfterConvertInCreate(E entity) {
+        entity.setStatus(StatusEnum.ACTIVE);
     }
 
 }

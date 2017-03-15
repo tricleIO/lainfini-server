@@ -20,6 +20,7 @@ public enum ServiceResponseStatus {
 
     // product
     PRODUCT_NOT_FOUND("Product with given uid was not found.", HttpStatus.NOT_FOUND),
+    PRODUCT_SLUG_NOT_FOUND("Product with given slug was not found.", HttpStatus.NOT_FOUND),
 
     // category
     CATEGORY_NOT_FOUND("Category with given uid was not found.", HttpStatus.NOT_FOUND),

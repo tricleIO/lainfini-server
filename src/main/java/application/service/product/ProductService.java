@@ -13,6 +13,7 @@ import java.util.UUID;
 
 public interface ProductService extends BaseDatabaseService<Product, UUID, ProductDTO> {
 
+    ServiceResponse<ProductDTO> read(String urlSlug);
     ServiceResponse<ProductDTO> read(UUID key, Principal principal);
     ServiceResponse<Page<ProductDTO>> readAll(Pageable pageable, Principal principal);
     ServiceResponse<Page<ProductDTO>> readProductsInCategoryAndSubcategories(Integer categoryId, Pageable pageable, Principal principal);
