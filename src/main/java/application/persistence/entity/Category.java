@@ -22,6 +22,9 @@ public class Category implements DTOConvertable<CategoryDTO>, Serializable {
     @ManyToOne
     private Category parent;
 
+    @Column(name = "priority")
+    private Integer priority;
+
     @Override
     public CategoryDTO toDTO(boolean selectAsParent, Object... parentParams) {
         CategoryDTO categoryDTO = new CategoryDTO();

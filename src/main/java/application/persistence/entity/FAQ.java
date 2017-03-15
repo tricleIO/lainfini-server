@@ -4,10 +4,7 @@ import application.persistence.DTOConvertable;
 import application.rest.domain.FaqDTO;
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @Entity
@@ -17,8 +14,10 @@ public class FAQ implements DTOConvertable<FaqDTO> {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(name = "question", length = 255)
     private String question;
 
+    @Column(name = "answer", columnDefinition = "TEXT")
     private String answer;
 
     @Override

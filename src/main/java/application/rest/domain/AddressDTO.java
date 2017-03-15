@@ -15,7 +15,7 @@ public class AddressDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
 
     private Long uid;
     private String street;
-    private int houseNumber;
+    private String houseNumber;
     private String city;
     private String postal;
     private String state;
