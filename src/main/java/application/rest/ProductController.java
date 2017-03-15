@@ -20,7 +20,12 @@ public class ProductController extends AbstractDatabaseController<Product, UUID,
     private ProductService productService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> readProducts(Pageable pageable, Principal principal) {
+    public ResponseEntity<?> readProducts(Pageable pageable, @RequestParam(name = "slug", required = false) String slug, Principal principal) {
+        if (slug != null) {
+            return getSimpleResponseEntity(
+                    productService.read(slug)
+            );
+        }
         return getPageResponseEntity(
                 productService.readAll(pageable, principal)
         );
@@ -30,13 +35,6 @@ public class ProductController extends AbstractDatabaseController<Product, UUID,
     public ResponseEntity<?> readProduct(@PathVariable UUID id, Principal principal) {
         return getSimpleResponseEntity(
                 productService.read(id, principal)
-        );
-    }
-
-    @RequestMapping(value = "/slug/{slug}", method = RequestMethod.GET)
-    public ResponseEntity<?> readProductBySlug(@PathVariable String slug) {
-        return getSimpleResponseEntity(
-                productService.read(slug)
         );
     }
 

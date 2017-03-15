@@ -35,7 +35,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     public ServiceResponse<ProductDTO> read(String urlSlug) {
         Product product = productRepository.findOneByUrlSlug(urlSlug);
         if (product == null) {
-            ServiceResponse.error(ServiceResponseStatus.PRODUCT_NOT_FOUND);
+            return ServiceResponse.error(ServiceResponseStatus.PRODUCT_SLUG_NOT_FOUND);
         }
         return ServiceResponse.success(product.toDTO(true));
     }
