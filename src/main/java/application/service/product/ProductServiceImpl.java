@@ -32,6 +32,15 @@ import java.util.*;
 public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Product, UUID, ProductRepository, ProductDTO> implements ProductService {
 
     @Override
+    public ServiceResponse<ProductDTO> read(String urlSlug) {
+        Product product = productRepository.findOneByUrlSlug(urlSlug);
+        if (product == null) {
+            return ServiceResponse.error(ServiceResponseStatus.PRODUCT_SLUG_NOT_FOUND);
+        }
+        return ServiceResponse.success(product.toDTO(true));
+    }
+
+    @Override
     public ServiceResponse<ProductDTO> read(UUID key, Principal principal) {
         ServiceResponse<ProductDTO> response = super.read(key);
         if (response.isSuccessful()) {
@@ -136,14 +145,14 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     }
 
     @Override
-    protected void beforeCreate(ProductDTO productDTO) {
+    protected void doBeforeConvertInCreate(ProductDTO productDTO) {
         // if url slug is null, generate it from name
         if (productDTO.getUrlSlug() == null) {
             productDTO.setUrlSlug(
                     getUrlSlugFromName(productDTO.getName())
             );
         }
-        super.beforeCreate(productDTO);
+        super.doBeforeConvertInCreate(productDTO);
     }
 
     // privates
