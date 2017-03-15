@@ -33,7 +33,7 @@ public class OrderItem implements DTOConvertable<OrderItemDTO>, Serializable {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "order_id", nullable = false)
-    private Order order;
+    private CustomerOrder order;
 
     @Override
     public OrderItemDTO toDTO(boolean selectAsParent, Object... parentParams) {

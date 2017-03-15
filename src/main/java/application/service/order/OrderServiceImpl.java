@@ -1,6 +1,6 @@
 package application.service.order;
 
-import application.persistence.entity.Order;
+import application.persistence.entity.CustomerOrder;
 import application.persistence.repository.OrderRepository;
 import application.rest.domain.OrderDTO;
 import application.service.AdditionalDataManipulator;
@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 import java.util.UUID;
 
 @Service
-public class OrderServiceImpl extends BaseDatabaseServiceImpl<Order, UUID, OrderRepository, OrderDTO> implements OrderService {
+public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUID, OrderRepository, OrderDTO> implements OrderService {
 
     @Autowired
     private OrderRepository orderRepository;
@@ -39,7 +39,7 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<Order, UUID, Order
 
     @Override
     public ServiceResponse<Page<OrderDTO>> readCustomerOrders(UUID customerId, Pageable pageable) {
-        Page<Order> orders = getRepository().findByCustomerId(customerId, pageable);
+        Page<CustomerOrder> orders = getRepository().findByCustomerId(customerId, pageable);
         return ServiceResponse.success(
                 convertPageWithEntitiesToPageWithDtos(orders, pageable)
         );

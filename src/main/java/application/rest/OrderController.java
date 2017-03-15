@@ -1,6 +1,6 @@
 package application.rest;
 
-import application.persistence.entity.Order;
+import application.persistence.entity.CustomerOrder;
 import application.rest.domain.OrderDTO;
 import application.service.order.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
 
 @RestController
-public class OrderController extends AbstractDatabaseController<Order, UUID, OrderDTO, OrderService> {
+public class OrderController extends AbstractDatabaseController<CustomerOrder, UUID, OrderDTO, OrderService> {
 
     @Autowired
     private OrderService orderService;
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value = "/orders", method = RequestMethod.GET)
     public ResponseEntity<?> readOrders(Pageable pageable) {
         return readAll(pageable);
     }

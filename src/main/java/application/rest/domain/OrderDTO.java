@@ -1,6 +1,6 @@
 package application.rest.domain;
 
-import application.persistence.entity.Order;
+import application.persistence.entity.CustomerOrder;
 import application.persistence.type.OrderStatusEnum;
 import lombok.Data;
 
@@ -9,7 +9,7 @@ import java.util.Set;
 import java.util.UUID;
 
 @Data
-public class OrderDTO implements ReadWriteDatabaseDTO<Order>, IdentifableDTO<UUID> {
+public class OrderDTO implements ReadWriteDatabaseDTO<CustomerOrder>, IdentifableDTO<UUID> {
 
     private UUID uid;
     private UUID cartUid;
@@ -26,8 +26,8 @@ public class OrderDTO implements ReadWriteDatabaseDTO<Order>, IdentifableDTO<UUI
     private PaymentMethodDTO paymentMethod;
 
     @Override
-    public Order toEntity(boolean selectAsParent, Object... parentParams) {
-        Order order = new Order();
+    public CustomerOrder toEntity(boolean selectAsParent, Object... parentParams) {
+        CustomerOrder order = new CustomerOrder();
         order.setCreatedAt(createdAt);
         order.setStatus(status);
         if (selectAsParent) {

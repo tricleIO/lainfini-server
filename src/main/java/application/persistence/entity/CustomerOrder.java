@@ -18,7 +18,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "customer_order")
 @Data
-public class Order implements DTOConvertable<OrderDTO>, Serializable {
+public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
 
     @Id
     @GenericGenerator(name = "uuid", strategy = "uuid2")
