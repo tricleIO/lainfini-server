@@ -2,10 +2,13 @@ package application.service.order;
 
 import application.persistence.entity.CustomerOrder;
 import application.persistence.repository.OrderRepository;
+import application.rest.domain.AddressDTO;
 import application.rest.domain.OrderDTO;
+import application.rest.domain.UserDTO;
 import application.service.AdditionalDataManipulator;
 import application.service.AdditionalDataManipulatorBatch;
 import application.service.BaseDatabaseServiceImpl;
+import application.service.address.AddressService;
 import application.service.cart.CartService;
 import application.service.delivery.DeliveryService;
 import application.service.paymentMethod.PaymentMethodService;
@@ -37,12 +40,50 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     @Autowired
     private PaymentMethodService paymentMethodService;
 
+    @Autowired
+    private AddressService addressService;
+
     @Override
     public ServiceResponse<Page<OrderDTO>> readCustomerOrders(UUID customerId, Pageable pageable) {
         Page<CustomerOrder> orders = getRepository().findByCustomerId(customerId, pageable);
         return ServiceResponse.success(
                 convertPageWithEntitiesToPageWithDtos(orders, pageable)
         );
+    }
+
+    @Override
+    protected ServiceResponse<OrderDTO> doBeforeConvertInCreate(OrderDTO dto) {
+        if (dto.getCustomerUid() == null && dto.getDeliveryAddressUid() == null) {
+            if (dto.getCustomer() != null &&  dto.getDeliveryAddress() != null) {
+                // create unregistered user
+                ServiceResponse<UserDTO> userResponse = userService.create(dto.getCustomer());
+                if (!userResponse.isSuccessful()) {
+                    return ServiceResponse.error(userResponse.getStatus());
+                }
+                dto.setCustomer(userResponse.getBody());
+
+                // create his delivery address
+                ServiceResponse<AddressDTO> deliveryAddressResponse = addressService.create(
+                        dto.getDeliveryAddress()
+                );
+                if (!deliveryAddressResponse.isSuccessful()) {
+                    return ServiceResponse.error(deliveryAddressResponse.getStatus());
+                }
+                dto.setDeliveryAddress(deliveryAddressResponse.getBody());
+
+                // if billing address is set, create it to
+                if (dto.getBillingAddress() != null) {
+                    ServiceResponse<AddressDTO> billingAddressResponse = addressService.create(
+                        dto.getBillingAddress()
+                    );
+                    if (!billingAddressResponse.isSuccessful()) {
+                        return ServiceResponse.error(billingAddressResponse.getStatus());
+                    }
+                    dto.setBillingAddress(billingAddressResponse.getBody());
+                }
+            }
+        }
+        return super.doBeforeConvertInCreate(dto);
     }
 
     @Override
@@ -71,6 +112,18 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                 new AdditionalDataManipulator.Reader<>(o.getPaymentMethodUid(), paymentMethodService::read),
                 new AdditionalDataManipulator.Writer<>(o::setPaymentMethod),
                 ServiceResponseStatus.PAYMENT_METHOD_NOT_FOUND)
+        );
+        // add billing address
+        batch.add(o -> new AdditionalDataManipulator<>(
+                new AdditionalDataManipulator.Reader<>(o.getBillingAddressUid(), addressService::read),
+                new AdditionalDataManipulator.Writer<>(o::setBillingAddress),
+                ServiceResponseStatus.ADDRESS_NOT_FOUND)
+        );
+        // add delivery address
+        batch.add(o -> new AdditionalDataManipulator<>(
+                new AdditionalDataManipulator.Reader<>(o.getDeliveryAddressUid(), addressService::read),
+                new AdditionalDataManipulator.Writer<>(o::setDeliveryAddress),
+                ServiceResponseStatus.ADDRESS_NOT_FOUND)
         );
         return batch;
     }

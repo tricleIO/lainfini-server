@@ -44,7 +44,9 @@ public enum ServiceResponseStatus {
 
     PAYMENT_METHOD_NOT_FOUND("Payment with given uid was not found.", HttpStatus.NOT_FOUND),
 
-    ORDER_NOT_FOUND("Order with given uid was not found.", HttpStatus.NOT_FOUND);
+    ORDER_NOT_FOUND("Order with given uid was not found.", HttpStatus.NOT_FOUND),
+
+    ADDRESS_NOT_FOUND("Address with given uid was not found.", HttpStatus.NOT_FOUND);
 
     private final HttpStatus httpStatus;
     private final String message;

@@ -40,7 +40,9 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
             return ServiceResponse.error(ServiceResponseStatus.USERNAME_ALREADY_EXISTS);
         }
         // bcrypt password
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        if (user.getPassword() != null) {
+            user.setPassword(passwordEncoder.encode(user.getPassword()));
+        }
         return super.create(user);
     }
 
