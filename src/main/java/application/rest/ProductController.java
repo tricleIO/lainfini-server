@@ -33,6 +33,13 @@ public class ProductController extends AbstractDatabaseController<Product, UUID,
         );
     }
 
+    @RequestMapping(value = "/slug/{slug}", method = RequestMethod.GET)
+    public ResponseEntity<?> readProductBySlug(@PathVariable String slug) {
+        return getSimpleResponseEntity(
+                productService.read(slug)
+        );
+    }
+
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> createProduct(@RequestBody ProductDTO product) {
         return create(product);
