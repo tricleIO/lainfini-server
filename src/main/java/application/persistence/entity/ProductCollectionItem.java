@@ -25,7 +25,7 @@ public class ProductCollectionItem implements DTOConvertable<ProductCollectionIt
     private Integer position;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "product_collection_id", nullable = false)
+    @JoinColumn(name = "product_collection_id", referencedColumnName = "id", nullable = false)
     private ProductCollection productCollection;
 
     @Override

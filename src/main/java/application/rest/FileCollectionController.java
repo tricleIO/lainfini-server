@@ -40,7 +40,7 @@ public class FileCollectionController extends AbstractDatabaseController<FileCol
         return read(id);
     }
 
-    @RequestMapping(value = "/{collectionId}/{fileId}", method = RequestMethod.POST)
+    @RequestMapping(value = "/{collectionId}/{fileId}", method = RequestMethod.GET)
     public ResponseEntity<?> addFileToCollection(@PathVariable Long collectionId, @PathVariable UUID fileId) {
         return getSimpleResponseEntity(fileCollectionService.addFileToCollection(collectionId, fileId));
     }
