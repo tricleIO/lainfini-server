@@ -3,6 +3,7 @@ package application.rest.domain;
 import application.persistence.entity.User;
 import application.persistence.type.SexEnum;
 import application.persistence.type.StatusEnum;
+import application.persistence.type.UserStatusEnum;
 import application.rest.AddressController;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
