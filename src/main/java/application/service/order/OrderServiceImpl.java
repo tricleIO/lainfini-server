@@ -24,7 +24,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.UUID;
 
 @Service
 public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUID, OrderRepository, OrderDTO> implements OrderService {
@@ -107,7 +110,7 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                 OrderItem orderItem = new OrderItem();
                 orderItem.setProduct(cartHasProduct.getProduct());
                 orderItem.setQuantity(cartHasProduct.getQuantity());
-                orderItem.setAddedAt(new Date());
+                orderItem.setAddedAt(cartHasProduct.getAddedAt());
                 orderItem.setOrder(entity);
                 orderItems.add(orderItem);
             }

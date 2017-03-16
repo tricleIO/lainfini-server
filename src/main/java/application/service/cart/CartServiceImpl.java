@@ -18,6 +18,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -85,6 +86,7 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
             cartHasProduct.setCart(cartServiceResponse.getBody().toEntity(false));
             cartHasProduct.setProduct(productServiceResponse.getBody().toEntity(false));
             cartHasProduct.setQuantity(item.getQuantity());
+            cartHasProduct.setAddedAt(new Date());
             cartHasProductRepository.save(cartHasProduct);
         } else {
             // if pair exists, add number of given productFiles to original number of productFiles

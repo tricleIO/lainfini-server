@@ -8,6 +8,7 @@ import lombok.Data;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.util.Date;
 
 @Entity
 @Table(name = "cart_has_product")
@@ -31,6 +32,10 @@ public class CartHasProduct implements DTOConvertable<ItemDTO>, Serializable {
     @NotNull
     @Column(name = "quantity", nullable = false)
     private Integer quantity;
+
+    @NotNull
+    @Column(name = "added_at", nullable = false)
+    private Date addedAt;
 
     @Override
     public ItemDTO toDTO(boolean selectAsParent, Object... parentParams) {
