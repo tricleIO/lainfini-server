@@ -17,6 +17,7 @@
 package application.persistence.repository;
 
 import application.persistence.entity.User;
+import application.persistence.type.UserStatusEnum;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.util.UUID;
@@ -24,5 +25,6 @@ import java.util.UUID;
 public interface UserRepository extends PagingAndSortingRepository<User, UUID> {
 
 	User findByLogin(String login);
+	User findByLoginAndRegisterStatus(String login, UserStatusEnum registerStatus);
 
 }

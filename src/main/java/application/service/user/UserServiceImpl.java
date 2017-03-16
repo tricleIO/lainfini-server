@@ -58,7 +58,7 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
     }
 
     private boolean exists(UserDTO dto) {
-        User foundUser = userRepository.findByLogin(dto.getUsername());
+        User foundUser = userRepository.findByLoginAndRegisterStatus(dto.getUsername(), UserStatusEnum.REGISTERED);
         return foundUser != null;
     }
 

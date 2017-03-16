@@ -101,11 +101,13 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
     // add info about owner (customer)
     @Override
     public ServiceResponse<CartDTO> create(CartDTO cartDTO) {
-        ServiceResponse<UserDTO> ownerResponse = userService.read(cartDTO.getOwnerUid());
-        if (!ownerResponse.isSuccessful()) {
-            return ServiceResponse.error(ServiceResponseStatus.CART_OWNER_NOT_FOUND);
+        if (cartDTO.getOwnerUid() != null) {
+            ServiceResponse<UserDTO> ownerResponse = userService.read(cartDTO.getOwnerUid());
+            if (!ownerResponse.isSuccessful()) {
+                return ServiceResponse.error(ServiceResponseStatus.CART_OWNER_NOT_FOUND);
+            }
+            cartDTO.setOwner(ownerResponse.getBody());
         }
-        cartDTO.setOwner(ownerResponse.getBody());
         return super.create(cartDTO);
     }
 

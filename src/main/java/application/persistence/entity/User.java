@@ -100,7 +100,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     /*login part*/
 
     @NotNull
-    @Column(unique = true, nullable = false)
+    @Column(nullable = false)
     private String login;
 
     @Column(name = "password", length = 64)
