@@ -2,7 +2,7 @@ package application.persistence.type;
 
 public enum FlashEnum {
 
-    WARN,
+    WARNING,
     SUCCESS,
     ERROR,
     INFO

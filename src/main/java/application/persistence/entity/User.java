@@ -20,6 +20,7 @@ import application.persistence.DTOConvertable;
 import application.persistence.type.LocaleEnum;
 import application.persistence.type.SexEnum;
 import application.persistence.type.StatusEnum;
+import application.persistence.type.UserStatusEnum;
 import application.rest.domain.UserDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
@@ -99,10 +100,9 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     /*login part*/
 
     @NotNull
-    @Column(unique = true, nullable = false)
+    @Column(nullable = false)
     private String login;
 
-    @NotNull
     @Column(name = "password", length = 64)
     private String password;
 
@@ -110,6 +110,10 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_role", joinColumns = {@JoinColumn(name = "user_id")}, inverseJoinColumns = {@JoinColumn(name = "role_id")})
     private Set<Role> roles = new HashSet<Role>();
+
+    @Column(name = "register_status")
+    @Enumerated(EnumType.ORDINAL)
+    private UserStatusEnum registerStatus;
 
     public User() {
     }
@@ -120,6 +124,22 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         this.login = user.getLogin();
         this.password = user.getPassword();
         this.roles = user.getRoles();
+        this.linkedAccountList = user.getLinkedAccountList();
+        this.degreeBeforeName = user.getDegreeBeforeName();
+        this.degreeAfterName = user.getDegreeAfterName();
+        this.firstName =user.getFirstName();
+        this.lastName = user.getLastName();
+        this.sex = user.getSex().getValue();
+        this.billingAddress= user.getBillingAddress();
+        this.deliveryAddress = user.getDeliveryAddress();
+        this.phoneCode = user.getPhoneCode();
+        this.phoneNumber = user.getPhoneNumber();
+        this.abraLink = user.getAbraLink();
+        this.stripeToken = user.getStripeToken();
+        this.statusEnum = user.getStatusEnum();
+        this.currency = user.getCurrency();
+        this.locale = user.getLocale();
+
     }
 
     @Override
@@ -129,6 +149,8 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         userDTO.setUsername(login);
         userDTO.setFirstName(firstName);
         userDTO.setLastName(lastName);
+        userDTO.setPassword(password);
+        userDTO.setStatus(statusEnum);
         userDTO.setSex(getSex());
         if (billingAddress != null) {
             userDTO.setBillingAddressUid(billingAddress.getId());
@@ -139,11 +161,13 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         userDTO.setPhoneCode(phoneCode);
         userDTO.setPhoneNumber(phoneNumber);
         userDTO.setAbraLink(abraLink);
+        userDTO.setStripeToken(stripeToken);
         if (currency != null) {
             userDTO.setCurrency(currency.toDTO(false));
         }
         userDTO.setDegreeAfterName(degreeAfterName);
         userDTO.setDegreeBeforeName(degreeBeforeName);
+        userDTO.setRegisterStatus(registerStatus);
         return userDTO;
     }
 

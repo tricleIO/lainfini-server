@@ -21,22 +21,22 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cart>, IdentifableDTO<UUID> {
 
     private UUID uid;
-    private UUID ownerUid;
+    private UUID customerUid;
     private Date createdAt;
-    private List<ItemDTO> products = new LinkedList<>();
+    private List<ItemDTO> items = new LinkedList<>();
     private CartStatus status;
     private String createdFrom;
 
     // for create
-    private UserDTO owner;
+    private UserDTO customer;
 
     @Override
     public Cart toEntity(boolean selectAsParent, Object... parentParams) {
         Cart cart = new Cart();
         cart.setId(uid);
         cart.setCreatedAt(new Date());
-        if (owner != null) {
-            cart.setOwner(owner.toEntity(false));
+        if (customer != null) {
+            cart.setCustomer(customer.toEntity(false));
         }
         cart.setStatus(status);
         cart.setCreatedFrom(createdFrom);
@@ -44,16 +44,16 @@ public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Car
     }
 
     public void addItem(ItemDTO itemDTO) {
-        products.add(itemDTO);
+        items.add(itemDTO);
     }
 
     @Override
     public void addLinks() {
         add(linkTo(methodOn(CartController.class).readCart(uid)).withSelfRel());
-        if (ownerUid != null) {
-            add(linkTo(methodOn(UserController.class).readUser(ownerUid)).withRel("owner"));
+        if (customerUid != null) {
+            add(linkTo(methodOn(UserController.class).readUser(customerUid)).withRel("customer"));
         }
-        for (ItemDTO item : products) {
+        for (ItemDTO item : items) {
             item.addLinks();
         }
     }

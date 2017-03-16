@@ -18,11 +18,14 @@ import java.util.Set;
 @Entity
 @DiscriminatorValue("F")
 @Data
-@EqualsAndHashCode(exclude = "productFiles")
+@EqualsAndHashCode(exclude = {"productFiles","fileCollection"})
 public class ApplicationFile extends AbstractFile<ApplicationFileDTO> {
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "pf.file")
     private Set<ProductFile> productFiles;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "fc.file")
+    private Set<FileCollectionHasFile> fileCollection;
 
     @Override
     public ApplicationFileDTO toDTO(boolean selectAsParent, Object... parentParams) { //todo dodělat

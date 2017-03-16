@@ -13,7 +13,9 @@ import java.util.UUID;
  */
 public interface AbstractFileService<E extends AbstractFile<D>, D extends AbstractFileDTO<E>> extends BaseDatabaseService<E, Long, D> {
 
-    ServiceResponse<?> findByIndex(UUID fileIndex);
+    ServiceResponse<D> findByIndex(UUID fileIndex);
 
     String getStoreLocation();
+
+    E findEntityByIndex(UUID fileIndex);
 }

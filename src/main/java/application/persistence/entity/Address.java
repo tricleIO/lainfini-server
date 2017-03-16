@@ -20,7 +20,7 @@ public class Address implements DTOConvertable<AddressDTO>, Serializable {
     private String street;
 
     @Column(name = "house_number")
-    private int houseNumber;
+    private String houseNumber;
 
     @Column(name = "city", length = 255)
     private String city;

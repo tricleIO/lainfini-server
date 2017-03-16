@@ -35,17 +35,35 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
     }
 
     public ServiceResponse<D> create(D dto) {
+        // before convert to entity
+        ServiceResponse<D> beforeConvertResponse = doBeforeConvertInCreate(dto);
+        if (!beforeConvertResponse.isSuccessful()) {
+            return beforeConvertResponse;
+        }
+        // load additional info to DTO
         ServiceResponseStatus status = getCreateAdditionalDataLoaderBatch(dto).tryReadAll();
         if (status != ServiceResponseStatus.OK) {
             return ServiceResponse.error(status);
         }
-        beforeCreate(dto);
+        // convert to entity
         E entity = dto.toEntity(true);
+        // additional update of entity
+        doAfterConvertInCreate(entity);
+        // save entity
         E savedEntity = getRepository().save(entity);
+        // after save
+        doAfterCreate(entity);
         return ServiceResponse.success(savedEntity.toDTO(true));
     }
 
-    protected void beforeCreate(D dto) {
+    protected ServiceResponse<D> doBeforeConvertInCreate(D dto) {
+        return ServiceResponse.success(dto);
+    }
+
+    protected void doAfterConvertInCreate(E entity) {
+    }
+
+    protected void doAfterCreate(E entity) {
     }
 
     protected AdditionalDataManipulatorBatch<D> getCreateAdditionalDataLoaderBatch(D dto) {

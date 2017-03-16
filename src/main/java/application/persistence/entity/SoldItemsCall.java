@@ -16,7 +16,7 @@ public class SoldItemsCall extends CallToAction {
     @Override
     public CallDTO toDTO(boolean selectAsParent, Object... parentParams) {
         SoldItemsCallDTO soldItemsCallDTO = new SoldItemsCallDTO();
-        soldItemsCallDTO.setId(getId());
+        soldItemsCallDTO.setUid(getId());
         soldItemsCallDTO.setType(getType());
 //        soldItemsCallDTO.setMade(made);
 //        soldItemsCallDTO.setSold(sold);

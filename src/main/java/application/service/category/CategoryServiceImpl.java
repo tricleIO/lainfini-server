@@ -19,14 +19,14 @@ public class CategoryServiceImpl extends BaseDatabaseServiceImpl<Category, Integ
 
     @Override
     public ServiceResponse<Page<CategoryDTO>> readMainCategories(Pageable pageable) {
-        Page<Category> categoryPage = categoryRepository.findByParentIsNull(pageable);
+        Page<Category> categoryPage = categoryRepository.findByParentCategoryIsNull(pageable);
         return ServiceResponse.success(
                 convertPageWithEntitiesToPageWithDtos(categoryPage, pageable)
         );
     }
 
     public ServiceResponse<Page<CategoryDTO>> readSubcategories(int parentCategoryId, Pageable pageable) {
-        Page<Category> categoryPage = categoryRepository.findByParentId(parentCategoryId, pageable);
+        Page<Category> categoryPage = categoryRepository.findByParentCategoryId(parentCategoryId, pageable);
         return ServiceResponse.success(
                 convertPageWithEntitiesToPageWithDtos(categoryPage, pageable)
         );
@@ -34,8 +34,8 @@ public class CategoryServiceImpl extends BaseDatabaseServiceImpl<Category, Integ
 
     @Override
     public ServiceResponse<CategoryDTO> createSubcategory(int parentCategoryId, CategoryDTO subcategoryDTO) {
-        // additional setting parent category dto for right convert to entity
-        // find parent category
+        // additional setting parentCategory category dto for right convert to entity
+        // find parentCategory category
         ServiceResponse<CategoryDTO> parentCategoryResponse = read(parentCategoryId);
         // error
         if (!parentCategoryResponse.isSuccessful()) {
