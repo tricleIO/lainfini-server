@@ -1,6 +1,9 @@
 package application.service.order;
 
+import application.persistence.entity.CartHasProduct;
 import application.persistence.entity.CustomerOrder;
+import application.persistence.entity.OrderItem;
+import application.persistence.repository.CartHasProductRepository;
 import application.persistence.repository.OrderRepository;
 import application.rest.domain.AddressDTO;
 import application.rest.domain.OrderDTO;
@@ -11,6 +14,7 @@ import application.service.BaseDatabaseServiceImpl;
 import application.service.address.AddressService;
 import application.service.cart.CartService;
 import application.service.delivery.DeliveryService;
+import application.service.orderItem.OrderItemService;
 import application.service.paymentMethod.PaymentMethodService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
@@ -20,13 +24,19 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.util.UUID;
+import java.util.*;
 
 @Service
 public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUID, OrderRepository, OrderDTO> implements OrderService {
 
     @Autowired
     private OrderRepository orderRepository;
+
+    @Autowired
+    private OrderItemService orderItemService;
+
+    @Autowired
+    private CartHasProductRepository cartHasProductRepository;
 
     @Autowired
     private UserService userService;
@@ -86,6 +96,24 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
             }
         }
         return super.doBeforeConvertInCreate(dto);
+    }
+
+    @Override
+    protected void doAfterCreate(CustomerOrder entity) {
+        if (entity.getCart() != null) {
+            List<CartHasProduct> cartHasProductList = cartHasProductRepository.findByCartId(entity.getCart().getId());
+            Set<OrderItem> orderItems = new LinkedHashSet<>();
+            for (CartHasProduct cartHasProduct : cartHasProductList) {
+                OrderItem orderItem = new OrderItem();
+                orderItem.setProduct(cartHasProduct.getProduct());
+                orderItem.setQuantity(cartHasProduct.getQuantity());
+                orderItem.setAddedAt(new Date());
+                orderItem.setOrder(entity);
+                orderItems.add(orderItem);
+            }
+            entity.setItems(orderItems);
+            orderRepository.save(entity);
+        }
     }
 
     @Override

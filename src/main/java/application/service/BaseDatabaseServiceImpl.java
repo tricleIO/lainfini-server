@@ -51,6 +51,8 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
         doAfterConvertInCreate(entity);
         // save entity
         E savedEntity = getRepository().save(entity);
+        // after save
+        doAfterCreate(entity);
         return ServiceResponse.success(savedEntity.toDTO(true));
     }
 
@@ -59,6 +61,9 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
     }
 
     protected void doAfterConvertInCreate(E entity) {
+    }
+
+    protected void doAfterCreate(E entity) {
     }
 
     protected AdditionalDataManipulatorBatch<D> getCreateAdditionalDataLoaderBatch(D dto) {
