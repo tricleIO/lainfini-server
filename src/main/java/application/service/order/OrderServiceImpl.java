@@ -81,6 +81,8 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                     }
                     dto.setBillingAddress(billingAddressResponse.getBody());
                 }
+            } else {
+                return ServiceResponse.error(ServiceResponseStatus.CUSTOMER_OR_DELIVERY_ADDRESS_NOT_GIVEN);
             }
         }
         return super.doBeforeConvertInCreate(dto);

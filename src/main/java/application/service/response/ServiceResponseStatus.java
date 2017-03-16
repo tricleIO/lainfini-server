@@ -46,7 +46,9 @@ public enum ServiceResponseStatus {
 
     ORDER_NOT_FOUND("Order with given uid was not found.", HttpStatus.NOT_FOUND),
 
-    ADDRESS_NOT_FOUND("Address with given uid was not found.", HttpStatus.NOT_FOUND);
+    ADDRESS_NOT_FOUND("Address with given uid was not found.", HttpStatus.NOT_FOUND),
+
+    CUSTOMER_OR_DELIVERY_ADDRESS_NOT_GIVEN("Customer or delivery address not given.", HttpStatus.BAD_REQUEST);
 
     private final HttpStatus httpStatus;
     private final String message;
