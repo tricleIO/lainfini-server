@@ -27,7 +27,7 @@ public class CategoryDTO extends ResourceSupport implements ReadWriteDatabaseDTO
         category.setName(name);
         if (selectAsParent) {
             if (parentCategory != null) {
-                category.setParent(parentCategory.toEntity(false));
+                category.setParentCategory(parentCategory.toEntity(false));
             }
         }
         return category;

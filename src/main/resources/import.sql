@@ -1,12 +1,12 @@
 INSERT INTO faq (question, answer) VALUES ('How can I comment on a BBC programme or service?', 'We appreciate ');
 INSERT INTO faq (question, answer)VALUES ('Where can I obtain my radio or key code, or a new key for my Ford?', 'Firstly, ');
 
-INSERT INTO category (id, name, parent_id, priority) VALUES (1, 'Scarves', NULL, 1);
-INSERT INTO category (id, name, parent_id, priority) VALUES (2, 'Silk', 1, 1);
-INSERT INTO category (id, name, parent_id, priority) VALUES (3, 'Cotton', 1, 1);
+INSERT INTO category (id, name, parent_category_id, priority) VALUES (1, 'Scarves', NULL, 1);
+INSERT INTO category (id, name, parent_category_id, priority) VALUES (2, 'Silk', 1, 1);
+INSERT INTO category (id, name, parent_category_id, priority) VALUES (3, 'Cotton', 1, 1);
 
-INSERT INTO category (name, parent_id, priority) VALUES ('Bestselling', NULL, 1);
-INSERT INTO category (name, parent_id, priority) VALUES ('Discounts', NULL, 1);
+INSERT INTO category (name, parent_category_id, priority) VALUES ('Bestselling', NULL, 1);
+INSERT INTO category (name, parent_category_id, priority) VALUES ('Discounts', NULL, 1);
 
 INSERT INTO currency (name, symbol, symbol_placement) VALUES ('CZK', 'Kč', 1);
 INSERT INTO currency (name, symbol, symbol_placement) VALUES ('USB', '$', 1);
