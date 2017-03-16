@@ -25,7 +25,7 @@ public class Cart implements DTOConvertable<CartDTO>, Serializable {
 
     @OneToOne
     @JoinColumn(name = "customer_id", referencedColumnName = "id", nullable = true)
-    private User owner;
+    private User customer;
 
     @NotNull
     @Column(name = "created_at", nullable = false)
@@ -40,8 +40,8 @@ public class Cart implements DTOConvertable<CartDTO>, Serializable {
     public CartDTO toDTO(boolean selectAsParent, Object... parentParams) {
         CartDTO cartDTO = new CartDTO();
         cartDTO.setUid(id);
-        if (owner != null) {
-            cartDTO.setOwnerUid(owner.getId());
+        if (customer != null) {
+            cartDTO.setCustomerUid(customer.getId());
         }
         cartDTO.setCreatedAt(createdAt);
         cartDTO.setStatus(status);

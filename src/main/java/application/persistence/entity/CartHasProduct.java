@@ -41,6 +41,7 @@ public class CartHasProduct implements DTOConvertable<ItemDTO>, Serializable {
     public ItemDTO toDTO(boolean selectAsParent, Object... parentParams) {
         ItemResponseDTO item = new ItemResponseDTO();
         item.setProductUid(product.getId());
+        item.setAddedAt(addedAt);
         item.setQuantity(quantity);
         item.setCartUid(cart.getId());
         return item;

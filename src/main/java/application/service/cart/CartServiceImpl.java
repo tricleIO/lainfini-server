@@ -100,15 +100,15 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
         return read(cartId);
     }
 
-    // add info about owner (customer)
+    // add info about customer
     @Override
     public ServiceResponse<CartDTO> create(CartDTO cartDTO) {
-        if (cartDTO.getOwnerUid() != null) {
-            ServiceResponse<UserDTO> ownerResponse = userService.read(cartDTO.getOwnerUid());
-            if (!ownerResponse.isSuccessful()) {
+        if (cartDTO.getCustomerUid() != null) {
+            ServiceResponse<UserDTO> customerResponse = userService.read(cartDTO.getCustomerUid());
+            if (!customerResponse.isSuccessful()) {
                 return ServiceResponse.error(ServiceResponseStatus.CART_OWNER_NOT_FOUND);
             }
-            cartDTO.setOwner(ownerResponse.getBody());
+            cartDTO.setCustomer(customerResponse.getBody());
         }
         return super.create(cartDTO);
     }
@@ -121,15 +121,8 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
     private void addItemsToCart(CartDTO cart, List<CartHasProduct> cartHasProducts) {
         for (CartHasProduct cartHasProduct : cartHasProducts) {
             // create item and add it to product list
-            cart.addItem(createCartItem(cartHasProduct));
+            cart.addItem(cartHasProduct.toDTO(false));
         }
-    }
-
-    private ItemDTO createCartItem(CartHasProduct cartHasProduct) {
-        ItemDTO itemDTO = new ItemDTO();
-        itemDTO.setProductUid(cartHasProduct.getProduct().getId());
-        itemDTO.setQuantity(cartHasProduct.getQuantity());
-        return itemDTO;
     }
 
     private List<CartHasProduct> getCartHasProductsByCartId(UUID cartId) {
