@@ -7,17 +7,7 @@ import lombok.Data;
 @Data
 public abstract class CallDTO implements ReadWriteDatabaseDTO<CallToAction>, IdentifableDTO<Integer> {
 
-    private Integer id;
+    private Integer uid;
     private CallEnum type;
-
-    @Override
-    public Integer getUid() {
-        return id;
-    }
-
-    @Override
-    public void setUid(Integer key) {
-        this.id = key;
-    }
 
 }

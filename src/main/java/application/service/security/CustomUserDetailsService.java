@@ -2,6 +2,7 @@ package application.service.security;
 
 import application.persistence.entity.User;
 import application.persistence.repository.UserRepository;
+import application.persistence.type.UserStatusEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -20,7 +21,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = userRepository.findByLogin(username);
+        User user = userRepository.findByLoginAndRegisterStatus(username, UserStatusEnum.REGISTERED);
         if (user == null) {
             throw new UsernameNotFoundException(
                     String.format("User %s does not exist!", username)

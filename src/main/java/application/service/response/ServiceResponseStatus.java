@@ -15,7 +15,7 @@ public enum ServiceResponseStatus {
     USERNAME_ALREADY_EXISTS("User with given username already exists.", HttpStatus.CONFLICT),
 
     // cart
-    CART_OWNER_NOT_FOUND("Cart owner (customer) with given uid was not found.", HttpStatus.NOT_FOUND),
+    CART_OWNER_NOT_FOUND("Cart customer (customer) with given uid was not found.", HttpStatus.NOT_FOUND),
     CART_NOT_FOUND("Cart with given uid was not found.", HttpStatus.NOT_FOUND),
 
     // product
@@ -44,7 +44,12 @@ public enum ServiceResponseStatus {
 
     PAYMENT_METHOD_NOT_FOUND("Payment with given uid was not found.", HttpStatus.NOT_FOUND),
 
-    ORDER_NOT_FOUND("Order with given uid was not found.", HttpStatus.NOT_FOUND);
+    ORDER_NOT_FOUND("Order with given uid was not found.", HttpStatus.NOT_FOUND),
+
+    ADDRESS_NOT_FOUND("Address with given uid was not found.", HttpStatus.NOT_FOUND),
+
+    CUSTOMER_OR_DELIVERY_ADDRESS_NOT_GIVEN("Customer or delivery address was not given.", HttpStatus.BAD_REQUEST),
+    CART_NOT_GIVEN("Cart was not given.", HttpStatus.BAD_REQUEST);
 
     private final HttpStatus httpStatus;
     private final String message;

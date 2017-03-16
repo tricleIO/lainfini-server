@@ -42,6 +42,8 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
     private String degreeBeforeName;
     private String degreeAfterName;
 
+    private UserStatusEnum registerStatus;
+
     @Override
     public User toEntity(boolean selectAsParent, Object... parentParams) {
         User user = new User();

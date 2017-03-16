@@ -30,7 +30,7 @@ public class ItemResponseDTO extends ItemDTO {
             add(linkTo(methodOn(CartController.class).readCart(cartUid)).withRel("cart"));
         }
         if (getProductUid() != null) {
-            add(linkTo(methodOn(ProductController.class).readProduct(getProductUid(), null)).withRel("billingAddress"));
+            add(linkTo(methodOn(ProductController.class).readProduct(getProductUid(), null)).withRel("product"));
         }
     }
 }
