@@ -34,7 +34,7 @@ public abstract class AbstractFile<T extends AbstractFileDTO>  implements DTOCon
     @Column(name = "file_name", length = 255)
     private String fileName;
 
-    @Column(name = "mime_type", length = 32)
+    @Column(name = "mime_type", length = 46)
     private String mimeType;
 
     @Column(name = "title", length = 255)

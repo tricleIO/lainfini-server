@@ -25,25 +25,29 @@ public class FileCollectionController extends AbstractDatabaseController<FileCol
         return readAll(pageable);
     }
 
+    @RequestMapping(method = RequestMethod.POST)
+    public ResponseEntity<?> createFileCollection(@RequestBody FileCollectionDTO fileCollectionDTO) {
+        return create(fileCollectionDTO);
+    }
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    public ResponseEntity<?> deleteFileCollection(@PathVariable Long id) {
+        return delete(id);
+    }
+
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public ResponseEntity<?> readById(@PathVariable Long id) {
         return read(id);
     }
 
-    @RequestMapping(value = "/add/{collectionId}/{fileId}")
+    @RequestMapping(value = "/{collectionId}/{fileId}", method = RequestMethod.POST)
     public ResponseEntity<?> addFileToCollection(@PathVariable Long collectionId, @PathVariable UUID fileId) {
         return getSimpleResponseEntity(fileCollectionService.addFileToCollection(collectionId, fileId));
     }
 
-    @RequestMapping(value = "/remove/{collectionId}/{fileId}")
+    @RequestMapping(value = "/{collectionId}/{fileId}",method = RequestMethod.DELETE)
     public ResponseEntity<?> removeFileFromCollection(@PathVariable Long collectionId, @PathVariable UUID fileId) {
         return getSimpleResponseEntity(fileCollectionService.removeFileFromCollection(collectionId, fileId));
-
-    }
-
-    @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<?> createFileCollection(@RequestBody FileCollectionDTO fileCollectionDTO) {
-        return create(fileCollectionDTO);
     }
 
     @Override
