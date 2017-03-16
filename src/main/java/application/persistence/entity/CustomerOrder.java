@@ -53,6 +53,14 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
     @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "order")
     private Set<OrderItem> items;
 
+    @OneToOne
+    @JoinColumn(name = "billing_address_id", referencedColumnName = "id")
+    private Address billingAddress;
+
+    @OneToOne
+    @JoinColumn(name = "delivery_address_id", referencedColumnName = "id")
+    private Address deliveryAddress;
+
     @Override
     public OrderDTO toDTO(boolean selectAsParent, Object... parentParams) {
         OrderDTO orderDTO = new OrderDTO();
@@ -69,6 +77,12 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
         }
         if (paymentMethod != null) {
             orderDTO.setPaymentMethod(paymentMethod.toDTO(false));
+        }
+        if (deliveryAddress != null) {
+            orderDTO.setDeliveryAddress(deliveryAddress.toDTO(false));
+        }
+        if (billingAddress != null) {
+            orderDTO.setDeliveryAddress(billingAddress.toDTO(false));
         }
         if (items != null) {
             Set<OrderItemDTO> itemDTOs = new LinkedHashSet<>(items.size());

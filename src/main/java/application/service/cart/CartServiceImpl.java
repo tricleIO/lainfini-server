@@ -18,6 +18,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -85,6 +86,7 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
             cartHasProduct.setCart(cartServiceResponse.getBody().toEntity(false));
             cartHasProduct.setProduct(productServiceResponse.getBody().toEntity(false));
             cartHasProduct.setQuantity(item.getQuantity());
+            cartHasProduct.setAddedAt(new Date());
             cartHasProductRepository.save(cartHasProduct);
         } else {
             // if pair exists, add number of given productFiles to original number of productFiles
@@ -98,14 +100,16 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
         return read(cartId);
     }
 
-    // add info about owner (customer)
+    // add info about customer
     @Override
     public ServiceResponse<CartDTO> create(CartDTO cartDTO) {
-        ServiceResponse<UserDTO> ownerResponse = userService.read(cartDTO.getOwnerUid());
-        if (!ownerResponse.isSuccessful()) {
-            return ServiceResponse.error(ServiceResponseStatus.CART_OWNER_NOT_FOUND);
+        if (cartDTO.getCustomerUid() != null) {
+            ServiceResponse<UserDTO> customerResponse = userService.read(cartDTO.getCustomerUid());
+            if (!customerResponse.isSuccessful()) {
+                return ServiceResponse.error(ServiceResponseStatus.CART_OWNER_NOT_FOUND);
+            }
+            cartDTO.setCustomer(customerResponse.getBody());
         }
-        cartDTO.setOwner(ownerResponse.getBody());
         return super.create(cartDTO);
     }
 
@@ -117,15 +121,8 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
     private void addItemsToCart(CartDTO cart, List<CartHasProduct> cartHasProducts) {
         for (CartHasProduct cartHasProduct : cartHasProducts) {
             // create item and add it to product list
-            cart.addItem(createCartItem(cartHasProduct));
+            cart.addItem(cartHasProduct.toDTO(false));
         }
-    }
-
-    private ItemDTO createCartItem(CartHasProduct cartHasProduct) {
-        ItemDTO itemDTO = new ItemDTO();
-        itemDTO.setProductUid(cartHasProduct.getProduct().getId());
-        itemDTO.setQuantity(cartHasProduct.getQuantity());
-        return itemDTO;
     }
 
     private List<CartHasProduct> getCartHasProductsByCartId(UUID cartId) {

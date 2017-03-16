@@ -2,6 +2,7 @@ package application.rest.domain;
 
 import application.persistence.entity.CustomerOrder;
 import application.persistence.type.OrderStatusEnum;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 import java.util.Date;
@@ -9,6 +10,7 @@ import java.util.Set;
 import java.util.UUID;
 
 @Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class OrderDTO implements ReadWriteDatabaseDTO<CustomerOrder>, IdentifableDTO<UUID> {
 
     private UUID uid;
@@ -19,11 +21,15 @@ public class OrderDTO implements ReadWriteDatabaseDTO<CustomerOrder>, Identifabl
     private Date createdAt;
     private OrderStatusEnum status;
     private Set<OrderItemDTO> items;
+    private Long billingAddressUid;
+    private Long deliveryAddressUid;
 
     private CartDTO cart;
     private UserDTO customer;
     private DeliveryDTO deliveryType;
     private PaymentMethodDTO paymentMethod;
+    private AddressDTO billingAddress;
+    private AddressDTO deliveryAddress;
 
     @Override
     public CustomerOrder toEntity(boolean selectAsParent, Object... parentParams) {
@@ -42,6 +48,12 @@ public class OrderDTO implements ReadWriteDatabaseDTO<CustomerOrder>, Identifabl
             }
             if (paymentMethod != null) {
                 order.setPaymentMethod(paymentMethod.toEntity(false));
+            }
+            if (billingAddress != null) {
+                order.setBillingAddress(billingAddress.toEntity(false));
+            }
+            if (deliveryAddress != null) {
+                order.setDeliveryAddress(deliveryAddress.toEntity(false));
             }
         }
         return order;

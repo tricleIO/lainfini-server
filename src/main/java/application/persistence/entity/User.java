@@ -20,6 +20,7 @@ import application.persistence.DTOConvertable;
 import application.persistence.type.LocaleEnum;
 import application.persistence.type.SexEnum;
 import application.persistence.type.StatusEnum;
+import application.persistence.type.UserStatusEnum;
 import application.rest.domain.UserDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
@@ -99,10 +100,9 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     /*login part*/
 
     @NotNull
-    @Column(unique = true, nullable = false)
+    @Column(nullable = false)
     private String login;
 
-    @NotNull
     @Column(name = "password", length = 64)
     private String password;
 
@@ -110,6 +110,10 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_role", joinColumns = {@JoinColumn(name = "user_id")}, inverseJoinColumns = {@JoinColumn(name = "role_id")})
     private Set<Role> roles = new HashSet<Role>();
+
+    @Column(name = "register_status")
+    @Enumerated(EnumType.ORDINAL)
+    private UserStatusEnum registerStatus;
 
     public User() {
     }
@@ -144,6 +148,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         }
         userDTO.setDegreeAfterName(degreeAfterName);
         userDTO.setDegreeBeforeName(degreeBeforeName);
+        userDTO.setRegisterStatus(registerStatus);
         return userDTO;
     }
 

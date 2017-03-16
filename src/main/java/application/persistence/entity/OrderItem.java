@@ -27,6 +27,8 @@ public class OrderItem implements DTOConvertable<OrderItemDTO>, Serializable {
 
     private Integer quantity;
 
+    private Double price;
+
     @NotNull
     @Column(name = "added_at", nullable = false)
     private Date addedAt;
@@ -44,6 +46,7 @@ public class OrderItem implements DTOConvertable<OrderItemDTO>, Serializable {
         }
         orderItemDTO.setQuantity(quantity);
         orderItemDTO.setAddedAt(addedAt);
+        orderItemDTO.setPrice(price);
         return orderItemDTO;
     }
 
