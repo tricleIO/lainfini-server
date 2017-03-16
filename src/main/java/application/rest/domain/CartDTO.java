@@ -9,8 +9,7 @@ import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
 import java.util.Date;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
@@ -23,7 +22,7 @@ public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Car
     private UUID uid;
     private UUID customerUid;
     private Date createdAt;
-    private List<ItemDTO> items = new LinkedList<>();
+    private Set<CartItemDTO> items;
     private CartStatus status;
     private String createdFrom;
 
@@ -43,18 +42,16 @@ public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Car
         return cart;
     }
 
-    public void addItem(ItemDTO itemDTO) {
-        items.add(itemDTO);
-    }
-
     @Override
     public void addLinks() {
         add(linkTo(methodOn(CartController.class).readCart(uid)).withSelfRel());
         if (customerUid != null) {
             add(linkTo(methodOn(UserController.class).readUser(customerUid)).withRel("customer"));
         }
-        for (ItemDTO item : items) {
-            item.addLinks();
+        if (items != null) {
+            for (CartItemDTO item : items) {
+                item.addLinks();
+            }
         }
     }
 

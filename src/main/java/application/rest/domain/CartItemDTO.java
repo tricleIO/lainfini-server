@@ -1,6 +1,6 @@
 package application.rest.domain;
 
-import application.persistence.entity.CartHasProduct;
+import application.persistence.entity.CartItem;
 import application.rest.ProductController;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
@@ -12,9 +12,10 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
-public class ItemDTO extends ResourceSupport implements ReadWriteDatabaseDTO<CartHasProduct>, Linkable {
+public class CartItemDTO extends ResourceSupport implements ReadWriteDatabaseDTO<CartItem>, IdentifableDTO<Long>, Linkable {
 
-    private UUID cartUuid;
+    private Long uid;
+    private UUID cartUid;
     private UUID productUid;
     private Integer quantity = 1;
     private Date addedAt;
@@ -30,18 +31,20 @@ public class ItemDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Car
     }
 
     @Override
-    public CartHasProduct toEntity(boolean selectAsParent, Object... parentParams) {
-        CartHasProduct cartHasProduct = new CartHasProduct();
+    public CartItem toEntity(boolean selectAsParent, Object... parentParams) {
+        CartItem cartItem = new CartItem();
+        cartItem.setId(uid);
         if (selectAsParent) {
             if (cart != null) {
-                cartHasProduct.setCart(cart.toEntity(false));
+                cartItem.setCart(cart.toEntity(false));
             }
             if (product != null) {
-                cartHasProduct.setProduct(product.toEntity(false));
+                cartItem.setProduct(product.toEntity(false));
             }
         }
-        cartHasProduct.setQuantity(quantity);
-        cartHasProduct.setAddedAt(new Date());
-        return cartHasProduct;
+        cartItem.setQuantity(quantity);
+        cartItem.setAddedAt(new Date());
+        return cartItem;
     }
+
 }

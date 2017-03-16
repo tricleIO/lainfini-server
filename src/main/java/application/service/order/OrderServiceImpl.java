@@ -1,9 +1,8 @@
 package application.service.order;
 
-import application.persistence.entity.CartHasProduct;
+import application.persistence.entity.CartItem;
 import application.persistence.entity.CustomerOrder;
 import application.persistence.entity.OrderItem;
-import application.persistence.repository.CartHasProductRepository;
 import application.persistence.repository.OrderRepository;
 import application.rest.domain.AddressDTO;
 import application.rest.domain.OrderDTO;
@@ -24,7 +23,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 
@@ -33,9 +31,6 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
 
     @Autowired
     private OrderRepository orderRepository;
-
-    @Autowired
-    private CartHasProductRepository cartHasProductRepository;
 
     @Autowired
     private UserService userService;
@@ -100,15 +95,15 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     @Override
     protected void doAfterCreate(CustomerOrder entity) {
         if (entity.getCart() != null) {
-            List<CartHasProduct> cartHasProductList = cartHasProductRepository.findByCartId(entity.getCart().getId());
+            Set<CartItem> cartItems = entity.getCart().getItems();
             Set<OrderItem> orderItems = new LinkedHashSet<>();
-            for (CartHasProduct cartHasProduct : cartHasProductList) {
+            for (CartItem cartItem : cartItems) {
                 OrderItem orderItem = new OrderItem();
-                orderItem.setProduct(cartHasProduct.getProduct());
-                orderItem.setQuantity(cartHasProduct.getQuantity());
-                orderItem.setAddedAt(cartHasProduct.getAddedAt());
+                orderItem.setProduct(cartItem.getProduct());
+                orderItem.setQuantity(cartItem.getQuantity());
+                orderItem.setAddedAt(cartItem.getAddedAt());
                 orderItem.setOrder(entity);
-                orderItem.setPrice(cartHasProduct.getProduct().getPrice());
+                orderItem.setPrice(cartItem.getProduct().getPrice());
                 orderItems.add(orderItem);
             }
             entity.setItems(orderItems);
