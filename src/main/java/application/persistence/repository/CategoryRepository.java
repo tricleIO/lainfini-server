@@ -9,8 +9,8 @@ import java.util.List;
 
 public interface CategoryRepository extends PagingAndSortingRepository<Category, Integer> {
 
-    List<Category> findByParentId(Integer parentId);
-    Page<Category> findByParentId(Integer parentId, Pageable pageable);
-    Page<Category> findByParentIsNull(Pageable pageable);
+    List<Category> findByParentCategoryId(Integer parentId);
+    Page<Category> findByParentCategoryId(Integer parentId, Pageable pageable);
+    Page<Category> findByParentCategoryIsNull(Pageable pageable);
 
 }

@@ -31,7 +31,7 @@ public abstract class AbstractFileController<E extends AbstractFile<D>, D extend
     @Autowired
     private ImageFileService imageFileService;
 
-    @RequestMapping(value = "/", method = RequestMethod.POST)
+    @RequestMapping(value = "", method = RequestMethod.POST)
     public ResponseEntity<?> uploadDocument(@RequestParam("file") MultipartFile[] files) throws IllegalAccessException, InstantiationException {
         List<D> applicationFileDTOS = new ArrayList<>();
         for (MultipartFile file : files) {

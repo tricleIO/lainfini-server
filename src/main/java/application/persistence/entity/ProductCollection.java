@@ -14,11 +14,13 @@ public class ProductCollection implements DTOConvertable<ProductCollectionDTO> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "product_collection_id", unique = true, nullable = false)
+    @Column(name = "id", unique = true, nullable = false)
     private Integer id;
 
+    @Column(name = "name")
     private String name;
 
+    @Column(name = "url_slug")
     private String urlSlug;
 
     @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "productCollection")

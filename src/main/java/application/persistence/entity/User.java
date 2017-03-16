@@ -124,6 +124,22 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         this.login = user.getLogin();
         this.password = user.getPassword();
         this.roles = user.getRoles();
+        this.linkedAccountList = user.getLinkedAccountList();
+        this.degreeBeforeName = user.getDegreeBeforeName();
+        this.degreeAfterName = user.getDegreeAfterName();
+        this.firstName =user.getFirstName();
+        this.lastName = user.getLastName();
+        this.sex = user.getSex().getValue();
+        this.billingAddress= user.getBillingAddress();
+        this.deliveryAddress = user.getDeliveryAddress();
+        this.phoneCode = user.getPhoneCode();
+        this.phoneNumber = user.getPhoneNumber();
+        this.abraLink = user.getAbraLink();
+        this.stripeToken = user.getStripeToken();
+        this.statusEnum = user.getStatusEnum();
+        this.currency = user.getCurrency();
+        this.locale = user.getLocale();
+
     }
 
     @Override
@@ -133,6 +149,8 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         userDTO.setUsername(login);
         userDTO.setFirstName(firstName);
         userDTO.setLastName(lastName);
+        userDTO.setPassword(password);
+        userDTO.setStatus(statusEnum);
         userDTO.setSex(getSex());
         if (billingAddress != null) {
             userDTO.setBillingAddressUid(billingAddress.getId());
@@ -143,6 +161,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         userDTO.setPhoneCode(phoneCode);
         userDTO.setPhoneNumber(phoneNumber);
         userDTO.setAbraLink(abraLink);
+        userDTO.setStripeToken(stripeToken);
         if (currency != null) {
             userDTO.setCurrency(currency.toDTO(false));
         }

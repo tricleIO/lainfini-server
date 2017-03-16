@@ -20,15 +20,19 @@ public class Category implements DTOConvertable<CategoryDTO>, Serializable {
     private String name;
 
     @ManyToOne
-    private Category parent;
+    @JoinColumn(name = "parent_category_id", referencedColumnName = "id", nullable = true)
+    private Category parentCategory;
+
+    @Column(name = "priority")
+    private Integer priority;
 
     @Override
     public CategoryDTO toDTO(boolean selectAsParent, Object... parentParams) {
         CategoryDTO categoryDTO = new CategoryDTO();
         categoryDTO.setUid(id);
         categoryDTO.setName(name);
-        if (parent != null) {
-            categoryDTO.setParentCategoryUid(parent.getId());
+        if (parentCategory != null) {
+            categoryDTO.setParentCategoryUid(parentCategory.getId());
         }
         return categoryDTO;
     }

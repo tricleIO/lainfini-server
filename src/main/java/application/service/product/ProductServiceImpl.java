@@ -172,12 +172,12 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
 
         // by queue mechanism add all subcategory ids
         Queue<Category> categoryQueue = new LinkedList<>();
-        categoryQueue.addAll(categoryRepository.findByParentId(categoryId));
+        categoryQueue.addAll(categoryRepository.findByParentCategoryId(categoryId));
         while (!categoryQueue.isEmpty()) {
             Category currentCategory = categoryQueue.remove();
             categoryIds.add(currentCategory.getId());
             // add all subcategories of current getCategoryDataManipulator to queue
-            categoryQueue.addAll(categoryRepository.findByParentId(currentCategory.getId()));
+            categoryQueue.addAll(categoryRepository.findByParentCategoryId(currentCategory.getId()));
         }
 
         return categoryIds;

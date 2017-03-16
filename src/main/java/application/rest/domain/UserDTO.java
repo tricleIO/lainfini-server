@@ -2,7 +2,7 @@ package application.rest.domain;
 
 import application.persistence.entity.User;
 import application.persistence.type.SexEnum;
-import application.persistence.type.UserStatusEnum;
+import application.persistence.type.StatusEnum;
 import application.rest.AddressController;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
@@ -21,6 +21,7 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
     private String username;
     private String password;
     private Long customerUid;
+    private StatusEnum status;
 
     private String firstName;
     private String lastName;
@@ -34,6 +35,7 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
     private String phoneNumber;
 
     private String abraLink;
+    private String stripeToken;
 
     private CurrencyDTO currency;
 
@@ -52,6 +54,7 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
         user.setLastName(lastName);
         user.setPhoneCode(phoneCode);
         user.setPhoneNumber(phoneNumber);
+        user.setStatusEnum(status);
         if (currency != null) {
             user.setCurrency(currency.toEntity(false));
         }
@@ -59,6 +62,7 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
             user.setSex(sex);
         }
         user.setAbraLink(abraLink);
+        user.setStripeToken(stripeToken);
         user.setDegreeAfterName(degreeAfterName);
         user.setDegreeBeforeName(degreeBeforeName);
         return user;
