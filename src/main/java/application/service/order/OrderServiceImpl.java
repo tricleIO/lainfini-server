@@ -14,7 +14,6 @@ import application.service.BaseDatabaseServiceImpl;
 import application.service.address.AddressService;
 import application.service.cart.CartService;
 import application.service.delivery.DeliveryService;
-import application.service.orderItem.OrderItemService;
 import application.service.paymentMethod.PaymentMethodService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
@@ -34,9 +33,6 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
 
     @Autowired
     private OrderRepository orderRepository;
-
-    @Autowired
-    private OrderItemService orderItemService;
 
     @Autowired
     private CartHasProductRepository cartHasProductRepository;
@@ -112,6 +108,7 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                 orderItem.setQuantity(cartHasProduct.getQuantity());
                 orderItem.setAddedAt(cartHasProduct.getAddedAt());
                 orderItem.setOrder(entity);
+                orderItem.setPrice(cartHasProduct.getProduct().getPrice());
                 orderItems.add(orderItem);
             }
             entity.setItems(orderItems);

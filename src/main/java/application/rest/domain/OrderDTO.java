@@ -2,6 +2,7 @@ package application.rest.domain;
 
 import application.persistence.entity.CustomerOrder;
 import application.persistence.type.OrderStatusEnum;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 import java.util.Date;
@@ -9,6 +10,7 @@ import java.util.Set;
 import java.util.UUID;
 
 @Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class OrderDTO implements ReadWriteDatabaseDTO<CustomerOrder>, IdentifableDTO<UUID> {
 
     private UUID uid;
