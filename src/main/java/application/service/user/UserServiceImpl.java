@@ -2,6 +2,7 @@ package application.service.user;
 
 import application.persistence.entity.User;
 import application.persistence.repository.UserRepository;
+import application.persistence.type.UserStatusEnum;
 import application.rest.domain.UserDTO;
 import application.service.BaseDatabaseServiceImpl;
 import application.service.response.ServiceResponse;
@@ -44,6 +45,16 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
             user.setPassword(passwordEncoder.encode(user.getPassword()));
         }
         return super.create(user);
+    }
+
+    @Override
+    protected void doAfterConvertInCreate(User user) {
+        if (user.getPassword() != null) {
+            user.setRegisterStatus(UserStatusEnum.REGISTERED);
+        } else {
+            user.setRegisterStatus(UserStatusEnum.UNREGISTERED);
+        }
+        super.doAfterConvertInCreate(user);
     }
 
     private boolean exists(UserDTO dto) {

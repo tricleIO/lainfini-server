@@ -148,6 +148,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         }
         userDTO.setDegreeAfterName(degreeAfterName);
         userDTO.setDegreeBeforeName(degreeBeforeName);
+        userDTO.setRegisterStatus(registerStatus);
         return userDTO;
     }
 
