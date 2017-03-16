@@ -16,8 +16,10 @@ public class Currency implements DTOConvertable<CurrencyDTO>, Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(name = "name", nullable = false)
     private String name;
 
+    @Column(name = "symbol", nullable = false)
     private String symbol;
 
     @Enumerated(EnumType.ORDINAL)
