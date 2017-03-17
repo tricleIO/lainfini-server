@@ -1,8 +1,10 @@
 package application.service.order;
 
+import application.persistence.entity.Cart;
 import application.persistence.entity.CartItem;
 import application.persistence.entity.CustomerOrder;
 import application.persistence.entity.OrderItem;
+import application.persistence.repository.CartRepository;
 import application.persistence.repository.OrderRepository;
 import application.rest.domain.AddressDTO;
 import application.rest.domain.OrderDTO;
@@ -36,6 +38,9 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     private UserService userService;
 
     @Autowired
+    private CartRepository cartRepository;
+
+    @Autowired
     private CartService cartService;
 
     @Autowired
@@ -58,7 +63,7 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     @Override
     protected ServiceResponse<OrderDTO> doBeforeConvertInCreate(OrderDTO dto) {
         if (dto.getCustomerUid() == null && dto.getDeliveryAddressUid() == null) {
-            if (dto.getCustomer() != null &&  dto.getDeliveryAddress() != null) {
+            if (dto.getCustomer() != null && dto.getDeliveryAddress() != null) {
                 // create unregistered user
                 ServiceResponse<UserDTO> userResponse = userService.create(dto.getCustomer());
                 if (!userResponse.isSuccessful()) {
@@ -78,7 +83,7 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                 // if billing address is set, create it to
                 if (dto.getBillingAddress() != null) {
                     ServiceResponse<AddressDTO> billingAddressResponse = addressService.create(
-                        dto.getBillingAddress()
+                            dto.getBillingAddress()
                     );
                     if (!billingAddressResponse.isSuccessful()) {
                         return ServiceResponse.error(billingAddressResponse.getStatus());
@@ -95,19 +100,22 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     @Override
     protected void doAfterCreate(CustomerOrder entity) {
         if (entity.getCart() != null) {
-            Set<CartItem> cartItems = entity.getCart().getItems();
-            Set<OrderItem> orderItems = new LinkedHashSet<>();
-            for (CartItem cartItem : cartItems) {
-                OrderItem orderItem = new OrderItem();
-                orderItem.setProduct(cartItem.getProduct());
-                orderItem.setQuantity(cartItem.getQuantity());
-                orderItem.setAddedAt(cartItem.getAddedAt());
-                orderItem.setOrder(entity);
-                orderItem.setPrice(cartItem.getProduct().getPrice());
-                orderItems.add(orderItem);
+            Cart cart = cartRepository.findOne(entity.getCart().getId());
+            if (cart != null) {
+                Set<OrderItem> orderItems = new LinkedHashSet<>();
+                for (CartItem cartItem : cart.getItems()) {
+                    // create order item from cart item
+                    OrderItem orderItem = new OrderItem();
+                    orderItem.setProduct(cartItem.getProduct());
+                    orderItem.setQuantity(cartItem.getQuantity());
+                    orderItem.setPrice(cartItem.getProduct().getPrice());
+                    orderItem.setAddedAt(cartItem.getAddedAt());
+                    orderItem.setOrder(entity);
+                    orderItems.add(orderItem);
+                }
+                entity.setItems(orderItems);
+                orderRepository.save(entity);
             }
-            entity.setItems(orderItems);
-            orderRepository.save(entity);
         }
     }
 

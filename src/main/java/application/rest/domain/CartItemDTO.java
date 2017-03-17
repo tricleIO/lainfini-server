@@ -31,7 +31,7 @@ public class CartItemDTO extends ResourceSupport implements ReadWriteDatabaseDTO
         if (productUid != null) {
             add(linkTo(methodOn(ProductController.class).readProduct(productUid, null)).withRel("product"));
         }
-        if (getCartUid() != null) {
+        if (cartUid != null) {
             add(linkTo(methodOn(CartController.class).readCart(cartUid)).withRel("cart"));
         }
     }
