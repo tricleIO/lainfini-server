@@ -17,9 +17,17 @@ public class CartItemController extends AbstractDatabaseController<CartItem, Lon
     private CartItemService cartItemService;
 
     @RequestMapping(value = "/{cartId}/items", method = RequestMethod.POST)
-    public ResponseEntity<?> createCart(@PathVariable UUID cartId, @RequestBody CartItemDTO cart) {
+    public ResponseEntity<?> createCartItem(@PathVariable UUID cartId, @RequestBody CartItemDTO cart) {
         cart.setCartUid(cartId);
         return create(cart);
+    }
+
+    @RequestMapping(value = "/{cartId}/items", method = RequestMethod.PUT)
+    public ResponseEntity<?> putCartItem(@PathVariable UUID cartId, @RequestBody CartItemDTO cart) {
+        cart.setCartUid(cartId);
+        return getSimpleResponseEntity(
+                cartItemService.put(cart)
+        );
     }
 
     @Override
