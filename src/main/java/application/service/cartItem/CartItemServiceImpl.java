@@ -30,14 +30,22 @@ public class CartItemServiceImpl extends BaseDatabaseServiceImpl<CartItem, Long,
     @Override
     public ServiceResponse<CartItemDTO> create(CartItemDTO dto) {
         if (productInCartAlreadyExists(dto.getProductUid(), dto.getCartUid())) {
-            CartItem cartItem = cartItemRepository.findByProductIdAndCartId(
-                    dto.getProductUid(), dto.getCartUid()
-            );
-            cartItem.setQuantity(cartItem.getQuantity() + dto.getQuantity());
-            CartItem updatedCartItem = cartItemRepository.save(cartItem);
-            return ServiceResponse.success(updatedCartItem.toDTO(true));
+            return ServiceResponse.error(ServiceResponseStatus.ALREADY_EXISTS);
         }
         return super.create(dto);
+    }
+
+    @Override
+    public ServiceResponse<CartItemDTO> put(CartItemDTO dto) {
+        if (!productInCartAlreadyExists(dto.getProductUid(), dto.getCartUid())) {
+            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+        }
+        CartItem cartItem = cartItemRepository.findByProductIdAndCartId(
+                dto.getProductUid(), dto.getCartUid()
+        );
+        cartItem.setQuantity(dto.getQuantity());
+        CartItem updatedCartItem = cartItemRepository.save(cartItem);
+        return ServiceResponse.success(updatedCartItem.toDTO(true));
     }
 
     @Override
