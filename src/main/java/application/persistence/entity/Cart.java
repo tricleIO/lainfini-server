@@ -39,7 +39,7 @@ public class Cart implements DTOConvertable<CartDTO>, Serializable {
 
     private String createdFrom;
 
-    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "cart")
+    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "cart")
     private Set<CartItem> items;
 
     @Override

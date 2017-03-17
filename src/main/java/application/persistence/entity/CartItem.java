@@ -39,6 +39,9 @@ public class CartItem implements DTOConvertable<CartItemDTO>, Serializable {
     public CartItemDTO toDTO(boolean selectAsParent, Object... parentParams) {
         CartItemDTO orderItemDTO = new CartItemDTO();
         orderItemDTO.setUid(id);
+        if (cart != null) {
+            orderItemDTO.setCartUid(cart.getId());
+        }
         if (product != null) {
             orderItemDTO.setProductUid(product.getId());
         }

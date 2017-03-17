@@ -1,7 +1,9 @@
 package application.rest.domain;
 
 import application.persistence.entity.CartItem;
+import application.rest.CartController;
 import application.rest.ProductController;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
@@ -12,6 +14,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class CartItemDTO extends ResourceSupport implements ReadWriteDatabaseDTO<CartItem>, IdentifableDTO<Long>, Linkable {
 
     private Long uid;
@@ -27,6 +30,9 @@ public class CartItemDTO extends ResourceSupport implements ReadWriteDatabaseDTO
     public void addLinks() {
         if (productUid != null) {
             add(linkTo(methodOn(ProductController.class).readProduct(productUid, null)).withRel("product"));
+        }
+        if (getCartUid() != null) {
+            add(linkTo(methodOn(CartController.class).readCart(cartUid)).withRel("cart"));
         }
     }
 

@@ -45,7 +45,7 @@ public class CartController extends AbstractDatabaseController<Cart, UUID, CartD
         if (!cartItemResponse.isSuccessful()) {
             return new ErrorResponseEntity(cartItemResponse.getStatus());
         }
-        return readCart(cartId);
+        return read(cartId);
     }
 
     @Override
