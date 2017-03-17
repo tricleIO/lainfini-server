@@ -49,8 +49,10 @@ public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Car
             add(linkTo(methodOn(UserController.class).readUser(customerUid)).withRel("customer"));
         }
         if (items != null) {
-            for (CartItemDTO item : items) {
-                item.addLinks();
+            if (items != null) {
+                for (CartItemDTO item : items) {
+                    item.addLinks();
+                }
             }
         }
     }

@@ -75,5 +75,12 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
         if (customerUid != null) {
             add(linkTo(methodOn(UserController.class).readUser(customerUid)).withRel("customer"));
         }
+        if (items != null) {
+            if (items != null) {
+                for (OrderItemDTO item : items) {
+                    item.addLinks();
+                }
+            }
+        }
     }
 }
