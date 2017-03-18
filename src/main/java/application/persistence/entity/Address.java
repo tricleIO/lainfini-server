@@ -34,6 +34,7 @@ public class Address implements DTOConvertable<AddressDTO>, Serializable {
     @Column(name = "country", length = 63)
     private String country;
 
+    // @TODO - add nullable=false
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "customer_id")
     private User customer;
