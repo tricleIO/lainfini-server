@@ -142,7 +142,6 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         this.statusEnum = user.getStatusEnum();
         this.currency = user.getCurrency();
         this.locale = user.getLocale();
-
     }
 
     @Override
@@ -152,7 +151,6 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         userDTO.setUsername(login);
         userDTO.setFirstName(firstName);
         userDTO.setLastName(lastName);
-        userDTO.setPassword(password);
         userDTO.setStatus(statusEnum);
         userDTO.setSex(getSex());
         if (billingAddress != null) {
