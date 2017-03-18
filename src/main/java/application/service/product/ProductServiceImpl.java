@@ -1,10 +1,8 @@
 package application.service.product;
 
-import application.persistence.entity.Category;
-import application.persistence.entity.Product;
-import application.persistence.entity.ProductHasCallToAction;
-import application.persistence.entity.ProductHasFlash;
+import application.persistence.entity.*;
 import application.persistence.repository.*;
+import application.persistence.type.UserStatusEnum;
 import application.rest.domain.FlashDTO;
 import application.rest.domain.ProductDTO;
 import application.rest.domain.ProductHasFlashDTO;
@@ -46,8 +44,13 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         if (response.isSuccessful()) {
             ProductDTO productDTO = response.getBody();
             if (principal != null) {
-                if (userLikesProduct(principal.getName(), productDTO)) {
-                    productDTO.setIsFavourite(true);
+                User user = userRepository.findByLoginAndRegisterStatus(
+                        principal.getName(), UserStatusEnum.REGISTERED
+                );
+                if (user != null) {
+                    if (userLikesProduct(user, productDTO)) {
+                        productDTO.setIsFavourite(true);
+                    }
                 }
             }
         }
@@ -58,9 +61,16 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     public ServiceResponse<Page<ProductDTO>> readAll(Pageable pageable, Principal principal) {
         ServiceResponse<Page<ProductDTO>> response = super.readAll(pageable);
         if (principal != null) {
-            for (ProductDTO productDTO : response.getBody().getContent()) {
-                if (userLikesProduct(principal.getName(), productDTO)) {
-                    productDTO.setIsFavourite(true);
+            if (principal != null) {
+                User user = userRepository.findByLoginAndRegisterStatus(
+                        principal.getName(), UserStatusEnum.REGISTERED
+                );
+                if (user != null) {
+                    for (ProductDTO productDTO : response.getBody().getContent()) {
+                        if (userLikesProduct(user, productDTO)) {
+                            productDTO.setIsFavourite(true);
+                        }
+                    }
                 }
             }
         }
@@ -74,9 +84,14 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         Page<ProductDTO> pageWithDtos = convertPageWithEntitiesToPageWithDtos(pageWithProducts, pageable);
 
         if (principal != null) {
-            for (ProductDTO productDTO : pageWithDtos.getContent()) {
-                if (userLikesProduct(principal.getName(), productDTO)) {
-                    productDTO.setIsFavourite(true);
+            User user = userRepository.findByLoginAndRegisterStatus(
+                    principal.getName(), UserStatusEnum.REGISTERED
+            );
+            if (user != null) {
+                for (ProductDTO productDTO : pageWithDtos.getContent()) {
+                    if (userLikesProduct(user, productDTO)) {
+                        productDTO.setIsFavourite(true);
+                    }
                 }
             }
         }
@@ -157,8 +172,13 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
 
     // privates
 
-    private boolean userLikesProduct(String username, ProductDTO productDTO) {
-        return userLikesProductRepository.countByUserLoginAndProductId(username, productDTO.getUid()) > 0;
+    private boolean userLikesProduct(User user, ProductDTO productDTO) {
+        Wish wish = new Wish();
+        wish.setCustomer(user);
+        Product product = new Product();
+        product.setId(productDTO.getUid());
+        wish.setProduct(product);
+        return user.getWishes().contains(wish);
     }
 
     private String getUrlSlugFromName(String productName) {
@@ -245,7 +265,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     private FlashService flashService;
 
     @Autowired
-    private UserLikesProductRepository userLikesProductRepository;
+    private UserRepository userRepository;
 
     @Autowired
     private CategoryService categoryService;
