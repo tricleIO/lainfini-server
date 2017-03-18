@@ -37,6 +37,9 @@ public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Car
         if (customer != null) {
             cart.setCustomer(customer.toEntity(false));
         }
+        if (status == null) {
+            status = CartStatus.OPENED;
+        }
         cart.setStatus(status);
         cart.setCreatedFrom(createdFrom);
         return cart;
