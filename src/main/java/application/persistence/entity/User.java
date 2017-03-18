@@ -100,6 +100,9 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "customer")
     private Set<Wish> wishes;
 
+    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "customer")
+    private Set<Address> addresses;
+
     /*login part*/
 
     @NotNull
