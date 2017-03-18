@@ -8,25 +8,29 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.UUID;
+
 @RestController
-@RequestMapping(value = "/addresses")
 public class AddressController extends AbstractDatabaseController<Address, Long, AddressDTO, AddressService> {
 
     @Autowired
     private AddressService addressService;
 
-    @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> readAddresses(Pageable pageable) {
-        return readAll(pageable);
+    @RequestMapping(value = "/users/{userId}/addresses", method = RequestMethod.GET)
+    public ResponseEntity<?> readAddresses(@PathVariable UUID userId, Pageable pageable) {
+        return getPageResponseEntity(
+                addressService.readCustomerAddresses(userId, pageable)
+        );
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/addresses/{id}", method = RequestMethod.GET)
     public ResponseEntity<?> readAddress(@PathVariable Long id) {
         return read(id);
     }
 
-    @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<?> createAddress(@RequestBody AddressDTO address) {
+    @RequestMapping(value = "/users/{userId}/addresses", method = RequestMethod.POST)
+    public ResponseEntity<?> createAddress(@PathVariable UUID userId, @RequestBody AddressDTO address) {
+        address.setCustomerUid(userId);
         return create(address);
     }
 
