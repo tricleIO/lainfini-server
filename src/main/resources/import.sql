@@ -33,8 +33,8 @@ INSERT INTO material (name) VALUES ('Natural');
 INSERT INTO `role` (id, role_name) VALUES (1, 'ADMIN');
 INSERT INTO `role` (id, role_name) VALUES (2, 'CUSTOMER');
 
-INSERT INTO customer (id, degree_after_name, degree_before_name, first_name, last_name, locale, login, password, phone_code, phone_number, sex, status, currency_id)VALUES (0x66353763616364612D303935612D3131, 'PhD', 'Ing', 'Michal', 'Novák', 'CZECH', '1','$2a$10$ClApxW.jQ.ZhtDzsNB.yeunMPnrA.QiKkjwMEsfPqU5hRtuR2HUwW', '+420','987654987', 'M', 'ACTIVE', 1);
-INSERT INTO customer (id, degree_after_name, degree_before_name, first_name, last_name, locale, login, password, phone_code, phone_number, sex, status, currency_id)VALUES (0x66353763616364612D303935612D3130, '', '', 'Petra', 'Andělová', 'CZECH', '2','$2a$10$ClApxW.jQ.ZhtDzsNB.yeunMPnrA.QiKkjwMEsfPqU5hRtuR2HUwW', '+420','555666888', 'F', 'ACTIVE', 1);
+INSERT INTO customer (id, degree_after_name, degree_before_name, first_name, last_name, locale, login, password, phone_code, phone_number, sex, status, currency_id, register_status) VALUES (0x66353763616364612D303935612D3131, 'PhD', 'Ing', 'Michal', 'Novák', 'CZECH', '1','$2a$10$ClApxW.jQ.ZhtDzsNB.yeunMPnrA.QiKkjwMEsfPqU5hRtuR2HUwW', '+420','987654987', 'M', 'ACTIVE', 1, 0);
+INSERT INTO customer (id, degree_after_name, degree_before_name, first_name, last_name, locale, login, password, phone_code, phone_number, sex, status, currency_id, register_status) VALUES (0x66353763616364612D303935612D3130, '', '', 'Petra', 'Andělová', 'CZECH', '2','$2a$10$ClApxW.jQ.ZhtDzsNB.yeunMPnrA.QiKkjwMEsfPqU5hRtuR2HUwW', '+420','555666888', 'F', 'ACTIVE', 1, 0);
 
 INSERT INTO address (city, country, house_number, postal_code, state, street, customer_id) VALUES ('Praha', 'Czechia', '987', '77984', 'Czechia', 'Polabinská', 0x66353763616364612D303935612D3131);
 INSERT INTO address (city, country, house_number, postal_code, state, street, customer_id) VALUES ('Brno', 'Czechia', '451689'  , '77984', 'Czechia', 'Polabinská', 0x66353763616364612D303935612D3130);
