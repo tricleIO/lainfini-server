@@ -6,6 +6,8 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
+import java.util.UUID;
+
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
@@ -20,6 +22,9 @@ public class AddressDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private String postal;
     private String state;
     private String country;
+    private UUID customerUid;
+
+    private UserDTO customer;
 
     @Override
     public Address toEntity(boolean selectAsParent, Object... parentParams) {
@@ -31,6 +36,11 @@ public class AddressDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         address.setPostalCode(postal);
         address.setState(state);
         address.setCountry(country);
+        if (selectAsParent) {
+            if (customer != null) {
+                address.setCustomer(customer.toEntity(false));
+            }
+        }
         return address;
     }
 
@@ -38,6 +48,5 @@ public class AddressDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     public void addLinks() {
         add(linkTo(methodOn(AddressController.class).readAddress(uid)).withSelfRel());
     }
-
 
 }
