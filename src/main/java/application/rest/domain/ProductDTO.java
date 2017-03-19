@@ -40,6 +40,9 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private String urlSlug;
     private StatusEnum status;
 
+    @JsonProperty("mainImage")
+    private ApplicationFileDTO mainImageDTO;
+
     @JsonProperty("images")
     private Set<ApplicationFileDTO> applicationFileDTOS;
 
@@ -54,6 +57,9 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         product.setShortDescription(shortDescription);
         product.setDescription(description);
         product.setPrice(price);
+        if (mainImageDTO != null) {
+            product.setMainImage(mainImageDTO.toEntity(false));
+        }
         if (selectAsParent) {
             if (category != null) {
                 product.setCategory(category.toEntity(false));

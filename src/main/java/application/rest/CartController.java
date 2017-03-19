@@ -2,7 +2,6 @@ package application.rest;
 
 import application.persistence.entity.Cart;
 import application.rest.domain.CartDTO;
-import application.rest.domain.ItemDTO;
 import application.service.cart.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -31,13 +30,6 @@ public class CartController extends AbstractDatabaseController<Cart, UUID, CartD
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> createCart(@RequestBody CartDTO cart) {
         return create(cart);
-    }
-
-    @RequestMapping(value = "/{cartId}", method = RequestMethod.PATCH)
-    public ResponseEntity<?> addProduct(@PathVariable UUID cartId, @RequestBody ItemDTO itemDTO) {
-        return getSimpleResponseEntity(
-                cartService.addProductToCart(cartId, itemDTO)
-        );
     }
 
     @Override
