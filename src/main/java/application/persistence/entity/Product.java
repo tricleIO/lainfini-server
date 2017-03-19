@@ -55,6 +55,10 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @JoinColumn(name = "unit_id", referencedColumnName = "id")
     private Unit unit;
 
+    @OneToOne
+    @JoinColumn(name = "main_image_id", referencedColumnName = "id")
+    private ApplicationFile mainImage;
+
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "pf.product", cascade=CascadeType.ALL)
     private Set<ProductFile> images = new HashSet<>();
 
@@ -72,6 +76,9 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
         productDTO.setShortDescription(shortDescription);
         productDTO.setDescription(description);
         productDTO.setPrice(price);
+        if (mainImage != null) {
+            productDTO.setMainImageDTO(mainImage.toDTO(false));
+        }
         if (category != null) {
             productDTO.setCategoryUid(category.getId());
         }

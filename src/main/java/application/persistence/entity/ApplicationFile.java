@@ -5,10 +5,7 @@ import application.rest.domain.ProductDTO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -27,6 +24,9 @@ public class ApplicationFile extends AbstractFile<ApplicationFileDTO> {
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "fc.file")
     private Set<FileCollectionHasFile> fileCollection;
 
+    @OneToOne(mappedBy = "mainImage")
+    private Product product;
+
     @Override
     public ApplicationFileDTO toDTO(boolean selectAsParent, Object... parentParams) { //todo dodělat
         ApplicationFileDTO applicationFileDTO = new ApplicationFileDTO();
@@ -37,6 +37,9 @@ public class ApplicationFile extends AbstractFile<ApplicationFileDTO> {
         applicationFileDTO.setFileDescription(getFileDescription());
         applicationFileDTO.setFileStatus(getFileStatus());
         applicationFileDTO.setFile(getFile());
+        if (product != null) {
+            applicationFileDTO.setProductDTO(product.toDTO(false));
+        }
         if (getImageFile() != null) {
             applicationFileDTO.setImageFileDTO(getImageFile().toDTO(false,applicationFileDTO));
         }

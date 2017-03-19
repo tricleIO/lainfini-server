@@ -17,6 +17,8 @@ public class ApplicationFileDTO extends AbstractFileDTO<ApplicationFile> {
 
     protected Set<ProductDTO> products;
 
+    protected ProductDTO productDTO;
+
     protected Integer sequenceNumber;
 
     @Override
@@ -29,6 +31,9 @@ public class ApplicationFileDTO extends AbstractFileDTO<ApplicationFile> {
         applicationFile.setFileDescription(fileDescription);
         applicationFile.setFileStatus(fileStatus);
         applicationFile.setFile(getFile());
+        if (applicationFile != null) {
+            applicationFile.setProduct(productDTO.toEntity(false));
+        }
         if (selectAsParent && imageFileDTO != null && imageFileDTO.getAbstractFileDTO() != null) {
             applicationFile.setImageFile(imageFileDTO.toEntity(false, applicationFile));
         }
