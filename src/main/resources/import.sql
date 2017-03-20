@@ -96,11 +96,11 @@ INSERT INTO product_collection (id, name, url_slug) VALUES (1,'New Arrivals','ne
 -- INSERT INTO product_collection (id, name,url_slug) VALUES (2,'best toys ever','best_toys_ever');
 -- INSERT INTO product_collection (id, name,url_slug) VALUES (3,'hallowen wishes','hallowen_wishes');
 
--- INSERT INTO product_collection_item (position, product_id, product_collection_id) VALUES (1, 0xCF03CE9A7BE24211BF006B4C4CE6232E,1);
--- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (2, 0xEE03CE9A7BE24251BF006B4C4CE6232E,1);
--- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (3, 0xAF03CE9B7BC24501BF006B4C4CE5232F,1);
--- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (4, 0xCF03CE9A7BE24201BF006B4C4CE6232A,1);
--- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (5, 0xEF03CE9A7BE24261BF006B4C4CE6232F,1);
+INSERT INTO product_collection_item (position, product_id, product_collection_id) VALUES (1, 0x66353763616364612D303935612D3131,1);
+INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (2, 0x004EDA8D0F3F4F33A5C3706C55A248C5,1);
+INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (3, 0x6ACf72A1D9B5462ABB90D05D6A87D61C,1);
+INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (4, 0x991DC5AB44744538849059A613EECC70,1);
+INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (5, 0x1D470BBF8E654CAC852B9A02E04F45FF,1);
 -- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (2, 0xCF03CE9A7BE24201BF006B4C4CE6232E,1);
 -- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (1, 0x66353763616364612D303935612D3131,2);
 -- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (2, 0xCF03CE9A7BE24201BF006B4C4CE6232E,2);
