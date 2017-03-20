@@ -23,7 +23,7 @@ public class ProductCollection implements DTOConvertable<ProductCollectionDTO> {
     @Column(name = "url_slug")
     private String urlSlug;
 
-    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "productCollection")
+    @OneToMany(cascade=CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY, mappedBy = "productCollection")
     private Set<ProductCollectionItem> items;
 
 

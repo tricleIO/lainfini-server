@@ -17,13 +17,13 @@ public class Size implements DTOConvertable<SizeDTO> {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String name;
+    private String value;
 
     @Override
     public SizeDTO toDTO(boolean selectAsParent, Object... parentParams) {
         SizeDTO sizeDTO = new SizeDTO();
         sizeDTO.setUid(id);
-        sizeDTO.setName(name);
+        sizeDTO.setValue(value);
         return sizeDTO;
     }
 
