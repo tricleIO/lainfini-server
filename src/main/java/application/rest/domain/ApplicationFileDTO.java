@@ -33,7 +33,7 @@ public class ApplicationFileDTO extends AbstractFileDTO<ApplicationFile> {
         applicationFile.setFileDescription(fileDescription);
         applicationFile.setFileStatus(fileStatus);
         applicationFile.setFile(getFile());
-        if (applicationFile != null) {
+        if (applicationFile != null && productDTO != null) {
             applicationFile.setProduct(productDTO.toEntity(false));
         }
         if (selectAsParent && imageFileDTO != null && imageFileDTO.getAbstractFileDTO() != null) {

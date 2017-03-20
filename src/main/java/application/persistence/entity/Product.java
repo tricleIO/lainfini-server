@@ -1,6 +1,7 @@
 package application.persistence.entity;
 
 import application.persistence.DTOConvertable;
+import application.persistence.type.ProductStatus;
 import application.rest.domain.ApplicationFileDTO;
 import application.rest.domain.ProductDTO;
 import lombok.Data;
@@ -30,6 +31,9 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
 
     @Column(name = "ean", length = 13)
     private String ean;
+
+    @Column(name = "code", length = 25)
+    private String code;
 
     @Column(name = "short_description", length = 255)
     private String shortDescription;
@@ -67,6 +71,9 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
 
     private String urlSlug;
 
+    @Enumerated(EnumType.ORDINAL)
+    private ProductStatus productStatus;
+
     @Override
     public ProductDTO toDTO(boolean selectAsParent, Object... parentParams) {
         ProductDTO productDTO = new ProductDTO();
@@ -76,6 +83,8 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
         productDTO.setShortDescription(shortDescription);
         productDTO.setDescription(description);
         productDTO.setPrice(price);
+        productDTO.setCode(code);
+        productDTO.setProductStatus(productStatus);
         if (mainImage != null) {
             productDTO.setMainImageDTO(mainImage.toDTO(false));
         }
