@@ -15,7 +15,7 @@ import java.util.Set;
 @Entity
 @DiscriminatorValue("F")
 @Data
-@EqualsAndHashCode(exclude = {"productFiles","fileCollection"})
+@EqualsAndHashCode(exclude = {"productFiles","fileCollection", "fileCollection"})
 public class ApplicationFile extends AbstractFile<ApplicationFileDTO> {
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "pf.file")
@@ -37,7 +37,7 @@ public class ApplicationFile extends AbstractFile<ApplicationFileDTO> {
         applicationFileDTO.setFileDescription(getFileDescription());
         applicationFileDTO.setFileStatus(getFileStatus());
         applicationFileDTO.setFile(getFile());
-        if (product != null) {
+        if (product != null && selectAsParent) {
             applicationFileDTO.setProductDTO(product.toDTO(false));
         }
         if (getImageFile() != null) {
