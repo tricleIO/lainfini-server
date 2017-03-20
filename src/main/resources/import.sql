@@ -2,33 +2,35 @@ INSERT INTO faq (question, answer) VALUES ('How can I comment on a BBC programme
 INSERT INTO faq (question, answer)VALUES ('Where can I obtain my radio or key code, or a new key for my Ford?', 'Firstly, ');
 
 INSERT INTO category (id, name, parent_category_id, priority) VALUES (1, 'Scarves', NULL, 1);
-INSERT INTO category (id, name, parent_category_id, priority) VALUES (2, 'Silk', 1, 1);
-INSERT INTO category (id, name, parent_category_id, priority) VALUES (3, 'Cotton', 1, 1);
+INSERT INTO category (id, name, parent_category_id, priority) VALUES (2, 'Shawl', 1, 1);
 
 INSERT INTO category (name, parent_category_id, priority) VALUES ('Bestselling', NULL, 1);
 INSERT INTO category (name, parent_category_id, priority) VALUES ('Discounts', NULL, 1);
 
 INSERT INTO currency (name, symbol, symbol_placement) VALUES ('CZK', 'Kč', 1);
-INSERT INTO currency (name, symbol, symbol_placement) VALUES ('USB', '$', 1);
+INSERT INTO currency (name, symbol, symbol_placement) VALUES ('USD', '$', 1);
 INSERT INTO currency (name, symbol, symbol_placement) VALUES ('EUR', '€', 1);
 
-INSERT INTO flash (message, title, `type`)VALUES ('This product may require professional installation', 'Professional is needed', 'WARNING');
+INSERT INTO flash (message, title, `type`) VALUES ('This product may require professional installation', 'Professional is needed', 'WARNING');
 INSERT INTO flash (message, title, `type`) VALUES ('Goods is used', 'Used', 'WARNING');
 
+INSERT INTO `size` (name) VALUES ('90x90 cm');
+INSERT INTO `size` (name) VALUES ('180x70 cm');
 INSERT INTO `size` (name) VALUES ('S');
 INSERT INTO `size` (name) VALUES ('M');
 INSERT INTO `size` (name) VALUES ('L');
 INSERT INTO `size` (name) VALUES ('XL');
 INSERT INTO `size` (name) VALUES ('XXL');
 
-INSERT INTO unit (abbr, name) VALUES ('mm', 'milimeter');
-INSERT INTO unit (abbr, name) VALUES ('cm', 'centimeter');
-INSERT INTO unit (abbr, name) VALUES ('m', 'meter');
-INSERT INTO unit (abbr, name) VALUES ('g', 'gram');
+-- INSERT INTO unit (abbr, name) VALUES ('mm', 'milimeter');
+-- INSERT INTO unit (abbr, name) VALUES ('cm', 'centimeter');
+-- INSERT INTO unit (abbr, name) VALUES ('m', 'meter');
+-- INSERT INTO unit (abbr, name) VALUES ('g', 'gram');
+INSERT INTO unit (abbr, name) VALUES ('pcs', 'pieces');
 
-INSERT INTO material (name) VALUES ('Cotton');
-INSERT INTO material (name) VALUES ('Silk');
-INSERT INTO material (name) VALUES ('Natural');
+INSERT INTO material (name, composition, url_slug) VALUES ('Twill', '100% Silk', 'twill');
+INSERT INTO material (name, composition, url_slug) VALUES ('Satin', '100% Silk', 'satin');
+INSERT INTO material (name, composition, url_slug) VALUES ('Triora', '70% Silk 30% Wool', 'triora');
 
 INSERT INTO `role` (id, role_name) VALUES (1, 'ADMIN');
 INSERT INTO `role` (id, role_name) VALUES (2, 'CUSTOMER');
@@ -50,9 +52,23 @@ INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,vali
 INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (5,'F','batmobile2.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE62366,'image/png','2017-03-16 11:08:01');
 INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (6,'F','batmobile3.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE6236E,'image/png','2017-03-16 11:08:01');
 
-INSERT INTO product (id, status, description, ean, name, price, short_description, url_slug, category_id, main_image_id, material_id, size_id, unit_id)VALUES (0x66353763616364612D303935612D3131, 0, 'Logitech Marathon Mouse M720 Triathlon long descrition','15616515', 'Logitech Marathon Mouse M720 Triathlon', 1899.0,'Mouse Wireless, Optical, 1000 dpi, battery life of up to 2 years,1 AA battery, can be paired with up to 3 computers simultaneously, nano Unifying USB receiver','logitech-marathon-mouse-m720-triathlon-d4460766',1, 1,1, 1, 1);
-INSERT INTO product (id, status, description, ean, name, price, short_description, url_slug, category_id, main_image_id, material_id, size_id, unit_id)VALUES (0xCF03CE9A7BE24201BF006B4C4CE6232E, 0, 'Dell E1234 long description','2221', 'Dell E1234', 59999.0,'Short description','dell-e51234-new',1,2, 1, 1, 1);
-INSERT INTO product (id, status, description, ean, name, price, short_description, url_slug, category_id, main_image_id, material_id, size_id, unit_id)VALUES (0xCF03CE9A7BE24201BF006B4C4CE623F5, 0, 'With the advent of Batman LEGO Movie comes a new range of its kits, which will resemble characters and scenes from the film. Discover the world of all those superheroes with LEGO Batman Movie! The kit is suitable for children aged 8 to 14 years, and besides, it provides an endless source of entertainment, it helps to develop creativity, fantasy and imagination.','787989', 'LEGO Batmobile', 59999.0,'Building Kit 581 pieces, the recommended age 8-14 years','lego-batmobile',2,3, 1, 1, 1);
+-- INSERT INTO product (id, status, description, ean, name, price, short_description, url_slug, category_id, main_image_id, material_id, size_id, unit_id) VALUES (0x66353763616364612D303935612D3131, 0, 'Logitech Marathon Mouse M720 Triathlon long descrition','15616515', 'Logitech Marathon Mouse M720 Triathlon', 1899.0,'Mouse Wireless, Optical, 1000 dpi, battery life of up to 2 years,1 AA battery, can be paired with up to 3 computers simultaneously, nano Unifying USB receiver','logitech-marathon-mouse-m720-triathlon-d4460766',1, 1,1, 1, 1);
+-- INSERT INTO product (id, status, description, ean, name, price, short_description, url_slug, category_id, main_image_id, material_id, size_id, unit_id) VALUES (0xCF03CE9A7BE24201BF006B4C4CE6232E, 0, 'Dell E1234 long description','2221', 'Dell E1234', 59999.0,'Short description','dell-e51234-new',1,2, 1, 1, 1);
+-- INSERT INTO product (id, status, description, ean, name, price, short_description, url_slug, category_id, main_image_id, material_id, size_id, unit_id) VALUES (0xCF03CE9A7BE24201BF006B4C4CE623F5, 0, 'With the advent of Batman LEGO Movie comes a new range of its kits, which will resemble characters and scenes from the film. Discover the world of all those superheroes with LEGO Batman Movie! The kit is suitable for children aged 8 to 14 years, and besides, it provides an endless source of entertainment, it helps to develop creativity, fantasy and imagination.','787989', 'LEGO Batmobile', 59999.0,'Building Kit 581 pieces, the recommended age 8-14 years','lego-batmobile',2,3, 1, 1, 1);
+INSERT INTO product (id, status, code, name, price, url_slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x0A6411589A9349D28BC467EB388C415B, 0, 'ST012010101_17001015', 'BUTTERFLY SCARF', 795, 'buttefly-scarf', 1, 2, 1, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, url_slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x43B090B8BF2946CBB7D6FE5916C0039B, 0, 'ST012010103_17002015', 'PLAY OF BLUE SCARF', 795, 'play-of-blue-scarf', 1, 2, 1, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, url_slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xFA800FA1F9A24BCAB53B3736B67E0C1F, 0, 'SS012010104_17003015', 'MOONBOW', 795, 'moonbow', 1, 2, 2, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, url_slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x004EDA8D0F3F4F33A5C3706C55A248C5, 0, 'ST012010105_17004015', 'SHIFT ROUND', 795, 'shift-round', 1, 2, 1, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, url_slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xCA0B32B2F0694B74A17E74AFAC3DCDF5, 0, 'ST012010105_17005015', 'SHIFT SQUARES', 795, 'shift-squares', 1, 2, 1, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, url_slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xBF5E361C9F0947CDA93AE0E34A2B23FB, 0, 'ST012010105_17006015', 'SHIFT BORDER', 795, 'shift-border', 1, 2, 1, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, url_slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xDE33C69DF2BD43BFB5E27B648C0E056B, 0, 'SS012010106_17007015', 'CERTAINTY RED', 795, 'certainty-red', 1, 2, 2, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, url_slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x6ACf72A1D9B5462ABB90D05D6A87D61C, 0, 'ST012010106_17008015', 'CERTAINTY YELLOW', 795, 'certainty-yellow', 1, 2, 1, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, url_slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x1D470BBF8E654CAC852B9A02E04F45FF, 0, 'ST012010106_17009015', 'CERTAINTY BLUE', 795, 'certainty-blue', 1, 2, 1, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, url_slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x2D947E4844AD439E8C71B11A106D6B81, 0, 'ST012010107_17010015', 'MOVEMENT', 795, 'movement', 1, 2, 1, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, url_slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x8EA1D8FD01DB4982AEEC30EBCDE88843, 0, 'MT012020201_17011012', 'BUTTERFLY SHAWL', 995, 'movement', 2, 2, 3, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, url_slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x991DC5AB44744538849059A613EECC70, 0, 'MT012020203_17012012', 'PLAY OF BLUE SHAWL', 995, 'movement', 2, 2, 3, 1, 1, 0);
+
+
 
 INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,1,0x66353763616364612D303935612D3131);
 INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,2,0x66353763616364612D303935612D3131);
@@ -74,15 +90,19 @@ INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VAL
 INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VALUES (1,1,2);
 INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VALUES (2,6,2);
 
-INSERT INTO product_collection (id, name,url_slug) VALUES (1,'new year eve collection 2017','new_year_eve_collection_2017');
-INSERT INTO product_collection (id, name,url_slug) VALUES (2,'best toys ever','best_toys_ever');
-INSERT INTO product_collection (id, name,url_slug) VALUES (3,'hallowen wishes','hallowen_wishes');
+INSERT INTO product_collection (id, name, url_slug) VALUES (1,'New Arrivals','new-arrivals');
+-- INSERT INTO product_collection (id, name,url_slug) VALUES (2,'best toys ever','best_toys_ever');
+-- INSERT INTO product_collection (id, name,url_slug) VALUES (3,'hallowen wishes','hallowen_wishes');
 
-INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (1, 0x66353763616364612D303935612D3131,1);
-INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (2, 0xCF03CE9A7BE24201BF006B4C4CE6232E,1);
-INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (1, 0x66353763616364612D303935612D3131,2);
-INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (2, 0xCF03CE9A7BE24201BF006B4C4CE6232E,2);
-INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (3, 0xCF03CE9A7BE24201BF006B4C4CE623F5,2);
-INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (2, 0x66353763616364612D303935612D3131,3);
-INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (3, 0xCF03CE9A7BE24201BF006B4C4CE6232E,3);
-INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (1, 0xCF03CE9A7BE24201BF006B4C4CE623F5,3);
+-- INSERT INTO product_collection_item (position, product_id, product_collection_id) VALUES (1, 0xCF03CE9A7BE24211BF006B4C4CE6232E,1);
+-- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (2, 0xEE03CE9A7BE24251BF006B4C4CE6232E,1);
+-- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (3, 0xAF03CE9B7BC24501BF006B4C4CE5232F,1);
+-- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (4, 0xCF03CE9A7BE24201BF006B4C4CE6232A,1);
+-- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (5, 0xEF03CE9A7BE24261BF006B4C4CE6232F,1);
+-- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (2, 0xCF03CE9A7BE24201BF006B4C4CE6232E,1);
+-- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (1, 0x66353763616364612D303935612D3131,2);
+-- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (2, 0xCF03CE9A7BE24201BF006B4C4CE6232E,2);
+-- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (3, 0xCF03CE9A7BE24201BF006B4C4CE623F5,2);
+-- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (2, 0x66353763616364612D303935612D3131,3);
+-- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (3, 0xCF03CE9A7BE24201BF006B4C4CE6232E,3);
+-- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (1, 0xCF03CE9A7BE24201BF006B4C4CE623F5,3);
