@@ -14,13 +14,13 @@ INSERT INTO currency (name, symbol, symbol_placement) VALUES ('EUR', '€', 1);
 INSERT INTO flash (message, title, `type`) VALUES ('This product may require professional installation', 'Professional is needed', 'WARNING');
 INSERT INTO flash (message, title, `type`) VALUES ('Goods is used', 'Used', 'WARNING');
 
-INSERT INTO `size` (name) VALUES ('90x90 cm');
-INSERT INTO `size` (name) VALUES ('180x70 cm');
-INSERT INTO `size` (name) VALUES ('S');
-INSERT INTO `size` (name) VALUES ('M');
-INSERT INTO `size` (name) VALUES ('L');
-INSERT INTO `size` (name) VALUES ('XL');
-INSERT INTO `size` (name) VALUES ('XXL');
+INSERT INTO `size` (value) VALUES ('90x90 cm');
+INSERT INTO `size` (value) VALUES ('180x70 cm');
+INSERT INTO `size` (value) VALUES ('S');
+INSERT INTO `size` (value) VALUES ('M');
+INSERT INTO `size` (value) VALUES ('L');
+INSERT INTO `size` (value) VALUES ('XL');
+INSERT INTO `size` (value) VALUES ('XXL');
 
 -- INSERT INTO unit (abbr, name) VALUES ('mm', 'milimeter');
 -- INSERT INTO unit (abbr, name) VALUES ('cm', 'centimeter');
