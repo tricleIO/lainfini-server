@@ -1,6 +1,6 @@
 package application.persistence.type;
 
-public enum CartStatus {
+public enum CartStatusEnum {
     OPENED,
     CHECKEDOUT,
     CANCELED

@@ -1,7 +1,7 @@
 package application.persistence.entity;
 
 import application.persistence.DTOConvertable;
-import application.persistence.type.CartStatus;
+import application.persistence.type.CartStatusEnum;
 import application.rest.domain.CartDTO;
 import application.rest.domain.CartItemDTO;
 import lombok.Data;
@@ -35,7 +35,7 @@ public class Cart implements DTOConvertable<CartDTO>, Serializable {
     private Date createdAt;
 
     @Enumerated(EnumType.ORDINAL)
-    private CartStatus status;
+    private CartStatusEnum status;
 
     private String createdFrom;
 
