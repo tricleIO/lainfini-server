@@ -94,11 +94,8 @@ public abstract class AbstractFileController<E extends AbstractFile<D>, D extend
 
             String pathToThumbnail = fileAccessModel.getDirectoryStructure() + "/" + size + extensionDashed + fileAccessModel.getDto().getUid();
             File file = new File(pathToThumbnail);
-            if (!file.exists() && width != null && height != null) {
+            if (!file.exists()) {
                 imageFileService.createResizedCopyAndSave(fileAccessModel.getPathToFile(), extension, width, height);
-                new File(pathToThumbnail);
-            } else if (!file.exists()) {
-                imageFileService.createCopyAndSave(fileAccessModel.getPathToFile(), extension);
                 new File(pathToThumbnail);
             }
             fileAccessModel.setPathToFile(pathToThumbnail);
