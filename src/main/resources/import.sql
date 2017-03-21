@@ -110,3 +110,5 @@ INSERT INTO product_collection_item (position, product_id,product_collection_id)
 -- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (2, 0x66353763616364612D303935612D3131,3);
 -- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (3, 0xCF03CE9A7BE24201BF006B4C4CE6232E,3);
 -- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (1, 0xCF03CE9A7BE24201BF006B4C4CE623F5,3);
+
+INSERT INTO `complaint` (`id`, `created_at`, `message`, `type`, `customer_id`, `image_id`, `order_id`, `product_id`, `reason_id`) VALUES (0x86573ac0e3164e4f9143d5fd6dd7e891, '2017-03-21 13:08:16', 'It is not i wanted.', 1, 0x66353763616364612d303935612d3130, NULL, NULL, 0x004eda8d0f3f4f33a5c3706c55a248c5, 1);
