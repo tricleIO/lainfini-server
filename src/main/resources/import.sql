@@ -124,5 +124,5 @@ INSERT INTO customer_order (id, created_at, status, billing_address_id, cart_id,
 INSERT INTO order_item (added_at, price, quantity, order_id, product_id) VALUES ('2017-03-21 13:16:24', 995, 2, 0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, 0x991DC5AB44744538849059A613EECC70);
 INSERT INTO order_item (added_at, price, quantity, order_id, product_id) VALUES ('2017-03-21 13:15:45', 795, 1, 0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, 0x004EDA8D0F3F4F33A5C3706C55A248C5);
 
-INSERT INTO complaint (id, created_at, message, type, customer_id, order_id, product_id, reason_id) VALUES (0x86573AC0E3164E4F9143D5FD6DD7E891, '2017-03-21 13:08:16', 'It is not i wanted.', 1, 0x66353763616364612D303935612D3130, NULL, 0x991DC5AB44744538849059A613EECC70, 1);
+INSERT INTO complaint (id, created_at, message, type, customer_id, order_id, product_id, reason_id) VALUES (0x86573AC0E3164E4F9143D5FD6DD7E891, '2017-03-21 13:08:16', 'It is not i wanted.', 1, 0x66353763616364612D303935612D3130, 0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, 0x991DC5AB44744538849059A613EECC70, 1);
 
