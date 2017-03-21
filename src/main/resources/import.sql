@@ -1,6 +1,8 @@
 INSERT INTO faq (question, answer) VALUES ('How can I comment on a BBC programme or service?', 'We appreciate ');
 INSERT INTO faq (question, answer)VALUES ('Where can I obtain my radio or key code, or a new key for my Ford?', 'Firstly, ');
 
+INSERT INTO complaint_reason (name) VALUES ('DEFECT');
+
 INSERT INTO category (id, name, parent_category_id, priority) VALUES (1, 'Scarves', NULL, 1);
 INSERT INTO category (id, name, parent_category_id, priority) VALUES (2, 'Shawl', 1, 1);
 
