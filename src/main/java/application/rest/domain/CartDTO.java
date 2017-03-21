@@ -1,7 +1,7 @@
 package application.rest.domain;
 
 import application.persistence.entity.Cart;
-import application.persistence.type.CartStatus;
+import application.persistence.type.CartStatusEnum;
 import application.rest.CartController;
 import application.rest.UserController;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -23,7 +23,7 @@ public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Car
     private UUID customerUid;
     private Date createdAt;
     private Set<CartItemDTO> items;
-    private CartStatus status;
+    private CartStatusEnum status;
     private String createdFrom;
 
     // for create
@@ -38,7 +38,7 @@ public class CartDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Car
             cart.setCustomer(customer.toEntity(false));
         }
         if (status == null) {
-            status = CartStatus.OPENED;
+            status = CartStatusEnum.OPENED;
         }
         cart.setStatus(status);
         cart.setCreatedFrom(createdFrom);

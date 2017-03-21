@@ -1,5 +1,5 @@
 package application.persistence.type;
 
-public enum ProductStatus {
+public enum ProductStatusEnum {
     IN_STOCK
 }

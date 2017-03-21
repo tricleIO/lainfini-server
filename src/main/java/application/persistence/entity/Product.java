@@ -1,7 +1,7 @@
 package application.persistence.entity;
 
 import application.persistence.DTOConvertable;
-import application.persistence.type.ProductStatus;
+import application.persistence.type.ProductStatusEnum;
 import application.rest.domain.ApplicationFileDTO;
 import application.rest.domain.ProductDTO;
 import lombok.Data;
@@ -72,7 +72,7 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     private String urlSlug;
 
     @Enumerated(EnumType.ORDINAL)
-    private ProductStatus productStatus;
+    private ProductStatusEnum productStatus;
 
     @Override
     public ProductDTO toDTO(boolean selectAsParent, Object... parentParams) {
