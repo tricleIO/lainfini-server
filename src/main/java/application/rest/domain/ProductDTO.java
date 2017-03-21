@@ -2,7 +2,7 @@ package application.rest.domain;
 
 import application.persistence.entity.Product;
 import application.persistence.entity.ProductFile;
-import application.persistence.type.ProductStatus;
+import application.persistence.type.ProductStatusEnum;
 import application.persistence.type.StatusEnum;
 import application.rest.CategoryController;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -41,7 +41,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private String urlSlug;
     private StatusEnum status;
     private String code;
-    private ProductStatus productStatus;
+    private ProductStatusEnum productStatus;
 
     @JsonProperty("mainImage")
     private ApplicationFileDTO mainImageDTO;
