@@ -41,7 +41,7 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
     @Override
     public CustomerOrder toEntity(boolean selectAsParent, Object... parentParams) {
         CustomerOrder order = new CustomerOrder();
-        order.setCreatedAt(createdAt);
+        order.setCreatedAt(new Date());
         order.setStatus(status);
         if (selectAsParent) {
             if (cart != null) {
