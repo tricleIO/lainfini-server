@@ -18,17 +18,17 @@ public class ComplaintController extends AbstractDatabaseController<Complaint, U
     private ComplaintService complaintService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> readMaterials(Pageable pageable) {
+    public ResponseEntity<?> readComplaints(Pageable pageable) {
         return readAll(pageable);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<?> readMaterial(@PathVariable UUID id) {
+    public ResponseEntity<?> readComplaint(@PathVariable UUID id) {
         return read(id);
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<?> createMaterial(@RequestBody ComplaintDTO complaintDTO) {
+    public ResponseEntity<?> createComplaint(@RequestBody ComplaintDTO complaintDTO) {
         return create(complaintDTO);
     }
 

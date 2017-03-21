@@ -10,9 +10,12 @@ import application.service.complaintReason.ComplaintReasonService;
 import application.service.order.OrderService;
 import application.service.product.ApplicationFileService;
 import application.service.product.ProductService;
+import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
@@ -79,4 +82,11 @@ public class ComplaintServiceImpl extends BaseDatabaseServiceImpl<Complaint, UUI
         return complaintRepository;
     }
 
+    @Override
+    public ServiceResponse<Page<ComplaintDTO>> readCustomerComplaints(UUID customerId, Pageable pageable) {
+        Page<Complaint> complaints = complaintRepository.findByCustomerId(customerId, pageable);
+        return ServiceResponse.success(
+                convertPageWithEntitiesToPageWithDtos(complaints, pageable)
+        );
+    }
 }
