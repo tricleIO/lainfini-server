@@ -111,4 +111,18 @@ INSERT INTO product_collection_item (position, product_id,product_collection_id)
 -- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (3, 0xCF03CE9A7BE24201BF006B4C4CE6232E,3);
 -- INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (1, 0xCF03CE9A7BE24201BF006B4C4CE623F5,3);
 
-INSERT INTO `complaint` (`id`, `created_at`, `message`, `type`, `customer_id`, `image_id`, `order_id`, `product_id`, `reason_id`) VALUES (0x86573ac0e3164e4f9143d5fd6dd7e891, '2017-03-21 13:08:16', 'It is not i wanted.', 1, 0x66353763616364612d303935612d3130, NULL, NULL, 0x004eda8d0f3f4f33a5c3706c55a248c5, 1);
+INSERT INTO cart (id, created_at, created_from, status, customer_id) VALUES (0xF888EE4007D94A08B6D3A3F7F2F1CC6D, '2017-03-21 13:14:52', NULL, 0, 0x66353763616364612D303935612D3130);
+
+INSERT INTO cart_item (added_at, quantity, cart_id, product_id) VALUES ('2017-03-21 13:15:45', 1, 0xF888EE4007D94A08B6D3A3F7F2F1CC6D, 0x004EDA8D0F3F4F33A5C3706C55A248C5);
+INSERT INTO cart_item (added_at, quantity, cart_id, product_id) VALUES ('2017-03-21 13:16:24', 2, 0xF888EE4007D94A08B6D3A3F7F2F1CC6D, 0x991DC5AB44744538849059A613EECC70);
+
+INSERT INTO delivery (id, name) VALUES (1, 'DHL');
+INSERT INTO payment_method (id, name) VALUES (1, 'CARD');
+
+INSERT INTO customer_order (id, created_at, status, billing_address_id, cart_id, customer_id, delivery_address_id, delivery_id, payment_id) VALUES (0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, '2017-03-21 13:20:29', 1, NULL, 0xF888EE4007D94A08B6D3A3F7F2F1CC6D, 0x66353763616364612D303935612D3130, 2, 1, 1);
+
+INSERT INTO order_item (added_at, price, quantity, order_id, product_id) VALUES ('2017-03-21 13:16:24', 995, 2, 0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, 0x991DC5AB44744538849059A613EECC70);
+INSERT INTO order_item (added_at, price, quantity, order_id, product_id) VALUES ('2017-03-21 13:15:45', 795, 1, 0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, 0x004EDA8D0F3F4F33A5C3706C55A248C5);
+
+INSERT INTO complaint (id, created_at, message, type, customer_id, order_id, product_id, reason_id) VALUES (0x86573AC0E3164E4F9143D5FD6DD7E891, '2017-03-21 13:08:16', 'It is not i wanted.', 1, 0x66353763616364612D303935612D3130, NULL, 0x991DC5AB44744538849059A613EECC70, 1);
+
