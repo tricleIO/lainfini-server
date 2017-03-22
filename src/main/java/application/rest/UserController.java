@@ -1,8 +1,10 @@
 package application.rest;
 
 import application.persistence.entity.User;
+import application.persistence.type.UserRoleEnum;
 import application.persistence.type.UserStatusEnum;
 import application.rest.domain.UserDTO;
+import application.service.response.ServiceResponse;
 import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -21,6 +23,15 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
 
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<?> readUsers(Pageable pageable) {
+        // has logged user demanded roles
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        // error
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
+        // then read
         return readAll(pageable);
     }
 
