@@ -27,6 +27,13 @@ public class CartController extends AbstractDatabaseController<Cart, UUID, CartD
         return read(id);
     }
 
+    @RequestMapping(value = "/current", method = RequestMethod.GET)
+    public ResponseEntity<?> readCurrentCart() {
+        return getSimpleResponseEntity(
+                cartService.readCurrentCustomersCart()
+        );
+    }
+
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> createCart(@RequestBody CartDTO cart) {
         return create(cart);
