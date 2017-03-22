@@ -1,6 +1,8 @@
 package application.configuration;
 
 
+import org.springframework.core.Ordered;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.GenericFilterBean;
 
@@ -14,6 +16,7 @@ import java.io.IOException;
 
 
 @Component
+@Order(Ordered.HIGHEST_PRECEDENCE)
 public class SimpleCORSFilter extends GenericFilterBean {
 
 
@@ -25,7 +28,7 @@ public class SimpleCORSFilter extends GenericFilterBean {
         response.setHeader("Access-Control-Allow-Origin", "*");
         response.setHeader("Access-Control-Allow-Methods", "POST, PUT, GET, PATCH, OPTIONS, DELETE");
         response.setHeader("Access-Control-Max-Age", "3600");
-        response.setHeader("Access-Control-Allow-Headers", "Authorization, Content-Type, x-requested-with");
+        response.setHeader("Access-Control-Allow-Headers", "Authorization, Content-Type");
         //response.setHeader("Access-Control-Allow-Credentials", "true");
 
         if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
