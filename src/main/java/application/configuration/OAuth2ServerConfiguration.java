@@ -33,7 +33,9 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Aut
 import org.springframework.security.oauth2.config.annotation.web.configurers.ResourceServerSecurityConfigurer;
 import org.springframework.security.oauth2.provider.token.DefaultTokenServices;
 import org.springframework.security.oauth2.provider.token.TokenStore;
-import org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore;
+import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
+
+import javax.sql.DataSource;
 
 @Configuration
 public class OAuth2ServerConfiguration {
@@ -47,20 +49,16 @@ public class OAuth2ServerConfiguration {
 
 		@Override
 		public void configure(ResourceServerSecurityConfigurer resources) {
-			// @formatter:off
 			resources
 				.resourceId(RESOURCE_ID);
-			// @formatter:on
 		}
 
 		@Override
 		public void configure(HttpSecurity http) throws Exception {
-			// @formatter:off
 			http
 				.authorizeRequests()
 					.antMatchers("/blabla").hasRole("ADMIN")
 					.antMatchers("/greeting").authenticated();
-			// @formatter:on
 		}
 
 	}
@@ -70,7 +68,6 @@ public class OAuth2ServerConfiguration {
 	protected static class AuthorizationServerConfiguration extends
 			AuthorizationServerConfigurerAdapter {
 
-		private TokenStore tokenStore = new InMemoryTokenStore();
 
 		@Autowired
 		@Qualifier("authenticationManagerBean")
@@ -79,20 +76,26 @@ public class OAuth2ServerConfiguration {
 		@Autowired
 		private CustomUserDetailsService userDetailsService;
 
+		@Autowired
+		@SuppressWarnings("SpringJavaAutowiringInspection")
+		private DataSource dataSource;
+
+		@Bean
+		public TokenStore tokenStore() {
+			return new JdbcTokenStore(dataSource);
+		}
+
 		@Override
 		public void configure(AuthorizationServerEndpointsConfigurer endpoints)
 				throws Exception {
-			// @formatter:off
 			endpoints
-				.tokenStore(this.tokenStore)
+				.tokenStore(tokenStore())
 				.authenticationManager(this.authenticationManager)
 				.userDetailsService(userDetailsService);
-			// @formatter:on
 		}
 
 		@Override
 		public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-			// @formatter:off
 			clients
 				.inMemory()
 					.withClient("clientapp")
@@ -100,8 +103,10 @@ public class OAuth2ServerConfiguration {
 						.authorities("USER")
 						.scopes("read", "write")
 						.resourceIds(RESOURCE_ID)
-						.secret("123456");
-			// @formatter:on
+						.secret("123456")
+						.autoApprove(true)
+						.accessTokenValiditySeconds(86400)
+						.refreshTokenValiditySeconds(90000);
 		}
 
 		@Bean
@@ -109,7 +114,7 @@ public class OAuth2ServerConfiguration {
 		public DefaultTokenServices tokenServices() {
 			DefaultTokenServices tokenServices = new DefaultTokenServices();
 			tokenServices.setSupportRefreshToken(true);
-			tokenServices.setTokenStore(this.tokenStore);
+			tokenServices.setTokenStore(tokenStore());
 			return tokenServices;
 		}
 
