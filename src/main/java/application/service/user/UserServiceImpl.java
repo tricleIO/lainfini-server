@@ -50,16 +50,6 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
         return super.create(user);
     }
 
-    @Override
-    protected void doAfterConvertInCreate(User user) {
-        if (user.getPassword() != null) {
-            user.setRegisterStatus(UserStatusEnum.REGISTERED);
-        } else {
-            user.setRegisterStatus(UserStatusEnum.UNREGISTERED);
-        }
-        super.doAfterConvertInCreate(user);
-    }
-
     private boolean exists(UserDTO dto) {
         User foundUser = userRepository.findByLoginAndRegisterStatus(dto.getUsername(), UserStatusEnum.REGISTERED);
         return foundUser != null;

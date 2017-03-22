@@ -5,6 +5,7 @@ import application.persistence.entity.User;
 import application.persistence.repository.RoleRepository;
 import application.persistence.repository.UserRepository;
 import application.persistence.type.UserRoleEnum;
+import application.persistence.type.UserStatusEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,6 +29,13 @@ public class CustomerServiceImpl extends UserServiceImpl implements CustomerServ
 
     @Override
     protected void doAfterConvertInCreate(User user) {
+        // if is created without password, set to unregistered
+        if (user.getPassword() != null) {
+            user.setRegisterStatus(UserStatusEnum.PRE_REGISTERED);
+        } else {
+            user.setRegisterStatus(UserStatusEnum.UNREGISTERED);
+        }
+        // set role to customer
         Role role = roleRepository.findByValue(UserRoleEnum.ROLE_CUSTOMER);
         if (role != null) {
             Set<Role> roles = new HashSet<>(1);
