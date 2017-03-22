@@ -1,11 +1,11 @@
 package application.rest.domain;
 
 import application.persistence.entity.User;
+import application.persistence.type.LocaleEnum;
 import application.persistence.type.SexEnum;
 import application.persistence.type.StatusEnum;
 import application.persistence.type.UserStatusEnum;
 import application.rest.AddressController;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
@@ -21,7 +21,6 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
 
     private UUID uid;
     private String username;
-    @JsonIgnore
     private String password;
     private Long customerUid;
     private StatusEnum status;
@@ -47,6 +46,8 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
 
     private UserStatusEnum registerStatus;
 
+    private LocaleEnum locale;
+
     @Override
     public User toEntity(boolean selectAsParent, Object... parentParams) {
         User user = new User();
@@ -57,13 +58,17 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
         user.setLastName(lastName);
         user.setPhoneCode(phoneCode);
         user.setPhoneNumber(phoneNumber);
-        user.setStatusEnum(status);
+        user.setStatus(StatusEnum.ACTIVE);
         if (currency != null) {
             user.setCurrency(currency.toEntity(false));
         }
-        if (sex != null) {
-            user.setSex(sex);
+        if (sex == null) {
+            sex = SexEnum.UNKNOWN;
         }
+        if (locale == null) {
+            locale = LocaleEnum.NONE;
+        }
+        user.setSex(sex);
         user.setAbraLink(abraLink);
         user.setStripeToken(stripeToken);
         user.setDegreeAfterName(degreeAfterName);
