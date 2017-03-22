@@ -72,4 +72,14 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
         return ServiceResponse.success(user.toDTO(false));
     }
 
+    @Override
+    public ServiceResponse<UserDTO> findByEmailVerificationTokenToken(String token) {
+        User user = userRepository.findByEmailVerificationTokenToken(token);
+        if (user == null) {
+            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+        }
+        return ServiceResponse.success(user.toDTO(false));
+
+    }
+
 }
