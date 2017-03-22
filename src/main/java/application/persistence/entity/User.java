@@ -90,7 +90,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "status", length = 15)
-    private StatusEnum statusEnum;
+    private StatusEnum status;
 
     @ManyToOne
     @JoinColumn(name = "currency_id", referencedColumnName = "id")
@@ -145,7 +145,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         this.phoneNumber = user.getPhoneNumber();
         this.abraLink = user.getAbraLink();
         this.stripeToken = user.getStripeToken();
-        this.statusEnum = user.getStatusEnum();
+        this.status = user.getStatus();
         this.currency = user.getCurrency();
         this.locale = user.getLocale();
     }
@@ -154,11 +154,10 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     public UserDTO toDTO(boolean selectAsParent, Object... parentParams) {
         UserDTO userDTO = new UserDTO();
         userDTO.setUid(id);
-        userDTO.setPassword(password);
         userDTO.setUsername(login);
         userDTO.setFirstName(firstName);
         userDTO.setLastName(lastName);
-        userDTO.setStatus(statusEnum);
+        userDTO.setStatus(status);
         userDTO.setSex(getSex());
         if (billingAddress != null) {
             userDTO.setBillingAddressUid(billingAddress.getId());

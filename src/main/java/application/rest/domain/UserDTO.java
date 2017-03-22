@@ -5,7 +5,6 @@ import application.persistence.type.SexEnum;
 import application.persistence.type.StatusEnum;
 import application.persistence.type.UserStatusEnum;
 import application.rest.AddressController;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
@@ -21,7 +20,6 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
 
     private UUID uid;
     private String username;
-    @JsonIgnore
     private String password;
     private Long customerUid;
     private StatusEnum status;
@@ -57,7 +55,7 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
         user.setLastName(lastName);
         user.setPhoneCode(phoneCode);
         user.setPhoneNumber(phoneNumber);
-        user.setStatusEnum(status);
+        user.setStatus(status);
         if (currency != null) {
             user.setCurrency(currency.toEntity(false));
         }
