@@ -1,6 +1,7 @@
 package application.rest.domain;
 
 import application.persistence.entity.User;
+import application.persistence.type.LocaleEnum;
 import application.persistence.type.SexEnum;
 import application.persistence.type.StatusEnum;
 import application.persistence.type.UserStatusEnum;
@@ -45,6 +46,8 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
 
     private UserStatusEnum registerStatus;
 
+    private LocaleEnum locale;
+
     @Override
     public User toEntity(boolean selectAsParent, Object... parentParams) {
         User user = new User();
@@ -59,9 +62,13 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
         if (currency != null) {
             user.setCurrency(currency.toEntity(false));
         }
-        if (sex != null) {
-            user.setSex(sex);
+        if (sex == null) {
+            sex = SexEnum.UNKNOWN;
         }
+        if (locale == null) {
+            locale = LocaleEnum.NONE;
+        }
+        user.setSex(sex);
         user.setAbraLink(abraLink);
         user.setStripeToken(stripeToken);
         user.setDegreeAfterName(degreeAfterName);
