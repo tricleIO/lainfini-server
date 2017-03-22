@@ -32,6 +32,13 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
         return create(user);
     }
 
+    @RequestMapping(value = "/current", method = RequestMethod.GET)
+    public ResponseEntity<?> readCurrentUser() {
+        return getSimpleResponseEntity(
+                userService.readCurrentUser()
+        );
+    }
+
     @Override
     public UserService getBaseService() {
         return userService;

@@ -7,6 +7,7 @@ import application.rest.domain.UserDTO;
 import application.service.BaseDatabaseServiceImpl;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
+import application.service.security.CustomUserDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -60,6 +61,15 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
     private boolean exists(UserDTO dto) {
         User foundUser = userRepository.findByLoginAndRegisterStatus(dto.getUsername(), UserStatusEnum.REGISTERED);
         return foundUser != null;
+    }
+
+    @Override
+    public ServiceResponse<UserDTO> readCurrentUser() {
+        User user = CustomUserDetails.getCurrentUser();
+        if (user == null) {
+            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+        }
+        return ServiceResponse.success(user.toDTO(false));
     }
 
 }
