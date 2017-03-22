@@ -85,6 +85,9 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "stripe_customer_token")
     private String stripeToken;
 
+    @OneToOne(mappedBy = "user")
+    private UserEmailVerificationToken emailVerificationToken;
+
     @Enumerated(EnumType.STRING)
     @Column(name = "status", length = 15)
     private StatusEnum statusEnum;
@@ -151,6 +154,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     public UserDTO toDTO(boolean selectAsParent, Object... parentParams) {
         UserDTO userDTO = new UserDTO();
         userDTO.setUid(id);
+        userDTO.setPassword(password);
         userDTO.setUsername(login);
         userDTO.setFirstName(firstName);
         userDTO.setLastName(lastName);
