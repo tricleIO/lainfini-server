@@ -6,7 +6,11 @@ import application.persistence.repository.RoleRepository;
 import application.persistence.repository.UserRepository;
 import application.persistence.type.UserRoleEnum;
 import application.persistence.type.UserStatusEnum;
+import application.rest.domain.UserDTO;
+import application.service.response.ServiceResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
@@ -21,6 +25,13 @@ public class CustomerServiceImpl extends UserServiceImpl implements CustomerServ
     @Autowired
     private RoleRepository roleRepository;
 
+    @Override
+    public ServiceResponse<Page<UserDTO>> readAll(Pageable pageable) {
+        Page<User> users = userRepository.findByRolesValue(UserRoleEnum.ROLE_CUSTOMER, pageable);
+        return ServiceResponse.success(
+                convertPageWithEntitiesToPageWithDtos(users, pageable)
+        );
+    }
 
     @Override
     public UserRepository getRepository() {
