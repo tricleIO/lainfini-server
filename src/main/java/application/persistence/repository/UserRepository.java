@@ -31,5 +31,6 @@ public interface UserRepository extends PagingAndSortingRepository<User, UUID> {
 	User findByLoginAndRegisterStatus(String login, UserStatusEnum registerStatus);
 	User findByEmailVerificationTokenToken(String token);
 	Page<User> findByRolesValue(UserRoleEnum userRole, Pageable pageable);
+	User findByIdAndRegisterStatusAndRolesValue(UUID id, UserStatusEnum registerStatus, UserRoleEnum userRole);
 
 }

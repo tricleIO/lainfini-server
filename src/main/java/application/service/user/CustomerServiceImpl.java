@@ -8,6 +8,7 @@ import application.persistence.type.UserRoleEnum;
 import application.persistence.type.UserStatusEnum;
 import application.rest.domain.UserDTO;
 import application.service.response.ServiceResponse;
+import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.UUID;
 
 @Service
 public class CustomerServiceImpl extends UserServiceImpl implements CustomerService {
@@ -24,6 +26,17 @@ public class CustomerServiceImpl extends UserServiceImpl implements CustomerServ
 
     @Autowired
     private RoleRepository roleRepository;
+
+    @Override
+    public ServiceResponse<UserDTO> read(UUID key) {
+        User customer = userRepository.findByIdAndRegisterStatusAndRolesValue(
+                key, UserStatusEnum.REGISTERED, UserRoleEnum.ROLE_CUSTOMER
+        );
+        if (customer == null) {
+            return ServiceResponse.error(ServiceResponseStatus.CUSTOMER_NOT_FOUND);
+        }
+        return ServiceResponse.success(customer.toDTO(false));
+    }
 
     @Override
     public ServiceResponse<Page<UserDTO>> readAll(Pageable pageable) {
