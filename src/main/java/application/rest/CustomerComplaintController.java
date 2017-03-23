@@ -19,7 +19,7 @@ public class CustomerComplaintController extends AbstractDatabaseController<Comp
     @Autowired
     private ComplaintService complaintService;
 
-    @RequestMapping(value = "users/{userId}/complaints", method = RequestMethod.GET)
+    @RequestMapping(value = "/customers/{userId}/complaints", method = RequestMethod.GET)
     public ResponseEntity<?> readComplaints(@PathVariable UUID userId, Pageable pageable) {
         return getPageResponseEntity(
                 complaintService.readCustomerComplaints(userId, pageable)

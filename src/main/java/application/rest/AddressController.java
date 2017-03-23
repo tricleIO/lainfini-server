@@ -16,7 +16,7 @@ public class AddressController extends AbstractDatabaseController<Address, Long,
     @Autowired
     private AddressService addressService;
 
-    @RequestMapping(value = "/users/{userId}/addresses", method = RequestMethod.GET)
+    @RequestMapping(value = "/customers/{userId}/addresses", method = RequestMethod.GET)
     public ResponseEntity<?> readAddresses(@PathVariable UUID userId, Pageable pageable) {
         return getPageResponseEntity(
                 addressService.readCustomerAddresses(userId, pageable)
@@ -28,7 +28,7 @@ public class AddressController extends AbstractDatabaseController<Address, Long,
         return read(id);
     }
 
-    @RequestMapping(value = "/users/{userId}/addresses", method = RequestMethod.POST)
+    @RequestMapping(value = "/customers/{userId}/addresses", method = RequestMethod.POST)
     public ResponseEntity<?> createAddress(@PathVariable UUID userId, @RequestBody AddressDTO address) {
         address.setCustomerUid(userId);
         return create(address);

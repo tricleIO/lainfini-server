@@ -17,7 +17,10 @@
 package application.persistence.repository;
 
 import application.persistence.entity.User;
+import application.persistence.type.UserRoleEnum;
 import application.persistence.type.UserStatusEnum;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.util.UUID;
@@ -27,5 +30,7 @@ public interface UserRepository extends PagingAndSortingRepository<User, UUID> {
 	User findByLogin(String login);
 	User findByLoginAndRegisterStatus(String login, UserStatusEnum registerStatus);
 	User findByEmailVerificationTokenToken(String token);
+	Page<User> findByRolesValue(UserRoleEnum userRole, Pageable pageable);
+	User findByIdAndRegisterStatusAndRolesValue(UUID id, UserStatusEnum registerStatus, UserRoleEnum userRole);
 
 }
