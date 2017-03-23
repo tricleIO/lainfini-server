@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
 
 @RestController
-@RequestMapping(value = "users/{customerId}/wishlist")
+@RequestMapping(value = "customers/{customerId}/wishlist")
 public class WishController extends AbstractDatabaseController<Wish, Long, WishDTO, WishService> {
 
     @Autowired

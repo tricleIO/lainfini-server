@@ -5,7 +5,8 @@ import java.io.Serializable;
 public enum SexEnum implements Serializable {
 
     MALE("M"),
-    FEMALE("F");
+    FEMALE("F"),
+    UNKNOWN("U");
 
     private String value;
 
