@@ -1,12 +1,16 @@
 package application.service.user;
 
+import application.configuration.AppProperties;
 import application.persistence.entity.Role;
 import application.persistence.entity.User;
+import application.persistence.entity.UserEmailVerificationToken;
 import application.persistence.repository.RoleRepository;
 import application.persistence.repository.UserRepository;
 import application.persistence.type.UserRoleEnum;
 import application.persistence.type.UserStatusEnum;
+import application.rest.domain.MailDTO;
 import application.rest.domain.UserDTO;
+import application.service.mail.MailService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +30,12 @@ public class CustomerServiceImpl extends UserServiceImpl implements CustomerServ
 
     @Autowired
     private RoleRepository roleRepository;
+
+    @Autowired
+    private MailService mailService;
+
+    @Autowired
+    private AppProperties appProperties;
 
     @Override
     public ServiceResponse<UserDTO> read(UUID key) {
@@ -56,6 +66,13 @@ public class CustomerServiceImpl extends UserServiceImpl implements CustomerServ
         // if is created without password, set to unregistered
         if (user.getPassword() != null) {
             user.setRegisterStatus(UserStatusEnum.PRE_REGISTERED);
+            UserEmailVerificationToken userEmailVerificationToken = new UserEmailVerificationToken(user);
+            user.setEmailVerificationToken(userEmailVerificationToken);
+            MailDTO mailDTO = new MailDTO();
+            mailDTO.setSubject("Registration");
+            mailDTO.setTo(user.getLogin());
+            mailDTO.setText("Text about registration with verification link: " + getVerificationUrl(userEmailVerificationToken));
+            mailService.sendMail(mailDTO);
         } else {
             user.setRegisterStatus(UserStatusEnum.UNREGISTERED);
         }
@@ -67,6 +84,10 @@ public class CustomerServiceImpl extends UserServiceImpl implements CustomerServ
             user.setRoles(roles);
         }
         super.doAfterConvertInCreate(user);
+    }
+
+    private String getVerificationUrl(UserEmailVerificationToken userEmailVerificationToken) {
+       return appProperties.getServerAddress() + "users/verify?verificationToken="+userEmailVerificationToken.getToken();
     }
 
 }
