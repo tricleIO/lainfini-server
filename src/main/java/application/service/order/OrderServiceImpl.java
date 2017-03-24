@@ -120,7 +120,7 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     }
 
     @Override
-    protected AdditionalDataManipulatorBatch<OrderDTO> getCreateAdditionalDataLoaderBatch(OrderDTO orderDTO) {
+    protected AdditionalDataManipulatorBatch<OrderDTO> getAdditionalDataLoaderBatch(OrderDTO orderDTO) {
         AdditionalDataManipulatorBatch<OrderDTO> batch = new AdditionalDataManipulatorBatch<>(orderDTO);
         // add customer
         batch.add(o -> new AdditionalDataManipulator<>(

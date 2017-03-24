@@ -51,7 +51,7 @@ public class WishServiceImpl extends BaseDatabaseServiceImpl<Wish, Long, WishRep
     }
 
     @Override
-    protected AdditionalDataManipulatorBatch<WishDTO> getCreateAdditionalDataLoaderBatch(WishDTO wishDTO) {
+    protected AdditionalDataManipulatorBatch<WishDTO> getAdditionalDataLoaderBatch(WishDTO wishDTO) {
         AdditionalDataManipulatorBatch<WishDTO> batch = new AdditionalDataManipulatorBatch<>(wishDTO);
         // add user
         batch.add(w -> new AdditionalDataManipulator<>(

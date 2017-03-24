@@ -39,7 +39,7 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
     }
 
     @Override
-    protected AdditionalDataManipulatorBatch<CartDTO> getCreateAdditionalDataLoaderBatch(CartDTO dto) {
+    protected AdditionalDataManipulatorBatch<CartDTO> getAdditionalDataLoaderBatch(CartDTO dto) {
         AdditionalDataManipulatorBatch<CartDTO> batch = new AdditionalDataManipulatorBatch<>(dto);
         // add customer
         batch.add(o -> new AdditionalDataManipulator<>(

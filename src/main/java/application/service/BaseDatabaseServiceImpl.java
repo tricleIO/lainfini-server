@@ -1,11 +1,11 @@
 package application.service;
 
-import application.BeanCopier;
 import application.persistence.DTOConvertable;
 import application.rest.domain.EntityConvertable;
 import application.rest.domain.IdentifableDTO;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
+import application.util.BeanCopier;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
@@ -42,7 +42,7 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
             return beforeConvertResponse;
         }
         // load additional info to DTO
-        ServiceResponseStatus status = getCreateAdditionalDataLoaderBatch(dto).tryReadAll();
+        ServiceResponseStatus status = getAdditionalDataLoaderBatch(dto).tryReadAll();
         if (status != ServiceResponseStatus.OK) {
             return ServiceResponse.error(status);
         }
@@ -67,15 +67,22 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
     protected void doAfterCreate(E entity) {
     }
 
-    protected AdditionalDataManipulatorBatch<D> getCreateAdditionalDataLoaderBatch(D dto) {
+    protected AdditionalDataManipulatorBatch<D> getAdditionalDataLoaderBatch(D dto) {
         return new AdditionalDataManipulatorBatch(dto);
     }
 
     public ServiceResponse<D> patch(D dto) {
+        // find record
         E originalEntity = getRepository().findOne(dto.getUid());
         if (originalEntity == null) {
             return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
         }
+        // load additional info to DTO
+        ServiceResponseStatus status = getAdditionalDataLoaderBatch(dto).tryReadAll();
+        if (status != ServiceResponseStatus.OK) {
+            return ServiceResponse.error(status);
+        }
+        // update
         E updatingEntity = dto.toEntity(true);
         BeanCopier.copyNonNullProperties(updatingEntity, originalEntity);
         E patchedEntity = getRepository().save(originalEntity);
