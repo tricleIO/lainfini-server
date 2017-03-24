@@ -179,8 +179,8 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     @Override
     protected ServiceResponse<ProductDTO> doBeforeConvertInCreate(ProductDTO productDTO) {
         // if url slug is null, generate it from name
-        if (productDTO.getUrlSlug() == null) {
-            productDTO.setUrlSlug(
+        if (productDTO.getSlug() == null) {
+            productDTO.setSlug(
                     getUrlSlugFromName(productDTO.getName())
             );
         }

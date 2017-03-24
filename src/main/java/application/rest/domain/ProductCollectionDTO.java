@@ -11,7 +11,7 @@ public class ProductCollectionDTO implements ReadWriteDatabaseDTO<ProductCollect
 
     private Integer uid;
     private String name;
-    private String urlSlug;
+    private String slug;
     private List<ProductCollectionItemDTO> items = new LinkedList<>();
 
     @Override
@@ -19,7 +19,7 @@ public class ProductCollectionDTO implements ReadWriteDatabaseDTO<ProductCollect
         ProductCollection productCollection = new ProductCollection();
         productCollection.setId(uid);
         productCollection.setName(name);
-        productCollection.setUrlSlug(urlSlug);
+        productCollection.setSlug(slug);
         return productCollection;
     }
 

@@ -69,7 +69,7 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @Transient
     private Set<ApplicationFile> applicationFiles;
 
-    private String urlSlug;
+    private String slug;
 
     @Enumerated(EnumType.ORDINAL)
     private ProductStatusEnum productStatus;
@@ -109,7 +109,7 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
             }
             productDTO.setApplicationFileDTOS(applicationFileDTOS);
         }
-        productDTO.setUrlSlug(urlSlug);
+        productDTO.setSlug(slug);
         productDTO.setStatus(status);
         return productDTO;
     }

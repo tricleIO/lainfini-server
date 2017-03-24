@@ -10,7 +10,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.UUID;
@@ -38,7 +37,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private Integer sizeUid;
     private UnitDTO unit;
     private Integer unitUid;
-    private String urlSlug;
+    private String slug;
     private StatusEnum status;
     private String code;
     private ProductStatusEnum productStatus;
@@ -78,11 +77,6 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
             if (unit != null) {
                 product.setUnit(unit.toEntity(false));
             }
-        }
-
-        if (selectAsParent) {
-            HashSet<ProductFile> productFiles = new HashSet<>();
-
             if (applicationFileDTOS != null) {
                 for (ApplicationFileDTO applicationFileDTO : applicationFileDTOS) {
                     ProductFile productFile = new ProductFile();
@@ -92,9 +86,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
                 }
             }
         }
-
-
-        product.setUrlSlug(urlSlug);
+        product.setSlug(slug);
         product.setStatus(status);
         return product;
     }

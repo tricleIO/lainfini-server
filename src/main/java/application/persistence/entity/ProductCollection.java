@@ -20,8 +20,8 @@ public class ProductCollection implements DTOConvertable<ProductCollectionDTO> {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "url_slug")
-    private String urlSlug;
+    @Column(name = "slug")
+    private String slug;
 
     @OneToMany(cascade=CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY, mappedBy = "productCollection")
     private Set<ProductCollectionItem> items;
@@ -33,7 +33,7 @@ public class ProductCollection implements DTOConvertable<ProductCollectionDTO> {
 
         productCollectionDTO.setUid(id);
         productCollectionDTO.setName(name);
-        productCollectionDTO.setUrlSlug(urlSlug);
+        productCollectionDTO.setSlug(slug);
         if (items != null) {
             for (ProductCollectionItem item : items) {
                 productCollectionDTO.addItem(item.toDTO(false));
