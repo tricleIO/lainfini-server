@@ -18,7 +18,7 @@ public interface SlugService<E extends SlugEntity & DTOConvertable<D>, R extends
             }
         } else {
             dto.setSlug(
-                    SlugMaker.getSlugFromString(dto.slugFrom(), getRepository())
+                    SlugGenerator.getSlugFromString(dto.slugFrom(), getRepository())
             );
         }
         return ServiceResponse.success(dto);
@@ -34,7 +34,7 @@ public interface SlugService<E extends SlugEntity & DTOConvertable<D>, R extends
 
     R getRepository();
 
-    class SlugMaker {
+    class SlugGenerator {
 
         public static <E extends SlugEntity & DTOConvertable<D>, R extends SlugRepository<E>, D extends SlugDTO & ReadWriteDatabaseDTO<E>>
         String getSlugFromString(String string, R slugRepository) {
