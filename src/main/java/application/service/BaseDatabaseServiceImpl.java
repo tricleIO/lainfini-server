@@ -1,8 +1,11 @@
 package application.service;
 
 import application.persistence.DTOConvertable;
+import application.persistence.SlugService;
+import application.persistence.repository.SlugRepository;
 import application.rest.domain.EntityConvertable;
 import application.rest.domain.IdentifableDTO;
+import application.rest.domain.SlugDTO;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.util.BeanCopier;
@@ -45,6 +48,16 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
         ServiceResponseStatus status = getAdditionalDataLoaderBatch(dto).tryReadAll();
         if (status != ServiceResponseStatus.OK) {
             return ServiceResponse.error(status);
+        }
+        // slug generation
+        if (this instanceof SlugService && dto instanceof SlugDTO && getRepository() instanceof SlugRepository) {
+            SlugService<SlugDTO> slugService = (SlugService) this;
+            SlugDTO slugDTO = (SlugDTO) dto;
+            SlugRepository slugRepository = (SlugRepository) getRepository();
+            ServiceResponse generateSlugResponse = slugService.generateSlugAndSetItToDTO(slugDTO, slugRepository);
+            if (!generateSlugResponse.isSuccessful()) {
+                return ServiceResponse.error(generateSlugResponse.getStatus());
+            }
         }
         // convert to entity
         E entity = dto.toEntity(true);

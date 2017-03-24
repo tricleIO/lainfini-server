@@ -19,7 +19,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Product>, IdentifableDTO<UUID>, SoftDeletableDTO {
+public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Product>, IdentifableDTO<UUID>, SoftDeletableDTO, SlugDTO {
 
     private UUID uid;
     private String name;
@@ -98,4 +98,9 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         }
     }
 
+    @Override
+    public String slugFrom() {
+        return name;
+    }
+    
 }

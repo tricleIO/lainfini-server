@@ -1,5 +1,6 @@
 package application.service.product;
 
+import application.persistence.SlugService;
 import application.persistence.entity.Product;
 import application.rest.domain.ProductDTO;
 import application.rest.domain.ProductHasFlashDTO;
@@ -11,7 +12,7 @@ import org.springframework.data.domain.Pageable;
 import java.security.Principal;
 import java.util.UUID;
 
-public interface ProductService extends BaseDatabaseService<Product, UUID, ProductDTO> {
+public interface ProductService extends BaseDatabaseService<Product, UUID, ProductDTO>, SlugService<ProductDTO> {
 
     ServiceResponse<ProductDTO> read(String slug);
     ServiceResponse<ProductDTO> read(UUID key, Principal principal);

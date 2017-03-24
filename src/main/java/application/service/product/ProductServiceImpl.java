@@ -16,7 +16,6 @@ import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.size.SizeService;
 import application.service.unit.UnitService;
-import application.util.SlugMaker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -29,8 +28,8 @@ import java.util.*;
 // @TODO - refactor this class, eventually add generic support for secured services
 
 @Service
-public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Product, UUID, ProductRepository, ProductDTO> implements ProductService {
-
+public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Product, UUID, ProductRepository, ProductDTO>
+        implements ProductService {
 
     @Autowired
     private ApplicationFileRepository applicationFileRepository;
@@ -177,20 +176,6 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         return dataManipulatorBatch;
     }
 
-    @Override
-    protected ServiceResponse<ProductDTO> doBeforeConvertInCreate(ProductDTO productDTO) {
-        // if url slug is null, generate it from name
-        if (productDTO.getSlug() != null) {
-            if (productRepository.countBySlug(productDTO.getSlug()) > 0) {
-                return ServiceResponse.error(ServiceResponseStatus.SLUG_ALREADY_EXISTS);
-            }
-        } else {
-            productDTO.setSlug(
-                    getSlugFromString(productDTO.getName())
-            );
-        }
-        return super.doBeforeConvertInCreate(productDTO);
-    }
 
     // privates
 
@@ -201,10 +186,6 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         product.setId(productDTO.getUid());
         wish.setProduct(product);
         return user.getWishes().contains(wish);
-    }
-
-    private String getSlugFromString(String string) {
-        return SlugMaker.getSlugFromString(string, productRepository);
     }
 
     private List<Integer> getCategoryAndAllSubcategoriesIds(Integer categoryId) {
