@@ -75,6 +75,7 @@ public abstract class AbstractFile<T extends AbstractFileDTO>  implements DTOCon
         applicationFileDTO.setFileIndex(getIndex());
         applicationFileDTO.setFileName(getFileName());
         applicationFileDTO.setMimeType(getMimeType());
+        applicationFileDTO.setFileTitle(getTitle());
         applicationFileDTO.setFileDescription(getFileDescription());
         applicationFileDTO.setFileStatus(getFileStatus());
         applicationFileDTO.setFile(getFile());

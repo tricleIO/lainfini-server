@@ -18,6 +18,7 @@ public interface ProductService extends BaseDatabaseService<Product, UUID, Produ
     ServiceResponse<Page<ProductDTO>> readAll(Pageable pageable, Principal principal);
     ServiceResponse<Page<ProductDTO>> readProductsInCategoryAndSubcategories(Integer categoryId, Pageable pageable, Principal principal);
     ServiceResponse<ProductDTO> addFlash(ProductHasFlashDTO productHasFlash);
+    ServiceResponse<Page<ProductDTO>> findByImagesPfFileId(Long imageId);
 
 
 }

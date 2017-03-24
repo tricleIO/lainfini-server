@@ -44,6 +44,7 @@ public class ApplicationFileController extends AbstractFileController<Applicatio
         return new ResponseEntity(applicationFileDTOS, HttpStatus.OK);
     }
 
+
     @Override
     public Class getDTOClazz() {
         return ApplicationFileDTO.class;

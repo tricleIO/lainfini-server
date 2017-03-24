@@ -24,6 +24,7 @@ import application.persistence.type.UserStatusEnum;
 import application.rest.domain.UserDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -37,6 +38,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "customer")
 @Data
+@EqualsAndHashCode(exclude = {"addresses","wishes"})
 public class User implements DTOConvertable<UserDTO>, Serializable {
 
     @Id
@@ -65,7 +67,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "sex", length = 1)
     private String sex;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "billing_address_id", referencedColumnName = "id")
     private Address billingAddress;
 
@@ -100,10 +102,10 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "locale", length = 10)
     private LocaleEnum locale;
 
-    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "customer")
+    @OneToMany(cascade=CascadeType.ALL, mappedBy = "customer")
     private Set<Wish> wishes;
 
-    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "customer")
+    @OneToMany(cascade=CascadeType.ALL, mappedBy = "customer")
     private Set<Address> addresses;
 
     /*login part*/

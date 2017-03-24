@@ -18,6 +18,7 @@ import application.service.size.SizeService;
 import application.service.unit.UnitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
@@ -28,6 +29,10 @@ import java.util.*;
 
 @Service
 public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Product, UUID, ProductRepository, ProductDTO> implements ProductService {
+
+
+    @Autowired
+    private ApplicationFileRepository applicationFileRepository;
 
     @Override
     public ServiceResponse<ProductDTO> read(String urlSlug) {
@@ -123,6 +128,18 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
 
         // load updated product
         return read(productHasFlashDTO.getProductUid());
+    }
+
+    @Override
+    public ServiceResponse<Page<ProductDTO>> findByImagesPfFileId(Long imageId) {
+        ApplicationFile one = applicationFileRepository.findOne(imageId);
+        Set<ProductFile> productFiles = one.getProductFiles();
+        List<ProductDTO> productDTOS = new ArrayList<>();
+        for (ProductFile productFile : productFiles) {
+            productDTOS.add(productFile.getPf().getProduct().toDTO(false));
+        }
+        return ServiceResponse.success(new PageImpl<ProductDTO>(productDTOS, null, productDTOS.size()));
+
     }
 
     @Override
