@@ -15,14 +15,21 @@ public class ProductCollectionController extends AbstractDatabaseController<Prod
     @Autowired
     private ProductCollectionService productCollectionService;
 
-    @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> readCollections(Pageable pageable) {
-        return readAll(pageable);
-    }
-
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public ResponseEntity<?> readCollection(@PathVariable Integer id) {
         return read(id);
+    }
+
+    @RequestMapping(method = RequestMethod.GET)
+    public ResponseEntity<?> readCollections(Pageable pageable, @RequestParam(name = "slug", required = false) String slug) {
+        if (slug != null) {
+            return getSimpleResponseEntity(
+                    productCollectionService.readBySlug(slug)
+            );
+        }
+        return getPageResponseEntity(
+                productCollectionService.readAll(pageable)
+        );
     }
 
     @RequestMapping(method = RequestMethod.POST)
