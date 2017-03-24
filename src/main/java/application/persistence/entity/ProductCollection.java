@@ -20,7 +20,7 @@ public class ProductCollection implements DTOConvertable<ProductCollectionDTO> {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "slug")
+    @Column(name = "slug", unique = true)
     private String slug;
 
     @OneToMany(cascade=CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY, mappedBy = "productCollection")

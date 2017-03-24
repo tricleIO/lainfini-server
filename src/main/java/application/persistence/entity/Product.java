@@ -69,6 +69,7 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @Transient
     private Set<ApplicationFile> applicationFiles;
 
+    @Column(name = "slug", unique = true)
     private String slug;
 
     @Enumerated(EnumType.ORDINAL)
