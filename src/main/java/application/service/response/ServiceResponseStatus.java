@@ -55,7 +55,9 @@ public enum ServiceResponseStatus {
 
     COMPLAINT_REASON_NOT_FOUND("Complaint reason with given uid was not found.", HttpStatus.NOT_FOUND),
 
-    IMAGE_NOT_FOUND("Image with given uid was not found.", HttpStatus.NOT_FOUND);
+    IMAGE_NOT_FOUND("Image with given uid was not found.", HttpStatus.NOT_FOUND),
+
+    SLUG_ALREADY_EXISTS("Slug already exists.", HttpStatus.CONFLICT);
 
     private final HttpStatus httpStatus;
     private final String message;

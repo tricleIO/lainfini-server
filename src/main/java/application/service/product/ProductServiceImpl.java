@@ -180,13 +180,13 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     @Override
     protected ServiceResponse<ProductDTO> doBeforeConvertInCreate(ProductDTO productDTO) {
         // if url slug is null, generate it from name
-        if (productDTO.getSlug() == null) {
-            productDTO.setSlug(
-                    getSlugFromString(productDTO.getName())
-            );
+        if (productDTO.getSlug() != null) {
+            if (productRepository.countBySlug(productDTO.getSlug()) > 0) {
+                return ServiceResponse.error(ServiceResponseStatus.SLUG_ALREADY_EXISTS);
+            }
         } else {
             productDTO.setSlug(
-                    getSlugFromString(productDTO.getSlug())
+                    getSlugFromString(productDTO.getName())
             );
         }
         return super.doBeforeConvertInCreate(productDTO);
