@@ -2,6 +2,7 @@ package application.rest.domain;
 
 import application.persistence.entity.ApplicationFile;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -17,6 +18,9 @@ public class ApplicationFileDTO extends AbstractFileDTO<ApplicationFile> {
 
     protected Set<ProductDTO> products;
 
+    @JsonProperty("mainImageOfProduct")
+    protected ProductDTO productDTO;
+
     protected Integer sequenceNumber;
 
     @Override
@@ -29,6 +33,9 @@ public class ApplicationFileDTO extends AbstractFileDTO<ApplicationFile> {
         applicationFile.setFileDescription(fileDescription);
         applicationFile.setFileStatus(fileStatus);
         applicationFile.setFile(getFile());
+        if (applicationFile != null && productDTO != null) {
+            applicationFile.setProduct(productDTO.toEntity(false));
+        }
         if (selectAsParent && imageFileDTO != null && imageFileDTO.getAbstractFileDTO() != null) {
             applicationFile.setImageFile(imageFileDTO.toEntity(false, applicationFile));
         }

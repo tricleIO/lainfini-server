@@ -16,6 +16,7 @@
 
 package application.persistence.entity;
 
+import application.persistence.type.UserRoleEnum;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 
@@ -36,12 +37,12 @@ public class Role implements GrantedAuthority, Serializable {
 
 	@NotNull
 	@Column(name = "role_name")
-	private String name;
+	@Enumerated(EnumType.STRING)
+	private UserRoleEnum value;
 
 	@Override
 	public String getAuthority() {
-		return name;
+		return value.getRoleName();
 	}
-
 
 }

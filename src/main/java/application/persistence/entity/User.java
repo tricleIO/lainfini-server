@@ -85,9 +85,12 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "stripe_customer_token")
     private String stripeToken;
 
+    @OneToOne(mappedBy = "user")
+    private UserEmailVerificationToken emailVerificationToken;
+
     @Enumerated(EnumType.STRING)
     @Column(name = "status", length = 15)
-    private StatusEnum statusEnum;
+    private StatusEnum status;
 
     @ManyToOne
     @JoinColumn(name = "currency_id", referencedColumnName = "id")
@@ -96,6 +99,12 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Enumerated(EnumType.STRING)
     @Column(name = "locale", length = 10)
     private LocaleEnum locale;
+
+    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "customer")
+    private Set<Wish> wishes;
+
+    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "customer")
+    private Set<Address> addresses;
 
     /*login part*/
 
@@ -136,10 +145,9 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         this.phoneNumber = user.getPhoneNumber();
         this.abraLink = user.getAbraLink();
         this.stripeToken = user.getStripeToken();
-        this.statusEnum = user.getStatusEnum();
+        this.status = user.getStatus();
         this.currency = user.getCurrency();
         this.locale = user.getLocale();
-
     }
 
     @Override
@@ -149,8 +157,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         userDTO.setUsername(login);
         userDTO.setFirstName(firstName);
         userDTO.setLastName(lastName);
-        userDTO.setPassword(password);
-        userDTO.setStatus(statusEnum);
+        userDTO.setStatus(status);
         userDTO.setSex(getSex());
         if (billingAddress != null) {
             userDTO.setBillingAddressUid(billingAddress.getId());

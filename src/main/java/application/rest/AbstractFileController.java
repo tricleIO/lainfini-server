@@ -9,6 +9,7 @@ import application.util.FileUtil;
 import lombok.Data;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -30,6 +31,11 @@ public abstract class AbstractFileController<E extends AbstractFile<D>, D extend
 
     @Autowired
     private ImageFileService imageFileService;
+
+    @RequestMapping(method = RequestMethod.GET)
+    public ResponseEntity<?> readAllFiles(Pageable pageable) {
+        return readAll(pageable);
+    }
 
     @RequestMapping(value = "", method = RequestMethod.POST)
     public ResponseEntity<?> uploadDocument(@RequestParam("file") MultipartFile[] files) throws IllegalAccessException, InstantiationException {
@@ -88,11 +94,8 @@ public abstract class AbstractFileController<E extends AbstractFile<D>, D extend
 
             String pathToThumbnail = fileAccessModel.getDirectoryStructure() + "/" + size + extensionDashed + fileAccessModel.getDto().getUid();
             File file = new File(pathToThumbnail);
-            if (!file.exists() && width != null && height != null) {
+            if (!file.exists()) {
                 imageFileService.createResizedCopyAndSave(fileAccessModel.getPathToFile(), extension, width, height);
-                new File(pathToThumbnail);
-            } else if (!file.exists()) {
-                imageFileService.createCopyAndSave(fileAccessModel.getPathToFile(), extension);
                 new File(pathToThumbnail);
             }
             fileAccessModel.setPathToFile(pathToThumbnail);

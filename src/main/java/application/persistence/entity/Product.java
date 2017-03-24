@@ -1,6 +1,7 @@
 package application.persistence.entity;
 
 import application.persistence.DTOConvertable;
+import application.persistence.type.ProductStatusEnum;
 import application.rest.domain.ApplicationFileDTO;
 import application.rest.domain.ProductDTO;
 import lombok.Data;
@@ -16,7 +17,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "product")
 @Data
-@EqualsAndHashCode(exclude="images")
+@EqualsAndHashCode(exclude={"images","mainImage"})
 public class Product extends SoftDeletableEntityImpl implements DTOConvertable<ProductDTO>, Serializable {
 
     @Id
@@ -30,6 +31,9 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
 
     @Column(name = "ean", length = 13)
     private String ean;
+
+    @Column(name = "code", length = 25)
+    private String code;
 
     @Column(name = "short_description", length = 255)
     private String shortDescription;
@@ -55,6 +59,10 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @JoinColumn(name = "unit_id", referencedColumnName = "id")
     private Unit unit;
 
+    @OneToOne
+    @JoinColumn(name = "main_image_id", referencedColumnName = "id")
+    private ApplicationFile mainImage;
+
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "pf.product", cascade=CascadeType.ALL)
     private Set<ProductFile> images = new HashSet<>();
 
@@ -62,6 +70,9 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     private Set<ApplicationFile> applicationFiles;
 
     private String urlSlug;
+
+    @Enumerated(EnumType.ORDINAL)
+    private ProductStatusEnum productStatus;
 
     @Override
     public ProductDTO toDTO(boolean selectAsParent, Object... parentParams) {
@@ -72,6 +83,11 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
         productDTO.setShortDescription(shortDescription);
         productDTO.setDescription(description);
         productDTO.setPrice(price);
+        productDTO.setCode(code);
+        productDTO.setProductStatus(productStatus);
+        if (mainImage != null) {
+            productDTO.setMainImageDTO(mainImage.toDTO(false));
+        }
         if (category != null) {
             productDTO.setCategoryUid(category.getId());
         }

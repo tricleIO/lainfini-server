@@ -1,9 +1,10 @@
 package application.service.order;
 
-import application.persistence.entity.CartHasProduct;
+import application.persistence.entity.Cart;
+import application.persistence.entity.CartItem;
 import application.persistence.entity.CustomerOrder;
 import application.persistence.entity.OrderItem;
-import application.persistence.repository.CartHasProductRepository;
+import application.persistence.repository.CartRepository;
 import application.persistence.repository.OrderRepository;
 import application.rest.domain.AddressDTO;
 import application.rest.domain.OrderDTO;
@@ -24,7 +25,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 
@@ -35,10 +35,10 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     private OrderRepository orderRepository;
 
     @Autowired
-    private CartHasProductRepository cartHasProductRepository;
+    private UserService userService;
 
     @Autowired
-    private UserService userService;
+    private CartRepository cartRepository;
 
     @Autowired
     private CartService cartService;
@@ -63,7 +63,7 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     @Override
     protected ServiceResponse<OrderDTO> doBeforeConvertInCreate(OrderDTO dto) {
         if (dto.getCustomerUid() == null && dto.getDeliveryAddressUid() == null) {
-            if (dto.getCustomer() != null &&  dto.getDeliveryAddress() != null) {
+            if (dto.getCustomer() != null && dto.getDeliveryAddress() != null) {
                 // create unregistered user
                 ServiceResponse<UserDTO> userResponse = userService.create(dto.getCustomer());
                 if (!userResponse.isSuccessful()) {
@@ -83,7 +83,7 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                 // if billing address is set, create it to
                 if (dto.getBillingAddress() != null) {
                     ServiceResponse<AddressDTO> billingAddressResponse = addressService.create(
-                        dto.getBillingAddress()
+                            dto.getBillingAddress()
                     );
                     if (!billingAddressResponse.isSuccessful()) {
                         return ServiceResponse.error(billingAddressResponse.getStatus());
@@ -100,19 +100,22 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     @Override
     protected void doAfterCreate(CustomerOrder entity) {
         if (entity.getCart() != null) {
-            List<CartHasProduct> cartHasProductList = cartHasProductRepository.findByCartId(entity.getCart().getId());
-            Set<OrderItem> orderItems = new LinkedHashSet<>();
-            for (CartHasProduct cartHasProduct : cartHasProductList) {
-                OrderItem orderItem = new OrderItem();
-                orderItem.setProduct(cartHasProduct.getProduct());
-                orderItem.setQuantity(cartHasProduct.getQuantity());
-                orderItem.setAddedAt(cartHasProduct.getAddedAt());
-                orderItem.setOrder(entity);
-                orderItem.setPrice(cartHasProduct.getProduct().getPrice());
-                orderItems.add(orderItem);
+            Cart cart = cartRepository.findOne(entity.getCart().getId());
+            if (cart != null) {
+                Set<OrderItem> orderItems = new LinkedHashSet<>();
+                for (CartItem cartItem : cart.getItems()) {
+                    // create order item from cart item
+                    OrderItem orderItem = new OrderItem();
+                    orderItem.setProduct(cartItem.getProduct());
+                    orderItem.setQuantity(cartItem.getQuantity());
+                    orderItem.setPrice(cartItem.getProduct().getPrice());
+                    orderItem.setAddedAt(cartItem.getAddedAt());
+                    orderItem.setOrder(entity);
+                    orderItems.add(orderItem);
+                }
+                entity.setItems(orderItems);
+                orderRepository.save(entity);
             }
-            entity.setItems(orderItems);
-            orderRepository.save(entity);
         }
     }
 

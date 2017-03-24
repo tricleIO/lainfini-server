@@ -2,6 +2,7 @@ package application.rest.domain;
 
 import application.persistence.entity.Product;
 import application.persistence.entity.ProductFile;
+import application.persistence.type.ProductStatusEnum;
 import application.persistence.type.StatusEnum;
 import application.rest.CategoryController;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -39,6 +40,11 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private Integer unitUid;
     private String urlSlug;
     private StatusEnum status;
+    private String code;
+    private ProductStatusEnum productStatus;
+
+    @JsonProperty("mainImage")
+    private ApplicationFileDTO mainImageDTO;
 
     @JsonProperty("images")
     private Set<ApplicationFileDTO> applicationFileDTOS;
@@ -54,6 +60,11 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         product.setShortDescription(shortDescription);
         product.setDescription(description);
         product.setPrice(price);
+        product.setCode(code);
+        product.setProductStatus(productStatus);
+        if (mainImageDTO != null) {
+            product.setMainImage(mainImageDTO.toEntity(false));
+        }
         if (selectAsParent) {
             if (category != null) {
                 product.setCategory(category.toEntity(false));

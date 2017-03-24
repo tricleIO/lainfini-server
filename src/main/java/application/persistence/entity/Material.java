@@ -19,11 +19,17 @@ public class Material implements DTOConvertable<MaterialDTO> {
 
     private String name;
 
+    private String composition;
+
+    private String urlSlug;
+
     @Override
     public MaterialDTO toDTO(boolean selectAsParent, Object... parentParams) {
         MaterialDTO materialDTO = new MaterialDTO();
         materialDTO.setUid(id);
         materialDTO.setName(name);
+        materialDTO.setComposition(composition);
+        materialDTO.setUrlSlug(urlSlug);
         return materialDTO;
     }
 
