@@ -58,6 +58,13 @@ public class ProductController extends AbstractDatabaseController<Product, UUID,
         );
     }
 
+    @RequestMapping(value = "/image/{imageId}", method = RequestMethod.GET)
+    public ResponseEntity<?> readProductsByImage(@PathVariable Long imageId) {
+        return getPageResponseEntity(
+                productService.findByImagesPfFileId(imageId)
+        );
+    }
+
     @Override
     public ProductService getBaseService() {
         return productService;

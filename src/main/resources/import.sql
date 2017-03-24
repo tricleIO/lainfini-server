@@ -86,8 +86,8 @@ INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,4,0x
 INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,5,0xCF03CE9A7BE24201BF006B4C4CE623F5);
 INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (5,6,0xCF03CE9A7BE24201BF006B4C4CE623F5);
 
-INSERT INTO file_collection (id,description,title,url_slug) VALUES (1,'New collection for year 2017','Collection 2017','collection-2017');
-INSERT INTO file_collection (id,description,title,url_slug) VALUES (2,'Sales description','Sales 2017','sales-2017');
+INSERT INTO file_collection (id,description,title,url_slug, valid_from) VALUES (1,'New collection for year 2017','Collection 2017','collection-2017','2017-01-01');
+INSERT INTO file_collection (id,description,title,url_slug, valid_from, valid_to) VALUES (2,'Sales description','Sales 2017','sales-2017', '2017-01-01', '2018-01-01');
 
 INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VALUES (5,1,1);
 INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VALUES (2,2,1);
