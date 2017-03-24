@@ -18,7 +18,7 @@ import java.util.UUID;
 @Table(name = "product")
 @Data
 @EqualsAndHashCode(exclude={"images","mainImage"})
-public class Product extends SoftDeletableEntityImpl implements DTOConvertable<ProductDTO>, Serializable {
+public class Product extends SoftDeletableEntityImpl implements DTOConvertable<ProductDTO>, SlugEntity, Serializable {
 
     @Id
     @GenericGenerator(name = "uuid", strategy = "uuid2")

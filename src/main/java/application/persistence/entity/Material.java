@@ -11,7 +11,7 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-public class Material implements DTOConvertable<MaterialDTO> {
+public class Material implements DTOConvertable<MaterialDTO>, SlugEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

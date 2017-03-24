@@ -51,10 +51,9 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
         }
         // slug generation
         if (this instanceof SlugService && dto instanceof SlugDTO && getRepository() instanceof SlugRepository) {
-            SlugService<SlugDTO> slugService = (SlugService) this;
+            SlugService slugService = (SlugService) this;
             SlugDTO slugDTO = (SlugDTO) dto;
-            SlugRepository slugRepository = (SlugRepository) getRepository();
-            ServiceResponse generateSlugResponse = slugService.generateSlugAndSetItToDTO(slugDTO, slugRepository);
+            ServiceResponse generateSlugResponse = slugService.generateSlugAndSetItToDTO(slugDTO);
             if (!generateSlugResponse.isSuccessful()) {
                 return ServiceResponse.error(generateSlugResponse.getStatus());
             }

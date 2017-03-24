@@ -5,12 +5,13 @@ import application.rest.domain.ProductCollectionDTO;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Set;
 
 @Entity
 @Table(name = "product_collection")
 @Data
-public class ProductCollection implements DTOConvertable<ProductCollectionDTO> {
+public class ProductCollection implements DTOConvertable<ProductCollectionDTO>, SlugEntity, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

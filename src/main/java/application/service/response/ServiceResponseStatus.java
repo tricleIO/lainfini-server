@@ -12,6 +12,7 @@ public enum ServiceResponseStatus {
     INTERNAL_ERROR("Internal error", HttpStatus.INTERNAL_SERVER_ERROR),
     READ_FORBIDDEN("Read forbidden.", HttpStatus.FORBIDDEN),
     UNAUTHORIZED("Unauthorized.", HttpStatus.UNAUTHORIZED),
+    OBJECT_BY_SLUG_NOT_FOUND("Object with given slug was not found.", HttpStatus.NOT_FOUND),
 
     // user
     USERNAME_ALREADY_EXISTS("User with given username already exists.", HttpStatus.CONFLICT),
@@ -22,7 +23,6 @@ public enum ServiceResponseStatus {
 
     // product
     PRODUCT_NOT_FOUND("Product with given uid was not found.", HttpStatus.NOT_FOUND),
-    PRODUCT_SLUG_NOT_FOUND("Product with given slug was not found.", HttpStatus.NOT_FOUND),
 
     // category
     CATEGORY_NOT_FOUND("Category with given uid was not found.", HttpStatus.NOT_FOUND),

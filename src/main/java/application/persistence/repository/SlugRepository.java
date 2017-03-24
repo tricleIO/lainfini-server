@@ -1,8 +1,11 @@
 package application.persistence.repository;
 
-public interface SlugRepository {
+import application.persistence.entity.SlugEntity;
+
+public interface SlugRepository<E extends SlugEntity> {
 
     Long countBySlug(String slug);
     Long countBySlugStartingWith(String slug);
+    E findOneBySlug(String slug);
 
 }

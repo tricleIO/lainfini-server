@@ -23,7 +23,7 @@ public class ProductController extends AbstractDatabaseController<Product, UUID,
     public ResponseEntity<?> readProducts(Pageable pageable, @RequestParam(name = "slug", required = false) String slug, Principal principal) {
         if (slug != null) {
             return getSimpleResponseEntity(
-                    productService.read(slug)
+                    productService.readBySlug(slug)
             );
         }
         return getPageResponseEntity(

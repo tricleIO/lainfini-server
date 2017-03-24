@@ -2,6 +2,7 @@ package application.service.product;
 
 import application.persistence.SlugService;
 import application.persistence.entity.Product;
+import application.persistence.repository.ProductRepository;
 import application.rest.domain.ProductDTO;
 import application.rest.domain.ProductHasFlashDTO;
 import application.service.BaseDatabaseService;
@@ -12,9 +13,8 @@ import org.springframework.data.domain.Pageable;
 import java.security.Principal;
 import java.util.UUID;
 
-public interface ProductService extends BaseDatabaseService<Product, UUID, ProductDTO>, SlugService<ProductDTO> {
+public interface ProductService extends BaseDatabaseService<Product, UUID, ProductDTO>, SlugService<Product, ProductRepository, ProductDTO> {
 
-    ServiceResponse<ProductDTO> read(String slug);
     ServiceResponse<ProductDTO> read(UUID key, Principal principal);
     ServiceResponse<Page<ProductDTO>> readAll(Pageable pageable, Principal principal);
     ServiceResponse<Page<ProductDTO>> readProductsInCategoryAndSubcategories(Integer categoryId, Pageable pageable, Principal principal);
