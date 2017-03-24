@@ -56,12 +56,18 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
     public ResponseEntity<?> verifyUser(@RequestParam String verificationToken) {
         UserDTO body = userService.findByEmailVerificationTokenToken(verificationToken).getBody();
         if (body != null) {
-//            Date expiryDate = body.toEntity(true).getEmailVerificationToken().getExpiryDate();
-            body.setRegisterStatus(UserStatusEnum.REGISTERED);
-            userService.patch(body);
-            return new ResponseEntity<>(
-                    HttpStatus.OK
-            );
+            if (body.getRegisterStatus().equals(UserStatusEnum.REGISTERED)) {
+                return new ResponseEntity<>(
+                        HttpStatus.OK
+                );
+            } else if (body.getRegisterStatus().equals(UserStatusEnum.PRE_REGISTERED)) {
+//            Date expiryDate = body.toEntity(true).getEmailVerificationToken().getExpiryDate(); //todo: brát v potaz expiraci
+                body.setRegisterStatus(UserStatusEnum.REGISTERED);
+                userService.patch(body); //todo: tady dát lepší patch, aby nemazal heslo
+                return new ResponseEntity<>(
+                        HttpStatus.OK
+                );
+            }
         }
 
         return new ResponseEntity<>(

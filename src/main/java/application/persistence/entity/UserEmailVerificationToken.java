@@ -1,6 +1,8 @@
 package application.persistence.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import org.apache.commons.lang3.RandomStringUtils;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -13,6 +15,7 @@ import java.util.Date;
 @Entity
 @Table(name = "customer_email_verification_token")
 @Data
+@EqualsAndHashCode(exclude = "user")
 public class UserEmailVerificationToken {
 
     @Id
@@ -30,6 +33,15 @@ public class UserEmailVerificationToken {
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(nullable = false, name = "customer_id")
     private User user;
+
+    public UserEmailVerificationToken() {
+    }
+
+    public UserEmailVerificationToken(User user) {
+        this.user = user;
+        this.expiryDate = calculateExpiryDate(EXPIRATION);
+        this.token = RandomStringUtils.randomAlphanumeric(63);
+    }
 
     private Date calculateExpiryDate(int expiryTimeInMinutes) {
         Calendar cal = Calendar.getInstance();

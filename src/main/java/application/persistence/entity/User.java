@@ -85,7 +85,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "stripe_customer_token")
     private String stripeToken;
 
-    @OneToOne(mappedBy = "user")
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private UserEmailVerificationToken emailVerificationToken;
 
     @Enumerated(EnumType.STRING)
