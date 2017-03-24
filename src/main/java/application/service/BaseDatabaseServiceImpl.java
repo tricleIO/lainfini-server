@@ -1,5 +1,6 @@
 package application.service;
 
+import application.BeanCopier;
 import application.persistence.DTOConvertable;
 import application.rest.domain.EntityConvertable;
 import application.rest.domain.IdentifableDTO;
@@ -71,11 +72,13 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
     }
 
     public ServiceResponse<D> patch(D dto) {
-        if (!getRepository().exists(dto.getUid())) {
+        E originalEntity = getRepository().findOne(dto.getUid());
+        if (originalEntity == null) {
             return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
         }
-        E entity = dto.toEntity(true);
-        E patchedEntity = getRepository().save(entity);
+        E updatingEntity = dto.toEntity(true);
+        BeanCopier.copyNonNullProperties(updatingEntity, originalEntity);
+        E patchedEntity = getRepository().save(originalEntity);
         return ServiceResponse.success(patchedEntity.toDTO(true));
     }
 

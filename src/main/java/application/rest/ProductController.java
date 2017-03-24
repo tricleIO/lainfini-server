@@ -50,6 +50,14 @@ public class ProductController extends AbstractDatabaseController<Product, UUID,
         );
     }
 
+    @RequestMapping(value = "/{id}", method = RequestMethod.PATCH)
+    public ResponseEntity<?> patchProduct(@PathVariable UUID id, @RequestBody ProductDTO productDTO) {
+        productDTO.setUid(id);
+        return getSimpleResponseEntity(
+                productService.patch(productDTO)
+        );
+    }
+
     @RequestMapping(value = "/{productId}/flashes", method = RequestMethod.POST)
     public ResponseEntity<?> addFlash(@PathVariable UUID productId, @RequestBody ProductHasFlashDTO productHasFlash) {
         productHasFlash.setProductUid(productId);
