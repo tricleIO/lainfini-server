@@ -16,6 +16,7 @@ import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.size.SizeService;
 import application.service.unit.UnitService;
+import application.util.SlugMaker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -181,7 +182,11 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         // if url slug is null, generate it from name
         if (productDTO.getSlug() == null) {
             productDTO.setSlug(
-                    getSlugFromName(productDTO.getName())
+                    getSlugFromString(productDTO.getName())
+            );
+        } else {
+            productDTO.setSlug(
+                    getSlugFromString(productDTO.getSlug())
             );
         }
         return super.doBeforeConvertInCreate(productDTO);
@@ -198,8 +203,8 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         return user.getWishes().contains(wish);
     }
 
-    private String getSlugFromName(String productName) {
-        return productName.replaceAll("\\s+", "-").toLowerCase();
+    private String getSlugFromString(String string) {
+        return SlugMaker.getSlugFromString(string, productRepository);
     }
 
     private List<Integer> getCategoryAndAllSubcategoriesIds(Integer categoryId) {
