@@ -181,7 +181,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         // if url slug is null, generate it from name
         if (productDTO.getSlug() == null) {
             productDTO.setSlug(
-                    getUrlSlugFromName(productDTO.getName())
+                    getSlugFromName(productDTO.getName())
             );
         }
         return super.doBeforeConvertInCreate(productDTO);
@@ -198,7 +198,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         return user.getWishes().contains(wish);
     }
 
-    private String getUrlSlugFromName(String productName) {
+    private String getSlugFromName(String productName) {
         return productName.replaceAll("\\s+", "-").toLowerCase();
     }
 

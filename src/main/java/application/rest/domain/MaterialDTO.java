@@ -9,7 +9,7 @@ public class MaterialDTO implements ReadWriteDatabaseDTO<Material>, IdentifableD
     private Integer uid;
     private String name;
     private String composition;
-    private String urlSlug;
+    private String slug;
 
     @Override
     public Material toEntity(boolean selectAsParent, Object... parentParams) {
@@ -17,7 +17,7 @@ public class MaterialDTO implements ReadWriteDatabaseDTO<Material>, IdentifableD
         material.setId(uid);
         material.setName(name);
         material.setComposition(composition);
-        material.setUrlSlug(urlSlug);
+        material.setSlug(slug);
         return material;
     }
 

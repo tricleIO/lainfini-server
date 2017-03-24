@@ -21,7 +21,7 @@ public class Material implements DTOConvertable<MaterialDTO> {
 
     private String composition;
 
-    private String urlSlug;
+    private String slug;
 
     @Override
     public MaterialDTO toDTO(boolean selectAsParent, Object... parentParams) {
@@ -29,7 +29,7 @@ public class Material implements DTOConvertable<MaterialDTO> {
         materialDTO.setUid(id);
         materialDTO.setName(name);
         materialDTO.setComposition(composition);
-        materialDTO.setUrlSlug(urlSlug);
+        materialDTO.setSlug(slug);
         return materialDTO;
     }
 
