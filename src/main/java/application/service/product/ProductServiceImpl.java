@@ -167,7 +167,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     // additional data manipulators
 
     @Override
-    protected AdditionalDataManipulatorBatch<ProductDTO> getCreateAdditionalDataLoaderBatch(ProductDTO productDTO) {
+    protected AdditionalDataManipulatorBatch<ProductDTO> getAdditionalDataLoaderBatch(ProductDTO productDTO) {
         AdditionalDataManipulatorBatch<ProductDTO> dataManipulatorBatch = new AdditionalDataManipulatorBatch<>(productDTO);
         dataManipulatorBatch.add(this::getCategoryDataManipulator);
         dataManipulatorBatch.add(this::getMaterialDataManipulator);

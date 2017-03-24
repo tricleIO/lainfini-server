@@ -34,7 +34,7 @@ public class AddressServiceImpl extends BaseDatabaseServiceImpl<Address, Long, A
     }
 
     @Override
-    protected AdditionalDataManipulatorBatch<AddressDTO> getCreateAdditionalDataLoaderBatch(AddressDTO dto) {
+    protected AdditionalDataManipulatorBatch<AddressDTO> getAdditionalDataLoaderBatch(AddressDTO dto) {
         AdditionalDataManipulatorBatch<AddressDTO> batch = new AdditionalDataManipulatorBatch<>(dto);
         // add customer
         batch.add(a -> new AdditionalDataManipulator<>(
