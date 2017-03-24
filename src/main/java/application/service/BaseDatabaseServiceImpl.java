@@ -80,7 +80,7 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
     }
 
     protected AdditionalDataManipulatorBatch<D> getAdditionalDataLoaderBatch(D dto) {
-        return new AdditionalDataManipulatorBatch(dto);
+        return new AdditionalDataManipulatorBatch<>(dto);
     }
 
     public ServiceResponse<D> patch(D dto) {
