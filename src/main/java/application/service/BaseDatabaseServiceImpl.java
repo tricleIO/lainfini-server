@@ -1,7 +1,6 @@
 package application.service;
 
 import application.persistence.DTOConvertable;
-import application.persistence.SlugService;
 import application.persistence.repository.SlugRepository;
 import application.rest.domain.EntityConvertable;
 import application.rest.domain.IdentifableDTO;

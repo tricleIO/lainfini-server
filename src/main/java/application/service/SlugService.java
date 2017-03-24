@@ -1,5 +1,6 @@
-package application.persistence;
+package application.service;
 
+import application.persistence.DTOConvertable;
 import application.persistence.entity.SlugEntity;
 import application.persistence.repository.SlugRepository;
 import application.rest.domain.ReadWriteDatabaseDTO;

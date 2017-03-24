@@ -1,11 +1,11 @@
 package application.service.product;
 
-import application.persistence.SlugService;
 import application.persistence.entity.Product;
 import application.persistence.repository.ProductRepository;
 import application.rest.domain.ProductDTO;
 import application.rest.domain.ProductHasFlashDTO;
 import application.service.BaseDatabaseService;
+import application.service.SlugService;
 import application.service.response.ServiceResponse;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
