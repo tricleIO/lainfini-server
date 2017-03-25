@@ -27,8 +27,8 @@ import java.util.UUID;
 
 public interface UserRepository extends PagingAndSortingRepository<User, UUID> {
 
-	User findByLogin(String login);
-	User findByLoginAndRegisterStatus(String login, UserStatusEnum registerStatus);
+	User findByEmail(String login);
+	User findByEmailAndRegisterStatus(String login, UserStatusEnum registerStatus);
 	User findByEmailVerificationTokenToken(String token);
 	Page<User> findByRolesValue(UserRoleEnum userRole, Pageable pageable);
 	User findByIdAndRegisterStatusAndRolesValue(UUID id, UserStatusEnum registerStatus, UserRoleEnum userRole);

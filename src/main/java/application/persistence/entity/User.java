@@ -112,7 +112,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
 
     @NotNull
     @Column(nullable = false)
-    private String login;
+    private String email;
 
     @Column(name = "password", length = 64)
     private String password;
@@ -132,7 +132,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     public User(User user) {
         super();
         this.id = user.getId();
-        this.login = user.getLogin();
+        this.email = user.getEmail();
         this.password = user.getPassword();
         this.roles = user.getRoles();
         this.linkedAccountList = user.getLinkedAccountList();
@@ -156,7 +156,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     public UserDTO toDTO(boolean selectAsParent, Object... parentParams) {
         UserDTO userDTO = new UserDTO();
         userDTO.setUid(id);
-        userDTO.setUsername(login);
+        userDTO.setUsername(email);
         userDTO.setFirstName(firstName);
         userDTO.setLastName(lastName);
         userDTO.setStatus(status);

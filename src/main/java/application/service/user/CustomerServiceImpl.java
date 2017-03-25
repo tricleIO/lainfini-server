@@ -70,7 +70,7 @@ public class CustomerServiceImpl extends UserServiceImpl implements CustomerServ
             user.setEmailVerificationToken(userEmailVerificationToken);
             MailDTO mailDTO = new MailDTO();
             mailDTO.setSubject("Registration");
-            mailDTO.setTo(user.getLogin());
+            mailDTO.setTo(user.getEmail());
             mailDTO.setText("Text about registration with verification link: " + getVerificationUrl(userEmailVerificationToken));
             mailService.sendMail(mailDTO);
         } else {

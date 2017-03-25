@@ -61,7 +61,7 @@ public class StripeController {
         }
 
         if (customer == null) {
-            customer = createCustomer(user.getLogin(), paymentInformation.getCardNumber(), paymentInformation.getMonthExpiration(), paymentInformation.getYearExpiration(), paymentInformation.getCvc());
+            customer = createCustomer(user.getEmail(), paymentInformation.getCardNumber(), paymentInformation.getMonthExpiration(), paymentInformation.getYearExpiration(), paymentInformation.getCvc());
             user.setStripeToken(customer.getId());
             userService.patch(user.toDTO(true));
         }
