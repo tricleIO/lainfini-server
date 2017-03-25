@@ -40,7 +40,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         if (response.isSuccessful()) {
             ProductDTO productDTO = response.getBody();
             if (principal != null) {
-                User user = userRepository.findByLoginAndRegisterStatus(
+                User user = userRepository.findByEmailAndRegisterStatus(
                         principal.getName(), UserStatusEnum.REGISTERED
                 );
                 if (user != null) {
@@ -58,7 +58,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         ServiceResponse<Page<ProductDTO>> response = super.readAll(pageable);
         if (principal != null) {
             if (principal != null) {
-                User user = userRepository.findByLoginAndRegisterStatus(
+                User user = userRepository.findByEmailAndRegisterStatus(
                         principal.getName(), UserStatusEnum.REGISTERED
                 );
                 if (user != null) {
@@ -80,7 +80,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         Page<ProductDTO> pageWithDtos = convertPageWithEntitiesToPageWithDtos(pageWithProducts, pageable);
 
         if (principal != null) {
-            User user = userRepository.findByLoginAndRegisterStatus(
+            User user = userRepository.findByEmailAndRegisterStatus(
                     principal.getName(), UserStatusEnum.REGISTERED
             );
             if (user != null) {
