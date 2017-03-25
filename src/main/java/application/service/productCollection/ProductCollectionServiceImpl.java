@@ -14,7 +14,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class ProductCollectionServiceImpl extends BaseDatabaseServiceImpl<ProductCollection, Integer, ProductCollectionRepository, ProductCollectionDTO> implements ProductCollectionService {
+public class ProductCollectionServiceImpl extends BaseDatabaseServiceImpl<ProductCollection, Integer, ProductCollectionRepository, ProductCollectionDTO>
+        implements ProductCollectionService {
 
     @Autowired
     private ProductCollectionRepository productCollectionRepository;

@@ -11,7 +11,7 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-public class Material implements DTOConvertable<MaterialDTO> {
+public class Material implements DTOConvertable<MaterialDTO>, SlugEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,7 +21,7 @@ public class Material implements DTOConvertable<MaterialDTO> {
 
     private String composition;
 
-    private String urlSlug;
+    private String slug;
 
     @Override
     public MaterialDTO toDTO(boolean selectAsParent, Object... parentParams) {
@@ -29,7 +29,7 @@ public class Material implements DTOConvertable<MaterialDTO> {
         materialDTO.setUid(id);
         materialDTO.setName(name);
         materialDTO.setComposition(composition);
-        materialDTO.setUrlSlug(urlSlug);
+        materialDTO.setSlug(slug);
         return materialDTO;
     }
 

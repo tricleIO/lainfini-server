@@ -18,7 +18,7 @@ import java.util.UUID;
 @Table(name = "product")
 @Data
 @EqualsAndHashCode(exclude={"images","mainImage"})
-public class Product extends SoftDeletableEntityImpl implements DTOConvertable<ProductDTO>, Serializable {
+public class Product extends SoftDeletableEntityImpl implements DTOConvertable<ProductDTO>, SlugEntity, Serializable {
 
     @Id
     @GenericGenerator(name = "uuid", strategy = "uuid2")
@@ -69,7 +69,8 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @Transient
     private Set<ApplicationFile> applicationFiles;
 
-    private String urlSlug;
+    @Column(name = "slug", unique = true)
+    private String slug;
 
     @Enumerated(EnumType.ORDINAL)
     private ProductStatusEnum productStatus;
@@ -109,7 +110,7 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
             }
             productDTO.setApplicationFileDTOS(applicationFileDTOS);
         }
-        productDTO.setUrlSlug(urlSlug);
+        productDTO.setSlug(slug);
         productDTO.setStatus(status);
         return productDTO;
     }

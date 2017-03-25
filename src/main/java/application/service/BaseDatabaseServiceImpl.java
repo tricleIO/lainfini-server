@@ -1,8 +1,10 @@
 package application.service;
 
 import application.persistence.DTOConvertable;
+import application.persistence.repository.SlugRepository;
 import application.rest.domain.EntityConvertable;
 import application.rest.domain.IdentifableDTO;
+import application.rest.domain.SlugDTO;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.util.BeanCopier;
@@ -46,6 +48,15 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
         if (status != ServiceResponseStatus.OK) {
             return ServiceResponse.error(status);
         }
+        // slug generation
+        if (this instanceof SlugService && dto instanceof SlugDTO && getRepository() instanceof SlugRepository) {
+            SlugService slugService = (SlugService) this;
+            SlugDTO slugDTO = (SlugDTO) dto;
+            ServiceResponse generateSlugResponse = slugService.generateSlugAndSetItToDTO(slugDTO);
+            if (!generateSlugResponse.isSuccessful()) {
+                return ServiceResponse.error(generateSlugResponse.getStatus());
+            }
+        }
         // convert to entity
         E entity = dto.toEntity(true);
         // additional update of entity
@@ -68,7 +79,7 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
     }
 
     protected AdditionalDataManipulatorBatch<D> getAdditionalDataLoaderBatch(D dto) {
-        return new AdditionalDataManipulatorBatch(dto);
+        return new AdditionalDataManipulatorBatch<>(dto);
     }
 
     public ServiceResponse<D> patch(D dto) {
