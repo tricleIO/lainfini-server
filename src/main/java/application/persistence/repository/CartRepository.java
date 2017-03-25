@@ -8,6 +8,7 @@ import java.util.UUID;
 
 public interface CartRepository extends PagingAndSortingRepository<Cart, UUID> {
 
+    Cart findOneById(UUID id);
     Cart findFirstByCustomerIdAndStatusOrderByCreatedAtDesc(UUID customerId, CartStatusEnum cartStatus);
 
 }

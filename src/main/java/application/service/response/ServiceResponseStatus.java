@@ -57,7 +57,9 @@ public enum ServiceResponseStatus {
 
     IMAGE_NOT_FOUND("Image with given uid was not found.", HttpStatus.NOT_FOUND),
 
-    SLUG_ALREADY_EXISTS("Slug already exists.", HttpStatus.CONFLICT);
+    SLUG_ALREADY_EXISTS("Slug already exists.", HttpStatus.CONFLICT),
+
+    CART_NOT_OPEN("Cart is not open, it can not be used for creating new product order.", HttpStatus.BAD_REQUEST);
 
     private final HttpStatus httpStatus;
     private final String message;
