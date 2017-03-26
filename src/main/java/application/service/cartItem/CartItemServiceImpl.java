@@ -49,6 +49,16 @@ public class CartItemServiceImpl extends BaseDatabaseServiceImpl<CartItem, Long,
     }
 
     @Override
+    public ServiceResponse<CartItemDTO> removeProductFromCart(UUID productId, UUID cartId) {
+        CartItem cartItem = cartItemRepository.findByProductIdAndCartId(productId, cartId);
+        if (cartItem == null) {
+            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+        }
+        cartItemRepository.delete(cartItem);
+        return ServiceResponse.success(cartItem.toDTO(true));
+    }
+
+    @Override
     protected AdditionalDataManipulatorBatch<CartItemDTO> getAdditionalDataLoaderBatch(CartItemDTO cartItemDTO) {
         AdditionalDataManipulatorBatch<CartItemDTO> batch = new AdditionalDataManipulatorBatch<>(cartItemDTO);
         // add cart

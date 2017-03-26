@@ -2,12 +2,13 @@ package application.service.wish;
 
 import application.persistence.entity.Wish;
 import application.persistence.repository.WishRepository;
+import application.persistence.type.StatusEnum;
 import application.rest.domain.ProductDTO;
 import application.rest.domain.UserDTO;
 import application.rest.domain.WishDTO;
 import application.service.AdditionalDataManipulator;
 import application.service.AdditionalDataManipulatorBatch;
-import application.service.BaseDatabaseServiceImpl;
+import application.service.BaseSoftDeletableDatabaseServiceImpl;
 import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
@@ -20,7 +21,7 @@ import org.springframework.stereotype.Service;
 import java.util.UUID;
 
 @Service
-public class WishServiceImpl extends BaseDatabaseServiceImpl<Wish, Long, WishRepository, WishDTO> implements WishService {
+public class WishServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Wish, Long, WishRepository, WishDTO> implements WishService {
 
     @Autowired
     private WishRepository wishRepository;
@@ -38,7 +39,7 @@ public class WishServiceImpl extends BaseDatabaseServiceImpl<Wish, Long, WishRep
         if (!userResponse.isSuccessful()) {
             return ServiceResponse.error(ServiceResponseStatus.CUSTOMER_NOT_FOUND);
         }
-        Page<Wish> wishes = wishRepository.findByCustomerId(customerId, pageable);
+        Page<Wish> wishes = wishRepository.findByCustomerIdAndStatus(customerId, StatusEnum.ACTIVE, pageable);
         Page<WishDTO> pageOfWishDTOs = convertPageWithEntitiesToPageWithDtos(wishes, pageable);
         return ServiceResponse.success(pageOfWishDTOs);
     }
@@ -62,10 +63,36 @@ public class WishServiceImpl extends BaseDatabaseServiceImpl<Wish, Long, WishRep
 
     @Override
     public ServiceResponse<WishDTO> create(WishDTO dto) {
-        if (productCustomerAlreadyWishesExists(dto.getProductUid(), dto.getCustomerUid())) {
+        Wish wish = wishRepository.findByCustomerIdAndProductId(dto.getCustomerUid(), dto.getProductUid());
+        if (wish != null) {
+            if (wish.getStatus() != StatusEnum.ACTIVE) {
+                // patch and act like its first time create
+                dto.setUid(wish.getId());
+                return patch(dto);
+            }
+            // already exists and active
             return ServiceResponse.error(ServiceResponseStatus.ALREADY_EXISTS);
         }
+        // first time create
         return super.create(dto);
+    }
+
+    @Override
+    public ServiceResponse<WishDTO> removeProductFromWishes(UUID customerId, UUID productId) {
+        Wish wish = wishRepository.findByCustomerIdAndProductId(customerId, productId);
+        if (wish == null) {
+            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+        }
+        return delete(wish.getId());
+    }
+
+    @Override
+    public ServiceResponse<WishDTO> removeProductFromWishesOfCurrentCustomer(UUID productId) {
+        ServiceResponse<UserDTO> currentUserResponse = userService.readCurrentUser();
+        if (!currentUserResponse.isSuccessful()) {
+            return ServiceResponse.error(currentUserResponse.getStatus());
+        }
+        return removeProductFromWishes(currentUserResponse.getBody().getUid(), productId);
     }
 
     @Override
@@ -99,10 +126,6 @@ public class WishServiceImpl extends BaseDatabaseServiceImpl<Wish, Long, WishRep
     @Override
     public WishRepository getRepository() {
         return wishRepository;
-    }
-
-    private boolean productCustomerAlreadyWishesExists(UUID productId, UUID customerId) {
-        return wishRepository.countByProductIdAndCustomerId(productId, customerId) > 0;
     }
 
 }
