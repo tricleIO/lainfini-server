@@ -30,6 +30,13 @@ public class CartItemController extends AbstractDatabaseController<CartItem, Lon
         );
     }
 
+    @RequestMapping(value = "/{cartId}/items/{productId}", method = RequestMethod.DELETE)
+    public ResponseEntity<?> deleteCartItem(@PathVariable UUID cartId, @PathVariable UUID productId) {
+        return getSimpleResponseEntity(
+                cartItemService.removeProductFromCart(productId, cartId)
+        );
+    }
+
     @Override
     public CartItemService getBaseService() {
         return cartItemService;
