@@ -48,6 +48,20 @@ public class WishController extends AbstractDatabaseController<Wish, Long, WishD
         );
     }
 
+    @RequestMapping(value = "/customers/{customerId}/wishlist/{productId}", method = RequestMethod.DELETE)
+    public ResponseEntity<?> deleteWish(@PathVariable UUID customerId, @PathVariable UUID productId) {
+        return getSimpleResponseEntity(
+                wishService.removeProductFromWishes(customerId, productId)
+        );
+    }
+
+    @RequestMapping(value = "/customers/current/wishlist/{productId}", method = RequestMethod.DELETE)
+    public ResponseEntity<?> deleteCurrentCustomerWish(@PathVariable UUID productId) {
+        return getSimpleResponseEntity(
+                wishService.removeProductFromWishesOfCurrentCustomer(productId)
+        );
+    }
+
     @Override
     public WishService getBaseService() {
         return wishService;
