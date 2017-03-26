@@ -63,9 +63,17 @@ public class WishServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Wish, 
 
     @Override
     public ServiceResponse<WishDTO> create(WishDTO dto) {
-        if (productCustomerAlreadyWishesExists(dto.getProductUid(), dto.getCustomerUid())) {
+        Wish wish = wishRepository.findByCustomerIdAndProductId(dto.getCustomerUid(), dto.getProductUid());
+        if (wish != null) {
+            if (wish.getStatus() != StatusEnum.ACTIVE) {
+                // patch and act like its first time create
+                dto.setUid(wish.getId());
+                return patch(dto);
+            }
+            // already exists and active
             return ServiceResponse.error(ServiceResponseStatus.ALREADY_EXISTS);
         }
+        // first time create
         return super.create(dto);
     }
 
@@ -118,10 +126,6 @@ public class WishServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Wish, 
     @Override
     public WishRepository getRepository() {
         return wishRepository;
-    }
-
-    private boolean productCustomerAlreadyWishesExists(UUID productId, UUID customerId) {
-        return wishRepository.countByProductIdAndCustomerId(productId, customerId) > 0;
     }
 
 }
