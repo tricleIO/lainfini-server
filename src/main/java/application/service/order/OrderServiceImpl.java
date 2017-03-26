@@ -6,7 +6,9 @@ import application.persistence.entity.CustomerOrder;
 import application.persistence.entity.OrderItem;
 import application.persistence.repository.CartRepository;
 import application.persistence.repository.OrderRepository;
+import application.persistence.type.CartStatusEnum;
 import application.rest.domain.AddressDTO;
+import application.rest.domain.CartDTO;
 import application.rest.domain.OrderDTO;
 import application.rest.domain.UserDTO;
 import application.service.AdditionalDataManipulator;
@@ -94,6 +96,19 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                 return ServiceResponse.error(ServiceResponseStatus.CUSTOMER_OR_DELIVERY_ADDRESS_NOT_GIVEN);
             }
         }
+        // cart
+        if (dto.getCartUid() == null) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_GIVEN);
+        }
+        ServiceResponse<CartDTO> cartResponse = cartService.read(dto.getCartUid());
+        if (!cartResponse.isSuccessful()) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_FOUND);
+        }
+        CartDTO cartDTO = cartResponse.getBody();
+        if (cartDTO.getStatus() != CartStatusEnum.OPENED) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_OPEN);
+        }
+        dto.setCart(cartDTO);
         return super.doBeforeConvertInCreate(dto);
     }
 
@@ -116,6 +131,8 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                 entity.setItems(orderItems);
                 orderRepository.save(entity);
             }
+            cart.setStatus(CartStatusEnum.CHECKEDOUT);
+            cartRepository.save(cart);
         }
     }
 

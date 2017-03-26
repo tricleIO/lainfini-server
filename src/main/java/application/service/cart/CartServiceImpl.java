@@ -26,6 +26,15 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
     @Autowired
     private UserService userService;
 
+    @Override
+    public ServiceResponse<CartDTO> read(UUID key) {
+        Cart cart = cartRepository.findOneById(key);
+        if (cart == null) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_FOUND);
+        }
+        return ServiceResponse.success(cart.toDTO(true));
+    }
+
     public ServiceResponse<CartDTO> readCurrentCustomersCart() {
         User user = CustomUserDetails.getCurrentUser();
         if (user == null) {

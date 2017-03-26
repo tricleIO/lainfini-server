@@ -1,7 +1,9 @@
 package application.rest;
 
 import application.persistence.entity.CustomerOrder;
+import application.rest.domain.CartDTO;
 import application.rest.domain.OrderDTO;
+import application.service.cart.CartService;
 import application.service.order.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -15,6 +17,9 @@ public class OrderController extends AbstractDatabaseController<CustomerOrder, U
 
     @Autowired
     private OrderService orderService;
+
+    @Autowired
+    private CartService cartService;
 
     @RequestMapping(value = "/orders", method = RequestMethod.GET)
     public ResponseEntity<?> readOrders(Pageable pageable) {
@@ -42,6 +47,8 @@ public class OrderController extends AbstractDatabaseController<CustomerOrder, U
     @RequestMapping(value = "/customers/{customerId}/orders", method = RequestMethod.POST)
     public ResponseEntity<?> createOrder(@PathVariable UUID customerId, @RequestBody OrderDTO order) {
         order.setCustomerUid(customerId);
+        CartDTO cartDTO = cartService.read(order.getCartUid()).getBody();
+        System.out.println(cartDTO);
         return create(order);
     }
 
