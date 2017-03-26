@@ -71,10 +71,6 @@ public class CartItemServiceImpl extends BaseDatabaseServiceImpl<CartItem, Long,
         return cartItemRepository;
     }
 
-    private void increaseQuantityOfProductInCartBy(Integer additionalQuantity, CartItem cartItem) {
-
-    }
-
     private boolean productInCartAlreadyExists(UUID productId, UUID cartId) {
         return cartItemRepository.countByProductIdAndCartId(productId, cartId) > 0;
     }
