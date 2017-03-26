@@ -59,11 +59,13 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
     public ServiceResponse<CartDTO> readCurrentCustomersCart() {
         User user = CustomUserDetails.getCurrentUser();
         if (user == null) {
-            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+            return create(new CartDTO());
         }
         Cart cart = cartRepository.findFirstByCustomerIdAndStatusOrderByCreatedAtDesc(user.getId(), CartStatusEnum.OPENED);
         if (cart == null) {
-            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+            CartDTO cartDTO = new CartDTO();
+            cartDTO.setCustomerUid(user.getId());
+            return create(cartDTO);
         }
         return ServiceResponse.success(cart.toDTO(false));
     }

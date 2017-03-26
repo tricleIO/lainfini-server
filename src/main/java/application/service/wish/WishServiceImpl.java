@@ -44,6 +44,15 @@ public class WishServiceImpl extends BaseDatabaseServiceImpl<Wish, Long, WishRep
     }
 
     @Override
+    public ServiceResponse<Page<WishDTO>> readCurrentCustomersWishes(Pageable pageable) {
+        ServiceResponse<UserDTO> currentUserResponse = userService.readCurrentUser();
+        if (!currentUserResponse.isSuccessful()) {
+            return ServiceResponse.error(currentUserResponse.getStatus());
+        }
+        return readCustomersWishes(currentUserResponse.getBody().getUid(), pageable);
+    }
+
+    @Override
     protected void additionalUpdateDto(WishDTO dto) {
         ServiceResponse<ProductDTO> productResponse = productService.read(dto.getProductUid());
         if (productResponse.isSuccessful()) {
@@ -57,6 +66,16 @@ public class WishServiceImpl extends BaseDatabaseServiceImpl<Wish, Long, WishRep
             return ServiceResponse.error(ServiceResponseStatus.ALREADY_EXISTS);
         }
         return super.create(dto);
+    }
+
+    @Override
+    public ServiceResponse<WishDTO> createWishToCurrentUser(WishDTO dto) {
+        ServiceResponse<UserDTO> currentUserResponse = userService.readCurrentUser();
+        if (!currentUserResponse.isSuccessful()) {
+            return ServiceResponse.error(currentUserResponse.getStatus());
+        }
+        dto.setCustomerUid(currentUserResponse.getBody().getUid());
+        return this.create(dto);
     }
 
     @Override
