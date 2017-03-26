@@ -18,6 +18,7 @@ import application.service.size.SizeService;
 import application.service.unit.UnitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
@@ -27,16 +28,11 @@ import java.util.*;
 // @TODO - refactor this class, eventually add generic support for secured services
 
 @Service
-public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Product, UUID, ProductRepository, ProductDTO> implements ProductService {
+public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Product, UUID, ProductRepository, ProductDTO>
+        implements ProductService {
 
-    @Override
-    public ServiceResponse<ProductDTO> read(String urlSlug) {
-        Product product = productRepository.findOneByUrlSlug(urlSlug);
-        if (product == null) {
-            return ServiceResponse.error(ServiceResponseStatus.PRODUCT_SLUG_NOT_FOUND);
-        }
-        return ServiceResponse.success(product.toDTO(true));
-    }
+    @Autowired
+    private ApplicationFileRepository applicationFileRepository;
 
     @Override
     public ServiceResponse<ProductDTO> read(UUID key, Principal principal) {
@@ -44,7 +40,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         if (response.isSuccessful()) {
             ProductDTO productDTO = response.getBody();
             if (principal != null) {
-                User user = userRepository.findByLoginAndRegisterStatus(
+                User user = userRepository.findByEmailAndRegisterStatus(
                         principal.getName(), UserStatusEnum.REGISTERED
                 );
                 if (user != null) {
@@ -62,7 +58,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         ServiceResponse<Page<ProductDTO>> response = super.readAll(pageable);
         if (principal != null) {
             if (principal != null) {
-                User user = userRepository.findByLoginAndRegisterStatus(
+                User user = userRepository.findByEmailAndRegisterStatus(
                         principal.getName(), UserStatusEnum.REGISTERED
                 );
                 if (user != null) {
@@ -84,7 +80,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         Page<ProductDTO> pageWithDtos = convertPageWithEntitiesToPageWithDtos(pageWithProducts, pageable);
 
         if (principal != null) {
-            User user = userRepository.findByLoginAndRegisterStatus(
+            User user = userRepository.findByEmailAndRegisterStatus(
                     principal.getName(), UserStatusEnum.REGISTERED
             );
             if (user != null) {
@@ -126,6 +122,18 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     }
 
     @Override
+    public ServiceResponse<Page<ProductDTO>> findByImagesPfFileId(Long imageId) {
+        ApplicationFile one = applicationFileRepository.findOne(imageId);
+        Set<ProductFile> productFiles = one.getProductFiles();
+        List<ProductDTO> productDTOS = new ArrayList<>();
+        for (ProductFile productFile : productFiles) {
+            productDTOS.add(productFile.getPf().getProduct().toDTO(false));
+        }
+        return ServiceResponse.success(new PageImpl<ProductDTO>(productDTOS, null, productDTOS.size()));
+
+    }
+
+    @Override
     public ProductRepository getRepository() {
         return productRepository;
     }
@@ -150,7 +158,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     // additional data manipulators
 
     @Override
-    protected AdditionalDataManipulatorBatch<ProductDTO> getCreateAdditionalDataLoaderBatch(ProductDTO productDTO) {
+    protected AdditionalDataManipulatorBatch<ProductDTO> getAdditionalDataLoaderBatch(ProductDTO productDTO) {
         AdditionalDataManipulatorBatch<ProductDTO> dataManipulatorBatch = new AdditionalDataManipulatorBatch<>(productDTO);
         dataManipulatorBatch.add(this::getCategoryDataManipulator);
         dataManipulatorBatch.add(this::getMaterialDataManipulator);
@@ -159,16 +167,6 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         return dataManipulatorBatch;
     }
 
-    @Override
-    protected ServiceResponse<ProductDTO> doBeforeConvertInCreate(ProductDTO productDTO) {
-        // if url slug is null, generate it from name
-        if (productDTO.getUrlSlug() == null) {
-            productDTO.setUrlSlug(
-                    getUrlSlugFromName(productDTO.getName())
-            );
-        }
-        return super.doBeforeConvertInCreate(productDTO);
-    }
 
     // privates
 
@@ -179,10 +177,6 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         product.setId(productDTO.getUid());
         wish.setProduct(product);
         return user.getWishes().contains(wish);
-    }
-
-    private String getUrlSlugFromName(String productName) {
-        return productName.replaceAll("\\s+", "-").toLowerCase();
     }
 
     private List<Integer> getCategoryAndAllSubcategoriesIds(Integer categoryId) {

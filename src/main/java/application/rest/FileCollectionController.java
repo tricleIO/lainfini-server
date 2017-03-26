@@ -3,11 +3,14 @@ package application.rest;
 import application.persistence.entity.FileCollection;
 import application.rest.domain.FileCollectionDTO;
 import application.service.file.FileCollectionService;
+import application.service.response.ServiceResponse;
+import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.UUID;
 
 /**
@@ -32,7 +35,14 @@ public class FileCollectionController extends AbstractDatabaseController<FileCol
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<?> deleteFileCollection(@PathVariable Long id) {
-        return delete(id);
+        ServiceResponse<FileCollectionDTO> read = fileCollectionService.read(id);
+        if (read.getBody() != null) {
+            FileCollectionDTO fileCollectionDTO = read.getBody();
+            fileCollectionDTO.setValidTo(new Date());
+            fileCollectionService.patch(fileCollectionDTO);
+            return ResponseEntity.ok(fileCollectionDTO);
+        }
+        return new ErrorResponseEntity(ServiceResponseStatus.NOT_FOUND);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
@@ -40,7 +50,7 @@ public class FileCollectionController extends AbstractDatabaseController<FileCol
         return read(id);
     }
 
-    @RequestMapping(value = "/{collectionId}/{fileId}", method = RequestMethod.GET)
+    @RequestMapping(value = "/{collectionId}/{fileId}", method = RequestMethod.PATCH)
     public ResponseEntity<?> addFileToCollection(@PathVariable Long collectionId, @PathVariable UUID fileId) {
         return getSimpleResponseEntity(fileCollectionService.addFileToCollection(collectionId, fileId));
     }

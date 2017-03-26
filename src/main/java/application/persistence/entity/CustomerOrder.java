@@ -26,7 +26,7 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
     @Column(name = "id", unique = true, nullable = false, columnDefinition = "BINARY(16)")
     private UUID id;
 
-    @OneToOne
+    @ManyToOne
     @NotNull
     @JoinColumn(name = "customer_id", referencedColumnName = "id", nullable = false)
     private User customer;
@@ -35,6 +35,7 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
     @Column(name = "created_at", nullable = false)
     private Date createdAt;
 
+    @Column(name = "status", nullable = false)
     @Enumerated(EnumType.ORDINAL)
     private OrderStatusEnum status;
 

@@ -25,7 +25,7 @@ public class OrderItemServiceImpl extends BaseDatabaseServiceImpl<OrderItem, Lon
     private OrderService orderService;
 
     @Override
-    protected AdditionalDataManipulatorBatch<OrderItemDTO> getCreateAdditionalDataLoaderBatch(OrderItemDTO orderItemDTO) {
+    protected AdditionalDataManipulatorBatch<OrderItemDTO> getAdditionalDataLoaderBatch(OrderItemDTO orderItemDTO) {
         AdditionalDataManipulatorBatch<OrderItemDTO> batch = new AdditionalDataManipulatorBatch<>(orderItemDTO);
         // add product
         batch.add(oi -> new AdditionalDataManipulator<>(

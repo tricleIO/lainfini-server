@@ -4,6 +4,8 @@ import application.persistence.entity.User;
 import application.persistence.type.UserRoleEnum;
 import application.persistence.type.UserStatusEnum;
 import application.rest.domain.UserDTO;
+import application.rest.domain.UserFacebookAccountDTO;
+import application.rest.domain.UserInstagramAccountDTO;
 import application.service.response.ServiceResponse;
 import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +13,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.UUID;
 
@@ -45,6 +48,22 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
         return create(user);
     }
 
+    @RequestMapping(value = "/facebook")
+    public ResponseEntity<?> getFacebookUserDetails(@RequestParam String token) {
+        String url = "https://graph.facebook.com/v2.8/me?fields=id,hometown,email,gender,first_name,last_name&access_token="+token;
+        RestTemplate restTemplate = new RestTemplate();
+        UserFacebookAccountDTO forObject = restTemplate.getForObject(url, UserFacebookAccountDTO.class);
+        return new ResponseEntity<Object>(forObject,HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/instagram")
+    public ResponseEntity<?> getInstagramUserDetails(@RequestParam String token) {
+        String url = "https://api.instagram.com/v1/users/self/?access_token="+token;
+        RestTemplate restTemplate = new RestTemplate();
+        UserInstagramAccountDTO forObject = restTemplate.getForObject(url, UserInstagramAccountDTO.class);
+        return new ResponseEntity<Object>(forObject,HttpStatus.OK);
+    }
+
     @RequestMapping(value = "/current", method = RequestMethod.GET)
     public ResponseEntity<?> readCurrentUser() {
         return getSimpleResponseEntity(
@@ -56,12 +75,18 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
     public ResponseEntity<?> verifyUser(@RequestParam String verificationToken) {
         UserDTO body = userService.findByEmailVerificationTokenToken(verificationToken).getBody();
         if (body != null) {
-//            Date expiryDate = body.toEntity(true).getEmailVerificationToken().getExpiryDate();
-            body.setRegisterStatus(UserStatusEnum.REGISTERED);
-            userService.patch(body);
-            return new ResponseEntity<>(
-                    HttpStatus.OK
-            );
+            if (body.getRegisterStatus().equals(UserStatusEnum.REGISTERED)) {
+                return new ResponseEntity<>(
+                        HttpStatus.OK
+                );
+            } else if (body.getRegisterStatus().equals(UserStatusEnum.PRE_REGISTERED)) {
+//            Date expiryDate = body.toEntity(true).getEmailVerificationToken().getExpiryDate(); //todo: brát v potaz expiraci
+                body.setRegisterStatus(UserStatusEnum.REGISTERED);
+                userService.patch(body); //todo: tady dát lepší patch, aby nemazal heslo
+                return new ResponseEntity<>(
+                        HttpStatus.OK
+                );
+            }
         }
 
         return new ResponseEntity<>(

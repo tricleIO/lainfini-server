@@ -5,9 +5,12 @@ import application.persistence.entity.User;
 import application.persistence.repository.CartRepository;
 import application.persistence.type.CartStatusEnum;
 import application.rest.domain.CartDTO;
+import application.rest.domain.CartItemDTO;
+import application.rest.domain.ProductDTO;
 import application.service.AdditionalDataManipulator;
 import application.service.AdditionalDataManipulatorBatch;
 import application.service.BaseDatabaseServiceImpl;
+import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.security.CustomUserDetails;
@@ -15,6 +18,7 @@ import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Set;
 import java.util.UUID;
 
 @Service
@@ -25,6 +29,32 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private ProductService productService;
+
+    @Override
+    protected void additionalUpdateDto(CartDTO dto) {
+        Set<CartItemDTO> items = dto.getItems();
+        for (CartItemDTO item : items) {
+            ServiceResponse<ProductDTO> productResponse = productService.read(item.getProductUid());
+            if (productResponse.isSuccessful()) {
+                item.setProduct(productResponse.getBody());
+            }
+        }
+    }
+
+    // @TODO - repair error with finOne in base service, not override here!
+    @Override
+    public ServiceResponse<CartDTO> read(UUID key) {
+        Cart cart = cartRepository.findOneById(key);
+        if (cart == null) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_FOUND);
+        }
+        CartDTO cartDTO = cart.toDTO(true);
+        additionalUpdateDto(cartDTO);
+        return ServiceResponse.success(cartDTO);
+    }
 
     public ServiceResponse<CartDTO> readCurrentCustomersCart() {
         User user = CustomUserDetails.getCurrentUser();
@@ -39,7 +69,7 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
     }
 
     @Override
-    protected AdditionalDataManipulatorBatch<CartDTO> getCreateAdditionalDataLoaderBatch(CartDTO dto) {
+    protected AdditionalDataManipulatorBatch<CartDTO> getAdditionalDataLoaderBatch(CartDTO dto) {
         AdditionalDataManipulatorBatch<CartDTO> batch = new AdditionalDataManipulatorBatch<>(dto);
         // add customer
         batch.add(o -> new AdditionalDataManipulator<>(

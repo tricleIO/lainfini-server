@@ -52,7 +52,7 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
     public User toEntity(boolean selectAsParent, Object... parentParams) {
         User user = new User();
         user.setId(uid);
-        user.setLogin(username);
+        user.setEmail(username);
         user.setPassword(password);
         user.setFirstName(firstName);
         user.setLastName(lastName);

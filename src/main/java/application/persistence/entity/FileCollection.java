@@ -25,22 +25,22 @@ public class FileCollection implements DTOConvertable<FileCollectionDTO>, Serial
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
+    @Column(name = "title")
     private String title;
 
-    @Column
+    @Column(name = "description")
     private String description;
 
-    @Column
+    @Column(name="url_slug")
     private String urlSlug;
 
-    @Column
+    @Column(name = "valid_from", nullable = false)
     private Date validFrom;
 
-    @Column
+    @Column(name = "valid_to")
     private Date validTo;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "fc.collection", cascade= CascadeType.ALL)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "fc.collection", cascade= CascadeType.PERSIST)
     private Set<FileCollectionHasFile> files = new HashSet<>();
 
     @Transient

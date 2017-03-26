@@ -26,17 +26,20 @@ public class Cart implements DTOConvertable<CartDTO>, Serializable {
     @Column(name = "id", unique = true, nullable = false, columnDefinition = "BINARY(16)")
     private UUID id;
 
-    @OneToOne
-    @JoinColumn(name = "customer_id", referencedColumnName = "id", nullable = true)
+    @ManyToOne(fetch = FetchType.EAGER, optional = true)
+    @NotNull
+    @JoinColumn(name = "customer_id", referencedColumnName = "id", nullable = false)
     private User customer;
 
     @NotNull
     @Column(name = "created_at", nullable = false)
     private Date createdAt;
 
+    @Column(name = "status", nullable = false)
     @Enumerated(EnumType.ORDINAL)
     private CartStatusEnum status;
 
+    @Column(name = "created_from")
     private String createdFrom;
 
     @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "cart")
@@ -46,7 +49,7 @@ public class Cart implements DTOConvertable<CartDTO>, Serializable {
     public CartDTO toDTO(boolean selectAsParent, Object... parentParams) {
         CartDTO cartDTO = new CartDTO();
         cartDTO.setUid(id);
-        if (customer != null) {
+        if (getCustomer() != null) {
             cartDTO.setCustomerUid(customer.getId());
         }
         cartDTO.setCreatedAt(createdAt);

@@ -23,7 +23,7 @@ public class ProductController extends AbstractDatabaseController<Product, UUID,
     public ResponseEntity<?> readProducts(Pageable pageable, @RequestParam(name = "slug", required = false) String slug, Principal principal) {
         if (slug != null) {
             return getSimpleResponseEntity(
-                    productService.read(slug)
+                    productService.readBySlug(slug)
             );
         }
         return getPageResponseEntity(
@@ -50,11 +50,26 @@ public class ProductController extends AbstractDatabaseController<Product, UUID,
         );
     }
 
+    @RequestMapping(value = "/{id}", method = RequestMethod.PATCH)
+    public ResponseEntity<?> patchProduct(@PathVariable UUID id, @RequestBody ProductDTO productDTO) {
+        productDTO.setUid(id);
+        return getSimpleResponseEntity(
+                productService.patch(productDTO)
+        );
+    }
+
     @RequestMapping(value = "/{productId}/flashes", method = RequestMethod.POST)
     public ResponseEntity<?> addFlash(@PathVariable UUID productId, @RequestBody ProductHasFlashDTO productHasFlash) {
         productHasFlash.setProductUid(productId);
         return getSimpleResponseEntity(
                 productService.addFlash(productHasFlash)
+        );
+    }
+
+    @RequestMapping(value = "/image/{imageId}", method = RequestMethod.GET)
+    public ResponseEntity<?> readProductsByImage(@PathVariable Long imageId) {
+        return getPageResponseEntity(
+                productService.findByImagesPfFileId(imageId)
         );
     }
 

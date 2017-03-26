@@ -24,6 +24,7 @@ import application.persistence.type.UserStatusEnum;
 import application.rest.domain.UserDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -37,6 +38,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "customer")
 @Data
+@EqualsAndHashCode(exclude = {"addresses","wishes"})
 public class User implements DTOConvertable<UserDTO>, Serializable {
 
     @Id
@@ -65,7 +67,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "sex", length = 1)
     private String sex;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "billing_address_id", referencedColumnName = "id")
     private Address billingAddress;
 
@@ -85,7 +87,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "stripe_customer_token")
     private String stripeToken;
 
-    @OneToOne(mappedBy = "user")
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private UserEmailVerificationToken emailVerificationToken;
 
     @Enumerated(EnumType.STRING)
@@ -100,17 +102,17 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "locale", length = 10)
     private LocaleEnum locale;
 
-    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "customer")
+    @OneToMany(cascade=CascadeType.ALL, mappedBy = "customer")
     private Set<Wish> wishes;
 
-    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "customer")
+    @OneToMany(cascade=CascadeType.ALL, mappedBy = "customer")
     private Set<Address> addresses;
 
     /*login part*/
 
     @NotNull
     @Column(nullable = false)
-    private String login;
+    private String email;
 
     @Column(name = "password", length = 64)
     private String password;
@@ -130,7 +132,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     public User(User user) {
         super();
         this.id = user.getId();
-        this.login = user.getLogin();
+        this.email = user.getEmail();
         this.password = user.getPassword();
         this.roles = user.getRoles();
         this.linkedAccountList = user.getLinkedAccountList();
@@ -154,7 +156,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     public UserDTO toDTO(boolean selectAsParent, Object... parentParams) {
         UserDTO userDTO = new UserDTO();
         userDTO.setUid(id);
-        userDTO.setUsername(login);
+        userDTO.setUsername(email);
         userDTO.setFirstName(firstName);
         userDTO.setLastName(lastName);
         userDTO.setStatus(status);

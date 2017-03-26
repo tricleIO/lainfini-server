@@ -36,7 +36,7 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
     }
 
     public ServiceResponse<UserDTO> read(String username) {
-        User foundUser = userRepository.findByLogin(username);
+        User foundUser = userRepository.findByEmail(username);
         if (foundUser == null) {
             return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
         }
@@ -56,7 +56,7 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
     }
 
     private boolean exists(UserDTO dto) {
-        User foundUser = userRepository.findByLoginAndRegisterStatus(dto.getUsername(), UserStatusEnum.REGISTERED);
+        User foundUser = userRepository.findByEmailAndRegisterStatus(dto.getUsername(), UserStatusEnum.REGISTERED);
         return foundUser != null;
     }
 

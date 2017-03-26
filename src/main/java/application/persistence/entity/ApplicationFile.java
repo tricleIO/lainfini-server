@@ -15,7 +15,7 @@ import java.util.Set;
 @Entity
 @DiscriminatorValue("F")
 @Data
-@EqualsAndHashCode(exclude = {"productFiles","fileCollection", "fileCollection"})
+@EqualsAndHashCode(exclude = {"productFiles","fileCollection", "fileCollection"},callSuper = true)
 public class ApplicationFile extends AbstractFile<ApplicationFileDTO> {
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "pf.file")
@@ -34,6 +34,7 @@ public class ApplicationFile extends AbstractFile<ApplicationFileDTO> {
         applicationFileDTO.setFileIndex(getIndex());
         applicationFileDTO.setFileName(getFileName());
         applicationFileDTO.setMimeType(getMimeType());
+        applicationFileDTO.setFileTitle(getTitle());
         applicationFileDTO.setFileDescription(getFileDescription());
         applicationFileDTO.setFileStatus(getFileStatus());
         applicationFileDTO.setFile(getFile());

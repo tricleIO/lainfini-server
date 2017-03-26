@@ -2,6 +2,7 @@ package application.service.wish;
 
 import application.persistence.entity.Wish;
 import application.persistence.repository.WishRepository;
+import application.rest.domain.ProductDTO;
 import application.rest.domain.UserDTO;
 import application.rest.domain.WishDTO;
 import application.service.AdditionalDataManipulator;
@@ -43,6 +44,14 @@ public class WishServiceImpl extends BaseDatabaseServiceImpl<Wish, Long, WishRep
     }
 
     @Override
+    protected void additionalUpdateDto(WishDTO dto) {
+        ServiceResponse<ProductDTO> productResponse = productService.read(dto.getProductUid());
+        if (productResponse.isSuccessful()) {
+            dto.setProduct(productResponse.getBody());
+        }
+    }
+
+    @Override
     public ServiceResponse<WishDTO> create(WishDTO dto) {
         if (productCustomerAlreadyWishesExists(dto.getProductUid(), dto.getCustomerUid())) {
             return ServiceResponse.error(ServiceResponseStatus.ALREADY_EXISTS);
@@ -51,7 +60,7 @@ public class WishServiceImpl extends BaseDatabaseServiceImpl<Wish, Long, WishRep
     }
 
     @Override
-    protected AdditionalDataManipulatorBatch<WishDTO> getCreateAdditionalDataLoaderBatch(WishDTO wishDTO) {
+    protected AdditionalDataManipulatorBatch<WishDTO> getAdditionalDataLoaderBatch(WishDTO wishDTO) {
         AdditionalDataManipulatorBatch<WishDTO> batch = new AdditionalDataManipulatorBatch<>(wishDTO);
         // add user
         batch.add(w -> new AdditionalDataManipulator<>(

@@ -42,7 +42,7 @@ public class ComplaintServiceImpl extends BaseDatabaseServiceImpl<Complaint, UUI
     private ApplicationFileService applicationFileService;
 
     @Override
-    protected AdditionalDataManipulatorBatch<ComplaintDTO> getCreateAdditionalDataLoaderBatch(ComplaintDTO dto) {
+    protected AdditionalDataManipulatorBatch<ComplaintDTO> getAdditionalDataLoaderBatch(ComplaintDTO dto) {
         AdditionalDataManipulatorBatch<ComplaintDTO> batch = new AdditionalDataManipulatorBatch<>(dto);
         // add reason
         batch.add(c -> new AdditionalDataManipulator<>(
