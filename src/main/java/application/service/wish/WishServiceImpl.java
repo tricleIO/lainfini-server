@@ -2,6 +2,7 @@ package application.service.wish;
 
 import application.persistence.entity.Wish;
 import application.persistence.repository.WishRepository;
+import application.rest.domain.ProductDTO;
 import application.rest.domain.UserDTO;
 import application.rest.domain.WishDTO;
 import application.service.AdditionalDataManipulator;
@@ -40,6 +41,14 @@ public class WishServiceImpl extends BaseDatabaseServiceImpl<Wish, Long, WishRep
         Page<Wish> wishes = wishRepository.findByCustomerId(customerId, pageable);
         Page<WishDTO> pageOfWishDTOs = convertPageWithEntitiesToPageWithDtos(wishes, pageable);
         return ServiceResponse.success(pageOfWishDTOs);
+    }
+
+    @Override
+    protected void additionalUpdateDto(WishDTO dto) {
+        ServiceResponse<ProductDTO> productResponse = productService.read(dto.getProductUid());
+        if (productResponse.isSuccessful()) {
+            dto.setProduct(productResponse.getBody());
+        }
     }
 
     @Override
