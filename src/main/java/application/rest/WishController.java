@@ -11,28 +11,41 @@ import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
 
 @RestController
-@RequestMapping(value = "customers/{customerId}/wishlist")
 public class WishController extends AbstractDatabaseController<Wish, Long, WishDTO, WishService> {
 
     @Autowired
     private WishService wishService;
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value = "/customers/{customerId}/wishlist", method = RequestMethod.GET)
     public ResponseEntity<?> readUsersWishes(@PathVariable UUID customerId, Pageable pageable) {
         return getPageResponseEntity(
                 wishService.readCustomersWishes(customerId, pageable)
         );
     }
 
-    @RequestMapping(value = "/{wishId}", method = RequestMethod.GET)
+    @RequestMapping(value = "/customers/current/wishlist", method = RequestMethod.GET)
+    public ResponseEntity<?> readUsersWishes(Pageable pageable) {
+        return getPageResponseEntity(
+                wishService.readCurrentCustomersWishes(pageable)
+        );
+    }
+
+    @RequestMapping(value = "/customers/{customerId}/wishlist/{wishId}", method = RequestMethod.GET)
     public ResponseEntity<?> readAddress(@PathVariable UUID customerId, @PathVariable Long wishId) {
         return read(wishId);
     }
 
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(value = "/customers/{customerId}/wishlist", method = RequestMethod.POST)
     public ResponseEntity<?> createWish(@PathVariable UUID customerId, @RequestBody WishDTO wishDTO) {
         wishDTO.setCustomerUid(customerId);
         return create(wishDTO);
+    }
+
+    @RequestMapping(value = "/customers/current/wishlist", method = RequestMethod.POST)
+    public ResponseEntity<?> createWish(@RequestBody WishDTO wishDTO) {
+        return getSimpleResponseEntity(
+                wishService.createWishToCurrentUser(wishDTO)
+        );
     }
 
     @Override

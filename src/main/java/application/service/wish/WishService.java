@@ -11,6 +11,8 @@ import java.util.UUID;
 
 public interface WishService extends BaseDatabaseService<Wish, Long, WishDTO> {
 
+    ServiceResponse<Page<WishDTO>> readCurrentCustomersWishes(Pageable pageable);
+    ServiceResponse<WishDTO> createWishToCurrentUser(WishDTO dto);
     ServiceResponse<Page<WishDTO>> readCustomersWishes(UUID customerId, Pageable pageable);
 
 }
