@@ -2,12 +2,13 @@ package application.service.wish;
 
 import application.persistence.entity.Wish;
 import application.persistence.repository.WishRepository;
+import application.persistence.type.StatusEnum;
 import application.rest.domain.ProductDTO;
 import application.rest.domain.UserDTO;
 import application.rest.domain.WishDTO;
 import application.service.AdditionalDataManipulator;
 import application.service.AdditionalDataManipulatorBatch;
-import application.service.BaseDatabaseServiceImpl;
+import application.service.BaseSoftDeletableDatabaseServiceImpl;
 import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
@@ -20,7 +21,7 @@ import org.springframework.stereotype.Service;
 import java.util.UUID;
 
 @Service
-public class WishServiceImpl extends BaseDatabaseServiceImpl<Wish, Long, WishRepository, WishDTO> implements WishService {
+public class WishServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Wish, Long, WishRepository, WishDTO> implements WishService {
 
     @Autowired
     private WishRepository wishRepository;
@@ -38,7 +39,7 @@ public class WishServiceImpl extends BaseDatabaseServiceImpl<Wish, Long, WishRep
         if (!userResponse.isSuccessful()) {
             return ServiceResponse.error(ServiceResponseStatus.CUSTOMER_NOT_FOUND);
         }
-        Page<Wish> wishes = wishRepository.findByCustomerId(customerId, pageable);
+        Page<Wish> wishes = wishRepository.findByCustomerIdAndStatus(customerId, StatusEnum.ACTIVE, pageable);
         Page<WishDTO> pageOfWishDTOs = convertPageWithEntitiesToPageWithDtos(wishes, pageable);
         return ServiceResponse.success(pageOfWishDTOs);
     }

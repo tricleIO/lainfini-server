@@ -15,7 +15,7 @@ import java.util.Date;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Wish implements DTOConvertable<WishDTO>, Serializable {
+public class Wish extends SoftDeletableEntityImpl implements DTOConvertable<WishDTO>, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -37,6 +37,7 @@ public class Wish implements DTOConvertable<WishDTO>, Serializable {
     public WishDTO toDTO(boolean selectAsParent, Object... parentParams) {
         WishDTO wishDTO = new WishDTO();
         wishDTO.setUid(id);
+        wishDTO.setStatus(status);
         if (product != null) {
             wishDTO.setProductUid(product.getId());
         }
