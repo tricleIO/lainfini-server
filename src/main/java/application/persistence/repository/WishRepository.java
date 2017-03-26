@@ -11,5 +11,6 @@ public interface WishRepository extends PagingAndSortingRepository<Wish, Long> {
 
     Page<Wish> findByCustomerId(UUID customerId, Pageable pageable);
     Long countByProductIdAndCustomerId(UUID productId, UUID customerId);
+    Wish findByCustomerIdAndProductId(UUID customerId, UUID productId);
 
 }

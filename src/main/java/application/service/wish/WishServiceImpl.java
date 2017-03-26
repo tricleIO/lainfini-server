@@ -69,6 +69,24 @@ public class WishServiceImpl extends BaseDatabaseServiceImpl<Wish, Long, WishRep
     }
 
     @Override
+    public ServiceResponse<WishDTO> removeProductFromWishes(UUID customerId, UUID productId) {
+        Wish wish = wishRepository.findByCustomerIdAndProductId(customerId, productId);
+        if (wish == null) {
+            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+        }
+        return delete(wish.getId());
+    }
+
+    @Override
+    public ServiceResponse<WishDTO> removeProductFromWishesOfCurrentCustomer(UUID productId) {
+        ServiceResponse<UserDTO> currentUserResponse = userService.readCurrentUser();
+        if (!currentUserResponse.isSuccessful()) {
+            return ServiceResponse.error(currentUserResponse.getStatus());
+        }
+        return removeProductFromWishes(currentUserResponse.getBody().getUid(), productId);
+    }
+
+    @Override
     public ServiceResponse<WishDTO> createWishToCurrentUser(WishDTO dto) {
         ServiceResponse<UserDTO> currentUserResponse = userService.readCurrentUser();
         if (!currentUserResponse.isSuccessful()) {

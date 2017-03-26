@@ -14,5 +14,7 @@ public interface WishService extends BaseDatabaseService<Wish, Long, WishDTO> {
     ServiceResponse<Page<WishDTO>> readCurrentCustomersWishes(Pageable pageable);
     ServiceResponse<WishDTO> createWishToCurrentUser(WishDTO dto);
     ServiceResponse<Page<WishDTO>> readCustomersWishes(UUID customerId, Pageable pageable);
+    ServiceResponse<WishDTO> removeProductFromWishes(UUID customerId, UUID productId);
+    ServiceResponse<WishDTO> removeProductFromWishesOfCurrentCustomer(UUID productId);
 
 }
