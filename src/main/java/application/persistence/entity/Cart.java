@@ -26,9 +26,8 @@ public class Cart implements DTOConvertable<CartDTO>, Serializable {
     @Column(name = "id", unique = true, nullable = false, columnDefinition = "BINARY(16)")
     private UUID id;
 
-    @ManyToOne(fetch = FetchType.EAGER, optional = true)
-    @NotNull
-    @JoinColumn(name = "customer_id", referencedColumnName = "id", nullable = false)
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "customer_id", referencedColumnName = "id")
     private User customer;
 
     @NotNull
