@@ -29,7 +29,7 @@ public class SimpleCORSFilter extends GenericFilterBean {
         response.setHeader("Access-Control-Allow-Methods", "POST, PUT, GET, PATCH, OPTIONS, DELETE");
         response.setHeader("Access-Control-Max-Age", "3600");
 //        response.setHeader("Access-Control-Allow-Headers", "Authorization, Content-Type");
-        response.setHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
+        response.setHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Authorization, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
         //response.setHeader("Access-Control-Allow-Credentials", "true");
 
         if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
