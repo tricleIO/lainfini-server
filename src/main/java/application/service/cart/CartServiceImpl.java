@@ -67,7 +67,7 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
             cartDTO.setCustomerUid(user.getId());
             return create(cartDTO);
         }
-        return ServiceResponse.success(cart.toDTO(false));
+        return read(cart.getId());
     }
 
     @Override
