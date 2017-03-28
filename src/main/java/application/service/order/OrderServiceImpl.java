@@ -4,6 +4,7 @@ import application.persistence.entity.Cart;
 import application.persistence.entity.CartItem;
 import application.persistence.entity.CustomerOrder;
 import application.persistence.entity.OrderItem;
+import application.persistence.repository.CartItemRepository;
 import application.persistence.repository.CartRepository;
 import application.persistence.repository.OrderRepository;
 import application.persistence.type.CartStatusEnum;
@@ -41,6 +42,9 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
 
     @Autowired
     private CartRepository cartRepository;
+
+    @Autowired
+    private CartItemRepository cartItemRepository;
 
     @Autowired
     private CartService cartService;
@@ -118,7 +122,7 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
             Cart cart = cartRepository.findOne(entity.getCart().getId());
             if (cart != null) {
                 Set<OrderItem> orderItems = new LinkedHashSet<>();
-                for (CartItem cartItem : cart.getItems()) {
+                for (CartItem cartItem : cartItemRepository.findByCartId(entity.getCart().getId())) {
                     // create order item from cart item
                     OrderItem orderItem = new OrderItem();
                     orderItem.setProduct(cartItem.getProduct());
