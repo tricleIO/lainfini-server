@@ -3,7 +3,6 @@ package application.persistence.entity;
 import application.persistence.DTOConvertable;
 import application.persistence.type.CartStatusEnum;
 import application.rest.domain.CartDTO;
-import application.rest.domain.CartItemDTO;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -11,8 +10,6 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
-import java.util.LinkedHashSet;
-import java.util.Set;
 import java.util.UUID;
 
 @Entity
@@ -41,8 +38,8 @@ public class Cart implements DTOConvertable<CartDTO>, Serializable {
     @Column(name = "created_from")
     private String createdFrom;
 
-    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "cart")
-    private Set<CartItem> items;
+//    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "cart")
+//    private Set<CartItem> items;
 
     @Override
     public CartDTO toDTO(boolean selectAsParent, Object... parentParams) {
@@ -55,13 +52,13 @@ public class Cart implements DTOConvertable<CartDTO>, Serializable {
         cartDTO.setStatus(status);
         cartDTO.setCreatedFrom(createdFrom);
         // items
-        if (items != null) {
-            Set<CartItemDTO> itemDTOs = new LinkedHashSet<>(items.size());
-            for (CartItem item : items) {
-                itemDTOs.add(item.toDTO(false));
-            }
-            cartDTO.setItems(itemDTOs);
-        }
+//        if (items != null) {
+//            Set<CartItemDTO> itemDTOs = new LinkedHashSet<>();
+//            for (CartItem item : items) {
+//                itemDTOs.add(item.toDTO(false));
+//            }
+//            cartDTO.setItems(itemDTOs);
+//        }
         return cartDTO;
     }
 
