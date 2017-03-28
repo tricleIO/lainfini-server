@@ -13,5 +13,6 @@ public interface UserService extends BaseDatabaseService<User, UUID, UserDTO> {
     ServiceResponse<UserDTO> readCurrentUser();
     ServiceResponse<Boolean> hasCurrentUserDemandedRoles(UserRoleEnum... demandedRoles);
     ServiceResponse<UserDTO> findByEmailVerificationTokenToken(String token);
+    ServiceResponse<UserDTO> resetUserPassword(String userId);
 
 }

@@ -71,6 +71,13 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
         );
     }
 
+    @RequestMapping(value = "/resetPassword", method = RequestMethod.GET)
+    public ResponseEntity<?> resetPassword(@RequestParam(name = "email") String email) {
+        return getSimpleResponseEntity(
+                userService.resetUserPassword(email)
+        );
+    }
+
     @RequestMapping(value = "/verify", method = RequestMethod.GET)
     public ResponseEntity<?> verifyUser(@RequestParam String verificationToken) {
         UserDTO body = userService.findByEmailVerificationTokenToken(verificationToken).getBody();
