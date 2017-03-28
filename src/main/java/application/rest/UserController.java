@@ -71,7 +71,7 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
         );
     }
 
-    @RequestMapping(value = "/resetPassword", method = RequestMethod.GET)
+    @RequestMapping(value = "/password-reset", method = RequestMethod.POST)
     public ResponseEntity<?> resetPassword(@RequestParam(name = "email") String email) {
         return getSimpleResponseEntity(
                 userService.resetUserPassword(email)

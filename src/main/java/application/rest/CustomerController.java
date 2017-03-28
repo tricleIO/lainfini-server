@@ -39,6 +39,13 @@ public class CustomerController extends AbstractDatabaseController<User, UUID, U
         );
     }
 
+    @RequestMapping(value = "/password-reset", method = RequestMethod.POST)
+    public ResponseEntity<?> resetPassword(@RequestParam(name = "email") String email) {
+        return getSimpleResponseEntity(
+                customerService.resetUserPassword(email)
+        );
+    }
+
     @Override
     public CustomerService getBaseService() {
         return customerService;
