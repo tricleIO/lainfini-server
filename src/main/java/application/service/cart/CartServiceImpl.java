@@ -56,16 +56,16 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
     }
 
     // @TODO - repair error with finOne in base service, not override here!
-//    @Override
-//    public ServiceResponse<CartDTO> read(UUID key) {
-//        Cart cart = cartRepository.findById(key);
-//        if (cart == null) {
-//            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_FOUND);
-//        }
-//        CartDTO cartDTO = cart.toDTO(true);
-//        additionalUpdateDto(cartDTO);
-//        return ServiceResponse.success(cartDTO);
-//    }
+    @Override
+    public ServiceResponse<CartDTO> read(UUID key) {
+        Cart cart = cartRepository.findById(key);
+        if (cart == null) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_FOUND);
+        }
+        CartDTO cartDTO = cart.toDTO(true);
+        additionalUpdateDto(cartDTO);
+        return ServiceResponse.success(cartDTO);
+    }
 
     public ServiceResponse<CartDTO> readCurrentCustomersCart() {
         User user = CustomUserDetails.getCurrentUser();
