@@ -5,8 +5,10 @@ import application.persistence.entity.User;
 import application.persistence.repository.UserRepository;
 import application.persistence.type.UserRoleEnum;
 import application.persistence.type.UserStatusEnum;
+import application.rest.domain.MailDTO;
 import application.rest.domain.UserDTO;
 import application.service.BaseDatabaseServiceImpl;
+import application.service.mail.MailService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.security.CustomUserDetails;
@@ -15,6 +17,8 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.math.BigInteger;
+import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -29,6 +33,9 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
 
     @Autowired
     private PasswordEncoder passwordEncoder;
+
+    @Autowired
+    private MailService mailService;
 
     @Override
     public UserRepository getRepository() {
@@ -94,6 +101,57 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
         }
         return ServiceResponse.success(user.toDTO(false));
 
+    }
+
+    public ServiceResponse<UserDTO> resetUserPassword(String email) {
+        // read user
+        ServiceResponse<UserDTO> readUserResponse = read(email);
+        if (!readUserResponse.isSuccessful()) {
+            // problem, not found etc.
+            return ServiceResponse.error(readUserResponse.getStatus());
+        }
+        // get user to reset his password
+        UserDTO userDTO = readUserResponse.getBody();
+        // generate new password
+        String newPassword = PasswordGenerator.generate();
+        // patch user password
+        ServiceResponse<UserDTO> patchPasswordResponse = patchUserPassword(
+                userDTO.getUid(), newPassword
+        );
+        if (!patchPasswordResponse.isSuccessful()) {
+            return ServiceResponse.error(patchPasswordResponse.getStatus());
+        }
+        // send reset password email to user
+        ServiceResponse<MailDTO> mailResponse = mailService.sendMail(
+                createResetPasswordEmailForUser(userDTO, newPassword)
+        );
+        if (!mailResponse.isSuccessful()) {
+            return ServiceResponse.error(mailResponse.getStatus());
+        }
+        return patchPasswordResponse;
+    }
+
+    private ServiceResponse<UserDTO> patchUserPassword(UUID userId, String newPassword) {
+        UserDTO user = new UserDTO();
+        user.setUid(userId);
+        user.setPassword(passwordEncoder.encode(newPassword));
+        return patch(user);
+    }
+
+    private MailDTO createResetPasswordEmailForUser(UserDTO userDTO, String password) {
+        MailDTO mailDTO = new MailDTO();
+        mailDTO.setTo(userDTO.getEmail());
+        mailDTO.setSubject("Reset password.");
+        mailDTO.setText("Your new password is: " + password);
+        return mailDTO;
+    }
+
+    private static final class PasswordGenerator {
+        private static SecureRandom random = new SecureRandom();
+
+        public static String generate() {
+            return new BigInteger(130, random).toString(32);
+        }
     }
 
 }
